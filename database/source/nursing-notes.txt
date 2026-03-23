@@ -1,0 +1,2556 @@
+Paste or import your nursing reference text here.
+
+Suggested workflow:
+- Keep each major topic under a clear heading.
+- Use clean plain text when possible.
+- Remove repeated page numbers and OCR noise if available.
+
+Example:
+
+Compiled by
+juma mwanigu
+1 | P a g e
+ACUTE CONDITIONS……………………………………004
+SPACE OCCUPYING LESSIONS………..………….….004
+TUMORS.……………………………….……….…007
+INFECTIONS……………….……………….......…018
+MENINGITIS.…………………….………………….029
+ENCEPHALITIS.………………….………….……...028
+BRAIN ABSCESSES..…………………………….…..047
+VASCULAR DISORDERS …………………………………052
+TRANSIENT ISCHAEMIC ATTACK ………………..….052
+CEREBRAL VASCULAR ACCIDENT…………………...064
+INTRACRANIAL ANEURYSM ……………………….…080
+HEAD INJURY ……………………………………..……093
+SPINAL CORD INJURY.………………………………127
+SPINAL DISC PROBLEMS………………………….…148
+2 | P a g e
+PPPP
+CHRONIC NEUROLOGICAL CONDITIONS ………………162
+SEIZURE DISORDER (EPILEPSY)……………………. 162
+CHRONIC DEGENERATIVE DISORDERS.…………………177
+MULTIPLE SCLEROSIS …………………….……..….177
+PARKINSON’S DISEASE …………………..……..…189
+AMYOTROPHIC LATERAL SCLEROSIS……….…….…203
+DEMENTIA ………….…….….……..………….…215
+ALZHEIMER’S DISEASE …………………………..…229
+PERIPHERAL NERVE DISORDERS………………….……..242
+GUILLAIN’S-BARRE SYNDROME …………………..…242
+DISORDERS OF THE NEUROMUSCULAR JUNCTION ………256
+MYESTHENIA GRAVIS …………………………….…256
+BELL’S PALSY …………………………………….…267
+CEREBRAL PALSY ……………………………….....273
+MUSCULAR DYSTROPHIES ………………………….293
+3 | P a g e
+4 | P a g e
+ACUTE CONDITIONS 
+A. SPACE OCCUPYING LESSIONS
+Definition
+An “Intra-cranial space occupying lesion” is defined as an 
+abnormal mass or lesion in the cranial cavity that consumes 
+the intracranial volume.
+5 | P a g e
+6 | P a g e
+A space-occupying lesion of the brain may result from:
+1- Tumors 
+Benign : Meningiomas
+Malignancy: primary or metastatic
+2- Inflammatory causes: Abscess, Tuberculoma, Syphilitic 
+gumma, fungal Granulomas. 
+3- Parasitic infections: Cysticercosis, Hydrated cyst, ame￾bic abscess, Schistosoma japonicum. 
+4- Traumatic brain injury: Subdural & Extradural hema￾toma. 
+5- Congenital causes: Dermoid, Epidermoid, Teratoma.
+7 | P a g e
+1. TUMORS
+Neoplasms- brain tomors
+ A brain tumor is a localized intracranial lesion that occu￾pies space within the skull. 
+ Primary brain tumors originate from cells and structures 
+within the brain. 
+ Secondary, or metastatic, brain tumors develop from struc￾tures outside the brain (lung, breast, lower gastrointestinal 
+tract, pancreas, kidney, and skin [melanomas]) 
+ Brain tumors may be classified into several groups: 
+8 | P a g e
+a.those arising from the coverings of the brain (eg, du￾ral meningioma), 
+b.those developing in or on the cranial nerves (eg, 
+acoustic neuroma), 
+c.those originating within brain tissue (eg, glioma), 
+and metastatic lesions originating elsewhere in the 
+body. 
+ Tumors may be benign or malignant. A benign tumor may 
+occur in a vital area and have effects as serious as a malig￾nant tumor.
+Types of Tumors
+9 | P a g e
+ Gliomas, the most common brain neoplasms, cannot be to￾tally removed without causing damage, because they 
+spread by infiltrating into the surrounding neural tissue.
+ Meningiomas are common benign encapsulated tumors of 
+arachnoid cells on the meninges.
+ An acoustic neuroma is a tumor of the eighth cranial nerve 
+(hearing and balance). 
+ Pituitary adenomas may cause symptoms as a result of 
+pressure on adjacent structures or hormonal changes such 
+as hyperfunction or hypofunction of the pituitary.
+ Angiomas are masses composed largely of abnormal blood 
+vessels and are found in or on the surface of the brain. 
+10 | P a g e
+ The walls of the blood vessels in angiomas are thin, in￾creasing the risk for hemorrhagic stroke.
+Clinical Manifestations
+Increased ICP
+Headache, although not always present, is most common 
+in the early morning and is made worse by coughing, 
+straining, or sudden movement. Headaches are usually 
+described as deep, expanding, or dull but unrelenting. 
+Frontal tumors produce a bilateral frontal headache; pi￾tuitary gland tumors produce bitemporal pain; in cerebel-
+11 | P a g e
+lar tumors, the headache may be located in the suboccip￾ital region at the back of the head.
+Vomiting, seldom related to food intake, is usually due to 
+irritation of the vagal centers in the medulla.
+Papilledema (edema of the optic nerve) is associated with 
+visual disturbances.
+Personality changes and a variety of focal deficits, includ￾ing motor, sensory, and cranial nerve dysfunction, are 
+common.
+Localized Symptoms
+The progression of the signs and symptoms is important 
+12 | P a g e
+because it indicates tumor growth and expansion. The 
+most common focal or localized symptoms are hemipare￾sis, seizures, and mental status changes.
+Tumor of the motor cortex: seizure like movements local￾ized to one side of the body.
+Occipital lobe tumors: visual manifestations, such as 
+contralateral homonymous hemianopsia (visual loss in 
+half of the visual field on the opposite side of tumor) and 
+visual hallucinations
+Tumors of the cerebellum: dizziness; an ataxic or stagger￾ing gait, with tendency to fall toward side of lesion; 
+marked muscle incoordination; jand nystagmus)
+13 | P a g e
+Tumors of the frontal lobe: personality disorders, changes 
+in emotional state and behavior, and an apathetic mental 
+attitude
+Assessment and Diagnostic Methods
+History of the illness and manner in which symptoms 
+evolved.
+Neurologic examination indicating areas involved
+CT, MRI, positron emission tomography (PET), computer￾assisted stereotaicd (three dimensional) biopsy, cerebral 
+angiography, EEG, and cytologic studies of the cerebro￾spinal fluid
+14 | P a g e
+Medical Management
+A variety of medical treatments, including chemotherapy 
+and external-beam radiation therapy, are used alone or 
+in combination with surgical resection.
+Surgical Management
+A variety of treatment modalities may be used; the spe￾cific approach depends on the type of tumor, its location, 
+and its accessibility. 
+Other Therapies
+Radiation therapy (the cornerstone of treatment for many 
+15 | P a g e
+brain tumors)
+Brachytherapy (the surgical implantation of radiation 
+sources to deliver high doses at a short distance)
+IV autologous bone marrow transplantation for marrow 
+toxicity associated with high doses of drugs and radiation
+Gene-transfer therapy (currently being tested)
+Nursing Management
+Evaluate gag reflex and ability to swallow preoperatively.
+Teach patient to direct food and fluids toward the unaf￾fected side.
+Assist patient to an upright position to eat, offer a semi-
+16 | P a g e
+soft diet, and have suction readily available if gag re￾sponse is diminished.
+Reassess function postoperatively.
+Perform neurologic checks, monitor vital signs, and main￾tain a neurologic flow chart. Space nursing interventions 
+to prevent rapid increase in ICP.
+Reorient patient when necessary to person, time, and 
+place. Supervise and assist with self-care. Monitor and 
+intervene to prevent injury.
+Monitor patients with seizures.
+Check motor function at intervals; assess sensory dis￾turbances. 
+17 | P a g e
+Evaluate speech.
+Assess eye movement, pupil size, and reaction.
+18 | P a g e
+2. INFECTIONS
+a) MENINGITIS
+ Meningitis is an inflammation of the lining around the 
+brain and spinal cord caused by bacteria or viruses. 
+ Meningitis is classified as septic or aseptic. 
+ The aseptic form may be viral or secondary to lymphoma, 
+leukemia, or human immunodeficiency virus (HIV). 
+ The septic form is caused by bacteria such as Streptococ￾cus pneumoniae and Neisseria meningitidis.
+19 | P a g e
+20 | P a g e
+Pathophysiology
+ The causative organism enters the bloodstream, crosses 
+the blood–brain barrier, and triggers an inflammatory reac￾tion in the meninges. 
+ Independent of the causative agent, inflammation of the 
+subarachnoid and pia mater occurs. Increased intracranial 
+ICP) results. 
+ Meningeal pressure (infections generally originate in one of 
+two ways: either through the blood stream from other in￾fections (cellulitis) or by direct extension (after a traumatic 
+injury to the facial bones). 
+ Bacterial or meningococcal meningitis also occurs as an 
+21 | P a g e
+opportunistic infection in patients with acquired immuno￾deficiency syndrome (AIDS).
+ Bacterial meningitis is the most significant form. The com￾mon bacterial pathogens are;
+a. N.meningitidis (meningococcal meningitis) and
+b. S.pneumoniae, accounting for 80% of cases of menin￾gitis in adults. 
+Clinical Manifestations
+ Headache and fever are frequently the initial symptoms; 
+a.Fever tends to remain high throughout the course of 
+the illness 
+22 | P a g e
+b.Headache is usually either steady or throbbing and 
+very severe as a result of meningeal irritation.
+ Meningeal irritation results in a number of other well￾recognized signs common to all types of meningitis:
+Nuchal rigidity (stiff neck) is an early sign.
+Positive Kernig’s sign: When lying with thigh flexed 
+on abdomen, patient cannot completely extend leg.
+Positive Brudzinski’s sign: Flexing patient’s neck 
+produces flexion of the knees and hips; passive flexion 
+of lower extremity of one side produces similar move￾ment for opposite extremity.
+Photophobia (extreme sensitivity to light) is common.
+23 | P a g e
+Rash (N. meningitidis): ranges from petechial rash with 
+pur- puric lesions to large areas of ecchymosis.
+Disorientation and memory impairment; behavioral 
+manifestations are also common. As the illness pro￾gresses, 
+a. Lethargy, 
+b. Unresponsiveness, and 
+c. Coma may develop.
+Seizures can occur and are the result of areas of irrita￾bility in the brain; ICP increases secondary to diffuse 
+brain swelling or hydrocephalus; initial signs of in￾creased ICP include decreased level of consciousness 
+24 | P a g e
+and focal motor deficits.
+An acute fulminant infection occurs in about 10% of 
+patients with meningococcal meningitis, producing 
+signs of septicemia: 
+a. an abrupt onset of high fever, 
+b. extensive purpuric lesions (over the face and 
+extremities), 
+c. shock, and 
+d. signs of disseminated intravascular coagula￾tion (DIC); death may occur within a few hours 
+after onset of the infection
+25 | P a g e
+Assessment and Diagnostis
+Computed tomography (CT) scan or magnetic resonance 
+imaging (MRI) scan to detect a shift in brain contents 
+(which may lead to herniation) prior to a lumbar punc￾ture.
+Key diagnostic tests: bacterial culture and Gram staining 
+of CSF and blood.
+Medical Management
+Vancomycin hydrochloride in combination with one of the 
+cephalosporins (eg, ceftriaxone sodium, cefotaxime so￾dium) is administered by intravenous (IV) injection.
+26 | P a g e
+Dexamethasone has been shown to be beneficial as ad￾junct therapy in the treatment of acute bacterial menin￾gitis and in pneumococcal meningitis.
+Dehydration and shock are treated with fluid volume ex￾panders.
+Seizures, which may occur early in the course of the dis￾ease, are controlled with phenytoin (Dilantin).
+Increased ICP is treated as necessary.
+Nursing Management
+ Assess neurologic status and vital signs constantly. De￾ter- mine oxygenation from arterial blood gas values and 
+27 | P a g e
+pulse oximetry.
+ Insert cuffed endotracheal tube (or tracheostomy), and po￾sition patient on mechanical ventilation as prescribed.
+ Assess blood pressure (usually monitored using an arte￾rial line) for incipient shock, which precedes cardiac or 
+respiratory failure.
+ Rapid IV fluid replacement may be prescribed, but take 
+care not to overhydrate patient because of risk of cerebral 
+edema.
+ Reduce high fever to decrease load on heart and brain 
+from oxygen demands.
+28 | P a g e
+ Protect the patient from injury secondary to seizure activ￾ity or altered level of consciousness (LOC).
+ Monitor daily body weight; serum electrolytes; and urine 
+volume, specific gravity, and osmolality, especially if syn￾drome of inappropriate antidiuretic hormone (SIADH) is 
+suspected.
+ Prevent complications associated with immobility, such 
+as pressure ulcers and pneumonia.
+ Institute infection control precautions until 24 hours after 
+initiation of antibiotic therapy (oral and nasal discharge is 
+considered infectious).
+29 | P a g e
+b) ENCEPHALITIS
+ Encephalitis is an acute inflammatory process of the brain 
+tissue.
+ 
+30 | P a g e
+Types include:-
+a.Herpes simplex encephalitis
+b.Arthropod-bone encephalitis
+c.Fungal encephalitis
+Herpes simplex encephalitis
+ Herpes simplex is the most common cause of acute enceph￾alitis.
+ There are two types of herpes simplex virus 
+a.HSV-1
+b.HSV-2
+ HSV-1 mainly affects children and adults but HSV-2 affects 
+31 | P a g e
+neonates who acquires the virus from there infected moth￾ers who have genital herpes.
+Pathophysiology
+ The pathology of encephalitis involves local necrotizing 
+haemorhage that becomes more generalized, followed by 
+odema. There is progressive deteroriation of the nerve cell 
+bodies.
+Clinical manifestation
+The initial symptoms of HSV-1 includes headache, fever 
+confusion, and hallucinations.
+32 | P a g e
+Focal neurological symptoms reflects the area of cerebral 
+inflammation and necrosis and include; 
+a.fever, 
+b.headache, 
+c.behavioral changes, 
+d.focal seizures, 
+e.dysphasia, hemiparesis, and 
+f. altered level of consciousness.
+Assessment and diagnosis
+Neuroimaging studies such as Electroencephalo￾gram(EEG), and CSF examination are used to diagnose 
+33 | P a g e
+HSV encephalitis. 
+MRI is the neuroimaging of choice to detect early changes 
+caused by HSV encephalitis; the study shows odema in 
+the frontal and temporal lobes.
+The EEG shows the diffuse slowing or focal changes in 
+the temporal lobe in the majority of patients.
+Lumbar puncture always reveals high opening pressure, 
+glucose within normal limits, and a high proteins level in 
+the CSF samples.
+Viral cultires are most always negative.
+The polymerase chain reaction (PCR) is the standard test 
+for early diagnosing of HSV-1 encephalitis.
+34 | P a g e
+Medical management
+Antiviral agents such as acyclovir and Gancyclovir are the 
+medication of choice for the treatment of HSV encephali￾tis.
+Early administration of antiviral agent improves the prog￾nosis associated with HSV-1 encephalitis. The mode of 
+action is inhibition of viral DNA replication.
+To prevent relapse the treatment is extended up to three 
+weeks.
+Slow IV administration over one hour to prevent crystali￾sation of medication in the urine.
+35 | P a g e
+Nursing Management
+Assessment of neurological function is key to monitoring 
+the progress of desease. 
+Comfort measures to reduce headache include diming the 
+light, reduce noise and limit the number of visitors, 
+grouping nursing interventions, and administering anal￾gesics . 
+Opioid analgesics may mask neurologic symptoms there￾fore they are used carefully.
+Seizure and altered level of consciousness requires care 
+directed towards injury prevention and safety.
+36 | P a g e
+Nursing care addresses patient and family anxiety 
+throughout the illness. 
+Monitoring of blood chemistry test result and urine out￾put alerts the nurse to presence of renal complications 
+relatedbto the antiviral therapy.
+Arthropod-bone encephalitis
+ Arthropod-bone viruses or Arboviruses, are mainly main￾tained in nature through biological transmission between 
+susceptible vertebrate host by blood feeding arthropods e.g. 
+mosquitoes, ticks, psychodids etc.
+37 | P a g e
+Pathophysiology
+ Viral replication occurs at the site is mosquito bite . 
+ The host immune response attempts to control the viral 
+replication . 
+ If the immune response is inadequate, viremia will occur.
+ The virus get access to the central nervous system via the 
+olfactory tract ,resulting in encephalitis. It spreads from 
+neuron to neuron predominantly affecting the cortical grey 
+matter ,brain stem and the thalamus. 
+ Meningeal exudate produces the clinical presentation by ir￾ritating the meninges and increasing ICP.
+38 | P a g e
+Clinical manifestation
+Arthropod-borne encephalitis occurs along a continuum 
+with some cases having only flulike symptoms. I.e. fever 
+and headache, but others proceeding to neulogical man￾ifestation that varies depending on the viral type . 
+Onset of symptoms is abrupt and fever headache, dizzi￾ness, nausea, and malaise.
+If the disease spread to the CNS , symptoms include stiff 
+nack , confusion, dizziness and tremors. Coma can occur 
+in severe cases, and mortality increases with age .
+Assessment and diagnosis
+39 | P a g e
+Primarily diagnosis is based on clinical presentation and lo￾cation and date of recent travel because certain viruses are 
+endemic in certain areas.
+Neuroimaging and CSF analysis are useful in diagnosis 
+encephalitis.
+MRI demonstrate the inflammation of the basal ganglia 
+and inflammation in the periventricular ganglia 
+Immunoglobulin M are also observed in serological stud￾ies.
+Electroencephalogram can identify abnormal brain waves 
+which can help identify some viral infections.
+40 | P a g e
+Medical management
+No specific medication for arbovirus exist; therefore 
+symptoms management is key. Controlling seizures and 
+increased ICP are critical components in the care in case 
+of neurological manifestations.
+Nursing management
+Many patients particularly those with only fever and 
+headache are treated on an outpatient an outpatient ba￾sis. If the patient is very ill hospitalization may be re￾quired.
+41 | P a g e
+The nurse carefully assess neurological status and iden￾tifies improvement or deterioration of patient condition.
+Injury prevention is key in case of seizures or falls. Any 
+encephalitis may progress to death or lifelong residual 
+health issues, and therefore the family may need support 
+to cope with the outcome.
+Fungal encephalitis
+ Fungal infection of the CNS occurs rarely in healthy people.
+ It occurs mainly due to compromised immune system due 
+to disease or immunosuppressive medication.
+42 | P a g e
+Causes of fungal infections include
+Cryptococcus neoformans,
+Blastomyces dermatitidis,
+Hiotoplasma capsulatum,
+Aspergillus fumigatus,
+Candida.
+Pathophysiology
+ The fungal spores enters the body via inhalation. They ini￾tially infect the lungs, causing vague respiratory symptoms 
+or pneumonitis.
+ The fungi may enter the blood stream causing fungemia. If 
+43 | P a g e
+fungemia overwhelms the person’s immune system the 
+fungus may spread to the CNS. 
+ The fungal infection may cause meningitis, encephalitis 
+brain abscess, granuloma, or arterial thrombus.
+Clinical Manifestion 
+The common symptoms of Fungal encephalitis are:-
+Fever 
+Malaise
+Headache
+Meningeal signs
+Change in the level of consciousness 
+44 | P a g e
+Cranial nerve dysfunction
+Symptoms of increased ICP related to hydrocephalus of￾ten occur.
+Assessment and diagnosis
+History of immuno-suppression associated with AIDS or 
+use of immunosuppressive medications may indicate the 
+disease.
+Infections caused by H. capsulatum and C.himmitis will 
+demonstrate fungal antibodies in serological tests.
+The CSF normally demonstrates elevated white cells and 
+protein levels while the glucose level is decreased.
+45 | P a g e
+C. neoformans is easily identified in CSF fungal cultures.
+Candida may be cultured from the blood or the CSF.
+Neuroimaging; to identify CNS changes related to fungal 
+infection.
+Medical management
+ Medical management is directed at the causative Fungus 
+and the neurologic and the neurological consequences of 
+the infection.
+ Antifungal agents are administered for speciflc period to 
+cure the infection in patients with competent immune 
+systems.
+46 | P a g e
+a.Amphoterisin B for fungal infections that does not re￾spond to conventional treatment. 
+b.Fluconazole or flucytosine may be administered oraly 
+in conjuction with Amphoterisin B as maintenance 
+dose.
+ Seizures are controlled antiseizure medications.
+ Increased ICP is controlled by lumbar puncture or shunt￾ing of CSF.
+ Nursing management aims at early identication of in￾creased ICP and its management (as discussed earlier)
+47 | P a g e
+c) BRAIN ABSCESSES
+ A brain abscess is a collection of infectious material 
+within the tissue of the brain.
+ Bacteria are the most common causative organisms. An 
+abscess can result from intracranial surgery, penetrating 
+head injury, or tongue piercing. 
+ Organisms causing brain abscess may reach the brain by 
+hematologic spread from the lungs, gums, tongue, or 
+heart, or from a wound or intra-abdominal infection.
+ It can be a complication in patients whose immune sys￾tems have been suppressed through therapy or disease.
+48 | P a g e
+Prevention
+To prevent brain abscess, otitis media, mastoiditis, rhi￾nosinusitis,hdentalninfec-tions,randksystemic infections 
+should be treated promptly.
+Clinical Manifestations
+Generally, symptoms result from alterations in intracra￾nial dynamics (edema, brain shift), infection, or the loca￾tion of the abscess.
+Headache, usually worse in morning, is the most prevail￾ing symptom.
+Fever, vomiting, and focal neurologic deficits (weakness 
+49 | P a g e
+and decreasing vision) occur as well.
+As the abscess expands, symptoms of increased intracra￾nial pressure (ICP) such as decreasing level of conscious￾ness and seizures are observed.
+Assessment and Diagnostic Methods
+Neuroimaging studies such as MRI or CT scanning to 
+identify the size and location of the abscess.
+Aspiration of the abscess, guided by CT or MRI, to culture 
+and identify the infectious organism
+Blood cultures, chest x-ray, electroencephalogram (EEG)
+50 | P a g e
+Medical Management
+The goal is to eliminate the abscess. 
+Treatment modalities include antimicrobial therapy;
+a. The initial antibiotic is ceftriaxone adminis￾tered in high doses to cross the blood brain bar￾rier, and later adjusted to the antibiotic according 
+to culture and sensitivity.
+b.Surgical incision, or aspiration (CT guided stereo￾tactic needle). 
+Medications used include corticosteroids to reduce the in￾flammatory cerebral edema and 
+Antiseizure medications for prophylaxis against seizures 
+51 | P a g e
+(phenytoin, phenobarbital).
+Abscess resolution is monitored with CT scans.
+Nursing Management
+Nursing interventions support the medical treatment, as 
+do patient teaching activities that address neurosurgical 
+procedures. Patients and families need to be advised of 
+neurologic deficits that may remain after treatment (hem￾iparesis, seizures, visual deficits, and cranial nerve pal￾sies). 
+52 | P a g e
+3. VASCULAR DISORDERS
+I. TRANSIENT ISCHAEMIC ATTACK
+Definitions
+ A transient ischemic attack (TIA) is a brief episode of neu￾rologic dysfunction caused by focal brain or retinal ische￾mia without evidence of acute infarction.
+ Clinical symptoms typically last minutes to one hour (alt￾hough they can last up to 24 hours). 
+ These symptoms can include motor, sensory, speech/lan￾guage, vision or cerebellar disturbances. 
+53 | P a g e
+ 
+ A stroke is defined as the sudden onset of focal neurological 
+deficit resulting from either infarction or hemorrhage 
+54 | P a g e
+within the brain. Symptoms of a stroke are similar to that 
+of TIA, however, they are not temporary.
+Risk factors for stroke or TIA
+Non-modifiable risk factors Modifiable risk factors
+ Age 
+ Hypertension
+ Previous stroke or TIA 
+ Hyperlipidemia
+ Gender 
+ Smoking
+ Ethnicity (e.g., South Asian, Caucasian) 
+55 | P a g e
+ Cardiovascular disease
+ Family History 
+ Diabetes
+Diagnosis
+Key features are sudden onset and focal neurological deficits 
+associated with a specific cerebral vascular territory. For ex￾ample:
+Weakness − sudden loss of strength or numbness in the 
+face, arm or leg
+Difficulty with speech − sudden confusion or trouble 
+speaking
+56 | P a g e
+Vision problems − sudden trouble with vision
+Headache − sudden severe and unusual headache
+Dizziness − loss of balance, especially with any of the 
+above signs
+Assessment
+ TIA patients are at high risk for stroke. Timely investigation 
+and management of TIAs significantly reduces the chance 
+of stroke. 
+ The ABCD score with vascular imaging will enable assess￾ment of the short term stroke risk after presenting with TIA.
+57 | P a g e
+Diagnostic tests for TIA
+Laboratory Tests:
+• Complete blood count
+• Electrolytes – sodium, potassium
+• Creatinine and eGFR
+• Coagulation – INR, aPTT
+• Troponin
+• Lipids – Full profile
+• Fasting blood glucose OR hemoglobin A1c.
+Brain Imaging:
+• CT is the investigation of choice in an acute stroke patient.
+• MRI is performed only if recommended by consultant.
+58 | P a g e
+ Carotid Imaging: Is preferably performed within 24 hours 
+in a carotid territory stroke/TIA in a patient who is apoten￾tial surgical candidate.
+• Carotid ultrasound – is the preferred investigation, though 
+any of the 3 tests are adequate.
+• CT angiography – arch to vertex
+• MR angiography – arch to vertex
+Acute Management
+Complete all appropriate and available investigations.
+Temperature (treat > 38 degrees Celsius, as fever may con￾tribute to further brain injury or indicate a complication 
+59 | P a g e
+such as pneumonia).
+ Neurological vital signs (initially Q4H).
+ O2 saturation (treat arterial O2 desaturations).
+ Blood sugar (treat hypo and hyperglycemia).
+ Blood pressure (treat > 220 systolic or > 120 diastolic 
+mmHg cautiously in first 48 hrs; aim for reduction by 10 
+– 15% unless otherwise indicated by medical conditions).
+ Heart rhythm (to assess for atrial fibrillation).
+ Initiate appropriate secondary stroke prevention treat￾ments. 
+Therapy Management.
+60 | P a g e
+ Stat CT head scan.
+ Activate stroke team or initiate stat transfer to stroke cen￾tre in eligible patients. Once diagnosed determine eligibil￾ity for tissue plasminogen activator (tPA) therapy imme￾diately 
+ Withhold anticoagulant therapy for first 24 hrs, after 
+which, Daily low dose ASPIRIN® 81mg or clopidogrel 75 
+mg should be given daily.
+ After ruling out intracranial hemorrhage, patients not 
+given tissue plasminogen activator should receive an im￾mediate one, loading dose of ASPIRIN 325 mg or 
+clopidogrel 300 mg.
+61 | P a g e
+Continuing Management of TIA in the Emergency De￾partment
+ Manage stroke patients on an acute stroke or general neu￾rological unit where possible. 
+ Patients who have received tPA should be monitored in an 
+intensive care unit. It is recommended that the core inter￾disciplinary team (e.g., medical, nursing, nutrition, occu￾pational therapy, physiotherapy, social work and speech￾language staff) assess patient within 48 hours of admis￾sion. 
+Prevention of Medical Complications
+62 | P a g e
+ There are multiple possible complications post-stroke.
+ Early mobilization and appropriate positioning during the 
+first 24 hours are associated with improved outcomes. 
+ Decubitus ulcer formation should be prevented by two 
+hourly turning and pressure area care. Long lasting ulcers 
+can develop rapidly in poorly mobilized patients; focus on 
+positioning and nutritional support as well as mattress op￾timization.
+ Consider referral to physiotherapist for rehabilitation ser￾vices as well as exercises to prevent shoulder pain with 
+hemiplegia. 
+ Venous thromboembolism: Pulmonary embolism accounts 
+63 | P a g e
+for 13 – 25% of early deaths post-stroke. Assess patients 
+for prophylaxis with anticoagulant and/or leg compression 
+with pneumatic compression devices. Graduated compres￾sion stockings are contraindicated.
+Communication upon Discharge
+ Provide stroke education and follow up information to the 
+patient (refer to Patient Information section). 
+ Communication with the patient’s family physician is of 
+utmost importance at the time of hospital discharge after 
+treatment for a stroke/TIA
+64 | P a g e
+II. CEREBRAL VASCULAR ACCIDENT
+ Cerebrovascular accident (CVA) /ischemic is when blood 
+flow to a part of the brain is stopped either by a blockage 
+or the rupture of a blood vessel.
+ There are two main types of cerebrovascular accident: 
+an ischemic stroke is caused by a blockage; a hemor￾rhagic stroke is caused by the rupture of a blood vessel. 
+Both types of stroke deprive part of the brain of blood and 
+oxygen, causing brain cells to die. 
+ There is a sudden loss of brain function resulting from a 
+disruption of the blood supply to a part of the brain. 
+65 | P a g e
+66 | P a g e
+Risk Factors
+Nonmodifiable
+ Advanced age (older than 55 years)
+ Gender (Male)
+ Race (African American)
+Modifiable
+ Hypertension
+ Atrial fibrillation
+ Hyperlipidemia
+ Obesity
+ Smoking
+ Diabetes
+67 | P a g e
+ Asymptomatic carotid stenosis and 
+ valvular heart disease (eg, endocarditis, prosthetic heart 
+valves)
+Clinical Manifestations
+General signs and symptoms include numbness or weak￾ness of face, arm, or leg (especially on one side of body); 
+confusion or change in mental status; trouble speaking 
+or understanding speech; visual disturbances; 
+loss of balance, dizziness, difficulty walking; or 
+sudden severe headache.
+68 | P a g e
+Motor Loss
+Hemiplegia, hemiparesis
+Flaccid paralysis and 
+loss of or decrease in the deep tendon reflexes (initial clin￾ical feature) followed by (after 48 hours)
+reappearance of deep reflexes and abnormally increased 
+mus- cle tone (spasticity)
+Communication Loss
+Dysarthria (difficulty speaking)
+Dysphasia (impaired speech) or aphasia (loss of speech)
+Apraxia (inability to perform a previously learned action)
+69 | P a g e
+Perceptual Disturbances and Sensory Loss
+Visual-perceptual dysfunctions (homonymous hemiano￾pia [loss of half of the visual field])
+Disturbances in visual-spatial relations (perceiving the 
+rela- tion of two or more objects in spatial areas), fre￾quently seen in patients with right hemispheric damage
+Sensory losses: slight impairment of touch or more severe 
+with loss of proprioception; difficulty in interrupting vis￾ual, tactile, and auditory stimuli
+Impaired Cognitive and Psychological Effects
+Frontal lobe damage: Learning capacity, memory, or 
+70 | P a g e
+other higher cortical intellectual functions may be im￾paired. 
+Depression, other psychological problems: emotional la￾bility, hostility, frustration, resentment, and lack of coop￾eration.
+Assessment and Diagnostic Methods
+History and complete physical and neurologic examina￾tion
+Noncontrast CT scan
+12-lead ECG and carotid ultrasound
+CT angiography or MRI and angiography
+71 | P a g e
+Transcranial Doppler flow studies
+Transthoracic or transesophageal echocardiography
+Xenon-enhanced CT scan
+Single photon emission CT (SPECT) scan
+Prevention
+Help patients alter risk factors for stroke; encourage pa￾tient to quit smoking, maintain a healthy weight, follow a 
+healthy diet (including modest alcohol consumption), and 
+exercise daily.
+Prepare and support patient through carotid endarterec￾tomy.
+72 | P a g e
+Administer anticoagulant agents as prescribed (eg, low￾dose aspirin therapy).
+Medical Management
+Recombinant tissue plasminogen activator (t-PA), unless 
+contraindicated; monitor for bleeding.
+Possible hemicraniectomy for increased ICP from brain 
+edema in a very large stroke.
+Anticoagulation therapy
+Management of increased intracranial pressure (ICP): os￾motic diuretics, maintain PaCO2 at 30 to 35 mm Hg, po￾sition to avoid hypoxia (elevate the head of bed to promote 
+73 | P a g e
+venous drainage and to lower increased ICP).
+Intubation with an endotracheal tube to establish a pa￾tent airway, if necessary
+Continuous hemodynamic monitoring antihypertensive 
+treatment may be withheld unless the systolic blood pres￾sure exceeds 220 mm Hg or the diastolic blood pressure 
+exceeds 120 mm Hg)
+Neurologic assessment to determine if the stroke is evolv￾ing and if other acute complications are developing
+Management of Complications
+74 | P a g e
+Decreased cerebral blood flow: Pulmonary care, mainte￾nance of a patent airway, and administration of supple￾mental oxygen as needed.
+Monitor for UTIs, cardiac dysrhythmias, and complica￾tions of immobility.
+Nursing interventions
+Improving Mobility and Preventing Deformities
+Position to prevent contractures; use measures to relieve 
+pressure, assist in maintaining good body alignment, and 
+prevent compressive neuropathies.
+75 | P a g e
+Apply a splint at night to prevent flexion of affected ex￾tremity.
+Prevent adduction of the affected shoulder with a pillow 
+placed in the axilla.
+Elevate affected arm to prevent edema and fibrosis.
+Position fingers so that they are barely flexed; place hand 
+in slight supination. If upper extremity spasticity is noted, 
+do not use a hand roll; dorsal wrist splint may be used
+Change position every 2 hours; place patient in a prone 
+position for 15 to 30 minutes several times a day.
+Establishing an Exercise Program
+76 | P a g e
+Provide full range of motion four or five times a day to 
+maintain joint mobility, regain motor control, prevent 
+contractures in the paralyzed extremity, prevent further 
+deterioration of the neuromuscular system, and enhance 
+circulation. 
+Exercise is helpful in preventing venous stasis, which 
+may predispose the patient to thrombosis and pulmonary 
+embolus.
+Preparing for Ambulation
+Start an active rehabilitation program when conscious￾ness returns (and all evidence of bleeding is gone, when 
+77 | P a g e
+indicated).
+Teach patient to maintain balance in a sitting position, 
+then to balance while standing (use a tilt table if needed)
+Assisting with Nutrition
+Observe patient for paroxysms of coughing, food dribbling 
+out or pooling in one side of the mouth, food retained for 
+long periods in the mouth, or nasal regurgitation when 
+swallowing liquids.
+Consult with speech therapist to evaluate gag reflexes; 
+Have patient sit upright, preferably on chair, when eating 
+and drinking; advance diet as tolerated.
+78 | P a g e
+Prepare for GI feedings through a tube if indicated; mon￾itor and report excessive retained or residual feeding.
+Attaining Bowel and Bladder Control
+Performggintermittent sterile catheterization during pe￾riod of loss of sphincter control.
+Analyze voiding pattern and offer urinal or bedpan on pa￾tient’s voiding schedule.
+Assist the male patient to an upright posture for voiding.
+Provide high-fiber diet and adequate fluid intake (2 to 3 
+L/day), unless contraindicated.
+Establish a regular time (after breakfast) for toileting.
+79 | P a g e
+Maintaining Skin Integrity
+Frequently assess skin for signs of breakdown, with em￾phasis on bony areas and dependent body parts.
+Employ pressure-relieving devices; continue regular 
+turn- ing and positioning (every 2 hours minimally); min￾imize shear and friction when positioning.
+Keep skin clean and dry, gently massage healthy dry skin, 
+and maintain adequate nutrition.
+80 | P a g e
+III. INTRACRANIAL ANEURYSM
+ An aneurysm is a localized sac or dilation formed at a weak 
+point in the wall of the artery. An intracranial (cerebral) an￾eurysm is a dilation of the walls of a cerebral artery that 
+develops as a result of weakness in the arterial wall. 
+ Its cause is unknown, but it may be due to atherosclerosis, 
+a congenital defect of the vessel walls, hypertensive vascu￾lar disease, head trauma, or advancing age.
+81 | P a g e
+82 | P a g e
+Intracranial aneurysm CT -MRI angiography
+83 | P a g e
+Clinical Manifestations
+ Neurologic deficits (similar to those of ischemic stroke)
+ Rupture of the aneurysm causes sudden, unusually severe 
+headache; often, loss of consciousness for a variable pe￾riod; pain and rigidity of the back of the neck and spine; 
+and visual disturbances (visual loss, diplopia, ptosis). Tin￾nitus, dizziness, and hemiparesis may also occur.
+ If the aneurysm leaks blood and forms a clot, patient may 
+show little neurologic deficit or may have severe bleeding, 
+resulting in cerebral damage followed rapidly by coma and 
+death.
+84 | P a g e
+Assessment and Diagnostic Methods
+ CT scan or MRI, and cerebral angiography, 
+ Lumbar puncture can be used to diagnose and confirm an 
+aneurysm.
+Medical Management
+ Allow the brain to recover from the initial insult (bleeding).
+ Prevent or minimize the risk of rebleeding.
+85 | P a g e
+ Prevent or treat other complications: rebleeding, cerebral 
+vasospasm, acute hydrocephalus, and seizures.
+ Provide bed rest with sedation to prevent agitation and 
+stress.
+ Manage vasospasm with calcium channel blockers, such as 
+nimodipine (Nimotop). Endovascular techniques may also 
+be used.
+ Administer supplemental oxygen and maintain the hemo￾globin and hematocrit at acceptable levels to assist in 
+maintaining tissue oxygenation.
+86 | P a g e
+ Institute surgical treatment (arterial bypass) or medical 
+treatment to prevent rebleeding.
+ Manage increased intracranial pressure (ICP) by draining 
+the CSF via ventricular catheter drainage.
+ Administer mannitol to reduce ICP, and monitor for signs 
+of dehydration and rebound elevation of ICP.
+ Administer antifibrinolytic agents to delay or prevent dis￾solution of the clot if surgery is delayed or contraindicated.
+ Manage systemic hypertension with antihypertensive ther￾apy, arterial hemodynamic monitoring, and stool softeners 
+to prevent straining and elevation of blood pressure.
+87 | P a g e
+Nursing Interventions
+Improving Cerebral Tissue Perfusion
+ Monitor closely for neurologic deterioration, and maintain 
+a neurologic flow record.
+ Check blood pressure, pulse, level of consciousness, pupil￾lary responses, and motor function hourly; monitor respir￾atory status and report changes immediately.
+ Implement aneurysm precautions (immediate and absolute 
+bed rest in a quiet, nonstressful setting; restrict visitors, 
+except for family).
+88 | P a g e
+ Elevate the head of bed 15 to 30 degrees or as ordered.
+ Avoid any activity that suddenly increases blood pressure 
+or obstructs venous return (eg, Valsalva maneuver, strain￾ing), instruct patient to exhale during voiding or defecation 
+to decrease strain, eliminate caffeine, administer all per￾sonal care, and minimize external stimuli.
+ Apply antiembolism stockings or sequential compression 
+devices. Observe legs for signs and symptoms of deep vein 
+thrombosis tenderness, redness, swelling, warmth, and 
+edema.
+89 | P a g e
+Relieving Sensory Deprivation
+ Keep sensory stimulation to a minimum.
+ Explain restrictions to help reduce patient’s sense of isola￾tion.
+Relieving Anxiety
+ Inform patient of plan of care.
+ Provide support and appropriate reassurance to patient 
+and family.
+90 | P a g e
+Monitoring and Managing Potential Complications
+ Assess for and immediately report signs of possible vaso￾spasm, which may occur several days after surgery or on 
+the initiation of treatment (intensified headaches, de￾creased level of responsiveness, or evidence of aphasia or 
+partial paralysis). Also administer calcium channel block￾ers or fluid-volume expanders as prescribed.
+ Maintain seizure precautions. Also maintain airway and 
+prevent injury if a seizure occurs. Administer antiseizure 
+medications as prescribed (phenytoin [Dilantin] is medica￾tion of choice).
+91 | P a g e
+ Monitor for and report symptoms of aneurysm rebleeding. 
+Rebleeding occurs most often in the first 2 weeks. 
+ Symptoms include sudden severe headache, nausea, vom￾iting, decreased level of consciousness, and neurologic def￾icit. Administer medications as ordered.
+ Hyponatremia: monitor laboratory data often because hy￾ponatremia (serum sodium level under 135 mEq/L) affects 
+up to 30% of patients. 
+Teaching Patients Self-Care
+92 | P a g e
+ Provide patient and family with information to promote co￾operation with the care and required activity restrictions 
+and prepare them for patient’s return home. 
+ Identify the causes of intracranial hemorrhage, its possible 
+consequences, and the medical or surgical treatments that 
+are implemented. 
+ Discuss the importance of interventions taken to prevent 
+and detect complications (eg, aneurysm precautions, close 
+monitoring of patient). 
+93 | P a g e
+4. HEAD INJURY
+Injuries to the head involve trauma to the scalp, skull,and 
+brain.
+A head injury may lead to conditions ranging from mild con￾cussion to coma and death; the most serious form is known 
+as a traumatic brain injury (TBI). 
+94 | P a g e
+95 | P a g e
+96 | P a g e
+Clinical Manifestations
+Persistent, localized pain usually suggests fracture.
+Fractures of the cranial vault may or may not produce 
+swelling in that region.
+Drainage of cerebrospinal fluid (CSF) from the ears and the 
+nose suggests basal skull fracture.
+Fractures of the base of the skull frequently produce hem￾orrhage from the nose, pharynx, or ears, and blood may 
+appear under the conjunctiva.
+Bloody spinal fluid suggests brain laceration or contusion.
+Drainage of CSF may cause serious infection (eg, meningi￾tis) through a tear in the dura mater.
+97 | P a g e
+Ecchymosis may be seen over the mastoid (Battle’s sign).
+Brain injury may have various signs, including;
+Altered level of consciousness (LOC),
+Pupillary abnormalities, 
+Altered or absent gag reflex or corneal reflex, 
+Neurologic deficits, 
+Change in vital signs (eg, respiration pattern, 
+Hypertension, 
+Bradycardia), 
+Hyperthermia or hypothermia, and 
+Sensory, vision, or hearing impairment.
+Signs of a postconcussion syndrome may include.
+98 | P a g e
+headache, 
+dizziness, anxiety, 
+irritability, and lethargy.
+In acute or subacute subdural hematoma, changes in LOC, 
+pupillary signs, hemiparesis, coma, hypertension, brady￾cardia, and slowing respiratory rate are signs of expanding 
+mass.
+Chronic subdural hematoma may result in severe head￾ache, alternating focal neurologic signs, personality 
+changes, mental deterioration, and focal seizures.
+99 | P a g e
+Assessment and Diagnostic Methods
+Physical examination and evaluationaofaneurologic status
+• Radiographic studies: x-rays, CT, MRI
+• Cerebral angiography
+Scalp and Skull Injuries
+• Scalp trauma may result in an abrasion (brush wound), 
+contusion, laceration, or hematoma. 
+100 | P a g e
+• Fracture of the skull is a break in the continuity of the 
+skull caused by forceful trauma. Fractures may occur with 
+or without damage to the brain. 
+They are classified as simple, comminuted, depressed, or bas￾ilar and may be open (dura is torn) or closed (dura is not 
+torn).
+Medical Management
+• Non depressed skull fractures generally do not require 
+surgical treatment but require close observation of patient.
+101 | P a g e
+• Depressed skull fractures usually require surgery with el￾evation of the skull and debridement, usually within 24 
+hours of 
+Types of head injuries
+1. Concussion (traumatic Brain Injury)
+A cerebral concussion after head injury is a temporary loss 
+of neurologic function with no apparent structural damage.
+It may or may not produce a brief loss of consciousness.
+102 | P a g e
+In most cases, CT scans of concussed patients do not show 
+any abnormal findings, even if the patient is experiencing 
+clear signs of concussion, such as dizziness, nausea, 
+and headaches. Above is a normal brain CT scan of concussed 
+patient
+103 | P a g e
+Causes of injury is usually blunt trauma from
+Acceleration–deceleration force, 
+Direct blow, or 
+Blast injury. 
+Nursing Management
+• Give information, explanations, and encouragement to 
+reduce post concussion syndrome.
+• Instruct family to look for the following signs and notify 
+physician or clinic: 
+difficulty in awakening or speaking. 
+104 | P a g e
+Confusion, 
+severe headache, 
+vomiting, and 
+weakness of one side of the body.
+2. Contusion
+A cerebral contusion is a moderate to severe head injury in 
+which the brain is bruised and damaged in a specific area 
+because of severe acceleration–deceleration force or blunt 
+trauma. 
+105 | P a g e
+Contusions are characterized by loss of consciousness asso￾ciated with stupor and confusion. 
+ 
+106 | P a g e
+Brain CT scan showing contusion
+107 | P a g e
+Human Cadaver: brain image showing 
+cerebral contusion
+108 | P a g e
+3. Diffuse Axonal Injury
+ It happens when the brain rapidly shifts inside the skull as 
+an injury is occurring. The long connecting fibers in the 
+brain called axons are sheared as the brain rapidly accel￾erates and decelerates inside the hard bone of the skull.
+ It results from shearing and rotational forces that produce 
+damage throughout the brain to axons in the cerebral hem￾ispheres, corpus callosum, and brain stem. 
+ Diagnosis is made by clinical signs and a CT or MRI scan.
+109 | P a g e
+ 
+Brain MRI diffuse axonal injury
+110 | P a g e
+111 | P a g e
+Intracranial Hemorrhage
+Hematomas are collections of blood in the brain that may be 
+epidural (above the dura), subdural (below the dura), or in￾tracerebral (within the brain). 
+Intracerebral
+112 | P a g e
+113 | P a g e
+Types of intercranial Hemorrhage
+1. Epidural Hematoma (Extradural Hematoma or Hemor￾rhage)
+ Blood collects in the epidural space between the skull and 
+dura mater. Symptoms are caused by the pressure of the 
+expanding hematoma.
+Medical Management
+This is an extreme emergency because marked neurologic 
+deficit or respiratory arrest may occur within minutes. 
+114 | P a g e
+Bur holes are made to remove the clots, and the bleeding 
+point is controlled (craniotomy, drain insertion).
+2. Subdural Hematoma
+Blood collects between the dura and the underlying brain 
+and is more frequently venous in origin. 
+The most common cause is trauma, but it may also be asso￾ciated with various bleeding tendencies (coagulopathies) or 
+rupture of an aneurysm.
+115 | P a g e
+3. Intracerebral Hemorrhage and Hematoma
+Bleeding occurs into the substance of the brain. 
+Hematoma is commonly seen when forces are exerted to the 
+head over a small area (missile injuries or bullet wounds; 
+stab injury). 
+It may also result from systemic hypertension causing de￾generation and rupture of a vessel, and rupture of a saccular 
+aneurysm. 
+Medical Management for head injuries
+116 | P a g e
+From the scene of the injury, the patient is transported on 
+a board, with head and neck maintained in alignment with 
+the axis of the body. 
+Apply a cervical collar and maintain it until cervical spine 
+x-rays have been obtained and the absence of cervical spi￾nal cord injury documented. 
+Managementbinvolves control of ICP, supportive care (eg, 
+ventilatory support, seizure prevention, fluid and electro￾lyteamaintenance, nutritional support, and management of 
+pain and anxiety), or craniotomy.
+117 | P a g e
+Increased ICP is managed by adequate oxygenation, man￾nitolnadministration, ventilatorymsupport, hyperventila￾tion, elevation of the head of the bed, maintenance of fluid 
+and electrolytedbalance, nutritional support, pain and anx￾iety management, or neurosurgery.
+See “Medical Management” and “Nursing Process” under 
+“IncreasedmIntracranial Pressure” for additional infor￾mation.
+Assessment for pt with TBI
+118 | P a g e
+Obtain health history, including time of injury, cause of in￾jury, direction and force of the blow, loss of consciousness, 
+and condition following injury. 
+Detailed neurologic information (LOC, ability to respond to 
+verbal commands if patient is conscious), response to tactile 
+stimuli (if patient is unconscious), pupillary response to 
+light, corneal and gag reflexes, 
+Monitoring Vital Signs
+Monitor patient at frequent intervals to assess intracranial 
+status.
+119 | P a g e
+Assess for increasing ICP, including slowing of pulse, in￾creasing systolic pressure, and widening pulse pressure. 
+Evaluate spontaneous eye opening.
+Evaluate size of pupils and reaction to light (unilaterally 
+dilated and poorly responding pupils may indicate develop￾ing hematoma). If both pupils are fixed and dilated, it usu￾ally indicates overwhelming injury and poor prognosis.
+Nursing Interventions
+Maintaining the Airway
+120 | P a g e
+Position the unconscious patient to facilitate drainage of 
+secretions; elevate the head of bed 30 degrees to decrease 
+intracranial venous pressure.
+Establish effective suctioning procedures.
+Guard against aspiration and respiratory insufficiency.
+Monitor arterial blood gases (ABGs) to assess adequacy of 
+ventilation.
+Monitor patient on mechanical ventilation for pulmonary 
+complications (acute respiratory distress syndrome 
+[ARDS] and pneumonia).
+Maintaining Fluid and Electrolyte Balance
+121 | P a g e
+Fluid and electrolyte balance is particularly important in 
+patients receiving osmotic diuretic..
+Record daily weights (which may indicate fluid loss from 
+diabetes insipidus).
+Promoting Adequate Nutrition
+Parenteral nutrition (PN) via a central line or enteral feedings 
+administered via a nasogastric or nasojejunal feeding tube 
+may be used.
+ Monitor laboratory values closely in patients receiving 
+PN.
+ Elevate the head of the bed and aspirate the enteral 
+122 | P a g e
+tube for evidence of residual feeding before administering 
+additional feedings to help prevent distention, regurgita￾tion, and aspiration.
+ Continue enteral or parenteral feedings until the swal￾lowing reflex returns and the patient can meet caloric re￾quirements orally.
+Preventing Injury
+Observe for restlessness, which may be due to hypoxia, 
+fever, pain, or a full bladder. 
+Avoid restraints when possible because straining can in￾crease ICP.
+123 | P a g e
+Protect patient from injury (padded side rails, hands 
+wrapped in mitts).
+Avoid using opioids for restlessness because they depress 
+respiration, constrict pupils, and alter LOC.
+Keep environmental stimuli to a minimum.
+Provide adequate lighting to prevent visual hallucinations.
+Minimize disruption of patient’s sleep/wake cycles.
+Use an external sheath catheter for incontinence because 
+an indwelling catheter may produce infection.
+Avoid bladder distention.
+Maintaining Body Temperature
+124 | P a g e
+Monitor temperature every 2 to 4 hours.
+If temperature rises, try to identify the cause and adminis￾ter acetaminophen and cooling blankets as prescribed to 
+achieve normothermia.
+Monitor for infection related to fever.
+Maintaining Skin Integrity
+Assess all body surfaces, and document skin integrity 
+every 8 hours.
+Lubricate the patient’s skin with oil or emollient lotion to 
+prevent irritation due to rubbing against the sheet.
+Turn patient and reposition every 2 hours.
+125 | P a g e
+Provide skin care every 4 hours.
+Assist patient to get out of bed three times a day (when 
+appropriate).
+Improving Cognitive Functioning
+Develop patient’s ability to devise problem-solving strate￾gies through cognitive rehabilitation over time; use a mul￾tidisciplinary approach.
+Preventing Sleep Pattern Disturbance
+Group nursing activities so that patient is disturbed less 
+frequently.
+Decrease environmental noise, and dim room lights.
+126 | P a g e
+Provide strategies (eg, back rubs) to increase comfort.
+Monitoring and Managing Potential Complications
+Take measures to control CPP (eg, elevate the head of the 
+bed and increase intravenous [IV] fluids).
+Take measures to control ICP refer mnx of ICP.
+Monitor for a patent airway, altered breathing pattern, 
+and hypoxemia and pneumonia. Assist with intubation 
+and mechanical ventilation.
+Assess carefully for development of posttraumatic sei￾zures.
+127 | P a g e
+B. SPINAL CORD INJURY
+ Damage to the spinal cord ranges from transient concus￾sion (patient recovers fully), to contusion, laceration, and 
+compression of the cord substance (either alone or in com￾bination), to complete transection of the cord (paralysis be￾low the level of injury).
+ In cases where a spinal cord injury caused paralysis of the 
+limbs, there can be varying levels of damage and disability. 
+128 | P a g e
+129 | P a g e
+130 | P a g e
+PARAPLEGIA
+ Paraplegia is caused by an injury of the spine at a site be￾low the neck, below the first thoracic spinal nerve and 
+within the sacral lumbar regions. 
+ With an injury in this region, sufferers usually lose all feel￾ing and movement in their legs but have full control of 
+movement in their arms.
+HEMIPLEGIA
+ Hemiplegia (also known as hemiparalysis) is a condition 
+caused by an injury to the brain. Like a stroke, hemiplegia 
+131 | P a g e
+only affects one side of the brain; therefore, its effects are 
+usually down one side of the body. As with all brain injury, 
+the effects can be non-physical as well as physical. 
+ Hemiplegia can be caused by trauma, an infection (such as 
+meningitis or encephalitis), a systemic disorder (such as 
+leukaemia) or hypertension (high blood pressure) in the 
+heart. 
+QUADRIPLEGIA
+ Quadriplegia (sometimes referred to as tetraplegia) is usu￾ally caused by an injury high up in the spinal cord, usually 
+132 | P a g e
+in the neck region. 
+ This results in loss of motor control below and, sometimes 
+including, the neck. As you would expect, the more severe 
+the injury, the worse the outcome. 
+ Usually a patient will lose all sensory function below the 
+neck as well. 
+ Sufferers of paraplegia and quadriplegia need extra care, as 
+damage to the central nervous system can have effects be￾yond paralysis. 
+ For instance, patients often experience a loss of control of 
+the function of the bowel and bladder. 
+133 | P a g e
+ As patients will typically not be able to feel pain, infections 
+such as urinary tract infections can set in unnoticed which 
+can become life-threatening. 
+ Numbness to external pain can also manifest in pressure 
+sores, burns and skin conditions, which are always a high 
+risk to a patient who is immobile. 
+ The lack of movement in the legs and in other parts of the 
+body put the patient at increased risk of blood clots.
+Clinical Manifestations of spinal cord injury.
+134 | P a g e
+The consequences of SCI depend on the type and level of in￾jury of the cord.
+Neurologic Level
+Total sensory and motor paralysis below the neurologic 
+level.
+Loss of bladder and bowel control (usually with urinary 
+retention and bladder distention).
+Loss of sweating and vasomotor tone.
+Marked reduction of BP from loss of peripheral vascular 
+resistance.
+If conscious, patient reports acute pain in back or neck; 
+135 | P a g e
+patient may speak of fear that the neck or back is broken.
+Respiratory Problems
+Related to compromised respiratory function; severity de￾pends on level of injury.
+Acute respiratory failure is the leading cause of death in 
+high cervical cord injury.
+Assessment and Diagnostic Methods
+ Detailed neurologic examination
+ x-ray examinations (lateral cervical spine x-rays), 
+ Computed tomography (CT), 
+136 | P a g e
+ Magnetic resonance imaging (MRI), and 
+ ECG (bradycardia and asystole are common in acute spi￾nal injuries) Complications.
+ Spinal shock, a serious complication of SCI, is a sudden 
+depression of reflex activity in the spinal cord (areflexia) 
+below the level of injury.
+ The muscles innervated by the part of the cord segment 
+situated below the level of the lesion becomeaacompletely 
+paralyzed and flaccid, and the reflexes are absent.
+ BP and heart rate fall as vital organs are affected. Parts of 
+the body below the level of the cord lesion are paralyzed 
+and without sensation.
+137 | P a g e
+Emergency Management
+Improper handling can cause further damage and loss of 
+neurologic function..
+Initial care includes rapid assessment, immobilization, 
+stabilization or control of life-threatening injuries, and 
+transportation to an appropriate medical facility.
+Maintain patient in an extended position (not sitting); no 
+body part should be twisted or turned.
+The standard of care is referral to a regional spinal injury 
+center or trauma center for treatment in first 24 hours.
+138 | P a g e
+Medical Management
+Acute Phase
+The patient is resuscitated as necessary, and oxygenation 
+and cardiovascular stability are maintained.
+High-dose corticosteroids (methylprednisolone) may be 
+administered to counteract spinal cord edema.
+Oxygen is administered to maintain a high arterial PaO2. 
+For patients with high cervical spine injuries requires im￾mobilization, reduction of dislocations, and stabilization 
+of the vertebral column.
+139 | P a g e
+Management of Complications
+Spinal and Neurogenic Shock
+Intestinal decompression is used to treat bowel distention 
+and paralytic ileus caused by depression of reflexes. 
+Patient who does not perspire on paralyzed portion of 
+body requires close observation for early detection of an 
+abrupt onset of fever.
+Body defenses are maintained and supported until the 
+spinal shock abates and the system has recovered from 
+the traumatic insult (up to 4 months).
+Special attention is paid to the respiratory system (may 
+140 | P a g e
+not be enough intrathoracic pressure to cough effec￾tively). Special problems include decreased vital capacity, 
+decreased oxygen levels, and pulmonary edema.
+Chest physiotherapy and suctioning are implemented to 
+help clear pulmonary secretions. Patient is monitored for 
+respiratory complications (respiratory failure, pneumo￾nia).
+Deep Vein Thrombosis and Other Complications
+Patient is observed for deep vein thrombosis (DVT), a 
+com- plication of immobility (eg, pulmonary embolism). 
+Symptoms
+141 | P a g e
+Low-dose anticoagulation therapy is initiated to prevent 
+DVT and pulmonary embolism, along with the use of an￾tiembolism stockings 
+Patient is monitored for autonomic hyperreflexia (charac￾ter- ized by pounding headache, profuse sweating, nasal 
+congestion, bradycardia, and hypertension).
+Constant surveillance is maintained for signs and symp￾toms of pressure ulcers and infection (urinary, respira￾tory, local infection at pin sites).
+Nursing Interventions
+Promoting Adequate Breathing and Airway Clearance
+142 | P a g e
+Detect potential respiratory failure by observing patient, 
+measuring vital capacity, and monitoring oxygen satura￾tion through pulse oximetry and arterial blood gas values.
+Prevent retention of secretions and resultant atelectasis 
+with early and vigorous attention to clearing bronchial 
+and pharyngeal secretions.
+Suction with caution, because this procedure can stimu￾late the vagus nerve, producing bradycardia and cardiac 
+arrest.
+Initiate chest physical therapy and assisted coughing to 
+mobilize secretions if the patient cannot cough effectively.
+Ensure proper humidification and hydration to maintain 
+143 | P a g e
+thin secretions.
+Assess for signs of respiratory infection: cough, fever, and 
+dyspnea.
+Monitor respiratory status frequently.
+Improving Mobility
+Maintain proper body alignment at all times.
+Reposition the patient frequently and assist patient out 
+of bed as soon as the spinal column is stabilized.
+Apply splints (various types) to prevent footdrop and tro￾chanter rolls to prevent external rotation of the hip joints; 
+reapply every 2 hours.
+144 | P a g e
+Patients with lesions above the midthoracic level may tol￾erate changes in position poorly; monitor BP when posi￾tions are changed.
+Do not turn patient who is not on a rotating specialty bed 
+unless physician indicates that it is safe to do so.
+Perform passive range-of-motion exercises as soon as 
+possible after injury to avoid complications such as con￾tractures and atrophy.
+Provide a full range of motion at least four or five times 
+daily to toes, metatarsals, ankles, knees, and hips.
+Promoting Adaptation to Disturbed Sensory Perception
+145 | P a g e
+Stimulate the area above the level of the injury through 
+touch, aromas, flavorful food and beverages, conversa￾tion, and music.
+Provide prism glasses to enable patient to see from supine 
+position.
+Encourage use of hearing aids, if applicable.
+Provide emotional support; teach patient strategies to 
+compensate for or cope with sensory deficits.
+Maintaining Skin Integrity
+Change patient’s position every 2 hours, and inspect the 
+skin, particularly under cervical collar.
+146 | P a g e
+Assess for redness or breaks in skin over pressure points; 
+check perineum for soilage; observe catheter for adequate 
+drainage; assess general body alignment and comfort.
+Wash skin every few hours with a mild soap, rinse well, 
+and blot dry. Keep pressure-sensitive areas well lubri￾cated and soft with bland cream or lotion.
+Maintaining Urinary Elimination
+Performbbintermittent catheterization to avoid over￾stretch- ing the bladder and infection. If this is not feasi￾ble, insert an indwelling catheter.
+147 | P a g e
+Improving Bowel Function
+Monitor reactions to gastric intubation.
+Provide a high-calorie, high-protein, and high-fiber diet..
+Administer prescribed stool softener to counteract effects 
+of immobility and analgesic agents, and institute a bowel 
+program as early as possible.
+148 | P a g e
+C. SPINAL DISC PROBLEMS
+Hypertrophy/expansion of degenerative tissues
+Common sources include ligamentum flavum and the facet 
+joint. The facet joint itself undergoes degenerative changes 
+(just like any other joint in the body), and synovial hypertro￾phy and/or associated cysts can compromise surrounding 
+nerve roots.
+149 | P a g e
+150 | P a g e
+Sagittal image of hypointensity magnetic resonance imaging 
+shows hypertrophy ligamentum flavum.
+151 | P a g e
+Disc Herniation 
+ A herniated disc is a condition affecting the spine in 
+which the annulus fibrosus is damaged enabling the nu￾cleus pulposus (which is normally located within the cen￾ter of the disc) to herniate. 
+ This can compress the nerves or spinal cord causing pain 
+and spinal cord dysfunction.
+152 | P a g e
+153 | P a g e
+MRI IMAGE
+154 | P a g e
+Etiology
+ The most common cause of disc herniation is a degenera￾tive process in which, as humans age, the nucleus pulpo￾sus becomes less hydrated and weakens. 
+ This process will lead to a progressive disc herniation that 
+can cause symptoms. 
+ The second most common cause of disc herniation is 
+trauma. 
+ Other causes include connective tissue disorders and con￾genital disorders such as short pedicles. 
+ Disc herniation is most common in the lumbar spine, fol￾lowed by the cervical spine. 
+155 | P a g e
+Signs and symptoms
+Cervical spine
+ Neck, shoulder, and scapula pain, lateral arm numbness, 
+and weakness during shoulder abduction.
+ The reflexes affected are the biceps and brachioradialis.
+ Weakness on the elbow and wrist are common, along with 
+weakness during radial extension.
+Thoracic Spine
+ Intervertebral disc degeneration often causes thoracic dis￾cogenic pain syndrome. 
+156 | P a g e
+ Thoracic disc lesions mostly affect the lower part of the tho￾racic spine. Three-quarters of incidence occurs below T8, 
+and T11-T12 are most common.
+ Patients may have sensory changes. Serious findings in￾clude gait disturbances, paralysis, cardiovascular abnor￾malities.
+lumbar spine
+ Pain and sensory loss are common in the inguinal region. 
+Hip flexion weakness is rare, and no stretch reflex is af￾fected.
+ In case of the first sacral Nerve (S1)- sensory loss on the 
+157 | P a g e
+posterior calf, lateral or plantar aspect of foot; 
+ weakness on hip extension, knee flexion, plantar flexion 
+of the foot; Achilles tendon; 
+ Medial buttock, perineal, and perianal region; weakness 
+may be minimal, with urinary and fecal incontinence as 
+well as sexual dysfunction.
+Diagnosis
+X-rays: 
+CT Scan
+MRI 
+158 | P a g e
+Treatment / Management
+Conservative Treatments
+ Acute cervical and lumbar radiculopathies due to a her￾niated disc are primarily managed with non-surgical 
+treatments. 
+ NSAIDs and physical therapy are first-line treatment mo￾dalities. 
+ Most cases of disc herniation resolve within a few weeks 
+after the onset of symptoms; thus, it is not recommended 
+to start physical therapy until symptoms have lasted for 
+at least three weeks. 
+159 | P a g e
+ Patients who fail conservative treatment or patients with 
+neurological deficits need timely surgical consultation. 
+ Muscle relaxers such as cyclobenzaprine or oral cortico￾steroids are used to manage chronic pain and discomfort 
+and also prevent oedema and cord compression.
+ For cases of severe pain unresponsive to over-the-counter 
+pain medication, opioid analgesics are warranted. 
+ Translaminar epidural injections and selective nerve root 
+blocks are the second-line modalities for patients unre￾sponsive to conservative management and who have had 
+symptoms for at least four to six weeks. 
+160 | P a g e
+Surgical Treatments
+For Hypertrophy/expansion of degenerative tissues
+ Lumbar discectomy with fusion: Fusion has been consid￾ered for a long time as the gold standard for the manage￾ment of lumbar degenerative disc disease.
+ Lumbar total disc replacement: The main indication is a 
+single-level disc disease with disease-free facet joints.
+For Disc Herniation 
+ Surgical procedures for a herniated disc include laminec￾tomies with discectomies depending on the cervical or 
+161 | P a g e
+lumbar area. 
+ Also, a patient with a herniated disc in the cervical spine 
+can be managed via an anterior approach that requires 
+anterior cervical decompression and fusion. 
+ An artificial disk replacement option can be considered. 
+ Other alternative surgical procedures to the lumbar spine 
+include a lateral or anterior approach that requires com￾plete discectomy and fusion. 
+162 | P a g e
+CHRONIC NEUROLOGICAL CONDI￾TIONS 
+SEIZURE DISORDER (EPILEPSY)
+ Epilepsies are symptom of several disorders of brain func￾tion characterized by recurring seizures.
+ There may be associated loss of consciousness, excess 
+movement, or loss of muscle tone or movement and dis￾turbances of behavior, mood, sensation, and perception. 
+163 | P a g e
+ The basic problem is an electrical disturbance (dysrhyth￾mia) in the nerve cells in one section of the brain, causing 
+them to emit abnormal, recurring, uncontrolled electrical 
+discharges. 
+ Epilepsies often follow many medical disorders, traumas, 
+and drug or alcohol intoxication. They are also associated 
+with brain tumors, abscesses, and congenital malfor￾mations. 
+164 | P a g e
+165 | P a g e
+Clinical Manifestations
+Seizures range from simple staring episodes to prolonged 
+convulsive movements with loss of consciousness. Sei￾zures are classified as partial, generalized, and unclassi￾fied according to the area of brain involved. 
+Aura, a premonitory or warning sensation, may occur be￾fore a seizure (eg, seeing a flashing light, hearing a 
+sound).
+Simple Partial Seizures
+Only a finger or hand may shake; 
+the mouth may jerk uncontrollably; 
+166 | P a g e
+the patient may talk unintelligibly, 
+may be dizzy, or may experience unusual or unpleasant 
+sights, 
+sounds, odors, or taste all with out loss of consciousness.
+Complex Partial Seizures
+The patient remains motionless or moves automatically 
+but inappropriately for time and place; may express fear, 
+anger, elation, or irritability; and does not remember epi￾sode when it is over.
+Generalized Seizures (Grand Mal Seizures)
+167 | P a g e
+Generalized seizures involve both hemispheres of the brain.
+There is intense rigidity of the entire body, followed by 
+alter- nations of muscle relaxation and contraction (gen￾eralized tonic–clonic contraction).
+Simultaneous contractions of diaphragm and chest mus￾cles produce characteristic epileptic cry.
+Tongue is chewed; patient is incontinent of urine and 
+stool.
+Convulsive movements last 1 or 2 minutes.
+The patient then relaxes and lies in a deep coma, breath￾ing noisily.
+168 | P a g e
+Postictal State
+After the seizure, patients are often confused and hard to 
+arouse and may sleep for hours. Many complain of head￾ache, sore muscles, fatigue, and depression.
+Assessment and Diagnostic Methods
+Developmental history and physical and neurologic ex￾aminations are done to determine the type, frequency, 
+and severity of seizures.
+Biochemical, hematologic, and serologic studies are in￾cluded.
+Magnetic resonance imaging (MRI) is performed to detect 
+169 | P a g e
+structural lesions.
+Electroencephalograms (EEGs) aid in classifying the type 
+of seizure.
+Single photon emission CT (SPECT) may be used to iden￾tify the epileptogenic zone.
+Medical Management
+The goals of treatment are to stop the seizures as quickly 
+as possible, to ensure adequate cerebral oxygenation, and 
+to maintain a seizure-free state.
+An airway and adequate oxygenation (intubate if neces￾sary) are established, as is an IV line for administering 
+170 | P a g e
+medications and obtaining blood samples for analysis.
+Pharmacologic Therapy
+Medications are used to achieve seizure control. The 
+usual treatment is single-drug therapy.
+IV diazepam, lorazepam, or fosphenytoin is administered 
+slowly in an attempt to halt the seizures. 
+General anesthesia with a short-acting barbiturate may 
+be used if initial treatment is unsuccessful.
+To maintain a seizure-free state, other medications 
+(phenytoin, phenobarbital) are prescribed after the initial 
+seizure is treated.
+171 | P a g e
+Surgical Management
+Surgery is indicated when epilepsy results from intracra￾nial tumors, abscesses, cysts, or vascular anomalies.
+Status Epilepticus
+ Status epilepticus (acute prolonged seizure activity) is a 
+series of generalized seizures that occur without full re￾covery of consciousness between attacks. 
+ The condition is a medical emergency that is character￾ized by continuous clinical or electrical seizures lasting at 
+least 30 minutes.
+172 | P a g e
+ Repeated episodes of cerebral anoxia and edema may 
+lead to irreversible and fatal brain damage. 
+ Common factors that precipitate status epilepticus in￾clude withdrawal of antiseizure medication, fever, and 
+concurrent infection.
+Assessment
+Obtain a complete seizure history. Ask about factors or 
+events that precipitate the seizures; document alcohol in￾take.
+Determine whether the patient has an aura before an ep-
+173 | P a g e
+ileptic seizure, which may indicate the origin of the sei￾zure (eg, seeing a flashing light may indicate that the sei￾zure originated in the occipital lobe).
+Observe and assess neurologic condition during and after 
+a seizure. 
+Assess vital and neurologic signs continuously. Patient 
+may die from cardiac involvement or respiratory depres￾sion.
+Planning and Goals
+Major goals include prevention of injury, control of seizures, 
+achievement of a satisfactory psychosocial adjustment.
+174 | P a g e
+Nursing Interventions
+General Care and Injury Prevention
+Monitor the seizure type and general condition of patient.
+Turn patient to side-lying position to assist in draining 
+pharyngeal secretions.
+Have suction equipment available if patient aspirates.
+Monitor IV line closely for dislodgment during seizures.
+Protect patient from injury during seizures with padded 
+side rails, and keep under constant observation.
+Do not restrain patient’s movements during seizure activ￾ity. Do not insert anything in patient’s mouth.
+175 | P a g e
+Reducing Fear of Seizures
+Reduce fear that a seizure may occur unexpectedly by en￾couraging compliance with prescribed treatment.
+Encourage patient to follow a regular and moderate rou￾tine in lifestyle, diet (avoiding excessive stimulants), exer￾cise, and rest (regular sleep patterns).
+Encourage patient to attend classes on stress manage￾ment.
+Improving Coping Mechanisms
+176 | P a g e
+Provide counseling to patient and family to help them un￾derstand the condition and limitations imposed.
+Encourage patient to participate in social and recrea￾tional activities.
+Teach patient and family about symptoms and their man￾agement.
+177 | P a g e
+CHRONIC DEGENERATIVE DISOR￾DERS
+A. MULTIPLE SCLEROSIS
+ Also called Disseminated sclerosis
+ Multiple sclerosis (MS) is a chronic, degenerative, progres￾sive disease of the central nervous system (CNS) character￾ized by small patches of demyelination in the brain and spi￾nal cord.
+178 | P a g e
+ Demyelination (destruction of myelin) results in im￾paired transmission of nerve impulses.
+ 
+179 | P a g e
+180 | P a g e
+Pathophysiology
+ The cause of MS is not known, but a defective immune re￾sponse probably plays a major role. In MS, sensitized T 
+cells inhabit the CNS and facilitate the infiltration of other 
+agents that damage the immune system.
+ The immune system attack leads to inflammation that de￾stroys myelin and oligoden- droglial cells that produce my￾elin in the CNS. 
+ Plaques of sclerotic tissue appear on demyelinated axons, 
+further interrupting the transmission of impulses.
+Clinical Manifestations
+181 | P a g e
+Signs and symptoms are varied and multiple and reflect 
+the location of the lesion (plaque) or combination of le￾sions.
+Primary symptoms: fatigue, depression, weakness, 
+numbness, difficulty in coordination, loss of balance, and 
+pain.
+Visual disturbances: blurring of vision, diplopia (double 
+vision), patchy blindness (scotoma), and total blindness.
+Spastic weakness of the extremities and loss of ab￾dominal reflexes; ataxia and tremor.
+Cognitive and psychosocial problems; depression, emo￾tional lability, and euphoria.
+182 | P a g e
+Bladder, bowel, and sexual problems possible.
+Secondary Manifestations Related to Complications
+Urinary tract infections, constipation
+Pressure ulcers, contracture deformities, dependent pe￾dal edema
+Pneumonia
+Reactive depressions and osteoporosis
+Emotional, social, marital, economic, and vocational 
+problems
+Assessment and Diagnostic Findings
+MRI (primary diagnostic tool) to visualize small plaques
+183 | P a g e
+Electrophoresis study of the cerebrospinal fluid (CSF); 
+abnormal immunoglobulin G antibody (oligoclonal bond￾ing)
+Evoked potential studies and urodynamic studies
+Neuropsychological testing as indicated to assess cogni￾tive impairment
+Sexual history to identify changes in sexual function
+Medical Management
+Because no cure exists for MS, the goals of treatment are 
+to delay the progression of the disease, manage chronic 
+symptoms, and treat acute exacerbations. 
+184 | P a g e
+An individualized treatment program is indicated to re￾lieve symptoms and provide support.
+Management strategies target the various motor and sen￾sory symptoms and effects of immobility that can occur. 
+Radiation therapy may be used to induce immunosup￾pression.
+Pharmacologic Therapy
+Disease Modification
+Interferon beta-1a (Rebif) and interferon beta-1b (Be￾taseron) are administered subcutaneously. Another prep￾aration of
+185 | P a g e
+interferon beta-1a, Avonex, is administered intramuscu￾larly once a week.
+Glatiramer acetate (Copaxone) to reduce the rate of re￾lapse in the RR course of MS; administered subcutane￾ously daily.
+IV methylprednisolone to treat acute relapse in the re￾laps- ing remitting course.
+Mitoxantrone (Novantrone) is administered via IV infu￾sion every 3 months for patients with secondary-progres￾sive or worsening relapsing-remitting MS.
+Symptom Management
+186 | P a g e
+Baclofen (Lioresal) is the medication of choice for treating 
+spasticity; benzodiazepines (Valium), tizanidine (Za￾naflex), and dantrolene (Dantrium) may also be used to 
+treat spas- ticity.
+Amantadine (Symmetrel), pemoline (Cylert), or fluoxetine 
+(Prozac) to treat fatigue.
+Beta-adrenergic blockers (Inderal), antiseizure agents 
+(Neu- rontin), and benzodiazepines (Klonopin) to treat 
+ataxia.
+Management of Related Bowel and Bladder Problems 
+Anticholinergics, alpha-adrenergic blockers, or antispas￾modic agents may be used to treat problems related to 
+187 | P a g e
+elimination, and patients may be taught to perform inter￾mittent self-catheterization as well. Additional measures 
+include assessment of urinary tract infections; ascorbic 
+acid to acidify urine; antibiotics when appropriate.
+Nursing Interventions
+Promoting Physical Mobility
+Encourage relaxation and coordination exercises to pro￾mote muscle efficiency.
+Encourage progressive resistance exercises to strengthen 
+weak muscles.
+Encourage walking exercises to improve gait.
+188 | P a g e
+Apply warm packs to spastic muscles; avoid hot baths 
+due to sensory loss. 
+Encourage daily exercises for muscle stretching to mini￾mize joint contractures..
+Avoid hurrying patient in any activity, because hurrying 
+increases spasticity.
+189 | P a g e
+B. PARKINSON’S DISEASE
+ Parkinson’s disease is a slowly progressive degenerative
+neurologic disorder affecting the brain centers that are re￾sponsible for control and regulation of movement. 
+ The cause of the disease is mostly unknown but research 
+suggests several causative factors (eg, genetics, atheroscle￾rosis, viral infections, head trauma). 
+190 | P a g e
+191 | P a g e
+Pathophysiology
+ Parkinson’s disease is associated with decreased levels of 
+dopamine resulting from destruction of pigmented neu￾ronal cells in the substantia nigra in the basal ganglia re￾gion of the brain. 
+ The loss of dopamine stores in this area of the brain results 
+in more excitatory neurotransmitters than inhibitory neu￾rotransmitters, leading to an imbalance that affects volun￾tary movement. 
+192 | P a g e
+193 | P a g e
+Clinical Manifestations
+The cardinal signs of Parkinson’s disease are tremor, ri￾gidity, bradykinesia (abnormally slow movements), and 
+postural instability.
+Resting tremors: a slow, unilateral turning of the forearm 
+and hand and a pill-rolling motion of the thumb against 
+the fingers; tremor at rest and increasing with concentra￾tion and anxiety.
+Resistance to passive limb movement characterizes mus￾cle rigidity; passive movement may cause the limb to 
+move in jerky increments (lead-pipe or cog-wheel move￾ments); stiffness of the arms, legs, face, and posture are 
+194 | P a g e
+common; involuntary stiffness of passive extremity in￾creases when another extremity is engaged in voluntary 
+active movement.
+Impaired movement: Bradykinesia includes difficulty in 
+ini- tiating, maintaining, and performing motor activities.
+Loss of postural reflexes, shuffling gait, loss of balance 
+(dif- ficulty pivoting); postural and gait problems place the 
+patient at increased risk for falls.
+Other Characteristics
+Autonomic symptoms that include excessive and uncon-
+195 | P a g e
+trolled sweating, paroxysmal flushing, orthostatic hy￾poten- sion, gastric and urinary retention, constipation, 
+and sexual dysfunction.
+Psychiatric changes may include depression, dementia, 
+delir- ium, and hallucinations; psychiatric manifestations 
+may include personality changes, psychosis, and acute 
+confusion.
+Auditory and visual hallucinations may occur.
+Hypokinesia (abnormally diminished movement) is com￾mon.
+Assessment and Diagnostic Methods
+196 | P a g e
+Patient’s history and presence of two of the four cardinal 
+manifestations: tremor, rigidity, bradykinesia, and pos￾tural changes.
+Positron emission tomography (PET) and single photon 
+emission computed tomography (SPECT) scanning have 
+been helpful in understanding the disease and advancing 
+treatmen.
+Medical history, presenting symptoms, neurologic exam￾ina- tion, and response to pharmacologic management 
+are care- fully evaluated when making the diagnosis.
+Medical Management
+197 | P a g e
+Goal of treatment is to control symptoms and maintain 
+func- tional independence; no approach prevents disease 
+progression.
+Pharmacologic Therapy
+Antipakinsonism act by dopamine activities.
+Levodopa (Larodopa) is the most effective agent and the 
+mainstay of treatment.
+Anticholinergic agents to control tremor and rigidity.
+Amantadine hydrochloride (Symmetrel), an antiviral 
+agent, to reduce rigidity, tremor, and bradykinesia.
+Dopamine agonists (eg, pergolide [Permax], bromocriptine 
+198 | P a g e
+mesylate [Parlodel]), ropinirole, and pramipexole are used 
+to postpone the initiation of carbidopa and levodopa ther￾apy.
+Monoamine oxidase inhibitors (MAOIs) to inhibit dopa￾mine breakdown.
+Catechol-O-methyltransferase (COMT) inhibitors to re￾duce motor fluctuation.
+Antidepressant drugs.
+Antihistamine drugs to allay tremors.
+Surgical Management
+Surgery to destroy a part of the thalamus (stereotactic 
+199 | P a g e
+thal- amotomy and pallidotomy) to interrupt nerve path￾ways and alleviate tremor or rigidity.
+Transplantation of neural cells from fetal tissue of human 
+or animal source to reestablish normal dopamine release.
+Deep brain stimulation with pacemakerlike brain im￾plants to block nerve pathways in the brain that cause 
+tremors.
+Nursing Assessment
+The nurse notes how the disease affects the patient’s ac￾tivities of daily living and functional abilities and also ob￾serves for degree of disability and functional 
+200 | P a g e
+Change that occur throughout the day, such as re￾sponses to medica- tion. 
+Nursing Interventions
+Improving Mobility
+Help patient plan progressive program of daily exercise to 
+increase muscle strength, improve coordination and dex￾terity, reduce muscular rigidity, and prevent contrac￾tures.
+Encourage postural exercises to counter the tendency of 
+the head and neck to be drawn forward and down. Teach 
+patient to walk erect. Also encourage breathing exercises 
+201 | P a g e
+while walking and frequent rest periods to prevent fatigue 
+or frustration.
+Advise patient that warm baths and massage help relax 
+muscles.
+Enhancing Self-Care Activities
+Enlist assistance of an occupational therapist as indi￾cated.
+Improving Bowel Elimination
+Increase fluid intake; eat foods with moderate fiber con￾tent.
+Improving Swallowing and Nutrition
+202 | P a g e
+Promote swallowing and prevent aspiration by having pa￾tient sit in upright position during meals.
+Provide semisolid diet with thick liquids that are easier to 
+swallow.
+Monitor patient’s weight on a weekly basis.
+Encouraging Use of Assistive Devices
+An occupational therapist can assist in identifying appro￾priate adaptive devices.
+203 | P a g e
+C. AMYOTROPHIC LATERAL SCLEROSIS
+ Amyotrophic lateral sclerosis is a fatal type of motor neuron 
+disease. It is characterized by progressive degeneration of 
+nerve cells in the spinal cord and brain.
+ It is a disease of unknown cause in which there is a loss of 
+motor neurons (nerve cells controlling muscles) in the an￾terior horns of the spinal cord and the motor nuclei of the 
+lower brain stem. 
+ Death usually occurs from infection, respiratory failure, or 
+aspiration. The average time from onset to death is about 3 
+to 5 years.
+204 | P a g e
+205 | P a g e
+AMYOTROPHIC LATERAL SCLEROSIS NORMAL BRAIN - MRI
+206 | P a g e
+Causes 
+ Autoimmune disease, 
+ free radical damage, 
+ oxidative stress, and 
+ transmission of an autosomal dominant trait for familial 
+ALS 
+Clinical Manifestations
+In most patients, the chief symptoms are fatigue, progressive 
+muscle weakness, cramps, fasciculations (twitching), and 
+incoordination.
+207 | P a g e
+Loss of Motor Neurons in Anterior Horns of Spinal Cord
+ Progressive weakness and atrophy of the arms, trunk, or 
+leg muscles.
+ Spasticity; deep tendon stretch reflexes are brisk and 
+overactive.
+ Anal and bladder sphincters usually remain intact.
+Weakness in Muscles Supplied by Cranial Nerves (25 % 
+of Patients in Early Stage )
+ Difficulty talking, swallowing, and ultimately breathing
+208 | P a g e
+ Soft palate and upper esophageal weakness, causing liq￾uids to be regurgitated through nose
+ Impaired ability to laugh, cough, or blow the nose
+Bulbar Muscle Impairment
+ Progressive difficulty in speaking and swallowing, and as￾piration
+ Nasal voice and unintelligible speech
+ Emotional lability
+ Eventually, compromised respiratory function
+Assessment and Diagnostic Methods
+209 | P a g e
+ Diagnosis is based on signs and symptoms 
+ Electromyographic (EMG) and muscle biopsy studies, 
+ MRI, and neuropsychological testing may be helpful.
+Medical Management
+ No specific treatment for ALS is available. Symptomatic 
+treatment includes the following:
+ Riluzole (Rilutek), a glutamate antagonist.
+ Baclofen, dantrolene sodium, or diazepam for spasticity.
+ Mechanical ventilation (using negative-pressure ventila￾tors) for alveolar hypoventilation; noninvasive positive￾pressure ventilation is also an option.
+210 | P a g e
+ Anaphylaxis
+ Enteral feedings (percutaneous endoscopic gastrostomy [ 
+PEG]) for patients with aspiration or swallowing difficulties.
+ Decision about life support measures is based on patient’s 
+and family’s understanding of the disease, prognosis, and 
+implications of initiating such therapy.
+ Encourage patient to complete an advance directive or “liv￾ing will” to preserve autonomy.
+Nursing Management
+ The nursing care of the patient with ALS is generally the 
+same as the basic care plan for patients with degenerative 
+211 | P a g e
+neurologic disorders (Myasthenia Gravis).
+Educate patient about self-care, including medication 
+man- agement, energy conservation, strategies to help 
+with ocular manifestations, and prevention and manage￾ment of complications.
+Encourage patient to determine the best times for daily 
+dosing by keeping a diary to determine fluctuation of 
+symptoms and to learn when the medication is wearing 
+off.
+Teach the patient strategies to conserve energy (e.g., if the 
+patient lives in a two-story home, suggest that frequently 
+used items such as hygiene products, cleaning products, 
+212 | P a g e
+and snacks be kept on each floor to minimize travel be￾tween floors).
+Help the patient identify the optimal times for rest 
+throughout the day.
+Instruct patient to schedule mealtimes to coincide with 
+the peak effects of anticholinesterase medication; encour￾age rest before meals to reduce muscle fatigue; advise the 
+patient to sit upright during meals, with the neck slightly 
+flexed to facilitate swallowing.
+Encourage meals of soft foods in gravy or sauces; if chok￾ing occurs frequently, suggest pureed food with a pud-
+213 | P a g e
+dinglike consistency. Supplemental feedings may be nec￾essary in some patients to ensure adequate nutrition.
+Ensure suction is available at home and that the patient 
+and family are instructed in its use.
+Instruct the patient to tape the eyes closed for short in￾tervals and to regularly instill artificial tears; patients who 
+wear eyeglasses can have “crutches” attached to help lift 
+the eye- lids; patching of one eye can help with double 
+vision.
+Remind the patient of the importance of maintaining 
+health promotion practices and of following health care 
+screening recommendations.
+214 | P a g e
+Encourage patient to note and avoid factors that exacer￾bate symptoms and potentially cause crisis: emotional 
+stress, infections (particularly respiratory infections), vig￾orous physical activity, some medications, and high envi￾ronmental temperature.
+215 | P a g e
+D. DEMENTIA
+ Not a specific disease, dementia is a group of conditions 
+characterised by impairment of at least two brain func￾tions, such as memory loss and judgement.
+ Dementia is caused by damage to brain cells. This dam￾age interferes with the ability of brain cells to communicate 
+with each other. When brain cells cannot communicate 
+normally, thinking, behavior and feelings can be affected.
+ Symptoms include forgetfulness, limited social skills and 
+thinking abilities so impaired that it interferes with daily 
+functioning.
+216 | P a g e
+217 | P a g e
+ There is disturbance of multiple higher cortical functions, 
+including memory, thinking, orientation, comprehension, 
+calculation, learning capacity, language, and judgement. 
+ Consciousness is not clouded.
+ In advanced dementia, the person will lose the ability to 
+eat, drink, bathe, dress, or use the toilet without assis￾tance. 
+ Alzheimer’s disease is the most common form of dementia 
+and possibly contributes to 60–70% of cases. 
+Causes
+Following are major etiologic categories for the syndrome of 
+218 | P a g e
+dementia:
+ Dementia of the Alzheimer’s type. The exact disease of 
+Alzheimer’s disease is unknown, but several theories have 
+been proposed, such as reduction in brain acetylcholine, 
+the formation of plaques and tangles, serious head trauma, 
+and genetic factors
+ Vascular Dementia. caused by significant cerebrovascular 
+disease. The client suffers small strokes caused by arte￾rial hypertension or cerebral emboli or thrombi, which de￾stroy many areas of the brain. 
+ Dementia due to HIV disease. The immune dysfunction 
+associated with human immunodeficiency virus (HIV) can 
+219 | P a g e
+lead to brain infections by other organisms. HIV also ap￾pears to cause dementia directly.
+ Dementia due to head trauma. The syndrome of symp￾toms associated with dementia can be brought on by a 
+traumatic head injury.
+ Dementia due to Parkinson’s disease. Parkinsons’s dis￾ease is caused by a loss of nerve cells in the substantia 
+nigra of the basal ganglia. 
+ Dementia due to other general medical condi￾tions. Some of these include endocrine conditions, pulmo￾nary disease, hepatic or renal failure, cardiopulmonary in￾sufficiency, fluid and electrolyte imbalances, nutritional 
+220 | P a g e
+deficiencies, frontal or temporal lobe lesions, uncon￾trolled epilepsy, central nervous system or systemic infec￾tions, and other neurological conditions.
+ Substance-induced Persisting Dementia. related to the 
+persisting effects of substances such as alcohol, inhalants, 
+sedatives, other medications, and environmental toxins.
+Clinical Manifestations
+ Memory impairment. Impaired ability to learn new infor￾mation or to recall previously learned information.
+ Impairment in abstract thinking, judgment, and impulse 
+control.
+221 | P a g e
+ Impairment in language ability, such as difficulty naming 
+objects. In some instances, the individual may not speak at 
+all (aphasia).
+ Personality changes are common.
+ Impaired ability to perform motor activities despite in￾tact motor abilities (apraxia).
+ Disorientation. Patient may feel disoriented regarding cur￾rent place, time, o names of persons they are close with.
+ Wandering. Because of disorientation, patient with demen￾tia may often wander from one place to another.
+ Delusions are common (particularly delusions of persecu￾tion).
+222 | P a g e
+Assessment and Diagnostic Findings
+Laboratory tests can be performed to rule out other condi￾tions that may cause cognitive impairment.
+Complete blood cell count (CBC). Workup to rule out 
+hematologic disease.
+Liver enzyme levels. Abnormalities found in screening 
+of liver enzyme levels require further workup to rule out 
+hepatic disease.
+Thyroid-stimulating hormone (TSH) levels. workup to 
+rule thyroid disease.
+Rapid plasma reagent. Abnormalities in rapid plasma 
+reagent (RPR) require further workup to rule out syphilis.
+223 | P a g e
+HIV serology. Abnormalities in HIV serology and/or PCR
+require further workup to rule out HIV/AIDS.
+Paraneoplastic antibodies. Workup to rule out autoim￾mune encephalitis.
+Medical Management
+ Pharmacological Management - use of centrally acting 
+cholinesterase inhibitors to attempt to compensate for the 
+depletion of acetylcholine in the cerebral cortex and hippo￾campus.
+Cholinesterase inhibitors. Cholinesterase inhibitors 
+are used to palliate cholinergic deficiency.
+224 | P a g e
+N-Methyl-D-Aspartate antagonists. this agent may 
+be used alone or in combination with AChE inhibitors.
+ Nutritional supplement. Medical foods are dietary supple￾ments intended to compensate specific nutritional prob￾lems caused by a disease or condition; Dietary 
+measures. caprylidene (Axona) is a prescription medical 
+food that is metabolized into ketone bodies, and the brain 
+can use these ketone bodies for energy when its ability to 
+process glucose is impaired. 
+ Physical activity. Routine physical activity and exercise 
+may have an impact on dementia progression and may per￾haps have a protective effect on brain health; the patient’s 
+225 | P a g e
+surroundings should be safe and familiar; maintaining 
+structured routines may be helpful to decrease patient’s 
+stress in regard to meals, medication, and other therapeu￾tic activities aimed at maintaining cognitive functioning.
+Nursing Management
+Nursing Assessment
+ Psychiatric interview. The psychiatric interview must 
+contain a description of the client’s mental status with a 
+thorough description of behavior, flow of thought and 
+226 | P a g e
+speech, affect, thought processes and mental content, sen￾sorium and intellectual resources, cognitive status, insight, 
+and judgment.
+Nursing Interventions
+ Orient client. Frequently orient client to reality and sur￾roundings. Allow client to have familiar objects around him 
+or her; use other items, such as a clock, a calendar, and 
+daily schedules, to assist in maintaining reality orientation.
+ Encourage caregivers about patient reorienta￾tion. Teach prospective caregivers how to orient client to 
+227 | P a g e
+time, person, place, and circumstances, as required. These 
+caregivers will be responsible for client safety after dis￾charge from the hospital.
+ Enforce with positive feedback. Give positive feedback 
+when thinking and behavior are appropriate, or when client 
+verbalizes that certain ideas expressed are not based in re￾ality. Positive feedback increases self-esteem and enhances 
+desire to repeat appropriate behavior.
+ Explain simply. Use simple explanations and face-to-face 
+interaction when communicating with client. Do not shout 
+message into client’s ear. Speaking slowly and in a face-to￾face position is most effective when communicating with 
+228 | P a g e
+an elderly individual experiencing a hearing loss.
+ Discourage suspiciousness of others. Express reasonable 
+doubt if client relays suspicious beliefs in response to de￾lusional thinking. Discuss with the client the potential per￾sonal negative effects of continued suspiciousness of oth￾ers.
+ Avoid cultivation of false ideas. Do not permit rumina￾tion of false ideas. When this begins, talk to client about 
+real people and real events.
+ Observe client closely. Close observation of client’s be￾havior is indicated if delusional thinking reveals an inten￾tion for violence. Client safety is a nursing priority.
+229 | P a g e
+E. ALZHEIMER’S DISEASE
+ Alzheimer’s disease (AD) is a progressive, irreversible, de￾generative neurologic disease that begins insidiously and is 
+characterized by gradual losses of cognitive function and 
+disturbances in behavior and affect. It is important to note 
+that AD is not a normal part of aging.
+ Although the greatest risk factor for AD is increasing age, 
+many environmental, dietary, and inflammatory factors 
+also may determine whether a person suffers from this cog￾nitive disease. 
+230 | P a g e
+231 | P a g e
+Causes
+ AD is a complex brain disorder caused by a combination of 
+various factors that may include genetics, neurotransmit￾ter changes, vascular abnormalities, stress hormones, cir￾cadian changes, head trauma, and the presence of seizure 
+disorders.
+Classification
+ Familial or early-onset AD (which is rare, and accounts for 
+less than 10% of cases) 
+ Sporadic or late-onset AD.
+232 | P a g e
+Clinical Manifestations
+ In early disease there is forgetfulness and subtle memory 
+loss, although social skills and behavioral patterns remain 
+intact. Conversation becomes difficult, and word-finding 
+difficulties occur.
+ Ability to formulate concepts and think abstractly disap￾pears.
+ Patient may exhibit inappropriate impulsive behavior.
+ Personality changes are evident; patient may become de￾pressed, suspicious, paranoid, hostile, and combative.
+ Speaking skills deteriorate to nonsense syllables; agitation 
+and physical activity increase.
+233 | P a g e
+ Voracious appetite may develop from high activity level; 
+dysphagia is noted with disease progression.
+ Eventually patient requires help with all aspects of daily 
+living, including toileting because incontinence occurs.
+ Terminal stage may last for months or years.
+Assessment and Diagnostic Findings
+ Clinical symptoms are found through health history, in￾cluding physical findings and results from functional abil￾ities assessments (eg, Mini-Mental Status Examination)
+ Electroencephalography (EEG)
+ Computed tomography (CT) scan
+234 | P a g e
+ Magnetic resonance imaging (MRI)
+ Laboratory tests (complete blood cell count, chemistry pro￾file, and vitamin B12 and thyroid hormone levels) and exam￾ination of the cerebrospinal fluid (CSF)
+Medical Management
+There is no cure, treatment relies on managing cognitive 
+symptoms with cholinesterase inhibitors, such as:-
+Donepezil hydrochloride (Aricept), 
+Rivastigmine tartrate (Exelon), 
+Galantamine hydrobromide (Razadyne 
+Tacrine (Cognex). 
+235 | P a g e
+These drugs enhance acetylcholine uptake in the brain to 
+maintain memory skills for a period of time. 
+Nursing management
+Assessment
+Obtain health history with mental status examination and 
+physical examination, noting symptoms indicating demen￾tia. 
+Nursing Interventions
+Supporting Cognitive Function
+236 | P a g e
+ Provide a calm, predictable environment to minimize con￾fusion and disorientation.
+ Help patient feel a sense of security with a quiet, pleasant 
+manner; clear, simple explanations; and use of memory 
+aids and cues.
+Promoting Physical Safety
+ Provide a safe environment (whether at home or in the hos￾pital) to allow patient to move about as freely as possible 
+and relieve family’s worry about safety.
+ Prevent falls and other accidents by removing obvious haz￾ards and providing adequate lighting; install handrails in 
+the home.
+237 | P a g e
+ Prohibit driving.
+ Reduce wandering behavior with gentle persuasion and 
+distraction. Supervise all activities outside the home to pro￾tect patient. As needed, secure doors leading from the 
+house. Ensure that patient wears an identification bracelet 
+or neck chain.
+ Avoid restraints because they may increase agitation.
+Promoting Independence in Self-Care Activities
+ Simplify daily activities into short achievable steps so that 
+patient feels a sense of accomplishment.
+ Maintain patient’s personal dignity and autonomy.
+ Encourage patient to make choices when appropriate and 
+238 | P a g e
+to participate in self-care activities as much as possible.
+Reducing Anxiety and Agitation
+ Provide emotional support to reinforce a positive self-im￾age.
+ When skill losses occur, adjust goals to fit patient’s declin￾ing ability and structure activities to help prevent agitation.
+ Keep the environment simple, familiar, and noise-free; limit 
+changes.
+ Remain calm and unhurried, particularly if the patient is 
+experiencing a combative, agitated state known as cata￾strophic reaction (overreaction to excessive stimulation).
+Improving Communication
+239 | P a g e
+ Reduce noises and distractions.
+ Use easy-to-understand sentences to convey messages.
+Providing for Socialization and Intimacy Needs
+ Encourage visits, letters, and phone calls (visits should be 
+brief and nonstressful, with one or two visitors at a time).
+ Encourage patient to participate in simple activities or hob￾bies.
+ Advise that the nonjudgmental friendliness of a pet can 
+provide satisfying activity and an outlet for energy.
+ Encourage spouse to talk about any sexual concerns and 
+suggest sexual counseling if necessary.
+Promoting Adequate Nutrition
+240 | P a g e
+ Keep mealtimes simple and calm; avoid confrontations.
+ Cut food into small pieces to prevent choking, and convert 
+liquids to gelatin to ease swallowing. Offer one dish at a 
+time.
+ Prevent burns by serving typically hot food and beverages 
+warm.
+Balancing Activity and Rest
+ Offer music, warm milk, or a back rub to help patient relax 
+and fall asleep.
+ To enhance nighttime sleep, provide sufficient opportuni￾ties for daytime exercise. Discourage long periods of day￾time sleeping.
+241 | P a g e
+ Assess and address any unmet underlying physical or psy￾chological needs that may prompt wandering or other in￾appropriate behavior.
+242 | P a g e
+PERIPHERAL NERVE DISORDERS 
+GUILLAIN’S-BARRE SYNDROME
+ Guillain–Barré syndrome is a rapid-onset muscle weak￾ness caused by the immune system damaging the periph￾eral nervous system.
+ It results in the acute, rapid segmental demyelination of 
+peripheral nerves and some cranial nerves, producing as￾cending weakness with dyskinesia (inability to execute vol-
+243 | P a g e
+untary movements), hyporeflexia, and paresthesias (numb￾ness). 
+244 | P a g e
+Pathophysiology
+ GBS results from an autoimmune (cell-mediated and hu￾moral) attack on peripheral nerve myelin proteins (sub￾stances speeding conduction of nerve impulses). 
+ The Schwann cell (which produces myelin in the peripheral
+nervous system) is spared in GBS, allowing for remye￾lination in the recovery phase of the disease.
+Clinical Manifestations
+ Areflexia and ascending weakness, although there may be 
+variations in presentation. 
+245 | P a g e
+ Muscle weakness and diminished reflexes of the lower ex￾tremities; hyporeflexia and weakness may progress to tet￾raplegia; Demyelination of the nerves that supply the dia￾phragm and intercostal muscles results in neuromuscular 
+respiratory failure.
+ Sensory symptoms include paresthesias (burning or prick￾ling sensation) of the hands and feet and pain due to the 
+demyelination of sensory fibers.
+ Optic nerve demyelination may result in blindness.
+ Bulbar muscle weakness related to demyelination of the 
+glossopharyngeal and vagus nerves results in the inability 
+to swallow or clear secretions.
+246 | P a g e
+ Vagus nerve demyelination results in autonomic dysfunc￾tion, manifested by instability of the cardiovascular system 
+(tachycardia, bradycardia, hypertension, or orthostatic hy￾potension).
+Assessment and Diagnostic Findings
+Clinical presentation (symmetric weakness, diminished re￾flexes, and upward progression of motor weakness) and 
+history of recent viral infection.
+Changes in vital capacity and negative inspiratory force 
+are assessed to identify impending neuromuscular respir￾atory failure.
+247 | P a g e
+Elevated protein levels are detected in cerebrospinal fluid 
+(CSF) evaluation, without an increase in other cells.
+Evoked potential studies demonstrate a progressive loss of 
+nerve conduction velocity.
+Medical Management
+ GBS is considered a medical emergency; patient is man￾aged in an intensive care unit.
+ Respiratory problems may require respiratory therapy or 
+mechanical ventilation.
+ Elective intubation may be implemented before the onset of 
+extreme respiratory muscle fatigue.
+248 | P a g e
+ Anticoagulant agents and antiembolism stockings or se￾quential compression boots may be used to prevent throm￾bosis and pulmonary emboli.
+ Plasmapheresis (plasma exchange) or intravenous immu￾noglobulin (IVIG) may be used to directly affect the periph￾eral nerve myelin antibody level.
+ Continuous ECG monitoring: Observe and treat cardiac 
+dysrhythmias and other labile complications of autonomic 
+dysfunction. 
+ Tachycardia and hypertension are treated with short-act￾ing medications such as alpha-adrenergic blocking agents. 
+249 | P a g e
+ Hypotension is managed by increasing the amount of in￾travenous fluid administered.
+Nursing Management
+Assessment 
+Monitor the patient for life-threatening complications (respir￾atory failure, cardiac dysrhythmias, deep vein thrombosis 
+[DVT]) so that appropriate interventions can be initiated. 
+Nursing Interventions
+250 | P a g e
+Maintaining Respiratory Function
+ Encourage use of incentive spirometry and provide chest 
+physiotherapy.
+ Monitor for changes in vital capacity and negative inspira￾tory force; if vital capacity falls, mechanical ventilation will 
+be necessary.
+ Suction to maintain a clear airway.
+ Assess blood pressure and heart rate frequently to identify 
+autonomic dysfunction.
+Enhancing Physical Mobility
+ Provide passive range-of-motion exercises at least twice 
+251 | P a g e
+daily; support the paralyzed extremities in functional posi￾tions. 
+ Change patient’s position at least every 2 hours.
+ Administer prescribed anticoagulant regimen to prevent 
+DVT and pulmonary embolism; assist with physical ther￾apy and position changes; use antiembolism stockings or 
+sequential compression boots, and provide adequate hy￾dration.
+ Place padding over bony prominences such as elbows and 
+heels to reduce the risk of pressure ulcers.
+Providing Adequate Nutrition
+ Collaborate with physician and dietitian to meet patient’s 
+252 | P a g e
+nutritional and hydration needs. Provide adequate nutri￾tion to prevent muscle wasting.
+ Evaluate laboratory test results that may indicate malnu￾trition or dehydration (both of these conditions increase the 
+risk for pressure ulcers).
+ If patient has paralytic ileus, provide intravenous fluids 
+and parenteral nutrition as prescribed, and monitor for re￾turn of bowel sounds.
+ Provide gastrostomy tube feedings if patient cannot swal￾low.
+ Assess the return of the gag reflex and bowel sounds before 
+resuming oral nutrition.
+253 | P a g e
+Improving Communication
+ Establish communication through lip reading, use of pic￾ture cards, or eye blinking.
+ Collaborate with speech therapist, as indicated.
+Decreasing Fear and Anxiety
+ Refer patient and family to a support group.
+ Allow and encourage family members to participate in 
+physical care of patient after providing instruction and sup￾port.
+ Provide patient with information about condition, empha￾sizing a positive appraisal of coping resources.
+ Encourage relaxation exercises and distraction techniques.
+254 | P a g e
+ Create a positive attitude and atmosphere.
+ Encourage diversional activities to decrease loneliness and 
+isolation. 
+Monitoring and Managing Potential Complications
+ Assess respiratory function at regular and frequent inter￾vals; monitor respiratory rate, the quality of respirations, 
+and vital capacity.
+ Watch for breathlessness while talking, shallow and irreg￾ular breathing, use of accessory muscles, tachycardia, 
+weak cough, and changes in respiratory pattern.
+ Monitor for and report cardiac dysrhythmias (through ECG 
+255 | P a g e
+monitoring), transient hypertension, orthostatic hypoten￾sion, DVT, pulmonary embolism, and urinary retention.
+256 | P a g e
+DISORDERS OF THE NEUROMUSCULAR 
+JUNCTION 
+A. MYESTHENIA GRAVIS
+ Myasthenia gravis (MG) is an autoimmune disorder affect￾ing the myoneural junction. Antibodies directed at the ac￾etylcholine receptor sites impair transmission of impulses 
+across the myoneural junction. 
+ Therefore, fewer receptors are avail- able for stimulation, 
+resulting in voluntary muscle weakness that escalates with 
+continued activity.
+257 | P a g e
+258 | P a g e
+Clinical Manifestations
+MG is purely a motor disorder with no effect on sensation 
+or coordination.
+Initial manifestation involves ocular muscles (eg, diplopia 
+and ptosis)
+Weakness of the muscles of the face (resulting in a bland 
+facial expression) and throat (bulbar symptoms) and 
+gener- alized weakness
+Laryngeal involvement: dysphonia (voice impairment) and 
+increases the risk of choking and aspiration
+Generalized weakness that affects all extremities and the 
+intercostal muscles, resulting in decreasing vital capacity 
+259 | P a g e
+and respiratory failure
+Assessment and Diagnostic Findings
+Injection of edrophonium (Tensilon) is used to confirm the 
+diagnosis (have atropine available for side effects). Im￾provement in muscle strength represents a positive test 
+and usually confirms the diagnosis.
+MRI may demonstrate an enlarged thymus gland.
+Tests include serum analysis for acetylcholine receptor 
+and electromyography (EMG) to measure electrical poten￾tial of muscle cells.
+260 | P a g e
+Complications
+A myasthenic crisis is an exacerbation of the disease pro￾cess characterized by severe generalized muscle weak￾ness and respiratory and bulbar weakness that may re￾sult in respiratory failure.
+A cholinergic crisis caused by overmedication with cho￾linesterase inhibitors is rare; atropine sulfate should be 
+on hand to treat bradycardia or respiratory distress.
+Neuromuscular respiratory failure is the critical compli￾cation in myasthenic and cholinergic crises.
+Medical Management
+261 | P a g e
+Management of MG is directed at improving function and 
+reducing and removing circulating antibodies. 
+administration of anticholinesterase medication and im￾munosuppressive therapy, plasmapheresis, and thymec￾tomy. 
+Pharmacologic Therapy
+Pyridostigmine bromide (Mestinon) is the first line of ther￾apy. It provides symptomatic relief by inhibiting the 
+breakdown of acetylcholine and increasing the relative 
+concentration of available acetylcholine at the neuromus￾cular junction.
+262 | P a g e
+Immunosuppressive therapy aims to reduce the produc￾tion of antireceptor antibody or remove it directly by 
+plasma exchange. Corticosteroids are given to sup- press 
+the immune response, decreasing the amount of blocking 
+antibody.
+Other Therapy
+Plasma exchange (plasmapheresis) produces a temporary 
+reduction in the titer of circulating antibodies.
+Thymectomy (surgical removal of the thymus) produces 
+substantial remis- sion, especially in patients with tumor 
+or hyperplasia of the thymus gland.
+263 | P a g e
+Nursing Management
+Educate patient about self-care, including medication 
+man- agement, energy conservation, strategies to help 
+with ocular manifestations, and prevention and manage￾ment of complications.
+Encourage patient to determine the best times for daily 
+dosing by keeping a diary to determine fluctuation of 
+symptoms and to learn when the medication is wearing 
+off.
+Teach the patient strategies to conserve energy (e.g., if the 
+patient lives in a two-story home, suggest that frequently 
+used items such as hygiene products, cleaning products, 
+264 | P a g e
+and snacks be kept on each floor to minimize travel be￾tween floors).
+Help the patient identify the optimal times for rest 
+throughout the day.
+Instruct patient to schedule mealtimes to coincide with 
+the peak effects of anticholinesterase medication; encour￾age rest before meals to reduce muscle fatigue; advise the 
+patient to sit upright during meals, with the neck slightly 
+flexed to facilitate swallowing.
+Encourage meals of soft foods in gravy or sauces; if chok￾ing occurs frequently, suggest pureed food with a pud-
+265 | P a g e
+dinglike consistency. Supplemental feedings may be nec￾essary in some patients to ensure adequate nutrition.
+Ensure suction is available at home and that the patient 
+and family are instructed in its use.
+Instruct the patient to tape the eyes closed for short in￾tervals and to regularly instill artificial tears; patients who 
+wear eyeglasses can have “crutches” attached to help lift 
+the eye- lids; patching of one eye can help with double 
+vision.
+Remind the patient of the importance of maintaining 
+health promotion practices and of following health care 
+screening recommendations.
+266 | P a g e
+Encourage patient to note and avoid factors that exacer￾bate symptoms and potentially cause crisis: emotional 
+stress, infections (particularly respiratory infections), vig￾orous physical activity, some medications, and high envi￾ronmental temperature.
+267 | P a g e
+B. BELL’S PALSY
+Definition
+ Bell’s palsy (facial paralysis) is due to peripheral involve￾ment of the seventh cranial nerve on one side, which re￾sults in weakness or paralysis of the facial muscles.
+ The cause is unknown, but possible causes may include 
+vascular ischemia, viral disease (herpes simplex, herpes 
+zoster), autoimmune disease, or a combination. 
+ Bell’s palsy may represent a type of pressure paralysis in 
+which ischemic necrosis of the facial nerve causes a distor￾tion of the face, increased lacrimation (tearing), and painful 
+268 | P a g e
+sensations in the face, behind the ear, and in the eye. 
+269 | P a g e
+Medical Management
+The objectives of management are to maintain facial mus￾cle tone and to prevent or minimize denervation.
+Corticosteroid therapy (prednisone) may be initiated to 
+reduce inflammation and edema, which reduces vascular 
+compression and permits restoration of blood circulation 
+to the nerve.
+Early administration of corticosteroids appears to dimin￾ish severity, relieve pain, and minimize denervation.
+Facial pain is controlled with analgesic agents or heat ap￾plied to the involved side of the face.
+Additional modalities may include electrical stimulation 
+270 | P a g e
+applied to the face to prevent muscle atrophy, or surgical 
+exploration of the facial nerve.
+Surgery may be performed if a tumor is suspected, for 
+surgical decompression of the facial nerve, and for surgi￾cal rehabilitation of a paralyzed face.
+Nursing Management
+Teaching Eye Care
+Because the eye usually does not close completely, the 
+blink reflex is diminished, so the eye is vulnerable to in￾jury from dust and foreign particles. Corneal irritation 
+271 | P a g e
+and ulceration may occur. Distortion of the lower lid al￾ters the proper drainage of tears. Key teaching points in￾clude the following:
+Cover the eye with a protective shield at night.
+Apply eye ointment to keep eyelids closed during sleep.
+Close the paralyzed eyelid manually before going to sleep.
+Wear wraparound sunglasses or goggles to decrease nor￾mal evaporation from the eye.
+Teaching About Maintaining Muscle Tone
+Show patient how to perform facial massage with gentle 
+upward motion several times daily when the patient can 
+tol- erate the massage.
+272 | P a g e
+Demonstrate facial exercises, such as wrinkling the fore￾head, blowing out the cheeks, and whistling, in an effort 
+to pre- vent muscle atrophy.
+Instruct patient to avoid exposing the face to cold and 
+drafts.
+273 | P a g e
+C. CEREBRAL PALSY
+ Cerebral palsy (CP) is a group of disorders that affect a per￾son’s ability to move and maintain balance and posture. CP 
+is the most common motor disability in childhood. Cere￾bral means having to do with the brain. Palsy means weak￾ness or problems with using the muscles. 
+ CP is caused by abnormal brain development or damage to 
+the developing brain that affects a person’s ability to con￾trol his or her muscles.
+ The symptoms of CP vary from person to person. A person 
+with severe CP might need to use special equipment to be 
+274 | P a g e
+able to walk, or might not be able to walk at all and might 
+need lifelong care. A person with mild CP, on the other 
+hand, might walk a little awkwardly, but might not need 
+any special help. CP does not get worse over time, though 
+the exact symptoms can change over a person’s lifetime.
+ All people with CP have problems with movement and pos￾ture. Many also have related conditions such as intellectual 
+disability; seizures; problems with vision, hearing, or 
+speech; changes in the spine (such as scoliosis); or joint 
+problems (such as contractures).
+275 | P a g e
+276 | P a g e
+ 
+277 | P a g e
+Types of Cerebral Palsy
+Classification is based the main type of movement disorder 
+involved. There are four main types of CP:
+Spastic Cerebral Palsy
+ People with spastic CP have increased muscle tone. This 
+means their muscles are stiff and, as a result, their move￾ments can be awkward.
+ Spastic CP usually is described by what parts of the body 
+are affected:
+Spastic diplegia/diparesis―In this type of CP, muscle 
+stiffness is mainly in the legs, with the arms less affected 
+278 | P a g e
+or not affected at all. People with spastic diplegia might 
+have difficulty walking because tight hip and leg muscles 
+cause their legs to pull together, turn inward, and cross 
+at the knees.
+Spastic hemiplegia/hemiparesis―This type of CP affects 
+only one side of a person’s body; usually the arm is more 
+affected than the leg.
+Spastic quadriplegia/quadriparesis―Spastic quadriplegia 
+is the most severe form of spastic CP and affects all four 
+limbs, the trunk, and the face. People with spastic quad￾riparesis usually cannot walk and often have other devel-
+279 | P a g e
+opmental disabilities such as intellectual disability; sei￾zures; or problems with vision, hearing, or speech.
+Dyskinetic Cerebral Palsy 
+ People with dyskinetic CP have problems controlling the 
+movement of their hands, arms, feet, and legs, making it 
+difficult to sit and walk. 
+ The movements are uncontrollable and can be slow and 
+writhing or rapid and jerky. Sometimes the face and tongue 
+are affected and the person has a hard time sucking, swal￾lowing, and talking. 
+280 | P a g e
+Ataxic Cerebral Palsy
+ People with ataxic CP have problems with balance and co￾ordination. 
+ They might be unsteady when they walk. They might have 
+a hard time with quick movements or movements that need 
+a lot of control, like writing. 
+ They might have a hard time controlling their hands or 
+arms when they reach for something.
+Mixed Cerebral Palsy
+ Some people have symptoms of more than one type of CP. 
+The most common type of mixed CP is spastic-dyskinetic 
+281 | P a g e
+CP.
+Early Signs
+ The main sign that a child might have CP is a delay reach￾ing motor or movement milestones (such as rolling over, 
+sitting, standing, or walking). Following are some other 
+signs of possible CP. 
+In a Baby Younger Than 6 Months of Age
+His head lags when you pick him up while he’s lying on his 
+back
+He feels stiff
+He feels floppy
+282 | P a g e
+When held cradled in your arms, he seems to overextend 
+his back and neck, constantly acting as if he is pushing 
+away from you
+When you pick him up, his legs get stiff and they cross or 
+scissor
+In a Baby Older Than 6 Months of Age
+She doesn’t roll over in either direction
+She cannot bring her hands together
+She has difficulty bringing her hands to her mouth
+She reaches out with only one hand while keeping the other 
+fisted
+283 | P a g e
+Screening and Diagnosis
+Developmental Monitoring
+Developmental monitoring (also called surveillance) means 
+tracking a child’s growth and development over time. 
+If any concerns about the child’s development are raised 
+during monitoring, then a developmental screening test 
+should be given as soon as possible.
+Developmental Screening
+During developmental screening a short test is given to see 
+284 | P a g e
+if the child has specific developmental delays, such as mo￾tor or movement delays. 
+Treatments and Intervention Services
+Physiotherapy for CP Children
+ Improved mobility can sometimes be achieved by the com￾bined use of techniques like hydrotherapy, and Snoezelen 
+techniques.
+ Stretching in patients with CP, particularly of bi-articular 
+muscles, as well as immobilisation in a stretched position.
+Orthopaedic surgery
+285 | P a g e
+ Surgery is mainly undertaken on the lower limb, but occa￾sionally in the upper limb. Some children require surgery 
+for scoliosis. 
+ Physiotherapy is an essential part of post-operative man￾agement. Gait laboratories are useful in planning the sur￾gical program for children who can walk independently or 
+with sticks or walking frames.
+ The hip: soft tissue surgery is often effective for children 
+when the hip problems are detected at an early stage (hence 
+the importance of regular X-rays). Lengthening of the ad￾ductor muscles may be all that is required in younger chil￾dren. 
+286 | P a g e
+ For most children surgery to keep the hips in joint, or to 
+put the hips back in joint, is preferable to leaving the child 
+with a dislocated hip which is frequently painful in later 
+life.
+ The knee: lengthening of the hamstrings can help the knee 
+straighten and so improve the walking pattern. Sometimes 
+transferring a muscle from the front to the back of the knee 
+can also help by reducing stiffness around the knee.
+Treatment for the associated medical Problems
+ Epilepsy - The most commonly used anticonvulsants are: 
+Carbamazepine, Sodium valproate, Lamotrigine, Phenytoin 
+287 | P a g e
+etc. 
+ Saliva control - The speech pathologist plays a central role 
+and can provide strategies to improve dribbling problems. 
+When these strategies are not effective, medication is occa￾sionally used, particularly in children over the age of six 
+years. Benzhexol hydrochloride (‘Artane’) reduces salivary 
+secretions. Occasionally irritability may occur. 
+ Constipation - Children with cerebral palsy often have 
+problems with constipation. A high fibre diet and increased 
+fluid intake can help with this problem. 
+ Nutrition - A dietitian can provide useful advice about ade-
+288 | P a g e
+quate nutrition. Excessive weight gain can be very disad￾vantageous for children learning to walk. 
+Nursing Interventions and Rationales
+ Perform complete nursing assessment to determine type of 
+deficits present (auditory, visual, motor or intellectual)
+ Perform range of motion exercises routinely per facility pro￾tocol. ROM exercises help to promote movement and 
+strengthen muscle tone, and to prevent contractures.
+ Provide education and assistance with orthotic devices as 
+required
+289 | P a g e
+ Patient may require use of braces or other orthotic sup￾ports for optimal mobility. Assist patient and parents to un￾derstand the need for and proper use of such devices.
+ Monitor during meals and snacks for signs of swallowing 
+difficulty. Patients often have difficulty swallowing due to 
+uncontrollable movements which can lead to choking or as￾piration.
+ Observe for signs of pain or discomfort and pay attention 
+to nonverbal cues. Provide alternative communication 
+(hand signals, pictures, etc.)
+ Many CP patients have difficulty with speech and express￾ing their needs. Spending time to become familiar with the 
+290 | P a g e
+patient helps to anticipate and recognize needs.
+ Provide skin care as appropriate. Provide barrier creams 
+and change undergarments as necessary. Note areas of 
+friction or irritation.
+ Patients who are incontinent or have limited mobility are at 
+risk for skin breakdown and infections.
+ Administer medications appropriately
+Anticholinergics
+Muscle relaxers
+Anticonvulsants
+ Anticholinergics (benztropine) are given to help treat un￾controlled movements and tremors.
+291 | P a g e
+ Muscle relaxers (baclofen) are given to help relax con￾tracted or stiff muscles.
+ Anticonvulsants (gabapentin) are given to prevent seizures.
+ Allow extra time for care and activities. Provide calm envi￾ronment.
+ Patients are often easily stressed with daily activities and 
+may need extra time to complete tasks.
+ Avoid rushing patient during care or treatments to allow 
+time for patient to understand and feel more comfortable.
+ Assist parents and providers develop Individual Education 
+Plans for educational success
+ Patient with CP have varying degrees of disabilities. Help 
+292 | P a g e
+family and providers create educational plans with schools 
+and learning facilities to meet the patient’s individual needs 
+and provide the best learning experience.
+ Provide patient and parent / caregiver education about nu￾trition, skin care and resources for therapy and support
+ Help patients and their families feel more comfortable with 
+home and daily care of patient and have access to re￾sources for specific needs
+293 | P a g e
+D. MUSCULAR DYSTROPHIES
+ Muscular dystrophies are a group of chronic muscle disor￾ders characterized by a progressive weakening and wasting 
+of the skeletal or voluntary muscles. 
+ Most are inherited. The pathologic features include degen￾eration and loss of muscle fibers, variation in muscle fiber 
+size, phagocytosis and regeneration, and replacement of 
+muscle tissue by connective tissue. 
+294 | P a g e
+ 
+295 | P a g e
+Clinical Manifestations
+ Muscle wasting and weakness.
+ Gastrointestinal tract problems: gastric dilation, rectal pro￾lapse, and fecal impaction.
+ Cardiomyopathy is a common complication in all forms of 
+muscular dystrophy.
+Medical Management
+ Treatment focuses on supportive care and prevention of 
+complications. A therapeutic exercise program is individu-
+296 | P a g e
+alized to prevent muscle tightness, contractures, and dis￾use atrophy.
+ Night splints and stretching exercises are employed to de￾lay joint contractures (especially ankles, knees, and hips). 
+ Braces may be used to compensate for muscle weakness. 
+ The patient may be fitted with an orthotic jacket to improve 
+sitting stability, reduce trunk deformity, and support car￾diovascular status. Spinal fusion may be performed to 
+maintain spinal stability. 
+ All upper respiratory infections and fractures from falls are 
+treated vigorously to minimize immobilization and to pre￾vent joint contractures. 
+297 | P a g e
+ Advise genetic counseling because of the genetic nature of 
+this disease. Also advise patient to consult with appropriate 
+caregivers for dental and speech problems and gastrointes￾tinal tract problems.
+Nursing Management
+ The goals are to maintain function at optimal levels and 
+enhance the quality of life.
+ Attend to patient’s physical requirements and emotional 
+and developmental needs.
+298 | P a g e
+ Actively involve patient and family in decision making, in￾cluding end-of-life decisions.
+ During hospitalization for treatment of complications, as￾sess knowledge and expertise of patient and family respon￾sible for giving care in the home. Assist patient and family 
+to maintain coping strategies used at home while in the 
+hospital.
+ Provide patient and family with information about the dis￾order, its anticipated course, and care and management 
+strategies that will optimize patient’s growth and develop￾ment and physical and psychological status.
+299 | P a g e
+ Communicate recommendations to all members of the 
+health care team so that they work toward common goals.
+ Encourage patient to use self-help devices to achieve 
+greater independence; assist adolescents to make transi￾tion to adulthood. Encourage education and job tracking 
+as appropriate.
+ When teaching family to monitor patient for respiratory 
+problems, give information regarding appropriate respira￾tory support, such as negative-pressure devices and posi￾tive pressure ventilators.
+ Encourage range-of-motion exercises to prevent disabling 
+contractures. Assist family in adjusting home environment 
+300 | P a g e
+to maximize functional independence; patient may require 
+manual or electric wheelchair, gait aids, seating systems, 
+bathroom equipment, lifts, ramps, and additional activity 
+of daily living aids.
+ Assess for signs of depression, prolonged anger, bargain￾ing, or denial and help patient to cope and adapt to chronic 
+disease. Arrange for referral to a psychiatric nurse clinician 
+or other mental health professional if indicated to assist 
+patient to cope and adapt to the disease.
+ Provide a hopeful, supportive, and nurturing environment.
+301 | P a g e
+302 | P a g e
+Hinkle, J.L
+Brunner & Suddarth's Textbook of Medical-Surgical Nursing. Philadelphia: 
+Wolters Kluwer.
+Lewis, S.L., Dirksen, S.R., Heitkemper, M.M., Bucher, L., & Harding, M.M. 
+(2017). Medical-Surgical Nursing: Assessment and Management of Clinical 
+Problems (10th ed.). St. Louis: Elsevier.
+Potter, P.A., Perry, A.G., Stockert, P.A., & Hall, A.M. (2019). Essentials for Nursing 
+Practice (9th ed.). St. Louis: Elsevier.
+Wilkinson, J.M., Treas, L.S., Barnett, K.L., & Smith, M.H. (2016). Fundamentals of 
+Nursing: Volume 1- Theory, Concepts, and Applications; Volume 2- Thinking, Do￾ing, and Caring. (3rd ed.). Philadelphia: F.A. Davis Co.
+Pathophysiology Textbooks for Nurses
+Grossman, S.C. & Porth, C.M. (2014). Porth’s Pathophysiology: Concepts of Al￾tered Health States (9th ed.). Philadelphia: Wolters Kluwer.
+McCance, K.L. & Huether, S.E. (2017). Understanding Pathophysiology: The Bio￾logic Basis for Disease in Adults and Children (6th ed.). St. Louis: Elsevier/Mosby.
+303 | P a g e
+J

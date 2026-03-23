@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NurseJK Assistant</title>
+</head>
+<body>
+  <h1>NurseJK Assistant</h1>
+  <textarea id="input" placeholder="Ask a nursing question..."></textarea>
+  <button onclick="sendMessage()">Send</button>
+  <pre id="output"></pre>
+
+  <script>
+    async function sendMessage() {
+      const message = document.getElementById("input").value.trim();
+      const output = document.getElementById("output");
+
+      if (!message) {
+        output.textContent = "Please enter a question.";
+        return;
+      }
+
+      output.textContent = "Loading...";
+
+      try {
+        const res = await fetch("https://nursejk-assistant22.onrender.com/api/chat", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({ message })
+        });
+
+        const data = await res.json();
+        output.textContent = data.reply || data.error || "No response received.";
+      } catch (error) {
+        output.textContent = "Failed to connect to backend.";
+      }
+    }
+  </script>
+</body>
+</html>
