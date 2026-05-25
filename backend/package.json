@@ -4,7 +4,8 @@
   "description": "AI-powered nursing assistant backend",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "build:vectors": "node scripts/buildVectorStore.js"
   },
   "author": "Joe",
   "license": "MIT",

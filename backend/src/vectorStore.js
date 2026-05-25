@@ -1,16 +1,12 @@
 import fs from "node:fs";
-import path from "node:path";
+import { config } from "./config.js";
 import { generateEmbedding } from "./openaiClient.js";
 
-const vectorStorePath = path.resolve(
-  process.cwd(),
-  "..",
-  "database",
-  "vector-store",
-  "nursing-embeddings.json"
-);
-
 function cosineSimilarity(a, b) {
+  if (!Array.isArray(a) || !Array.isArray(b) || a.length !== b.length) {
+    return 0;
+  }
+
   let dot = 0;
   let magnitudeA = 0;
   let magnitudeB = 0;
@@ -31,24 +27,42 @@ function cosineSimilarity(a, b) {
 }
 
 function loadVectorStore() {
-  if (!fs.existsSync(vectorStorePath)) {
-    throw new Error(
-      "Vector store not found. Run `node scripts/buildVectorStore.js` first."
-    );
+  if (!fs.existsSync(config.vectorStorePath)) {
+    return { items: [] };
   }
 
-  return JSON.parse(fs.readFileSync(vectorStorePath, "utf8"));
+  const store = JSON.parse(fs.readFileSync(config.vectorStorePath, "utf8"));
+
+  if (!Array.isArray(store.items)) {
+    throw new Error("Vector store is invalid or empty.");
+  }
+
+  return store;
+}
+
+export function isVectorStoreReady() {
+  if (!fs.existsSync(config.vectorStorePath)) {
+    return false;
+  }
+
+  try {
+    const store = JSON.parse(fs.readFileSync(config.vectorStorePath, "utf8"));
+    return Array.isArray(store.items) && store.items.length > 0;
+  } catch {
+    return false;
+  }
 }
 
 export async function searchVectorStore(query, topK = 3) {
   const store = loadVectorStore();
-  const queryEmbedding = await generateEmbedding(query);
 
-  if (!store.items?.length) {
+  if (!store.items.length) {
     return [];
   }
 
-  const limitedTopK = Math.max(1, Math.min(topK, 10));
+  const queryEmbedding = await generateEmbedding(query);
+  const requestedTopK = Number.isInteger(topK) ? topK : 3;
+  const limitedTopK = Math.max(1, Math.min(requestedTopK, 10));
 
   return store.items
     .map((item) => ({

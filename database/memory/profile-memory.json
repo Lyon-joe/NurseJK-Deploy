@@ -1,0 +1,109 @@
+{
+  "updatedAt": "2026-05-25",
+  "source": "Merged from Gemini import, ChatGPT import, and user corrections in this app.",
+  "demographics": [
+    {
+      "text": "The user's preferred name is Joe.",
+      "evidence": "Imported ChatGPT memory says: Preferred name: Joe. Date unknown; imported 2026-05."
+    },
+    {
+      "text": "The user prefers to call the assistant Mira, short for Mirabel, and wants the assistant to refer to itself as Mira in replies.",
+      "evidence": "Imported ChatGPT memory states this preference. Date unknown; imported 2026-05."
+    },
+    {
+      "text": "The user is male.",
+      "evidence": "Imported ChatGPT memory says: User is male. Date unknown; imported 2026-05."
+    },
+    {
+      "text": "The user is in nursing education/profession.",
+      "evidence": "Imported ChatGPT memory says: Role: Nursing. Date unknown; imported 2026-05."
+    },
+    {
+      "text": "The user is preparing for the Nursing Council of Kenya licensure exam.",
+      "evidence": "Imported ChatGPT memory says preparation was ongoing up to May 14, 2026; prior local memory also reflected NCK exam preparation."
+    },
+    {
+      "text": "The user has general residence/location context in Nairobi, Kenya.",
+      "evidence": "Imported ChatGPT memory cites system location context indicating Nairobi, Nairobi City, Kenya on 2026-05-25."
+    }
+  ],
+  "interestsAndPreferences": [
+    {
+      "text": "The user is interested in building an AI nurse assistant.",
+      "evidence": "Imported ChatGPT memory and prior local memory both mention AI nurse assistant development."
+    },
+    {
+      "text": "The user prefers structured, educational responses with strong formatting.",
+      "evidence": "Imported ChatGPT memory says the user prefers detailed explanations instead of plain points."
+    },
+    {
+      "text": "The user prefers bold formatting only for topics and subtopics.",
+      "evidence": "Imported ChatGPT memory states this formatting preference."
+    },
+    {
+      "text": "For clinical and academic information, the user prefers a consistent, clear, and well-structured presentation style.",
+      "evidence": "Imported ChatGPT memory states this preference."
+    },
+    {
+      "text": "For health-condition presentations, the user prefers this structure: Definition; causes/risk factors; clinical manifestations; diagnostic tests (radiological if any and laboratory); medical and nursing management; nursing diagnosis; complications; prevention measures.",
+      "evidence": "Imported ChatGPT memory states this exact preferred flow."
+    },
+    {
+      "text": "The user is deeply engaged in medical and nursing education, focusing on clinical protocols, pharmacology, and patient care management.",
+      "evidence": "Prior Gemini import cited sustained engagement with nursing council practice questions, clinical case studies, and medical literature reviews."
+    },
+    {
+      "text": "The user has a strong interest in the intersection of artificial intelligence and healthcare.",
+      "evidence": "Prior Gemini import cited explicit AI nursing assistant development work."
+    },
+    {
+      "text": "The user is interested in high-end, high-contrast studio photography and professional image editing.",
+      "evidence": "Prior Gemini import cited detailed photographic style prompts."
+    },
+    {
+      "text": "The user is a sports fan, specifically supporting Liverpool FC.",
+      "evidence": "User corrected the imported memory and stated: I do not support Arsenal, I am a Liverpool fan. Date: 2026-05."
+    }
+  ],
+  "relationships": [],
+  "projectsAndPlans": [
+    {
+      "text": "The user is actively preparing for the Nursing Council of Kenya licensure examination.",
+      "evidence": "Imported ChatGPT memory states preparation for the NCK licensure exam through May 14, 2026; prior local memory also reflected NCK exam preparation."
+    },
+    {
+      "text": "The user is working on or exploring development of an AI nurse assistant project.",
+      "evidence": "Imported ChatGPT memory says the user is interested in building an AI nurse assistant."
+    }
+  ],
+  "instructions": [
+    {
+      "text": "The assistant should refer to itself as Mira.",
+      "evidence": "Imported ChatGPT memory says the user prefers to call the assistant Mira, short for Mirabel, and wants the assistant to address itself as Mira."
+    },
+    {
+      "text": "Use bold formatting only for topics and subtopics.",
+      "evidence": "Imported ChatGPT memory states this formatting preference."
+    },
+    {
+      "text": "Provide detailed explanations instead of plain points.",
+      "evidence": "Imported ChatGPT memory states this response preference."
+    },
+    {
+      "text": "For clinical or health-condition presentations, use this structure: Definition; causes/risk factors; clinical manifestations; diagnostic tests (radiological if any and laboratory); medical and nursing management; nursing diagnosis; complications; prevention measures.",
+      "evidence": "Imported ChatGPT memory states this exact preferred structure."
+    },
+    {
+      "text": "Use a good, clear, and well-structured presentation style, especially for academic or clinical content.",
+      "evidence": "Imported ChatGPT memory states this preference."
+    },
+    {
+      "text": "Do not keep reminding the user about the specific proximity of the licensure exam date.",
+      "evidence": "Prior local memory says the user requested this in 2026-05."
+    },
+    {
+      "text": "Respect the user's correction that, in the latest pediatric pneumonia guideline they referenced, chest indrawing is not under severe pneumonia.",
+      "evidence": "Prior local memory says the user corrected this clinical information in 2026-05."
+    }
+  ]
+}

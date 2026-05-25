@@ -1,7 +1,12 @@
 import fs from "node:fs";
 import path from "node:path";
+import { fileURLToPath } from "node:url";
 
-const rootDir = path.resolve(process.cwd(), "..");
+const backendDir = path.resolve(
+  path.dirname(fileURLToPath(import.meta.url)),
+  ".."
+);
+const rootDir = path.resolve(backendDir, "..");
 const inputPath = path.join(rootDir, "database", "source", "nursing-notes.txt");
 const outputDir = path.join(rootDir, "database", "vector-store");
 const outputPath = path.join(outputDir, "nursing-embeddings.json");
@@ -32,11 +37,16 @@ function loadEnvFile(filePath) {
   }
 }
 
-loadEnvFile(path.join(rootDir, "backend", ".env"));
+loadEnvFile(path.join(backendDir, ".env"));
 
 const openAiApiKey = process.env.OPENAI_API_KEY || "";
+const embeddingProvider = process.env.EMBEDDING_PROVIDER || "openai";
 const openAiEmbeddingModel =
   process.env.OPENAI_EMBEDDING_MODEL || "text-embedding-3-small";
+const geminiApiKey = process.env.GEMINI_API_KEY || process.env.GOOGLE_API_KEY || "";
+const geminiEmbeddingModel =
+  process.env.GEMINI_EMBEDDING_MODEL || "gemini-embedding-001";
+const maxEmbeddingRetries = 6;
 
 function normalizeText(text) {
   return text
@@ -100,21 +110,43 @@ function chunkText(rawText) {
 }
 
 async function createEmbedding(text) {
+  const provider = embeddingProvider.toLowerCase();
+
+  if (provider === "gemini") {
+    return createGeminiEmbedding(text);
+  }
+
+  return createOpenAiEmbedding(text);
+}
+
+async function createOpenAiEmbedding(text) {
   if (!openAiApiKey) {
     throw new Error("Missing OPENAI_API_KEY in backend/.env");
   }
 
-  const response = await fetch("https://api.openai.com/v1/embeddings", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      Authorization: `Bearer ${openAiApiKey}`
-    },
-    body: JSON.stringify({
-      model: openAiEmbeddingModel,
-      input: text
-    })
-  });
+  let response;
+
+  try {
+    response = await fetch("https://api.openai.com/v1/embeddings", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${openAiApiKey}`
+      },
+      body: JSON.stringify({
+        model: openAiEmbeddingModel,
+        input: text
+      })
+    });
+  } catch (error) {
+    const message = error instanceof Error ? error.message : "Unknown network error";
+    const cause =
+      error instanceof Error && error.cause instanceof Error
+        ? ` Cause: ${error.cause.message}`
+        : "";
+
+    throw new Error(`Embedding network request failed: ${message}.${cause}`);
+  }
 
   if (!response.ok) {
     const errorText = await response.text();
@@ -129,6 +161,101 @@ async function createEmbedding(text) {
   }
 
   return embedding;
+}
+
+function geminiModelPath(model) {
+  return model.startsWith("models/") ? model : `models/${model}`;
+}
+
+function sleep(ms) {
+  return new Promise((resolve) => {
+    setTimeout(resolve, ms);
+  });
+}
+
+function readRetryDelayMs(errorText) {
+  try {
+    const parsed = JSON.parse(errorText);
+    const retryDelay = parsed.error?.details?.find((detail) =>
+      typeof detail.retryDelay === "string"
+    )?.retryDelay;
+
+    if (retryDelay?.endsWith("s")) {
+      return Math.ceil(Number(retryDelay.slice(0, -1)) * 1000);
+    }
+  } catch {
+    const match = errorText.match(/retry in ([\d.]+)s/i);
+    if (match) {
+      return Math.ceil(Number(match[1]) * 1000);
+    }
+  }
+
+  return 65000;
+}
+
+async function createGeminiEmbedding(text) {
+  if (!geminiApiKey) {
+    throw new Error("Missing GEMINI_API_KEY in backend/.env");
+  }
+
+  const modelPath = geminiModelPath(geminiEmbeddingModel);
+  const url = `https://generativelanguage.googleapis.com/v1beta/${modelPath}:embedContent`;
+
+  for (let attempt = 1; attempt <= maxEmbeddingRetries; attempt += 1) {
+    let response;
+
+    try {
+      response = await fetch(url, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "x-goog-api-key": geminiApiKey
+        },
+        body: JSON.stringify({
+          model: modelPath,
+          content: {
+            parts: [{ text }]
+          }
+        })
+      });
+    } catch (error) {
+      const message = error instanceof Error ? error.message : "Unknown network error";
+      const cause =
+        error instanceof Error && error.cause instanceof Error
+          ? ` Cause: ${error.cause.message}`
+          : "";
+
+      throw new Error(`Embedding network request failed: ${message}.${cause}`);
+    }
+
+    if (response.status === 429 && attempt < maxEmbeddingRetries) {
+      const errorText = await response.text();
+      const retryDelayMs = readRetryDelayMs(errorText);
+      console.log(
+        `Gemini rate limit reached. Retrying in ${Math.ceil(
+          retryDelayMs / 1000
+        )}s...`
+      );
+      await sleep(retryDelayMs + 1000);
+      continue;
+    }
+
+    if (!response.ok) {
+      const errorText = await response.text();
+      throw new Error(`Gemini embedding request failed: ${response.status} ${errorText}`);
+    }
+
+    const data = await response.json();
+    const embedding = data.embedding?.values ?? data.embeddings?.[0]?.values;
+
+    if (!Array.isArray(embedding)) {
+      throw new Error("Gemini embedding response was invalid.");
+    }
+
+    return embedding;
+  }
+
+  throw new Error("Gemini embedding request failed after retrying.");
 }
 
 async function main() {
@@ -156,7 +283,11 @@ async function main() {
     outputPath,
     JSON.stringify(
       {
-        model: openAiEmbeddingModel,
+        provider: embeddingProvider.toLowerCase(),
+        model:
+          embeddingProvider.toLowerCase() === "gemini"
+            ? geminiEmbeddingModel
+            : openAiEmbeddingModel,
         createdAt: new Date().toISOString(),
         count: items.length,
         items

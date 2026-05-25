@@ -1,6 +1,6 @@
 # Nurse AI Backend
 
-Node.js backend API for a nursing AI chatbot.
+Node.js API and static frontend for a nursing AI chatbot.
 
 ## Features
 
@@ -11,21 +11,36 @@ Node.js backend API for a nursing AI chatbot.
 - Nursing-specific system prompt with a fixed response format
 - Basic request validation and emergency-safety language
 - Local JSON vector store ingestion for nursing notes
+- Static frontend served from `frontend/index.html`
 
 ## Requirements
 
 - Node.js 18 or newer
-- An `OPENAI_API_KEY`
+- A `GEMINI_API_KEY`
+- Optional: an `OPENAI_API_KEY` only if `CHAT_PROVIDER=openai` or `EMBEDDING_PROVIDER=openai`
 
 ## Setup
 
-1. Copy `.env.example` to `.env`
-2. Fill in your OpenAI API key
-3. Start the server:
+1. Copy `backend/.env.example` to `backend/.env`
+2. Fill in your Gemini API key
+3. Use Gemini for chat and note embeddings:
 
 ```bash
+CHAT_PROVIDER=gemini
+GEMINI_CHAT_MODEL=gemini-2.5-flash
+EMBEDDING_PROVIDER=gemini
+GEMINI_API_KEY=your_gemini_api_key_here
+GEMINI_EMBEDDING_MODEL=gemini-embedding-001
+```
+
+4. Start the server:
+
+```bash
+cd backend
 npm start
 ```
+
+The app runs on `http://localhost:3001` by default.
 
 ## Build The Knowledge Base
 
@@ -38,7 +53,8 @@ database/source/nursing-notes.txt
 2. Generate chunks and embeddings:
 
 ```bash
-node scripts/buildVectorStore.js
+cd backend
+npm run build:vectors
 ```
 
 This creates:
@@ -56,7 +72,7 @@ flowchart TD
     A["User Query"] --> B["Embedding Model<br/>text-embedding-3-small"]
     B --> C["Vector Database Search"]
     C --> D["Top Matching Document Chunks"]
-    D --> E["LLM<br/>OpenAI Responses API"]
+    D --> E["LLM<br/>Gemini generateContent API"]
     E --> F["Final Answer"]
 ```
 

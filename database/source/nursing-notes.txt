@@ -1,48 +1,3 @@
-Paste or import your nursing reference text here.
-
-Suggested workflow:
-- Keep each major topic under a clear heading.
-- Use clean plain text when possible.
-- Remove repeated page numbers and OCR noise if available.
-
-Example:
-
-Compiled by
-juma mwanigu
-1 | P a g e
-ACUTE CONDITIONS……………………………………004
-SPACE OCCUPYING LESSIONS………..………….….004
-TUMORS.……………………………….……….…007
-INFECTIONS……………….……………….......…018
-MENINGITIS.…………………….………………….029
-ENCEPHALITIS.………………….………….……...028
-BRAIN ABSCESSES..…………………………….…..047
-VASCULAR DISORDERS …………………………………052
-TRANSIENT ISCHAEMIC ATTACK ………………..….052
-CEREBRAL VASCULAR ACCIDENT…………………...064
-INTRACRANIAL ANEURYSM ……………………….…080
-HEAD INJURY ……………………………………..……093
-SPINAL CORD INJURY.………………………………127
-SPINAL DISC PROBLEMS………………………….…148
-2 | P a g e
-PPPP
-CHRONIC NEUROLOGICAL CONDITIONS ………………162
-SEIZURE DISORDER (EPILEPSY)……………………. 162
-CHRONIC DEGENERATIVE DISORDERS.…………………177
-MULTIPLE SCLEROSIS …………………….……..….177
-PARKINSON’S DISEASE …………………..……..…189
-AMYOTROPHIC LATERAL SCLEROSIS……….…….…203
-DEMENTIA ………….…….….……..………….…215
-ALZHEIMER’S DISEASE …………………………..…229
-PERIPHERAL NERVE DISORDERS………………….……..242
-GUILLAIN’S-BARRE SYNDROME …………………..…242
-DISORDERS OF THE NEUROMUSCULAR JUNCTION ………256
-MYESTHENIA GRAVIS …………………………….…256
-BELL’S PALSY …………………………………….…267
-CEREBRAL PALSY ……………………………….....273
-MUSCULAR DYSTROPHIES ………………………….293
-3 | P a g e
-4 | P a g e
 ACUTE CONDITIONS 
 A. SPACE OCCUPYING LESSIONS
 Definition
@@ -2552,5 +2507,1341 @@ Nursing: Volume 1- Theory, Concepts, and Applications; Volume 2- Thinking, Do￾
 Pathophysiology Textbooks for Nurses
 Grossman, S.C. & Porth, C.M. (2014). Porth’s Pathophysiology: Concepts of Al￾tered Health States (9th ed.). Philadelphia: Wolters Kluwer.
 McCance, K.L. & Huether, S.E. (2017). Understanding Pathophysiology: The Bio￾logic Basis for Disease in Adults and Children (6th ed.). St. Louis: Elsevier/Mosby.
-303 | P a g e
-J
+
+
+  UNIT: 	Epidemiology
+Objectives
+By the end of this unit the learner should be able to:
+Define terms commonly used in epidemiology
+State uses &objectives of epidemiology
+State natural history of a disease
+Describe the disease components
+Describe epidemiologic triad
+State classification of disease agents
+Describe disease prevention levels
+Describe epidemiological studies 
+Describe integration of disease surveillance response
+Introduction/overview
+The word epidemiology comes from the Greek words epi, meaning on or upon, demos, meaning people and logos, meaning the study of. 
+In other words, the word epidemiology has its roots in the study of what befalls a population
+Epidemiology is a scientific discipline with sound methods of scientific inquiry at its foundation. 
+Epidemiology is data-driven and relies on a systematic and unbiased approach to the collection, analysis and interpretation of data.
+Basic epidemiologic methods tend to rely on careful observation and use of valid comparison groups to assess whether what was observed, such as the number of cases of disease in a particular area during a particular time period or the frequency of an exposure among persons with disease, differs from what might be expected. 
+However, epidemiology also draws on methods from other scientific fields, including biostatistics and informatics, with biologic, economic, social and behavioral sciences.
+Epidemiology is often described as the basic science of public health and for good reason: 
+First, epidemiology is a quantitative discipline that relies on a working knowledge of probability, statistics and sound research methods. 
+Second, epidemiology is a method of causal reasoning based on developing and testing hypotheses grounded in such scientific fields as biology, behavioral sciences, physics and ergonomics to explain health-related behaviors, states and events. 
+However, epidemiology is not just a research activity but an integral component of public health, providing the foundation for directing practical and appropriate public health action based on this science and causal reasoning.
+The following are used in characterizing epidemiologic events, E. g a disease  outbreak. 
+Diagnosis or health event (what)
+Person (who)
+Place (where)
+Time (when)
+Causes, risk factors and Modes of transmission (why/how)
+Epidemiology is also used to search for determinants, which are the causes and other factors that influence the occurrence of disease and other health-related events.
+Epidemiologists assume that illness does not occur randomly in a population, but happens only when the right accumulation of risk factors or determinants exists in an individual. 
+To search for these determinants, epidemiologists use analytic epidemiology or epidemiologic studies to provide the “Why” and “How” of such events. 
+They assess whether groups with different rates of disease differ in their demographic characteristics, genetic or immunologic make-up, behaviors, environmental exposures, or other so-called potential risk factors.
+ Ideally, the findings provide sufficient evidence to direct prompt and effective public health control and prevention measures.
+
+Epidemiology is the study of how often diseases occur in different groups of people and why. Epidemiological information is used to plan and evaluate strategies to prevent illness and as a guide to the management of patients in whom disease has already developed.
+Like the clinical findings and pathology, the epidemiology of a disease is an integral part of its basic description. The subject has its special techniques of data collection and interpretation, and its necessary jargon for technical terms. 
+All findings must relate to a defined population
+A key feature of epidemiology is the measurement of disease outcomes in relation to a population at risk. The population at risk is the group of people, healthy or sick, who would be counted as cases if they had the disease being studied. E.g, if a general practitioner were measuring how often patients consult him about deafness, the population at risk would comprise those people on his list (and perhaps also of his partners) who might see him about a hearing problem if they had one. Patients who, though still on the list, had moved to another area would not consult that doctor. They would therefore not belong to the population at risk.
+The importance of considering the population at risk is illustrated by two examples. In a certain study of accidents to patients in hospital it was noted that the largest number occurred among the elderly, and from this the authors concluded that “patients aged 60 and over are more prone to accidents.” Another study, based on a survey of hang gliding accidents, recommended that flying should be banned between 11 am and 3 pm, because this was the time when 73% of the accidents occurred. Each of these studies based conclusions on the same logical error, namely, the floating numerator: the number of cases was not related to the appropriate “at risk” population. Had this been done, the conclusions might have been different. Differing numbers of accidents to patients and to hang gliders must reflect, at least in part, differing numbers at risk. Epidemiological conclusions (on risk) cannot be drawn from purely clinical data (on the number of sick people seen).
+More often observations can only be made on a study sample, which is selected in some way from the target population. E.g, a gastroenterologist wishing to draw general inferences about long term prognosis in patients with Crohn’s disease might extrapolate from the experience of cases encountered in his own clinical practice. The confidence that can be placed in conclusions drawn from samples depends in part on sample size. Small samples can be unrepresentative just by chance, and the scope for chance errors can be quantified statistically. More problematic are the errors that arise from the method by which the sample is chosen. A gastroenterologist who has a special interest in Crohn’s disease may be referred patients whose cases are unusual or difficult, the clinical course and complications of which are atypical of the disease more generally. Such systematic errors cannot usually be measured, and assessment therefore becomes a matter for subjective judgement.
+Systematic sampling errors can be avoided by use of a random selection process in which each member of the target population has a known (non-zero) probability of being included in the study sample. However, this requires an enumeration or census of all members of the target population, which may not be feasible.
+Often the selection of a study sample is partially random. Within the target population an accessible subset, the study population, is defined. The study sample is then chosen at random from the study population.:
+Target population – study population – study sample
+This approach is appropriate where a suitable study population can be identified but is larger than the investigation requires. E.g , in a survey of back pain and its possible causes, the target population was all potential back pain sufferers. The study population was defined as all people aged A – Z years from a certain number of communities, and a sample of subjects was then randomly selected for investigation from within this study population. With this design, inference from the study sample to the study population is free from systematic sampling error, but further extrapolation to the target population remains a matter of judgement.
+The definition of a study population begins with some characteristic which all its members have in common. This may be geographical( e.g “all Kenyan residents in year X” or “all residents in a specified health district”); occupational (e.g “all employees of a factory,” “children attending a certain primary school”, e.g “all welders in Nairobi and Wales”); based on special care (“e.g patients on a physician’s list”, “residents in an old people’s home”); or diagnostic (e.g“all people in Southampton who first had an epileptic fit during year A –year B”). Within this broad definition appropriate restrictions may be specified – for example in age range or sex.
+Oriented to groups rather than individual
+Clinical observations determine decisions about individuals. Epidemiological observations may also guide decisions about individuals, but they relate primarily to groups of people. This fundamental difference in the purpose of measurements implies different demands on the quality of data. 
+Inaccuracy was alarming at the level of individual patients. Nevertheless, the false positive results balanced the false negatives so the clinicians’ total (53 + 21 = 74 cases) was about the same as the pathologists’ total (53 + 22 = 75 cases). Hence, in this instance, mortality statistics in the population seemed to be about right, despite the unreliability of individual death certificates. Conversely, it may not be too serious clinically if Dr. X systematically records blood pressure 10 mm Hg higher than his colleagues, because his management policy is (one hopes) adjusted accordingly. But choosing Dr. X as an observer in a population study of the frequency of hypertension would be unfortunate.
+ Historical evolution of Epidemiology
+Although epidemiology as a discipline has blossomed since World War II, epidemiologic thinking has been traced from Hippocrates through John Graunt, William Farr, John Snow, and others. 
+Circa 400 B.C.
+Epidemiology’s roots are nearly 2,500 years old.
+Hippocrates attempted to explain disease occurrence from a rational rather than a supernatural viewpoint. In his essay entitled “On Airs, Waters and Places,” Hippocrates ( the Father of epidemiology) suggested that environmental and host factors such as behaviors might influence the development of disease.
+1662
+Another early contributor to epidemiology was John Graunt, a London haberdasher and councilman who published a landmark analysis of mortality data in 1662. 
+This publication was the first to quantify patterns of birth, death and disease occurrence, noting disparities between males and females, high infant mortality, urban/rural differences and seasonal variations.
+1839
+William Farr built upon Graunt’s work by systematically collecting and analyzing Britain’s mortality statistics. 
+Farr, considered the Father of modern vital statistics and surveillance, developed many of the basic practices used today in vital statistics and disease classification.
+ He concentrated his efforts on collecting vital statistics, assembling and evaluating those data and reporting to responsible health authorities and the general public.
+1854
+In the mid-1800s, an anesthesiologist named John Snow was conducting a series of investigations in London that warrant his being considered the “father of field epidemiology.” 
+Twenty years before the development of the microscope, Snow conducted studies of cholera outbreaks both to discover the cause of disease and to prevent its recurrence.
+Because his work illustrates the classic sequence from descriptive epidemiology to hypothesis generation to hypothesis testing (analytic epidemiology) to application.
+Snow conducted one of his now famous studies in 1854 when an epidemic of cholera erupted in the Golden Square of London.
+ He began his investigation by determining where in this area persons with cholera lived and worked. i.e John Snow,  the British physician: Formulated and tested hypothesis concerning the origin of cholera epidemic in London in 1854.
+He marked each residence on a map of the area, as shown in Figure 1 Today, this type of map, showing the geographic distribution of cases, is called a spot map
+
+                                            Figure 1
+19th Century
+Dr. John Snow is famous for his investigations into the causes of the 19th Century Cholera epidemics. 
+He began with a comparison between the death rates from areas supplied by two adjacent water companies in Southwark. 
+His identification of the Broad Street pump as the cause of the SoHo epidemic is considered the classic example of epidemiology. 
+Dr. John Snow is famous for his investigations into the causes of the 19th Century Cholera epidemics. 
+He began with a comparison between the death rates from areas supplied by two adjacent water companies in Southwark. 
+His identification of the Broad Street pump as the cause of the SoHo epidemic is considered the classic example of epidemiology. 
+He used chlorine in an attempt to clean the water and had the handle removed, thus ending the outbreak. (It has been questioned as to whether the epidemic was already in decline when Snow took action.) 
+This has been perceived as a major event in the history of public health and can be regarded as the founding event of the science of epidemiology. 
+20th Century
+In the early 20th century, mathematical methods were introduced into epidemiology by Ronald Ross, Anderson Gray McKendrick and others
+Epidemiologic Terms and Concepts
+The natural history of a disease in a population, sometimes termed the disease’s ecology, refers to the course of the disease from its beginning to its final clinical endpoints. The natural history begins before infection (pre-pathogenesis period) when the agent simply exists in the environment, includes the factors that affect its incidence and distribution and concludes with either its disappearance or persistence (endemnicity) in that environment. Although knowledge of the complete natural history is not absolutely necessary for treatment and control of disease in a population, it does facilitate the most effective interventions.
+An important epidemiologic concept is that neither health nor disease occurs randomly throughout populations. Innumerable factors influence the temporal waxing and waning of disease. A disease is considered endemic when it is constantly present within a given geographic area.  
+An epidemic occurs when a disease occurs in larger numbers than expected in a given population and geographic area.  
+A subset of an epidemic is an outbreak, when the higher disease occurrence occurs in a smaller geographic area and shorter period of time. Finally, a pandemic occurs when an epidemic becomes global in scope (eg, influenza, HIV/AIDS).
+The population at risk is an extremely important concept in epidemiology and includes members of the overall population who are capable of developing the disease or condition being studied. This concept seems simple at first, but misinterpretations can lead to erroneous study results and conclusions. As a simple example, a study of testicular cancer among residents in a population should not include women in the population at risk (frequently expressed as the “denominator” in an epidemiologic ratio).
+A ratio is the value obtained from dividing one quantity by another (X/Y). The numerator and denominator may be independent of each other. 
+In fact, in epidemiology, the term ratio is applied when the numerator is not a subset of the denominator. For example, in a class of veterinary students in which 88 are female and 14 are male, the sex ratio of female students to male students is 88/14, or 6.3 to 1.
+A proportion is a type of ratio in which the numerator is part of the denominator (A/[A + B]). Therefore, they are not independent. For example, suppose that, among domestic dogs testing positive for internal parasites in Glendale, Arizona, 889 were male and 643 were female. The proportion of female dogs among those found to have parasite infections would be 643/(889 + 643), or 0.42.
+A rate is another type of ratio in which the denominator involves the passage of time. This is important in epidemiology, because rates can be used to measure the speed of a disease event or to make epidemiologic comparisons between populations over time. Rates are typically expressed as a measure of the frequency with which an event occurs in a defined population in a defined time (eg, the number of foodborne Salmonella infections per 100,000 people annually in the USA).
+Incidence is a measure of the new occurrence of a disease event (eg, illness or death) within a defined time period in a specified population. Two essential components are the number of new cases and the period of time in which those new cases appear. In an example regarding the class of veterinary students, if 13 of them developed influenza over the course of 3 months (one quarter), the incidence would be 13 cases per quarter.
+An incidence rate takes the population at risk into account. In the previous example, the incidence rate would be 13 cases per quarter/102 students, or 0.127 cases per quarter per student. Incidence rates are usually expressed by a multiplier that makes the number easier to conceptualize and compare. In this example, the multiplier would be 100, and the incidence rate would be 12.7 cases per quarter per 100 students (or 12.7%). An attack rate is an incidence rate; however, the period of susceptibility is very short (usually confined to a single outbreak).
+A similar concept to incidence is prevalence. Prevalence (synonymous with “point prevalence”) is the total number of cases that exist at a particular point in time in a particular population at risk. Again using the influenza example from above, if 7 students had influenza at the same time during the academic quarter, the prevalence would be 7/102 or 0.069 cases per class (or 6.9%).
+Definition of Terms
+Epidemiology:
+Broader definition of epidemiology that captures the underlying principles and public health spirit of epidemiology is:
+Epidemiology is the study of the distribution and determinants of health-related states or events in specified populations and the application of this study to the control of health problems (broader definition).
+Simple definition of epidemiology: 
+Epidemiology is the study of how disease is distributed in populations and the factors that influence or determine this distribution
+Disease 
+i)Is a pattern of response by a living organism to some form of invasion by a foreign substance or injury which causes an alteration of the organisms normal functioning
+ii)Is an abnormal state in which the body is not capable of responding to or carrying on its normally required functions
+iii)Is the inability of the individual to function, physically, mentally, socially at a level that is both individually satisfying and appropriate to the stage of growth and development of the individual
+Pathogens
+This is organisms or substances such as bacteria, viruses, or parasites that are capable of producing diseases
+Pathogenesis 
+This is the development, production, or process of generating a disease
+Pathogenic 
+This means disease causing or producing
+Pathogenicity
+This  describes the potential ability and strength of a pathogenic substance to cause disease
+Infective diseases 
+Are those which the pathogen or agent has the capability to enter, survive, and multiply in the host
+Virulence 
+This is the extent of pathogenicity or strength of different organisms
+The ability of the pathogen to grow, thrive, and to develop all factor into virulence
+The capacity and strength of the disease to produce severe and fatal cases of illness
+The disease producing power of an organism, the degree of pathogenicity within a group or species.
+The degree of pathology caused by the organism.
+Invasiveness
+The ability to get into a susceptible host and cause a disease within the host
+The capacity of a microorganism to enter into and grow in or upon tissues of a host
+Incidence 
+This refers to New cases of disease or event during specified period of time
+Prevalence: 	
+The number of affected persons present in a population at a specific time divided by the number of persons in the population at that particular time
+Prevalence =        No. of cases present in the population at a specified time        × 1,000 
+                             No. of persons in the population at that specified time 
+Frequency 
+This refers not only to the number of health events such as the number of cases of meningitis or diabetes in a population, but also to the relationship of that number to the size of the population. The resulting rate allows epidemiologists to compare disease occurrence across different populations.
+Pattern
+This  refers to the occurrence of health-related events by time, place and person. 
+Time patterns may be annual, seasonal, weekly, daily, hourly, weekday versus weekend, or any other breakdown of time that may influence disease or injury occurrence.
+Place patterns include geographic variation, urban/rural differences, and location of work sites or schools.
+Personal characteristics include demographic factors which may be related to risk of illness, injury, or disability such as age, sex, marital status, and socioeconomic status, as well as behaviors and environmental exposures.
+NB: Characterizing health events by time, place and person are activities of descriptive epidemiology
+Determinant: 
+Any factor, whether event, characteristic, or other definable entity, that brings about a change in a health condition or other defined characteristic.
+Health-related states or events
+The term health-related states or events may be seen as anything that affects the well-being of a population.
+ Nonetheless, many epidemiologists  use the term “disease” as shorthand for the wide range of health-related states and events that are studied.
+ Although epidemiologists and direct health-care providers (clinicians) are both concerned with occurrence and control of disease, they differ greatly in how they view “the patient.” The clinician is concerned about the health of an individual; the epidemiologist is concerned about the collective health of the people in a community or population. In other words, the clinician’s “patient” is the individual; the epidemiologist’s “patient” is the community. Therefore, the clinician and the epidemiologist have different responsibilities when faced with a person with illness. For example, when a patient with diarrheal disease presents, both are interested in establishing the correct diagnosis. However, while the clinician usually focuses on treating and caring for the individual, the epidemiologist focuses on identifying the exposure or source that caused the illness; the number of other persons who may have been similarly exposed; the potential for further spread in the community; and interventions to prevent additional cases or recurrences.
+Application
+Epidemiology is not just “the study of” health in a population; it also involves applying the knowledge gained by the studies to community-based practice. Like the practice of medicine, the practice of epidemiology is both a science and an art. To make the proper diagnosis and prescribe appropriate treatment for a patient, the clinician combines medical (scientific) knowledge with experience, clinical judgment, and understanding of the patient. Similarly, the epidemiologist uses the scientific methods of descriptive and analytic epidemiology as well as experience, epidemiologic judgment and understanding of local conditions in “diagnosing” the health of a community and proposing appropriate, practical and acceptable public health interventions to control and prevent disease in the community.
+Summary
+Epidemiology is the study (scientific, systematic, data-driven) of the distribution (frequency, pattern) and determinants (causes, risk factors) of health-related states and events (not just diseases) in specified populations (patient is community, individuals viewed collectively), and the application of (since epidemiology is a discipline within public health) this study to the control of health problems.
+Objectives of epidemiology include the following:
+To identify the aetiology or cause of disease and the risk factors( factors that increase a person’s risk for a disease
+To determine the extent of disease found in the community.
+To study the natural history and progression of disease.
+To evaluate preventive and therapeutic measures for a disease or condition.
+To provide the foundation for developing public health policy and making regulatory decisions relating to environmental problems.
+Uses of Epidemiology 
+to determine, describe, and report on the natural course of disease, disability, injury, and death  
+to aid in the planning and development of health services and programs 
+to provide administrative and planning data
+to study the cause (or etiology) of disease(s), or conditions, disorders, disabilities, etc.
+to determine the primary agent responsible or ascertain causative factors 
+to determine the characteristics of the agent or causative factors
+to determine the mode of transmission
+to determine contributing factors
+to identify and determine geographic patterns
+Purpose of Epidemiology 
+To provide a basis for developing disease control and prevention measures for groups at risk this translates into developing measures to prevent or control disease
+Goal of epidemiology
+The major goal is to identify subgroups in the population who are at high risk for the disease
+Disease components
+In epidemiology we look at 3 components of a disease namely:
+Disease frequency
+Distribution of disease
+Determinants of disease
+i)Disease Frequency
+This is the measurement of how often a disease occurs and the disability or death caused.  This information is summarized in the form of rates and ratios i.e. prevalence rate, incidence rate, death rate etc.
+ii)Distribution of disease 
+This is concerned with describing how widespread a disease is in terms of age, sex, race, geography, etc.  In measuring the distribution of a disease we ask the following questions:
+Who are the people affected
+Where do they come from?
+When are they affected (during dry season or rainy season)
+iii)Determinants of disease  
+This is any of a group of variables, such as specific disease agents and environmental factors, that directly or indirectly influence the frequency or distribution of a disease.This involves interpretation of the distribution of disease in terms of its possible causal factors
+NB
+In epidemiology we use data on the frequency and distribution of disease in order to help us understand whether the disease is an epidemic, endemic, or sporadic.  
+An epidemic disease is one that occurs unexpectedly and may give rise to many new cases in a short period of time.  
+An endemic disease is one that is present all the time in a community.  
+A sporadic disease is one that occurs only occasionally and without a regular pattern
+In some parts of Kenya, malaria is an ENDEMIC disease as it is present in the population all the time.  A good example of an EPIDEMIC is cholera.  When we say that a disease is epidemic, we use the information about both frequency and distribution.
+Importance of identifying those at high risk
+i). By identifying  we can direct preventive efforts such as screening programs for early detection to these populations who are most likely to benefit from any intervention that  are developed for the disease
+ii). By identifying we may be able to identify the specific factors or characteristics that put at high risk and then try to modify those factors
+NB:
+Types of risk factors
+i). Non- modifiable, E.g.  Age, sex, race etc
+ii). Modifiable, E.g. obesity, diet, other lifestyle factors
+Factors influencing Health and Illness ( Determinants of disease and health)
+Genetic make up
+Lifestyle of a person
+Our surrounding( Environment)
+Economic status of a person or the family
+Literacy status of a person/ family
+Occupation of the person/ family
+Availability of health services
+EPIDEMIOLOGICAL STUDIES
+Epidemiological studies are classified into two  broad groups according to their purpose.  These are:
+1.Descriptive studies
+2.Analytical studies
+1. Descriptive Studies
+This is the study of the amount and distribution of disease or health status within a population by person, place and time.
+  The study involves determining the incidence, prevalence and mortality rate for disease in large population groups, according to characteristics such as sex, age, race and geographical area. 
+It is the study of factors associated with distribution of health and disease in human population	
+There are three main types of descriptive studies:
+Case Series
+Cross-sectional survey
+Correlation studies
+Case Series
+Case series- clinicians describe the experience of a single patient or group of patients with similar diagnosis.  
+They use the unusual features of a disease that are common among patients to make a diagnosis. 
+ It is through case series studies that clinicians are able to diagnose new or emerging diseases, such as Ebola and Chloroquine resistant malaria.
+Cross-sectional Survey 
+Cross-sectional studies provide information about frequency and characteristics of a disease by studying the disease status in a population at a specific time period in a given year.
+ Correlation Studies
+Correlation studies use data of the entire population to compare disease frequencies between different groups of people during the same period of time.
+Essentials characteristics of disease that we look for in descriptive studies are:
+Person
+Place
+Time
+Person
+
+age
+gender
+ethnic group 
+genetic predisposition 
+concurrent disease 
+diet 
+physical activity
+smoking 
+risk taking behavior 
+SES, 
+education
+occupation
+
+Geographic place
+
+presence of agents or vectors 
+climate 
+geology
+population density 
+economic development 
+nutritional practices 
+medical practices
+
+Time
+
+calendar time
+time since an event 
+physiologic cycles
+age (time since birth) 
+seasonality 
+temporal trends
+
+a). Descriptive Epidemiology
+Given that neither health nor disease is equally distributed throughout a population, epidemiologists use various methods to study and describe their occurrence. In descriptive epidemiology, diseases are classified according to the variables of person, place and time.
+Person: 
+Who is affected by this disease? This is relevant, because certain variables may highlight changes in disease status and can be used to focus additional studies and interventions. Common person variables include age, sex, race, socioeconomic status, marital status, religion, smoker/nonsmoker, etc. In the case of animals, equivalent variables may include species, breed, reproductive status (eg, intact vs neutered, pregnant vs non-pregnant), function (eg, meat/milk/fibre production, race horse vs working horse vs pleasure horse, companion dog vs military working dog), and wild/feral vs domesticated (cats).
+Place: 
+Where does this disease occur? Place variables commonly illustrate geographic differences in the occurrence of a particular disease. Focused studies can help assist epidemiologists to determine why those differences have occurred and to identify specific risk factors. Common place variables include comparisons across national, state, and municipal boundaries and between urban and rural communities. For animal populations, “place” may refer to housing (eg, indoors vs outdoors, pen number or stall) or type of herd management (eg, intensive feedlot confinement vs extensive grazing). Place may also relate to risk of exposure to infectious animals at sale barns or during shipment or to external factors such as severe weather and natural disasters.
+Time: 
+When and over what time period (hours, days, weeks, day vs night) does this disease occur? Time variables are important to describe when disease occurs in relation to various factors of potential exposure and vulnerability. In animals, time may refer to milking shift, breeding season, lambing/calving season, at weaning, during shipment, on arrival at the feedlot, dry vs wet season, etc. Common time variables include secular trends (changes over long periods of time), seasonal/cyclic periods, and specific points in time (eg, outbreaks, epidemics, clusters, etc).
+When a particular disease is observed relative to the variables of person, place, and time, it is often systematically described to facilitate more in-depth study. These systematic descriptions commonly take the form of case reports, case series, or cross-sectional studies.
+Case reports are accounts of single or a few noteworthy health-related incidents (eg, an epidemiologic description of a case of human rabies).
+Case series are listings of a larger number of cases, usually presented consecutively (eg, a characterization of dog bite incidents in a population of veterinarians and/or technicians over time). Case series articles are useful for comparing variables of person, place, or time as they appear to affect the occurrence of a particular disease.
+Cross-sectional studies are one-time assessments of the incidence or prevalence of a disease in a defined population, which is usually selected at random from a larger population at risk (eg, a serosurvey of veterinarians for the presence of antibodies to Bartonella henselae organisms to determine risk factors and for cat scratch disease). Cross-sectional studies are especially useful in forming hypotheses to be addressed by follow-on analytic studies.
+Two main types of bias in descriptive epidemiology are: 
+selection bias 
+ observation bias
+i)Selection bias results from the identification of subjects/cases from a subset that is not representative of the entire population at risk. A nonmedical example of selection bias would occur in a voter survey, intended to predict the outcome of a political election, but drawn from a sample of voters from either high- or low-income status, neither of which would be representative of the overall voting population.
+ii) Observation bias arises from systematic differences in the method of obtaining information from subjects/cases. Consider a study comparing library usage between students at two universities. Significant differences might result if students from one university were queried over the phone regarding library visits, whereas students at the other university were directly observed for actual usage. In general, bias in descriptive studies is not as prevalent or significant as bias in analytical studies.
+In summary, descriptive epidemiology serves to describe the occurrence of disease in a population. Descriptive methods are commonly applied to little-known diseases; they use preexisting data, address the questions of who/where/when, and identify potential associations for more in-depth analytical studies.
+2.Analytical studies 
+Analytical  studies study the underlying causes of health problems.  It seeks to uncover the source and mode of spread of disease; looking at multiple factors that bring about the disease in different groups.  
+Analytical Epidemiology looks for reasons behind the relatively high or low frequency of disease in specific human groups (causal relationships)
+Analytical studies are divided into two, namely:
+Observational
+Experimental 
+Observational studies 
+In observational studies we observe events in the community as they occur.  
+They may occur in seasons or be triggered by certain events such as floods that may lead to waterborne diseases or an outbreak of malaria. 
+ Another example is the increased incidence of fractures among children during the fruit picking season.  
+As a CHN, you need to put measures in place to prevent these problems.
+ Experimental studies
+In experimental studies, we set up experiments with controls in order to see the cause and effect.  
+E.g, one can decide to give malaria prophylaxis or mosquito nets to one community during the rainy season and deny the same to another similar community.
+Then observe the two to see if they have the same incidence of malaria or if there is any difference
+Investigating a hypothesis about the cause of disease by studying how exposures relate to disease 
+Analytical epidemiology studies require information to:  
+know where to look 
+know what to control for 
+develop viable hypotheses   
+Analytical studies are applied to study the etiology of disease, to identify a causal relationship between exposures and health outcomes. They are typically used when insights of a particular health issue are available, commonly from previous descriptive studies. In evaluating the causality of disease associations, analytical studies address the question of “why” as opposed to the “person/place/time” of descriptive studies.
+Once potential associations have been observed between those who have a particular disease and those who do not, further investigations are undertaken to determine causality and identify effective interventions. The first step in an analytic study is to form some conjecture regarding observed exposures and health outcomes. In analytical studies, this conjecture is termed the null hypothesis, meaning that the default assumption is that there is no association between the exposure in question and the disease outcome. Note that this assumption of no association is made even though the epidemiologist often thinks that some association actually exists. Once the null hypothesis is generated, studies are designed to test it and either reject it (by finding that some association actually does exist between exposure and disease outcome) or accept it (by finding that no association exists).
+Analytical epidemiology is accomplished through either observational studies or interventional studies. In the former, the investigator does not control the exposure between the groups under study and typically cannot randomly assign subjects to study groups.
+
+
+NB:
+Single blinding:
+when the patient does not know if he/she is getting the drug or placebo
+Double blinding:
+where the patient and the dispensing doctor also does not know whether the patient is getting the drug or placebo
+Triple blinding:
+where the patient, dispenser and the person analysing the data also does not know the identity of the groups as the ‘therapy’ or ‘placebo’.
+Validity in Epidemiologic Studies
+Internal validity:  
+Does the study truly measure what it set out to measure? 
+–Bias: Any systematic error (not random or by chance) in a study which leads to an incorrect estimate of the association between an exposure and disease (threat to internal validity) –Chance –Confounding
+External validity:  
+ Can results obtained using the study sample be generalized to a population?
+Principles of Epidemiology  
+Every public health worker should be familiar with the basic principles and also how they are useful:
+Distribution
+Epidemiology is concerned with the frequency and pattern of health events in a population. Frequency includes not only the number of events in a population, but also the rate or risk of disease in the population. Determining the rate of disease occurrences (number of events divided by size of the population) is critical for making valid comparisons across different populations.
+Determinants
+Epidemiology is also used to search for causes and other factors that influence the occurrence of health-related events. The occurrence of a health-related event is usually related to multiple determinants that should be considered. Examples of determinants include host susceptibility to a disease, and opportunity for exposure to a microorganism, environmental toxin, insect vector or other infected individual that may pose a risk for acquiring disease.
+Specified populations 
+Epidemiologists are concerned with the collective health of people in a community or other area and the impact of health events on that population.
+Application 
+Epidemiology provides data for directing public health action. An epidemiologist uses the scientific methods of descriptive and analytic epidemiology in "diagnosing" the health of a community, but also must call upon experience and creativity when planning how to control and prevent disease in the community.
+NB: 
+Epidemiological research provides information that can be used to specify the priority for investigation and action.
+This can be done by:
+Discovering patterns and trends in health problems
+To identify the importance of a given health problem, many studies set their objectives to measure its incidence, prevalence and mortality.
+Also obtaining relative frequency of cases within subgroups will help identify high-risk groups on which we should focus prevention or apply an appropriate solution.
+Epidemiologic triangle and triad (balance beam) 
+The traditional model (epi triad) illustrates that infectious diseases result from the interaction of agent, host, and environment. More specifically, transmission occurs when the agent leaves its reservoir or host through a portal of exit, and is conveyed by some mode of transmission, and enters through an appropriate portal of entry to infect a susceptible host. This is sometimes called the chain of infection   
+
+The mission of the epidemiologist is to break one of the legs of the triangle, which disrupts the connection between environment, host, and agent, stopping the continuation of an outbreak.
+The goals of public health are the control and prevention of disease.
+By breaking one of the legs of the triangle, public health intervention can partially realize these goals and stop epidemics
+An epidemic can be stopped when one of the elements of the triangle is interfered with, altered, changed or removed from existence.
+ The epidemiologic triangle or triad is the traditional model of infectious disease causation. It has three components: an external agent, a susceptible host and an environment that brings the host and agent together. In this model, the environment influences the agent, the host and the route of transmission of the agent from a source to the host. 
+
+
+Disease causation 
+Definition 
+Cause of disease:
+This is an event, condition, characteristic or a combination of these factors which plays an important role in producing the disease.  
+The causes of disease can be classified in to two: 
+i)Primary causes 
+These are the factors which are necessary for a disease to occur, in whose absence the disease will not occur. The term ”etiologic agent” can be used instead of primary cause for Infectious causes of diseases. For example “Mycobacterium tuberculosis” is the primary cause (etiologic agent) of pulmonary tuberculosis. 
+ii)Risk factors (contributing, predisposing, or aggravating factors).    
+These are not the necessary causes of disease but they are important for a disease to occur.  A factor associated with an increased occurrence of a disease is risk factor for the exposed group and a factor associated with a decreased occurrence of a disease is a risk factor for the non- exposed group. Risk factors could be related to the agent, the host and the environment. 
+The etiology of a disease is the sum total of all the factors (primary causes and risk factors) which contribute to the occurrence of the disease.  
+It is the interaction of the agent, the host, and the environment which determines whether or not a disease develops, and this can be illustrated using the epidemiologic triangle.    
+The epidemiologic triangle, depicts the relationship among three key factors in the occurrence of disease or injury: agent, environment, and host. 
+An agent is a factor whose presence or absence, excess or deficit is necessary for a particular disease or injury to occur.  
+The environment includes all external factors, other than the agent, that can influence health.  These factors are further categorized according to whether they belong in the social, physical, or biological environments.   
+The social environment encompasses a broad range of factors, including education, unemployment, culture regarding diet; and many other factors pertaining to political, legal, economic, communications, transportation, and health care systems.   
+Physical environmental factors are factors like climate, terrain, and pollution.   
+Biological environmental influences include vectors, humans and plants serving as reservoirs of infection. 
+From the perspective of epidemiologic triangle, the host, agent, and environment can coexist harmoniously.  Disease and injury occur only when there is altered equilibrium between them.
+Agent factors 
+Agent originally referred to an infectious microorganism E.g virus, bacterium, parasite, or other microbe. Generally, these agents must be present for disease to occur. That is, they are necessary but not always sufficient to cause disease. As epidemiology has been applied to noninfectious conditions, the concept of agent in this model has been broadened to include chemical and physical causes of disease. These include chemical contaminants, such as the l-tryptophan contaminant responsible for eosinophiliamyalgia syndrome, and physical forces, such as repetitive mechanical forces associated with carpal tunnel syndrome. This model does not work well for some noninfectious diseases, because it is not always clear whether a particular factor should be classified as an agent or as an environmental factor.
+Examples of   types of agents
+Biologic: 
+Infectious organisms (bacteria, viruses, fungi, etc); allergens,; vaccines, antibiotics, and foods (e.g. high fat diet)
+Chemical: 
+Chemical toxins (e.g. lead) and dusts , these can cause acute/chronic illness
+Physical: 
+Kinetic energy (bullet wounds, vehicular injuries); radiation; heat; cold; and  noise
+Host factors
+Host factors are intrinsic factors that influence an individual’s exposure, susceptibility, or response to a causative agent.
+Age, race, sex, socioeconomic status, and behaviors (smoking, drug abuse, lifestyle, sexual practices and contraception, eating habits) are just some of the many host factors which affect a person’s likelihood of exposure. 
+Age, genetic composition, nutritional and immunologic status, anatomic structure, presence of disease or medications, and psychological makeup are some of the host factors which affect a person’s susceptibility and response to an agent.  
+Environmental factors 
+ Environmental factors are extrinsic factors which affect the agent and the opportunity for exposure. 
+Generally, environmental factors include physical factors such as geology, climate, and physical surroundings (e.g., a nursing home, hospital); biologic factors such as insects that transmit the agent; and socioeconomic factors such as crowding, sanitation and the availability of health services. 
+Agent, host, and environmental factors interrelate in a variety of complex ways to produce disease in humans. 
+Their balance and interactions are different for different diseases. 
+When we search for causal relationships, we must look at all three components and analyze their interactions to find practical and effective prevention and control measures.  
+CLASSIFICATION OF DISEASE AGENTS
+There are five major types of infectious agents: bacteria, viruses, fungi, protozoa and helminths. In addition, a new class of infectious agents, the prions, has recently been recognized. A brief review of the general characteristics of each of these agents and examples of some diseases they cause is as follows: 
+Bacteria
+Bacteria are unicellular prokaryotic organisms; that is, they have no organized internal membranous structures such as nuclei, mitochondria, or lysosomes. Their genomes are circular, double-stranded DNA that is associated with much less protein than eukaryotic genomes. Most bacteria reproduce by growing and dividing into two cells in a process known as binary fission. Despite these commonalities that group them together in the Kingdom Monera, there is a wide range of diversity among the bacteria.
+There are a variety of morphologies among bacteria, but three of the most common are bacillus (rod-shaped), coccus (spherical), or spirillum (helical rods). The energy sources for bacteria also vary. Some bacteria are photosynthetic and obtain their energy directly from the sun. Others oxidize inorganic compounds to supply their energy needs. Still other bacteria generate energy by breaking down organic compounds such as amino acids and sugars in a respiratory process. Some bacteria require oxygen (aerobes), while others are unable to tolerate it (anaerobes). Some bacteria can grow either with or without oxygen (facultative anaerobes).
+Bacteria are frequently divided into two broad classes based on their cell wall structures, which influences their Gram stain reaction. Gram-negative bacteria appear pink after the staining procedure. Familiar pathogenic gram-negative organisms are Salmonella typhi, which causes typhoid fever, and Yersiniapestis, which causes plague. Gram-positive bacteria appear purple after the Gram stain procedure. Examples of pathogenic gram-positive bacteria are Staphylococcus aureus, which causes skin, respiratory, and wound infections, and Clostridium tetani, which produces a toxin that can be lethal for humans.
+Viruses
+Microbiologists have found viruses that infect all organisms, from plants and animals to fungi and bacteria. Viruses, however, are not organisms themselves because, apart from a host cell, they have no metabolism and cannot reproduce. A virus particle is composed of a viral genome of nucleic acid that is surrounded by a protein coat called a capsid. In addition, many viruses that infect animals are surrounded by an outer lipid envelope, which they acquire from the host cell membrane as they leave the cell. Unlike organisms, in which the genetic material is always double-stranded DNA, viral genomes may be double- or single-stranded DNA (a DNA virus), or double- or single-stranded RNA (an RNA virus).
+In the general process of infection and replication by a DNA virus, a viral particle first attaches to a specific host cell via protein receptors on its outer envelope, or capsid. The viral genome is then inserted into the host cell, where it uses host cell enzymes to replicate its DNA, transcribe the DNA to make messenger RNA, and translate the messenger RNA into viral proteins. The replicated DNA and viral proteins are then assembled into complete viral particles, and the new viruses are released from the host cell. In some cases, virus-derived enzymes destroy the host cell membranes, killing the cell and releasing the new virus particles. In other cases, new virus particles exit the cell by a budding process, weakening but not destroying the cell.
+In the case of some RNA viruses, the genetic material can be used directly as messenger RNA to produce viral proteins, including a special viral RNA polymerase that copies the RNA template to produce the genetic material for new viral particles. Other RNA viruses, called retroviruses, use a unique enzyme called reverse transcriptase to copy the RNA genome into DNA. This DNA then integrates itself into the host cell genome. These viruses frequently exhibit long latent periods in which their genomes are faithfully copied and distributed to progeny cells each time the cell divides. The human immunodeficiency virus (HIV), which causes AIDS, is a familiar example of a retrovirus.
+Just like other infectious agents, viruses cause disease by disrupting normal cell function. They do this in a variety of ways. Some viruses make repressor proteins that stop the synthesis of the host cell's proteins, RNA, and DNA. Viral activity may weaken cell membranes and lysosomal membranes, leading to cell autolysis. Some viral proteins are toxic to cells, and the body's immune defenses also may kill virus-infected cells.
+Viruses are classified using a variety of criteria, including shape, size, and type of genome. Among the DNA viruses are the herpes viruses that cause chicken pox, cold sores, and painful genital lesions, and the poxvirus that causes smallpox. Significant RNA viruses that cause human disease include rhinoviruses that cause most common colds; myxoviruses and paramyxoviruses that cause influenza, measles, and mumps; rotaviruses that cause gastroenteritis; and the retroviruses that cause AIDS and several types of cancer.
+Fungi
+Fungi are eukaryotic, heterotrophic organisms that have rigid cellulose- or chitin-based cell walls and reproduce primarily by forming spores. Most fungi are multicellular, although some, such as yeasts, are unicellular. Together with bacteria, fungi fulfill the indispensable role of decomposers in the environment. Many fungi also infect plants and animals. Examples of diseases caused by fungi are ringworm and histoplasmosis (a mild to severe lung infection transmitted by bat or bird droppings). Yeasts of the Candida genus are opportunistic pathogens that may cause diseases such as vaginal yeast infections and thrush (a throat infection) among people who are immunocompromised or undergoing antibiotic therapy. Antibiotics reduce the bacterial population normally present in the throat and vagina, allowing the yeast to grow unchecked
+Protozoa
+Protozoa are unicellular, heterotrophic eukaryotes that include the familiar amoeba and paramecium. Because protozoa do not have cell walls, they are capable of a variety of rapid and flexible movements. Protozoa can be acquired through contaminated food or water or by the bite of an infected arthropod such as a mosquito. Diarrheal disease in the United States can be caused by two common protozoan parasites, Giardia lamblia and Cryptosporidium parvum. Malaria, a tropical illness that causes 300 million to 500 million cases of disease annually, is caused by several species of the protozoan Plasmodium.
+Helminths
+Helminths are simple, invertebrate animals, some of which are infectious parasites. They are multicellular and have differentiated tissues. Because they are animals, their physiology is similar in some ways to ours. This makes parasitic helminth infections difficult to treat because drugs that kill helminths are frequently very toxic to human cells.
+Many helminths have complex reproductive cycles that include multiple stages, many or all of which require a host. Schistosoma, a flatworm, causes the mild disease swimmer's itch in the United States; another species of Schistosoma causes the much more serious disease schistosomiasis, which is endemic in Africa and Latin America. Schistosome eggs hatch in freshwater, and the resulting larvae infect snails. When the snails shed these larvae, the larvae attach to and penetrate human skin. They feed, grow, and mate in the human bloodstream; the damage to human tissues caused by the accumulating schistosome eggs with their sharp spines results in disease symptoms including diarrhea and abdominal pain. Liver and spleen involvement are common. Another disease due to a helminth is trichinosis, caused by the roundworm Trichinella spiralis. This infectious agent is typically ingested in improperly cooked pork from infected pigs. Early disease symptoms include vomiting, diarrhea, and fever; later symptoms include intense muscle pain because the larvae grow and mature in those tissues. Fatal cases often show congestive heart failure and respiratory paralysis.
+Prions
+During the past two decades, evidence has linked some degenerative disorders of the central nervous system to infectious particles that consist only of protein. These "proteinaceous infectious particles" have been named prions (preeons). The known prion diseases include Creutzfeldt-Jakob disease (CJD) (in humans), scrapie (in sheep), and bovine spongiform encephalopathy ("mad cow disease" in cattle); all known prion diseases frequently result in brain tissue that is riddled with holes. While some prion diseases are inherited, others are apparently due to infection by eating infected tissue or inadvertently through medical procedures such as tissue transplants
+Prion diseases occur when normal prion protein, found on the surface of many cells, becomes abnormal and clump in the brain, causing brain damage. This abnormal accumulation of protein in the brain can cause memory impairment, personality changes, and difficulties with movement. Experts still don't know a lot about prion diseases, but unfortunately, these disorders are generally fatal.
+MEASUREMENTS OF MORBIDITY AND MORTALITY  
+Learning objectives 
+At the end of this unit the learner should be able to: 
+Describe the differences between ratio, proportion and rate 
+Calculate the most important morbidity and mortality measures 
+Measurement of health 
+Epidemiology is mainly a quantitative science and measures of disease frequency are the basic tools of the epidemiological approach. 
+Health status of a community is assessed by the collection, compilation, analysis and interpretation of data on illness (morbidity), death (mortality), disability and utilization of health services. 
+The most basic measure of disease frequency is a simple count of affected individuals. Such information is useful for public health planners and administrators for proper allocation of health care resources in a particular community.  
+However, to investigate distributions and determinants of disease, it is also necessary to know the size of the source population from which affected individuals were counted. 
+One of the central concerns of epidemiology is to find and enumerate appropriate denominators in order to describe and compare groups in a meaningful and useful way. Such measures allow direct comparisons of disease frequencies in two or more groups of individuals.  
+ Ratios, proportions and rates 
+Ratio 
+A ratio quantifies the magnitude of one occurrence or condition to another.  It expresses the relationship between two numbers in the form of  x: y  or   x/y X k  
+Example: 
+The ratio of males to females (M:F) in Kenya. 
+The ratio of male malaria patients to female malaria patients 
+Proportion 
+A proportion quantifies occurrences in relation to the populations in which these occurrences take place. It is a specific type of ratio in which the numerator is included in the denominator and the result is expressed as a percentage.    
+Example: The proportion of all births that was male 
+      Male births               x   100 
+Male + Female births 
+Rate 
+Rate is the most important epidemiological tool used for measuring diseases. Rate is a special form of proportion that includes time.  It is the measure that most clearly expresses probability or risk of disease in a defined population over a specified period of time, hence, it is considered to be a basic measure of disease occurrence.  Accurate count of all events of interest that occur in a defined population during a specified period is essential for the calculation of rate.   
+Rate =        Number of events in a specific period    x    k    
+            Population at risk of these events in a specified Period 
+Example:  The number of newly diagnosed pneumonia cases in 2021 per 1000 under five children. 
+Using Rates in everyday in Community Health Nursing practice
+The following school situation exemplifies the value of rates:
+A community health nurse screened 500 students for Tuberculosis (TB) in Southside School and identified 15 students with newly positive tuberculin tests. The proportion of Southside School students affected was 15/500, or 0.03 (3%), or a rate of 30/1000 students at risk for TB. Concurrently, the nurse conducted screening in North side School and again identified 15 positive tuberculin tests. However, this school was much larger than the Southside School and had 900 potentially at-risk students. To place the number of affected students in perspective relative to the size of the North side School, the nurse calculated a proportion of 15/900, or 0.017 (1.7%), or a rate of 17/1000 students at risk.
+On the basis of this comparison, the nurse concluded that although both schools had equal numbers of tuberculin conversions, Southside School had the greater rate of tuberculin test conversions. To determine if rates are excessively high, the nurse should compare rates with the city, county, and state rates and then explore reasons for the difference in these rates.
+Sometimes a ratio is used to express a relationship between two variables. A ratio is obtained by dividing one quantity by another, and the numerator is not necessarily part of the denominator. For example, a ratio could contrast the number of male births to that of female births. Proportions can describe characteristics of a population. A proportion is often a percentage, and it represents the numerator as part of the denominator.
+Types of Frequency measures – TO BE ADDED TO DEMORGRAPHY
+There are 3 types of measures used in epidemiology:
+Ratio
+Proportion 
+Rate
+All the above 3 measures are based on the same formula.
+Important aspects about this formula:
+The persons in the denominator must reflect the population from which the cases in the numerator arose.
+The counts in the numerator and denominator should cover the same time period.
+In theory, the persons in the denominator must be “at risk” for the event, that is, it should have been possible for them to experience the event.
+Example A
+During the first 10 months of Kenya national surveillance for disease K, Centre for Disease Control (CDC) received 1,068 case reports which specified sex,  893 cases were  females, 175 were males.
+Calculation for the female-to-male ratio for disease K
+1.Define x and y:
+              x = cases in females
+ 		    y = cases in males
+2.Identify x and y:
+               x = 893
+                          y = 175
+3.Set up the ratio x/y:
+              893/175
+4. Reduce the fraction so that either
+                      x or y equals 1: 893/175 = 5.1 to 1
+Thus, there were just over 5 female patients with K disease for each male patient with disease K reported to CDC.
+Example B
+Based on the data in the example A above, calculation for  the proportion of disease K cases that are male is as follows:
+1.Define x and y: 
+                         x = cases in males
+                                    y = all cases
+2.Identify x and y: 
+                        x = 175
+                                   y = 1,068
+3.Set up the ratio x/y:
+                         175/1,068
+4. Reduce the fraction so that either
+                                    x or y equals 1: 175/1,068 = 0.16/1 = 1/6.10
+                                    =1/6.1
+Thus, about 1 out of every 6 reported disease K cases were in males.
+In the first example, we calculated the female-to-male ratio. In the second, we calculated the proportion of cases that were male. Is the female-to-male ratio a proportion?
+Frequently used measures of morbidity
+Measurements of morbidity 
+Morbidity rates are rates used to quantify the occurrence of disease. Measures of morbidity include: 
+incidence
+period prevalence 
+point prevalence rates. 
+Incidence rate  
+The incidence of a disease is defined as the number of new cases of a disease that occur during a specified period of time in a population at risk for developing the disease.  
+Incidence rate =  Number of new cases of a disease over a period of time   X   K
+                                 Total Population during the given period of time 
+The critical element in the definition of incidence is new cases of disease. Because incidence is a measure of new events (i.e. transition from a non-diseased to a diseased state), incidence is a measure of risk. The appropriate denominator for incidence rate is population at risk but knowing the population at risk is difficult at this level. Hence, total population can be used as a denominator. Another important issue in incidence is the issue of time. For incidence to be a measure of risk we must specify a period of time and we must know that all of the individuals in the group represented by the denominator have been followed up for that entire period. The choice of time period is arbitrary: We could calculate incidence rate in one week, one month, one year, 5 years, and so on. Incidence rates can be used to make statements about the risk of disease. If the incidence rate of a certain disease is high in one area, then the risk of acquiring that disease by other healthy individuals will be high. 
+Example. In country K in 2021 there were 50 new cases of relapsing fever in “village X”. The average total population of  “village X” was 5000. Calculate the incidence rate of relapsing fever in “village X” in country K, 2021. 
+Answer- Incidence rate =      50           X 1000 = 10 new cases per 1000 population 
+     5000  
+That means out of every 1000 people living in “village X”, 10 of them acquired relapsing fever in country K, 2021
+Another commonly used measure of morbidity is attack rate. Attack rate is a type of incidence rate which is mainly used during epidemics. 
+Attack rate = No. of new cases of a specific disease reported during an epidemic    X  k 
+                        Total population at risk during the same time  
+On 4th April, 2022,  100 people were invited by a friend for dinner. All of them ate the food that was served for dinner. The next day (5th April, 2022, ) 90 of the 100 people who ate that food developed diarrhea. Calculate the attack rate of diarrhea which occurred on 5th April, 2022.  
+Attack rate =      90      X  100  = 90 cases of diarrhea per 100 people                          
+                                                             100  
+That means out of 100 people who ate the food served at dinner, 90 of them developed diarrhea on 5th April, 2022.  
+Uses incidence rate 
+Incidence rate is important as a fundamental tool for etiologic studies of diseases since it is a direct measure of risk. 
+If the incidence rate is significantly higher in one area, then the cause of that disease can be systematically searched.  
+Prevalence rate  
+Prevalence rate measures the number of people in a population who have a disease at a given time. It includes both new and old cases.  The major type of prevalence is point prevalence rate. 
+Point Prevalence rate: 
+This measures the proportion of a population with a certain condition at a given point in time.   Point prevalence rate can be determined by conducting cross-sectional study.  
+Point Prevalence rate =    All persons with a specific condition  at one point in time    X  
+                                                                       Total population  
+Example: One health care worker conducted a survey in one of the nearby primary schools on  10th  October,  2021 to know the prevalence of trachoma in that school. The total number of students in that school was 200. The health care worker examined all the 200 students for trachoma. 100 students were found to have trachoma. 
+Calculate the point prevalence rate of trachoma for that school.  
+Point prevalence rate=     100    X  100 = 50 trachoma patients per 100 students  
+                                                        200                          
+That means 50 % of the students in that elementary school were affected by trachoma on 10th October , 2021  
+Uses of prevalence rate 
+Planning health facilities and human resource 
+Monitoring chronic disease control programs like tuberculosis control program 
+Incidence Rate 
+Refers to new cases of a specified disease reported during a given time interval
+Attack Rate 
+Refers  to new cases of a specified disease reported during an epidemic period
+Secondary Attack Rate
+Refers to  new cases of a specified disease among contacts of known cases
+Point Prevalence
+Refers to  current cases, new and old, of a specified disease at a given point in time
+Period Prevalence
+Refers to current cases, new and old, of a specified disease identified over a given time interval
+Incidence Rates
+Incidence rates are the most common way of measuring and comparing the frequency of disease in populations. 
+Incidence rates are used instead of raw numbers for comparing disease occurrence in different populations because rates adjust for differences in population sizes.
+The incidence rate expresses the probability or risk of illness in a population over a period of time.
+Since incidence is a measure of risk, when one population has a higher incidence of disease than another, we say that the first population is at a higher risk of developing disease than the second, all other factors being equal. We can also express this by saying that the first population is a high-risk group relative to the second population. 
+An incidence rate (sometimes referred to simply as incidence) is a measure of the frequency with which an event, such as a new case of illness, occurs in a population over a period of time.
+The formula for calculating an incidence rate follows:
+Incidence rate =
+Population at risk during the same time period
+New cases occurring during a given time period            × 10n
+Example
+In 2020, 733,151 new cases of gonorrhea were reported among population B. The 2020 mid-year of  population B  was estimated to be 246,552,000. For these data we will use a value of 105 for 10n
+Calculation  of the 2020 gonorrhea incidence rate for the population B using these data.
+1. Define x and y: x = new cases of gonorrhea in Population B  during 2020
+ y = Population B in  2020
+2. Identify x, y, and 10n
+: x = 733,151
+ y = 246,552,000
+ 10n
+ = 105
+ = 100,000
+3. Calculate (x/y) × 10n
+246,552,000
+733,151 × 105
+ = .002974 × 100,000 = 297.4 per 100,000
+or approximately 3 reported cases per 1,000 population in 2020.
+The numerator of an incidence rate should reflect new cases of disease which occurred or were diagnosed during the specified period. The numerator should not include cases which occurred or were diagnosed earlier.
+Notice that the denominator is the population at risk. This means that persons who are included in the denominator should be able to develop the disease that is being described during the time period covered. Unfortunately, unless we conduct a special study, we usually cannot identify and eliminate persons who are not susceptible to the disease from available population data. In practice, we usually use country’s. Census population counts or estimates for the midpoint of the time period under consideration. If the population being studied is small and very specific, however such as a nursing home population, we can and should use exact denominator data.
+The denominator should represent the population from which the cases in the numerator arose. For surveillance purposes, the population is usually defined geopolitically (e.g., Kenya, County C). The population, however, may be defined by affiliation or membership (e.g., employee of Company X), common experience (underwent childhood thyroid irradiation),or any other characteristic which defines a population appropriate for the cases in the numerator.
+NB:  In the example above that the numerator was limited to civilian cases. Therefore, it was necessary for us to restrict the denominator to civilians as well.
+Attack Rate
+An attack rate is a variant of an incidence rate, applied to a narrowly defined population observed for a limited time, such as during an epidemic. The attack rate is usually expressed as a percent, so 10n  equals 100.
+For a defined population (the population at risk), during a limited time period,
+Attack rate =
+Population at risk at the beginning of the period
+Number of newcases among the population during the period            × 100
+Example
+Of 75 persons who attended a church picnic, 46 subsequently developed gastroenteritis. To calculate the attack rate of gastroenteritis we first define the numerator and denominator:
+x = Cases of gastroenteritis occurring within the incubation period for gastroenteritis among persons who attended the picnic = 46
+y = Number of persons at the picnic = 75
+Then, the attack rate for gastroenteritis is 
+46 × 100 = 61%
+75
+NB:  The attack rate is a proportion , the persons in the numerator are also in the denominator. This proportion is a measure of the probability or risk of becoming a case. In the
+example above, we could say that, among persons who attended the picnic, the probability of developing gastroenteritis was 61%, or the risk of developing gastroenteritis was 61%.
+Secondary Attack Rate
+A secondary attack rate is a measure of the frequency of new cases of a disease among the contacts of known cases. The formula is as follows:
+Secondary attack rate =
+Total number of contact
+Number of cases among contacts of primary cases during the period                          × 10n
+To calculate the total number of household contacts, we usually subtract the number of primary cases from the total number of people residing in those households.
+Example
+Seven cases of hepatitis A occurred among 70 children attending a child care center. Each infected child came from a different family. The total number of persons in the 7 affected families was 32. One incubation period later, 5 family members of the 7 infected children also developed hepatitis A. We will calculate the attack rate in the child care center and the secondary  attack rate among family contacts of those cases.
+1. Attack rate in child care center:
+ x = cases of hepatitis A among children in child care center = 7
+ y = number of children enrolled in the child care center = 70
+Attack rate = x/y x100=7/70 x 100= 10%
+Frequently used measures of mortality
+Measurements of Mortality   
+Mortality rates and ratios measure the occurrence of deaths in a population using different ways. 
+Rates whose denominators are the total population are commonly calculated using either the mid - interval population or the average population. 
+This is done because population size fluctuates over time due to births, deaths and migration.   
+  Some formulas for the commonly used mortality rates and ratios:
+1. Crude Death rate (CDR)  
+CDR =     Total no. of deaths reported during a given time interval  X  1000 
+                                     Estimated mid interval population  
+The Crude Death Rate measures the proportion of the population dying every year, or the number of deaths in the community, per 1000 population. It reflects the risk of death in that community or country. Currently the Crude Death Rate in country C is 12.6 per 1000 population ( MOH). That means out of 1000 total population about 13 people die each year. 
+2. Age- specific mortality rate =  No. of deaths in a specific age group  
+                                                              during a given time     X  1000 
+                                                      Estimated mid interval population of specific age group  
+NB: One example of age specific mortality rate is Infant Mortality Rate. 
+3. Sex- specific mortality rate =       No. of deaths in a specific sex  
+                                                                              during a given time              X   1000 
+                                                        Estimated mid interval population of same sex  
+Example: The average total population of Village Y” in 2021 was 6000 (3500 female & 2500 male). In the same year 300 people died (100 female & 200 male). Calculate the mortality rate (Crude death rate) for females. 
+CDR for females =   100   X 1000   = 29 per 1000 female population 
+                                           3500 
+That means out of 1000 female population living in “village Y”, 29 females died in 2021.  
+4. Proportionate mortality ratio =    No. of deaths from a specific cause   during a given time             x  100 
+Proportional Mortality 
+Refers to deaths assigned to a specific cause during a given time interval
+Cause-specific Death Rate
+These are deaths assigned to a specific cause during a given time interval
+Death-to-Case Ratio 
+Refers to deaths assigned to a specific disease during a given time interval
+Neonatal Mortality Rate 
+Refers to deaths under 28 days of age during a given time interval 
+Post-neonatal Mortality Rate
+Refers to deaths from 28 days to, but not including, 1 year of age, during a given time interval
+Infant Mortality Rate
+ Refers to deaths under 1 year of age during a given time interval
+Maternal Mortality Rate 
+Refers to deaths assigned to pregnancy-related causes during a given time interval
+Crude mortality rate (crude death rate)
+The crude mortality rate is the mortality rate from all causes of death for a population. 
+Sex-specific mortality rate
+A sex-specific mortality rate is a mortality rate among either males or females. Both numerator and denominator are limited to the one sex.
+Race-specific mortality rate
+A race-specific mortality rate is a mortality rate limited to a specified racial group. Both numerator and denominator are limited to the specified race.
+Combinations of specific mortality rates
+Mortality rates can be further refined to combinations that are cause-specific, age-specific, sex-specific, and/or race-specific. 
+E.g, the mortality rate attributed to HIV among 25- to 44-year-olds in country G in 2020 was 9,820 deaths among 77.6 million 25- to 44-yearolds, or 12.7 per 100,000. This is a cause- and age-specific mortality rate, because it is limited to one cause (HIV infection) and one age group (25 to 44 years).
+Age-adjusted mortality rates
+Often, we want to compare the mortality experience of different populations. However, since mortality rates increase with age, a higher mortality rate in one population than in another may simply reflect that the first population is older than the second. Statistical techniques are used to adjust or standardize the rates in the populations to be compared which eliminates the effect of different age distributions in the different populations. Mortality rates computed with these techniques are called age-adjusted or age-standardized mortality rates.
+NATURAL HISTORY OF DISEASE
+The “natural history of disease” refers to the progression of disease process in an individual over time, in the absence of intervention.
+There are 4 stages in the natural history of a disease and these are:
+1. Stage of susceptibility
+2. Stage of pre-symptomatic (sub-clinical) disease
+3. Stage of clinical disease
+4. Stage of disability or death
+1. Stage of susceptibility
+In this stage, disease has not yet developed, but the groundwork has been laid by the presence of factors that favor its occurrence.
+Example: unvaccinated child is susceptible to measles.
+2. Stage of Pre-symptomatic (sub-clinical) disease
+In this stage there are no manifestations of the disease but pathologic changes (damages) have started to occur in the body. The disease can only be detected through special tests since the signs and symptoms of the disease are not present.
+Examples:
+Detection of antibodies against HIV in an apparently healthy person.
+Ova of intestinal parasite in the stool of apparently healthy children.
+The pre-symptomatic (sub-clinical) stage may lead to the clinical stage, or may sometimes end in recovery without development of any signs or symptoms.
+3. The Clinical stage 
+At this stage the person has developed signs and symptoms of the disease. The clinical stage of different diseases differs in duration, severity and outcome. The outcomes of this stage may be recovery, disability or death.
+Examples:
+Common cold has a short and mild clinical stage and almost everyone recovers quickly.  
+Polio has a severe clinical stage and many patients develop paralysis becoming disabled for the rest of their lives.
+Rabies has a relatively short but severe clinical stage and almost always results in death.
+Diabetes Mellitus has a relatively longer clinical stage and eventually results in death if the patient is not properly treated.
+4. Stage of disability or death
+Some diseases run their course and then resolve completely either spontaneously or by treatment. In others the disease may result in a residual defect, leaving the person disabled for a short or longer duration. Still, other diseases will end in death.
+Disability is limitation of a person's activities including his role as a parent, wage earner, etc 
+Examples:
+Trachoma may cause blindness
+Meningitis may result in blindness or deafness. Meningitis may also result in death. 
+Levels of disease
+Are classified into 3 levels:
+Acute  relatively severe, of short duration and often treatable
+usually the patient either recovers or dies
+Sub-acute  intermediate in severity and duration, having some acute aspects to the disease but of longer duration and with a degree of severity that detracts from a complete state of health
+Patient expected to eventually heal
+Chronic less severe but of long and continuous duration, lasting over a long time periods, if not a lifetime
+Patient may not fully recover and the disease can get worse overtime
+Life not immediately threatened, but may be over long term
+Component of infectious  process
+The infectious process of a specific disease can be described by the following components, which constitute of the chain of disease transmission: 
+The Agent   
+Its reservoirs   
+Its portal of exits  
+Its mode of transmission   
+Its portals of entry   
+The human host            
+I. The Agents 
+The agents in the infectious process range from viral particles to complex multi-cellular organisms  
+II. Reservoirs 
+A reservoir is an organism or habitat, in which an infectious agent normally lives, transforms, develops and/or multiplies.  Reservoirs for infectious agents may be humans, animals, plants or other inanimate objects.   
+Some diseases with human reservoirs are: 
+Most bacterial and viral respiratory diseases 
+HIV/AIDS/Sexually Transmitted Infections (STIs), measles, typhoid etc.  
+All infected humans, whether showing signs and symptoms of the disease or not, are potential sources of infection to others. A person who does not have apparent clinical disease, but is a potential source of infection to other people is called a Carrier.  An example of carrier is a person infected with HIV. A person infected with HIV might not have the signs and symptoms but he/she is capable of transmitting the infection to others 
+Some diseases are transmitted to human beings from animals. These diseases are called zoonoses. 
+ Examples: Rabies, anthrax, etc. 
+III. Portal of Exit 
+Portal of exit is the way the infectious agent leaves the reservoir.  Possible portals of exit include all body secretions and discharges: Mucus, saliva, tears, breast milk, vaginal and cervical discharges, excretions (feces and urine), blood, and tissues. For example feces is the portal of exit for the eggs of hook worm.  
+IV. Mode of Transmission 
+Modes of transmission include the various mechanisms by which agents are conveyed to other susceptible hosts.  Transmission may be direct or indirect. 
+ Direct Transmission 
+Direct contact: Occurs when there is contact of skin, mucosa, or conjunctiva with infectious agents directly from person or vertebrate animal, via touching, kissing, biting, passage through the birth canal, or during sexual intercourse. 
+Example: HIV/AIDS/STIs, rabies 
+ Direct Projection: is transmission by projection of saliva droplets during coughing, sneezing, singing, spitting or talking.  
+Example: common cold  
+ Transplacental: is transmission from mother to fetus through the placenta.  
+  Example: syphilis, HIV/AIDS 
+Indirect transmission 
+The following are the different types of indirect transmission:
+ Vehicle-borne: Transmission occurs through indirect contact with inanimate objects fomites: bed sheets, towels, toys, or surgical instruments; as well as through contaminated food, water, IV fluids etc. 
+Vector-borne: The infectious agent is conveyed by an arthropod to a host. Vectors may be 		biological or mechanical. 
+ Biological vector: A vector is called biological vector if the agent multiplies in the vector 			before transmission. 
+ Example: anopheles mosquito is a biological vector for malaria.  
+       Mechanical vector: A vector is called mechanical vector if the agent is directly infective to other hosts, without having to go through a period of multiplication or development in the vector. The vector simply carries the agent by its body parts( leg, proboscis etc) to convey it to susceptible hosts. 
+ Example: Flies are mechanical vectors for the transmission of trachoma. 
+Airborne:  which may occur by dust or droplet nuclei (dried residue of aerosols) 
+ Example: Tuberculosis. When pulmonary tuberculosis patients cough, they emit many aerosols which consists the agents of tuberculosis. When these aerosols dry droplet nuclei will be formed. These droplet nuclei will remain suspended in the air for some time. When another healthy susceptible individual breaths he/she will inhale the droplet nuclei and become infected with tuberculosis. 
+V. Portal of entry - is the site where an infectious agent enters a susceptible host.   
+Examples:   
+Nasal mucosa is portal of entry for common cold 
+Conjunctiva is the portal of entry for trachoma 
+Injury site is portal of entry for tetanus 
+VI. Susceptible human host: The susceptible human host is the final link in the infectious process.  Host susceptibility or resistance can be seen at the individual and at the community level.   
+       Host resistance at the community (population) level is called herd immunity.  Herd immunity can be defined as the resistance of a population to the introduction and spread of an infectious agent, based on the immunity of a high proportion of individual members of the population, thereby lessening the likelihood of a person with a disease coming into contact with susceptibles  
+Example - If 90 % of the children are vaccinated for measles, the remaining 10 % of the children who are not vaccinated might not become infected with measles because most of the children (90 %) are vaccinated. That means transmission from infected person to other susceptible children will not be easier
+Levels of disease occurrence  
+Diseases occur in a community at different levels at a particular point in time. Some diseases are usually present at a predictable level. This is called the expected level. But sometimes they occur in excess of what is expected. The examples of expected level are endemic and hyper endemic. When the disease occur as epidemic, outbreak, and pandemic it is considered as excess of what is expected.   
+Definition of terms related to the level of occurrence of disease  
+1. Endemic:  Presence of a disease at more or less stable level. Malaria is endemic in the 			lowland areas of Kenya 
+2. Hyper endemic: Persistently high level of disease occurrence. 
+3. Sporadic:  Occasional or irregular occurrence of a disease. When diseases occur 			sporadically they may occur as epidemic. 
+4. Epidemic:  The occurrence of disease or other health related condition in excess of the 			usual frequency in a given area or among a specific group of people over a 		particular period of time. 
+5. Outbreak:  Epidemics of shorter duration covering a more limited area.  
+6. Pandemic:  An epidemic involving several countries or continents affecting a large number 		of people.  For example the worldwide occurrence of HIV/AIDS is a 			pandemic. 
+The definition of epidemic indicates that the term can have a broad meaning. It may include any kind of disease or injury including non – infectious diseases. There is no general rule about the number of cases that must exist for a disease to be considered an epidemic. If the number of cases exceeds the expected level on the basis of the past experience of the particular population, then it is an epidemic. It is important to note that this level varies for different diseases and different circumstances. An epidemic may cover a small area within a city, or an entire nation or may have a worldwide distribution. It may encompass any time period ranging from few hours (chemical intoxication, bacterial food poisoning), a few weeks (influenza, hepatitis) to several years (AIDS).  A disease that remains epidemic over many years eventually may be considered endemic. 
+Types of epidemics 
+Epidemics (outbreaks) can be classified according to the method of spread or propagation, nature and length of exposure to the infectious agent, and duration. 
+1. Common source Epidemics:- Disease occurs as a result of exposure of a group of susceptible persons to a common source of a pathogen, often at the same time or within a brief time period. When the exposure is simultaneous, the resulting cases develop within one incubation period of the disease and this is called a point source epidemic. The epidemic curve in a point source epidemic will commonly show a sharp rise and fall. Food borne epidemic following an event where the food was served to many people is a good example of point source epidemic. If the exposure to a common source continues over time it will result in a continuous common source epidemic. A waterborne outbreak that spreads through a contaminated community water supply is an example of a common source epidemic with continuous exposure. The epidemic curve may have a wide peak because of the range of exposures and the range of incubation periods. 
+2. Propagated/ Progressive Epidemics:- The infectious agent is transferred from one host to another. It can occur through direct person to person transmission or it can involve more complex cycles in which the agent must pass through a vector as in  malaria. Propagated spread usually results in an epidemic curve with a relatively gentle upslope and somewhat steeper tail. An outbreak of malaria is a good example of propagated epidemic.  
+When it is difficult to differentiate the two types of epidemics by the epidemic curve, spot map (studying the geographic distribution) can help.  
+3. Mixed Epidemics:- The epidemic begins with a single, common source of an infectious agent with subsequent propagated spread. Many food borne pathogens result in mixed epidemics.  
+Investigation of an Epidemic 
+The purpose is to determine the specific cause or causes of the outbreak at the earliest time and to take appropriate measure directed at controlling the epidemic and preventing future occurrence. The following questions should be answered when investigating an epidemic.  
+What is the etiological agent responsible for the epidemic? 
+What is/are the predominant modes of transmission? 
+What specific source/s of disease can be identified?  
+E.g. human carriers, breeding sites for vectors, etc. 
+What specific practices or environmental deficiencies have contributed to the outbreak? E.g. improper food handling, human made breeding sites for mosquitoes. 
+What is the chain of events that led to the outbreak? 
+E.g. accumulation of susceptible hosts in an area.  
+Uncovering outbreaks 
+Outbreaks are detected in one of the following ways: 
+Through timely analysis of routine surveillance data  
+Report from clinician. 
+Report from the community, either from the affected group or concerned citizen. 
+Steps in epidemic investigation 
+There is no fixed step in the investigation of epidemics but the following step can be considered as one option. 
+1. Prepare for fieldwork.  
+ Before leaving for the field you should be well prepared to under take the investigation.  Preparations can include:  
+Investigator must have the appropriate scientific knowledge, supplies, and equipment to carry out the investigation.  It might be difficult for the health extension worker to fully investigate the epidemic, hence, he/she should inform and involve other high level health professionals from the outset.  
+collect sample questionnaire. 
+arrange transportation and organize personnel matters. 
+clarify your and your team role in the field. Arrange where and when to meet them.  
+2. Verify (confirm) the existence of an epidemic 
+This initial determination is often made on the basis of available data. Compare the number of cases with the past levels to identify whether the present occurrence is in excess of its usual frequency. Instead of comparing absolute numbers it is advisable to compare rates like incidence rate  
+3. Verify (confirm the diagnosis).  
+Always consider whether initial reports are correct. Carry out clinical and laboratory investigations on the reported cases. For example the already collected blood film slides can be seen by laboratory experts to check whether the initial report was correct. It is important to investigate the index case (the first case that comes to the attention of health authorities) and other early cases. The importance of the index case and other early cases for diseases that are known to occur in epidemic form, such as relapsing fever, is as an indication to health authorities of the possible start of an outbreak. The sooner the index case and other early cases are investigated, the greater the opportunity to arrest the outbreak at earliest stage possible. The health extension worker requests support from the Health Office or the nearest Health Center for confirming the diagnosis. 
+4.  Identify and count cases 
+Prepare  “case definition” before starting identification of cases.  
+Case definition is defined as a standard set of criteria to differentiate between cases and non cases. Cases can be one of the following: 
+a). Confirmed / definite: A case with laboratory verification. 
+b). Probable: A case with typical clinical features but without laboratory confirmation. 
+c). Possible: A case with fewer of typical clinical features. 
+Cases can better be identified by active case detection using all available means including house to house visits. They can also be identified by stimulated passive case detection, for example by alerting the public about the epidemic and requesting them to report to the nearest health institution when they have signs and symptoms of that disease. The health extension worker can identify and count cases based on the sign and symptoms of the disease. 
+If there is effective drug for the treatment of that disease, cases can be treated while identifying them. Additionally other control measures can be taken side by side to arrest the epidemic before many people are affected. 
+  5. Describe the epidemic with respect to person, place and time 
+Each case must be defined according to standard epidemiologic parameters: the date of onset of the illness, the place where the person lives or became ill, and the socio-demographic characteristics (age, sex, education level, occupation).  
+The tools to be used when characterizing the epidemic are epidemic curve, spot map and attack rates. 
+Epidemic curve is an important tool for the investigation of disease outbreaks. In epidemic curve the distribution of cases is plotted over time, usually in the form of histogram, with the date of onset of cases on the horizontal axis, and the number of cases corresponding to each date of onset on the vertical axis.  
+Spot map is a map of locality where the outbreak has occurred, on which the location of cases is plotted. The spot map is often helpful in detecting the source of an outbreak. Mapping disease can be done at village, district, regional, and national level. One limitation of spot map is that it does not take into account underlying geographic differences in population density. Thus the spot map needs to be supplemented by calculation of place specific attack rates.  
+Person specific attack rates:  The tool that is important for the analysis of disease outbreaks by personal characteristics is person specific attack rates like attack rates by age, sex, occupation, income, religion etc.  
+6. Identify the causes of the epidemic 
+All factors that can contribute to the occurrence of the epidemic should be assessed. The epidemic investigating team should try to answer questions like: 
+Why did this epidemic occur? 
+Are there many susceptible individuals?  
+Is the temperature favorable for the transmission of the diseases?  
+Are there breeding sites for the breeding of vectors? Etc 
+ Confirmation of the diagnosis can be done by using additional tests which are more accurate. In addition to knowing the etiologic agent, more emphasis should be given to identify the risk factors. Investigate the environmental conditions such as food sanitation, suspected breeding sites, animal reservoirs, according to the type of disease outbreak being investigated. 
+7. Management of epidemic and follow up 
+ Although it is discussed late, intervention must start as soon as possible depending on the specific circumstances.  One might aim control measures at the specific agent, source, or reservoir.  For example, an outbreak might be controlled by destroying contaminated foods, disinfecting contaminated water, or destroying mosquito breeding sites or an infectious food handler could be suspended from the job and treated.  
+General principles in the management of epidemics 
+Management of epidemics requires an urgent and intelligent use of appropriate measures against the spread of the disease.  Action to be taken is dependent on the type of the disease as well as the source of the outbreak.  However, the actions can be generally categorized as presented below to facilitate easy understanding of the strategies: 
+A. Measures directed against the reservoir 
+Understanding the nature of the reservoir is necessary in the selection of an appropriate control methods and their likelihood of success.  The following are examples of control measures against diseases with various reservoirs: 
+i). Domestic animals as reservoir: 
+Immunization. Example – giving anti-rabies vaccine for dogs 
+Destruction of infected animals  e.g anthrax 
+Wild animals as reservoir: 
+post-exposure prophylaxis for human beings- Example: rabies 
+Humans as reservoir: 
+a. Isolation of infected persons.  This is separation of infected persons from non-infected for the period of communicability.  This is not suitable in the control of diseases in which a large proportion are in apparent infection (without signs and symptoms) or in which maximal infectivity precedes overt illness. 
+b. Treatment to make them non-infectious- e.g., tuberculosis. 
+c. Quarantine- is the limitation of freedom of movement of apparently healthy persons or animals who have been exposed to a case of infectious disease. Usually imposed for the duration of the usual maximal incubation period of the disease. 
+NB: Cholera, Plague, and yellow fever are the three internationally quarantinable diseases by 	international agreement. 
+Now quarantine is replaced in some countries by active surveillance of the individuals; maintaining close supervision over possible contacts of ill persons to detect infection or illness promptly; their freedom of movement is not restricted. 
+B. Measures that interrupt the transmission of organisms 
+ Action to prevent transmission of disease by ingestion: 
+i. Purification of water 
+ii. Pasteurization of milk 
+iii. Inspection procedures to ensure safe food supply. 
+iv. Improve housing conditions. 
+Actions to reduce transmission of respiratory infections 
+include ventilation of rooms. 
+ In the case of diseases that involve an intermediate host for transmission, for example schistosomiasis, clearing irrigation farms from snails is an appropriate measure. 
+C. Measures that reduce host susceptibility 
+ Immunization (vaccination). Example vaccination for meningitis 
+Chemoprophylaxis: for example, use of chloroquine to persons traveling to malaria endemic areas. 
+ After the epidemic is controlled, strict follow up mechanisms should be designed so as to prevent similar epidemics in the future. 
+8. Report of the investigation   
+At the end prepare a comprehensive report and submit to the appropriate/concerned bodies like  X Health Office. The report should follow the usual scientific format: introduction, methods, results, discussion, and recommendations. 
+The report should discuss in detail: 
+Factors leading to the epidemic. 
+Measures used for the control of the epidemic. 
+Recommendations for the prevention of similar episodes in the future.
+
+LEVELS OF DISEASE PREVENTION
+The major purpose in investigating the epidemiology of diseases is to learn how to prevent and control them. Disease prevention means to interrupt or slow the progression of disease. Epidemiology plays a central role in disease prevention by identifying those modifiable causes.
+There are three levels of prevention:
+1)Primary prevention:
+The main objectives of primary prevention are promoting health, preventing exposure and preventing disease. Primary prevention keeps the disease process from becoming established by eliminating causes of disease or increasing resistance to disease.
+Primary prevention has 3 components. These are health promotion, prevention of exposure and prevention of disease.
+A. Health promotion:
+consists of general non-specific interventions that enhance health and the body's ability to resist disease.
+     E.g Improvement of socioeconomic status, provision of adequate food, housing, clothing, and education are examples of health promotion.
+B. Prevention of exposure:
+This is the avoidance of factors which may cause disease if an individual is exposed to them. 
+Examples can be provision of safe and adequate water, proper excreta disposal, and vector control.
+C. Prevention of disease:
+— is the prevention of disease development after the individual has become exposed to the disease causing factors
+—Immunization is an example of prevention of disease. Immunization acts after exposure has taken place.
+—Immunization does not prevent an infectious organism from invading the immunized host, but does prevent it from establishing an infection.
+—If we take measles vaccine, it will not prevent the virus from entering to the body but it prevents the development of infection/disease.
+2)Secondary prevention:
+The objective of secondary prevention is to stop or slow the progression of disease so as to prevent or limit permanent damage. Secondary prevention can be achieved through detecting people who already have the disease as early as possible and treat them.
+It is carried out before the person is permanently damaged.
+Examples:
+Prevention of blindness from Trachoma
+Early detection and treatment of breast cancer to prevent its progression to the invasive stage, which is the severe form of the disease. 
+3)Tertiary prevention:
+– is targeted towards people with permanent damage or disability. Tertiary prevention is needed in some diseases because primary and secondary preventions have failed, and in others because primary and secondary prevention are not effective. It has two objectives:
+Treatment to prevent further disability or death 
+To limit the physical, psychological, social, and financial impact of disability, thereby improving the quality of life. This can be done through rehabilitation, which is the retraining of the remaining functions for maximal effectiveness.
+Example: When a person becomes blind due to vitamin A deficiency, tertiary prevention (rehabilitation) can help the blind or partly blind person learn to do gainful work and be economically self supporting.
+General principles of preventing transmission
+Case management
+1.Verify the diagnosis:
+ It is very important to promptly establish or verify the etiologic agent responsible for the disease. For many diseases reported by physicians or others, there are often little or no laboratory data initially available to verify the diagnosis. Since control efforts depend on the exact diagnosis, it is important to: 
+(a) determine if this information exists 
+(b) arrange for laboratory tests if the information does not otherwise exist
+ (c) make the best guess about diagnosis if it cannot be obtained
+2.Determine if the case is infectious or possibly infectious: 
+If the case is still infectious, you must identify available measures for preventing transmission. There are two ways to assess the case's infectivity:
+estimation
+uses the date of onset of illness, dates of known treatment, and known periods of infectiousness for an illness. E.g, hepatitis A is no longer infectious after 1 week of the onset of symptoms. Strep throat is no longer infectious after 24 hours of treatment.
+verification
+requires laboratory testing of specimens for the case (E.g, a stool specimen for a food-handler with salmonellosis). Which method you use depends upon the disease (the period of communicability for some diseases is precise; for others it is not precise), the quality of information about the case (e.g., is date of onset known?), and the need to know definitely whether the case is infectious.
+In practice, because of delays in diagnosis and reporting, many cases will have passed the infectious stage by the time they are reported. In this instance, the opportunity to prevent transmission is lost, but preventive efforts can be directed to the case's contacts, and other purposes of case investigation can be fulfilled. You may need to contact the physician to fill in information about the case, determine results of laboratory tests, or arrange for tests. Also ask about similar cases for which a report may be pending.
+3.Minimize the duration of the case's infectivity: 
+Drugs (antimicrobials) are the most important means to shorten the duration of infectivity for many diseases. Usually, decisions about drug treatment will be made by the time you investigate. However, sometimes it may be necessary to work with the patient and physician to ensure the patient is appropriately treated.
+4.Put into effect practices for preventing transmission: 
+These practices depend upon the disease and other circumstances. If the disease warrants, the case may have to employ these practices while ill and for a period after recovery during which (s)he is still infectious:
+disinfect and dispose of contaminated material (e.g., blood, saliva, feces, urine, eating utensils, bedding, clothes, toys, etc.)
+disinfect the case, clothing, bedding, etc. (e.g., lice)
+encourage behavioral practices of the case (e.g., hand-washing, covering the nose and mouth when coughing/sneezing, protecting lesions from contact with another person. Also, there may be a need for changes if individual is a food-handler.)
+isolate the case -  the duration and degree depends upon the illness
+Contact management
+1.Determine the risk of infection to contacts: 
+What is the frequency, duration and dosage of the exposure? Often, these characteristics can only be described vaguely. It is usually reasonable to assume persons living in the same household had opportunity for exposure.
+Is the contact susceptible? Has the person been vaccinated, or previously infected? Is there evidence of a compromised immune system (surgery, steroids, etc.)? Does the disease result in immunity or are people generally susceptible?
+2.Determine if the contact is ill or infected: 
+Look for clinical signs or symptoms. It is important to know if the contact is in the early stages of an illness or asymptomatic infected, you must rely on the laboratory. If you determine that a contact is ill or infected, manage him/her as a case.
+3.Prevent illness in susceptible: 
+It may be useful for you to think of contacts in two ways: Those who have been exposed, and those who might yet be exposed, either to the original source or to a contact who subsequently acquires an infection.
+The choice of the preventive measure depends upon the disease. Rapid identification of susceptibles is important. Remember, vaccines usually require a time period greater than one incubation period to develop antibody. Therefore, they rarely prevent illness in the first generation of contacts. They can, however prevent illness in later generations. Immune globulins must be given within a few days of contact to prevent or modify an infection, but they provide only short-term protection. Antimicrobials are particularly important for contacts exposed to strep, tuberculosis and meningitis.
+Limit the activities of exposed persons -- sometimes it may be prudent to recommend cessation of contact between the contact and the source. Another example is quarantining exposed persons to protect others not yet exposed.
+Conduct personal surveillance of the exposed person, it may be important to call an exposed person by the end of the maximum incubation period to see if (s)he is ill (e.g., for hepatitis A), or simply ask the contact to call you if (s)he develops symptoms. The intensity of the surveillance depends upon the importance attached to preventing transmission from that person
+INTEGRATED  DISEASE SURVEILLANCE AND RESPONSE (IDSR) 
+In 1998, the World Health Organization (WHO) Regional Office for Africa (AFRO), together with its technical partners, adopted a strategy for developing and implementing comprehensive public health surveillance and response systems in African countries, initially called Integrated Disease Surveillance. However, to highlight the linkage between surveillance and response, the strategy was later renamed Integrated Disease Surveillance and Response (IDSR). 
+The coming into force in 2007, of the International Health Regulations (IHR 2005), the emergence of new diseases, conditions and events and the formulation of strategies for disaster risk management (DRM) resulted in the need to revise the first edition of the IDSR guidelines. Also a need to address the increasing burden of non-communicable diseases.
+Also, community-based surveillance for early detection, rapid confirmation and response to public health threats had to be enhanced, while alignment with broader system strengthening objectives was necessary and all this led to the development of the second edition of the IDSR guidelines in 2010.
+The guidelines should be used by:
+Health workers at all levels (including surveillance officers, clinicians, laboratory 	personnel and public health workers)
+Provincial and district health teams
+Data managers
+IHR national focal points and other sectors implementing IHR 
+Competent authorities at points of entry (PoE)
+Veterinary and wildlife health officers 
+Environmental health officers
+ Health training institutions
+Supply chain officers
+Other public health experts, including nongovernmental organizations (NGOs)
+The guidelines are intended for use as:
+A general reference for surveillance activities at all levels 
+A set of standard definitions for threshold levels that initiate action for responding to 	specific diseases
+A stand-alone reference for level-specific responsibilities
+A resource for developing training, supervision, monitoring and evaluation of surveillance activities
+A guide for improving early detection and response to epidemic-prone diseases
+NB: The guidelines are to strengthen capacities for preparedness, alert and response for 	health security throughout the WHO African Region.
+The purpose of revising these IDSR technical guidelines was to:
+ Align with the current situation and needs of the Member States.
+ Align with the objectives, targets and elements of the WHO Africa Region’s strategy for 	health security and emergencies 2016–2020.
+ Update the guidelines with contemporary information, taking into consideration new developments such as: emerging and re-emerging priority diseases, conditions and events. 
+ Incorporate recent recommendations from expert panels on strengthening the IHR, 2005 	that are underpinned on the One Health approach. 
+ Holistically address disaster risk management (DRM) strategies.
+ Take into account lessons learnt from the unprecedented EVD outbreak in West Africa, polio eradication and other humanitarian crises. 
+Take advantage of technology advancement and utilize the opportunities offered by the internet and mobile phones to scale up the implementation of real time community event-based surveillance (CEBS), with robust geographical 	information system (GIS) platforms.
+Scale up other electronic surveillance systems and incorporate new ways for capacity building using the IDSR eLearning tools.
+NB: 
+Meeting for final draft (3rd ) was held in March, 2018.
+It is also important to emphasize from the outset that these guidelines are to help build and strengthen surveillance systems for priority diseases, conditions and all other public health events, whether they are known or unknown, whether they are disease events or other IHR hazards. These guidelines are NOT limited to only known diseases.
+Disease surveillance usually begins with descriptive epidemiology i.e defining the what, who, when and where of health-related events.
+What
+ - Define the disease events and/or its determinants
+who 
+Descriptions of demographic characteristics are helpful in determining which groups are at risk for some outcome. The demographic characteristics usually include age, sex and race/ethnicity. Other categories include socioeconomic status, history of occupation, or smoking habits, which provide useful information about exposures that may present a risk. A history of underlying diseases may be useful for determining susceptibility to certain conditions.
+When
+Following changes in disease rates over time, following long-term disease trends and knowledge of the seasonality of certain diseases helps identify unusual occurrences that may define epidemics. Temporal associations between particular exposures on illness give information about incubation periods and exposures posing a risk to others.
+where 
+Insight into the geographical extent of health-related events gives an idea of where the agent that causes a disease normally lives and multiplies, what may carry or transmit it and how it spreads.
+Objectives of IDSR
+Broad objective.
+To improve countries’ abilities to detect, report, confirm and effectively respond to high-priority communicable and non-communicable diseases. 
+Specific objectives:
+Strengthen the capacity of countries to conduct effective surveillance activities: train personnel at all levels; develop and carry out plans of action; and advocate and mobilize resources.
+Increase involvement of clinicians and other cadres of health staff in surveillance activities.
+Integrate multiple surveillance systems so that tools, personnel and resources are used more efficiently.
+ Improve the triangulation and use of information to detect changes in trend in order to conduct a rapid response to suspected and confirmed outbreaks; monitor the impact of interventions (for example, declining incidence, 	spread, and case fatality); and facilitate evidence-based response to public health events; health policy design; planning; and management. 
+Improve the flow of surveillance information between and within levels of the health system, using electronic tools.
+Build strong laboratory systems and networks at national, regional/province and district levels, to confirm pathogens and other hazards, monitor drug sensitivity and increase efficacy of point-of-care tests.
+Trigger epidemiological investigations of reported public health problems and implementation of effective public health interventions. 
+Mount an effective response to public health emergencies. 
+Emphasize community participation in detection, reporting and response to public health problems, including case-based and event-based surveillance and response and risk communication in line with International Health Regulations. 
+ The integrated disease surveillance system
+The integrated disease surveillance system is a relatively new strategy, which is being implemented in Ethiopia. In this strategy several activities from the different vertical programs are coordinated and streamlined in order to make best use of scarce resources. The activities are combined taking advantage of similar surveillance functions, skills, resources, and target population.
+Integrated disease surveillance strategy recommends coordination and integration of surveillance activities for diseases of public health importance.
+Three types of disease surveillance systems:
+a)Facility-Based Routine Surveillance
+This is where health workers are required to report on the number of individuals that come to their facility and are diagnosed with notifiable diseases. The process of detecting and reporting information on diseases that bring patients to the health facility is known as passive surveillance.
+b)Community-Based Surveillance
+This is where with proper training, members of the community can expand facility-based surveillance by detecting and reporting cases that may go undetected by the health facility.
+c)Sentinel Surveillance
+This is the collection and analysis of data by designated institutions selected for their geographical location, medical specialty and ability to accurately diagnose and report high quality data
+	
+Diseases included in the integrated disease surveillance system
+Different communicable diseases and conditions are selected for integrated disease surveillance in various countries globally amongst the most prevalent health problems in that particular country
+E.g Among the most prevalent health problems in Ethiopia are  21 (twenty one) communicable diseases and conditions  and are selected for integrated disease surveillance  for implementation. The diseases are recommended because they fall into one or more of the following categories: 
+Are top causes of high morbidity and mortality in Ethiopia (for example, malaria, pneumonia, diarrheal diseases, tuberculosis, and HIV/AIDS)
+Have epidemic potential (for example yellow fever and cholera)
+Surveillance required internationally (for example plague, yellow fever and cholera)
+Have available effective control and prevention interventions for addressing the public health problem they pose (for example schistosomiasis, onchocerciasis, trypanosomiasis)
+Can easily be identified using simple case definition
+Have intervention programs for prevention, control, eradication or elimination of the diseases (for example EPI and Integrated Management of Childhood Illness Strategy (IMCI)
+What takes place in an integrated system?
+All surveillance activities are coordinated and streamlined. Rather than using scarce resources to maintain multiple surveillance systems with separate vertical activities, resources are combined to collect, manage and analyse information at a single focal point at each level. 
+Several activities are combined into one integrated activity, and take advantage of similar surveillance functions, skills, resources and target populations. For example, surveillance activities for Acute Flaccid Paralysis (AFP) often address surveillance for neonatal tetanus, measles and other vaccine preventable diseases (VPDs) or any unusual events. Thus, health workers who routinely visit health facilities to search for AFP cases also review district and health facility records for information about other priority diseases in the area. Community focal persons interact with their community members on a regular basis and ask about a range of diseases, conditions and events. Communities know they can bring anything unusual to the attention of their focal persons. 
+The district level is the hub and focus for integrating surveillance functions. It is the first level in the local health system. It has dedicated staff for all aspects of public health, such as planning, supporting implementation of the National Health Strategy Plan, monitoring health events in the health facility and the community, mobilizing community action, seeking assistance at the national level, and accessing regional resources for protecting at the district level. Similar functions also occur at the various administrative levels.
+ Surveillance focal points at the district, regional and national levels collaborate with emergency response committees at each level to plan relevant public health response actions and actively seek opportunities for combining resources.
+ The focus is on the creation of an overall public health surveillance system with sufficient capacity for detecting, confirming and responding to diseases, conditions and events. IDSR ensures that the information flow is bi-directional (horizontal and vertical), so that each level is informed promptly of potential outbreaks and response interventions. Information flow should also reach adjoining communities and districts. 
+Integration refers to the efficient use of human resources, and harmonizing different methods, software, data collection forms, standards and case definitions in order to prevent inconsistent information and maximize efforts among all disease prevention and control programmes and stakeholders. Where possible, countries use a common reporting form, a single data entry system for multiple diseases, and common communication channels. Training and supervision are integrated, a common feedback bulletin is used, and other resources ,such as computers and vehicles are shared. IDSR involves full-time coordination of surveillance activities and joint action (planning, implementation, monitoring and evaluation), whenever possible and useful.
+ Coordination refers to working or acting together effectively for the rational and efficient use of available, but limited resources ,such as the Health Management Information System and various disease programmes. Coordination  involves information sharing, joint planning, monitoring and evaluation to provide accurate, consistent and relevant data and information to policy-makers and stakeholders at district, provincial/regional and national levels. 
+ Epidemiological surveillance
+Surveillance is defined as the continuous (ongoing) scrutiny of the factors that determine the occurrence and distribution of diseases and other health related events through a systematic collection of data.
+ Purpose of surveillance
+To be able to identify diseases, injuries, hazards and other health related factors as early as possible, i.e. prediction and early detection of outbreaks. 
+To provide scientific baseline data and information for priority setting, planning, implementing and evaluating disease control program for both communicable and non-communicable health problems.
+To define the magnitude and distribution of diseases by time, person and place dimension.
+Disease surveillance importance
+Surveillance systems generate data that help public health officials understand existing and emerging infectious and non-infectious diseases E.g information on etiology, distribution and mechanism of infection
+Why is surveillance needed?
+Serves as an early warning system
+Identifies health emergencies
+Guide public health policy and strategies
+Document impact of a intervention or progress towards specified public health targets/goals
+Monitor the epidemiology of a condition to set priorities and guide public health policy and strategies
+An effective surveillance system has the following functions:
+Detection and notification of health events
+Collection and consolidation of pertinent data
+Investigation and confirmation ( epidemiological, clinical/ or laboratory) cases or outbreaks
+Routine analysis and creation of reports
+Feedback of information to those providing the data
+Feed-forward( i.e the forwarding of data to more central levels)
+Reporting data to the next administrative level
+Purposes of communicable diseases investigation
+The purpose of investigating communicable disease is to: 
+Prevent transmission from cases to contacts
+Identify the source of the disease. The source may be in the environment, a food or another person. Its identification can lead to control
+Identify other cases. It is important to question the reported case about others who have been exposed or who have similar symptoms
+Conduct surveillance. Information collected when investigating a reported disease can be examined on a state or regional basis to identify outbreaks or trends and to formulate policy
+Ensure that the patient has adequate medical supervision. The responsibility include making sure the patient is catered for and understands the consequences of his illness. Where medical care is inadequate, appropriate referrals should be made
+Steps in carrying out surveillance
+1.Reporting: 
+The data has to be recorded. Usually by health care providers who provide clinical care, E.g nurses, doctors, clinical officers etc. They complete a form recording various bits of information concerning patients seen/ reviewed in their practice
+2.Data accumulation: 
+This the collection of the data from all the reporters and putting together
+3.Data analysis:
+ This is calculation of E.g disease rates, changes in disease rates, etc using the collected data
+4.Judgement and action: 
+This is deciding what needs to be done based on the results of the analysis
+When to do Surveillance 
+When continuous data to make immediate clinical and public health decisions is needed
+When the basic infrastructure and people are available to gather, transmit and analyse the data
+When the resources to take action based on the data are available and ready
+Types of surveillance
+The two common types of surveillance are passive and active surveillance.
+a)Passive surveillance
+Passive surveillance may be defined as a mechanism for routine surveillance based on passive case detection and on the routine recording and reporting system. The information provider comes to the health institutions for help, be it 	medical or other preventive and promotive health services. It involves collection of data as part of routine provision of health services.
+ A system whereby a health institution receives routine reports submitted from health facilities, such as hospitals, clinics and public health units, the community or other sources. There is no active search for cases.
+This is the most common form of surveillance, which includes the surveillance of diseases and other public health events using routine surveillance; routine health management and information system or any other public health information system.
+Advantages of passive surveillance
+covers a wide range of problems
+does not require special arrangement
+it is relatively cheap 
+ covers a wider area
+The disadvantages of passive surveillance
+The information generated is to a large extent unreliable, incomplete and inaccurate
+Most of the time, data from passive surveillance is not available on time
+Most of the time, you may not get the kind of information you desire
+It lacks representativeness of the whole population since passive surveillance is mainly based on health institution reports
+b)Active surveillance
+Active surveillance is defined as a method of data collection usually on a specific disease, for relatively limited period of time. It involves collection of data from communities such as in house-to-house surveys or mobilizing communities to some central point where data can be collected. This can be arranged by assigning health personnel to collect information on presence or absence of new cases of a particular disease at regular intervals.
+It involves an on-going search for cases in the community or health facilities. This may involve regular contacts with key reporting sources, by making telephone calls to health care workers at a facility or laboratory or physically moving to the source and carrying out record review of data. Examples include active search for cases of measles and polio, including during outbreaks, where mechanisms must be put in place for active finding of additional cases.
+Example: investigation of out-breaks 
+The advantages of active surveillance
+the collected data is complete and accurate
+information collected is timely.
+The disadvantages of active surveillance
+ it requires good organization,
+ it is expensive
+ it requires skilled human power
+ it is for short period of time(not a continuous process)
+it is directed towards specific disease conditions
+c)Integrated disease surveillance. 
+It is an approach that aims at collecting health data for multiple diseases, using standardized tools. To ensure robust early warning and prompt response, the IDSR data collection and analysis system relies on two main channels of information or signal generation: Indicator-based surveillance (IBS); and event-based surveillance (EBS).
+Conditions in which active surveillance is appropriate
+Active surveillance has limited scope. Unlike passive surveillance, it cannot be used for routine purposes. There are certain conditions where active surveillance is appropriate. These conditions are:
+ For periodic evaluation of an ongoing program
+For programs with limited time of operation such as eradication program 
+ In unusual situations such as:
+New disease discovery
+ New mode of transmission
+When a disease is found to affect a new subgroup of the population.
+When a previously eradicated disease reappears.
+Activities in surveillance
+The different activities carried out under surveillance are:
+Data collection and recording
+Data compilation, analysis and interpretation
+Reporting and notification
+Dissemination of information
+ Features of a good surveillance system
+Using a combination of both active and passive surveillance techniques
+Timely notification
+Timely and comprehensive action taken in response to notification 
+Availability of a strong laboratory service for accurate diagnoses of cases
+General guidelines for outbreak investigations
+The first action of a health agency when it receives a report of a case or a cluster of cases of a disease is to investigate. The investigation may be anything from a limited phone call to confirm reported information, or it may be as extensive as a field investigation coordinating the efforts of many people to determine the extent and cause of a large outbreak.
+Outbreaks may be detected when routine, timely analysis of surveillance data reveals an increase in reported cases or an unusual clustering of cases. In South Carolina, for example, the weekly tabulation of disease reports by county is a useful way to monitor trends, evaluate geographical distribution throughout the state and identify possible clusters.
+Why do we investigate outbreaks?
+The health agency has a responsibility to institute control and prevention measures. Outbreak investigations may be considered as opportunities to study disease events and are training exercises for those conducting the investigation. If cases are continuing to occur, the goal may be to prevent additional cases. If an outbreak appears to be almost over, the goal may be to prevent outbreaks in the future. The objective here would be to identify factors which contributed to the outbreak to implement measures that would prevent serious outbreaks in the future. Other concerns like public relations, political concerns and legal obligations may also need to be considered.
+Steps in the investigation
+Prepare for field work - talk to others with experience, review the literature.
+Establish the existence of an outbreak - An outbreak or epidemic is the occurrence of more cases of disease than expected in a given area or among a specific group of people over a particular period of time. A cluster is an aggregation of cases in a given area over a particular period without regard to whether the number of cases is more than expected. Defining an epidemic requires that one determine what the expected number of cases would be usually from existing surveillance data. Some reasons for a "false" epidemic may be reports of sporadic cases of unrelated cases of the same disease, reports of similar cases but unrelated diseases, or changes in surveillance or reporting procedures.
+Verify the diagnosis - Collect clinical information, contact the diagnosing physician, confirm results of laboratory tests done.
+Define and identify cases - Establish a case definition for the disease using a standard set of criteria for deciding whether an individual should be classified as having the health condition of interest.
+Perform descriptive epidemiology - Collect information to characterize an outbreak by time, place and person. Remember the what, who, when and where of descriptive epidemiology.
+Develop hypotheses - After collecting some of the initial information characterizing the outbreak, one should be able to formulate a hypothesis that addresses the source of the agent, the mode (and vehicle or vector) of transmission, and the exposures that caused the disease.
+Evaluate hypotheses - Compare your hypothesis with the established facts. Is it plausible and consistent? If not, the hypothesis should be revised.
+As necessary, reconsider/refine hypotheses and execute additional studies.
+Implement control and prevention measures - This is the primary goal of most outbreak investigations. Although mentioned far down on the list, prevention and control measures should be implemented as soon as possible in an outbreak setting. This may be accomplished by destroying contaminated foods, removing an infected food-handler from the job, or immunizing and providing prophylaxis to a population at risk.
+Communicate findings - An oral briefing or a written report are always useful to summarize an investigation. Formally presenting recommendations provides a blueprint for action and may serve in the health agency as a reference if the health agency encounters a similar situation in the future.
+Data collection guidelines
+Line listings. Traditionally we collect data on a standard case report form or questionnaire. A separate sheet of information from each person interviewed often makes synthesizing the data difficult. To create a line listing, critical items are selected from the data collection form and are organized so that data from multiple cases can be entered in columns on a single sheet to summarize the data. In a line listing, each column represents an important variable, such as name or identification number, age, sex, case classification, etc., while each row represents a different case.
+The epidemic curve. The "epi" curve serves as a map of an epidemic. It provides a simple visual display of the outbreak's magnitude and time trend. Although simple it provides a great deal of information about an epidemic. You will usually be able to tell where you are in the time course of an epidemic, and what the future course might be. If you have identified the disease and know its usual incubation period, you usually can deduce a probable time period of exposure and can develop a questionnaire focusing on that time period. Finally, you may be able to draw inferences about the epidemic pattern -- whether it is common source or propagated, or both. Drawing an epidemic curve, plotting time on the x axis and the number of cases on the y axis, will provide additional clues in furthering the investigation. Mapping of individual cases should be done by their date of onset. Changing the unit of time on the x axis may be necessary to best "see" the outbreak. This will depend on the incubation period of the disease you are dealing with.
+Public Health Surveillance is the on-going systematic identification, collection, collation, analysis and interpretation of disease occurrence and public health event data, for the purposes of taking timely and robust action, such as disseminating the resulting information to the relevant people, for effective and appropriate action. 
+Surveillance is also essential for planning, implementation, monitoring and evaluation of public health practice. WHO AFRO has decided to achieve its public health surveillance objectives through the implementation of the IDSR strategy 
+ Definition of the different types/approaches of public health surveillance  
+(a)Passive surveillance
+A system whereby a health institution receives routine reports submitted from health facilities, such as hospitals, clinics and public health units, the community or other sources. There is no active search for cases. This is the most common form of surveillance, which includes the surveillance of diseases and other public health events using routine surveillance; routine health management and information system or any other public health information system.  
+(b)Active surveillance 
+It involves an on-going search for cases in the community or health facilities. This may involve regular contacts with key reporting sources, by making telephone calls to health care workers at a facility or laboratory or physically moving to the source and carrying out record review of data. Examples include active search for cases of measles and polio, including during outbreaks, where mechanisms must be put in place for active finding of additional cases 
+(c)Integrated disease surveillance
+It is an approach that aims at collecting health data for multiple diseases, using standardized tools. To ensure robust early warning and prompt response, the IDSR data collection and analysis system relies on two main channels of information or signal generation:
+Indicator-based surveillance (IBS)
+Event-based surveillance (EBS).  
+Indicator-based surveillance   
+This is the systematic (regular) identification, collection, monitoring, analysis and interpretation of structured data, such as indicators produced by well-identified, mostly health-based formal sources.  
+The common methods of indicator-based surveillance
+(a)Facility-based surveillance
+All reporting units, such as health facilities, are required to report on a weekly, monthly, quarterly or annual basis to the next level, based on the categories of the diseases, conditions and events. Additionally, they are also required to report any epidemic-prone disease to the next level immediately
+(b)Case-based surveillance
+ This involves the on-going and rapid identification of identifiable cases for the purpose of case follow-up. It is the type of surveillance used for diseases targeted for elimination or eradication or during confirmed outbreaks. In these scenarios, every individual case identified is reported immediately to the next level, using a case-based form.  
+(c)Sentinel surveillance
+This type of surveillance is done for specific conditions in a specific cohort, such as a geographical area or population subgroup, to estimate trends in a larger population. A given number of health facilities or reporting sites are usually designated as sentinel sites for monitoring the rate of occurrence of priority events such as pandemic or epidemic events and other health events of public health importance, where they act as early warning and reporting sites. Sentinel sites are usually designated because they are representative of an area or are in an area of likely risk for a disease or condition of concern. Examples of sentinel surveillance include sentinel surveillance for influenza, rotavirus, paediatric bacterial meningitis, and environmental sewage sampling for polio.  
+(d)Syndromic surveillance
+This is an active or passive system that uses Standard Case Definitions, based entirely on clinical features, without any laboratory diagnosis. Examples of these are: collecting the number of cases of Acute Flaccid Paralysis (AFP) as an alert for polio; acute watery diarrhoea among people aged two years and older as an alert for cholera; “rash illness” as an alert for measles; acute haemorrhagic fever as an alert for viral haemorrhagic diseases, or severe acute respiratory infection or influenza-like illness as alerts for influenza. Because of the lack of specificity of this system, reports require more investigation from higher levels. 
+(e)Laboratory-based surveillance. 
+This consists of surveillance conducted at laboratories to detect events or trends, which may not be seen as a problem at other locations or originate from laboratory testing, mainly done routinely or used when conducting sentinel surveillance. Laboratories can be the source of an initial alert for a specific outbreak or public health event that necessitates further epidemiological investigations. For example, the laboratory may be the first to detect the emergence of resistant strains, such as multi-drug resistant tuberculosis, in the community. Other examples of laboratory-based surveillance are virological surveillance for influenza and bacteriological surveillance under the antimicrobial resistance surveillance system. Recently, WHO established a global antimicrobial resistance surveillance system (GLASS) for clinical specimens, which is focusing initially on priority human bacterial infections namely E. coli, K. pneumonia, S. aureus, S. pneumoniae, Salmonella spp., Shigella spp and N. gonorrheae. This type of laboratory surveillance provides information about antimicrobial resistance incidence, prevalence and trends.
+(f)Disease-specific surveillance 
+This involves surveillance activities aimed at targeted health data for a specific disease for vertical surveillance. Examples include tuberculosis, malaria and HIV surveillance systems. 
+(g)Community-based surveillance (CBS) 
+This is defined as the systematic detection and reporting of events of public health significance within the community by community members. CBS incorporates both indicator-based and event-based surveillance methods.  Under CBS, focal persons are identified to report cases or events to the designated focal point at nearby local health delivery points. Community-based surveillance strategies focus on two approaches to collect community information. The first one relies on identifying and reporting events based on agreed indicators (lay case definitions). For example, trusted community members are trained to identify diseases such as measles, cholera, polio and Guinea worm, using community (lay) case definition and use the standardized reporting system to the next level. The second strategy relies on reporting of unusual events (alerts) which can alert the early stages of an outbreak or any other public health threat in the community. Alerts may capture a wide variety of unusual events emerging at the community level, and information from these alerts may be incomplete and unconfirmed and as such, need to be triaged and verified. Information using this strategy can also come from people who have already been oriented on the agreed indicators (lay case definitions), for example, the CBS volunteers, or any other representatives from community, who have been trained to detect events, such as unusual animal deaths and report them to the next level. Often, CBS focal persons would link the patient identified, through any of the strategies, to a nearby health facility and can help identify contacts.   
+Event-based surveillance   
+Event-based surveillance is the organized and rapid capture of information about events that are of potential risk to public health. Information is initially captured as an alert, considered by the early warning and response system as representing a potential acute risk (such as an outbreak) to human health. All alerts may not necessarily become real events, and as such, need to be triaged and verified before a response is initiated. Alerts which may signify potential risks include: 
+occurrence of disease in humans, such as unexplained clustered cases of a disease or syndromes, unusual disease patterns or unexpected deaths, as recognized by health workers and other key informants in the community;  
+events related to potential exposure for humans, such as to diseases and deaths in animals, contaminated food products or water, and environmental hazards, including chemical and radio-nuclear events; 
+alerts of potential exposure of human beings by biological, chemical or radiological and nuclear hazards, or occurrence of natural or man-made disasters.   
+Event-based surveillance also involves media monitoring, which entails regular scanning of newspapers, internet sites and media alert systems, such as ProMed, blogs, social media, radio, and television.   
+The event-based surveillance system is very sensitive, and information received through it should be synchronized with IBS and rapidly assessed for the risk the event poses to public health and responded to appropriately (illustrated in Figure 1).  
+NB: Unlike indicator-based surveillance, event-based surveillance is not based on the routine monitoring of indicators and automated thresholds for action, but rather on the screening of all available information to detect any event happening in the community (unusual disease or deaths in humans or animals, and unusual or clustering of cases, events/conditions in the community, including environmental conditions).
+Event-based surveillance (EBS) and indicator-based surveillance (IBS) as backbone to the IDSR strategy  
+Event-based surveillance and indicator-based surveillance are components of the early warning and response and epidemic intelligence, incorporated into the IDSR strategy. EBS and IBS complement each other, albeit with separate roles and purposes. EBS is most likely to pick up alerts to detect small outbreaks early, while IBS is better at monitoring disease trends overtime, and useful for signalling the start of regular seasonal outbreaks of endemic diseases, using alert and epidemic thresholds. IBS may not be useful for smaller events because they are either averaged out in large data sets or lost in smaller data sets. EBS is also better at picking up alerts indicating outbreaks in areas where access to healthcare is limited. In the context of IDSR strategy, the flow of EBS information follows the same reporting lines as IBS, that is  from community to sub-district/district, to region/province and to national level. EBS and IBS are applied at all levels of the health system - community, health facility, district regional/provincial and national . 
+Surveillance activities for different diseases involve similar functions (detection, sample collection, reporting, analysis and interpretation, feedback, and action), and often use the same structures, processes and personnel. As such, the principles of surveillance are the same whether applied to a single disease, condition or event or multiple diseases. What may differ is whether the target is elimination or eradication, which may require time-limited intensive efforts aimed at proving the absence of disease.   
+Epidemic-Prone Diseases 
+
+Cholera
+ Diarrhea with blood (Shigella)
+ Yellow fever
+ Measles
+Meningitis
+Plague
+Viral hemorrhagic fevers***
+Typhoid fever
+Relapsing fever
+Epidemic typhus
+ Malaria
+
+Diseases targeted for Eradication and Elimination
+Acute flaccid paralysis (AFP)/ polio
+Dracunculiasis (Guinea worm)
+ Leprosy
+ Neonatal tetanus
+Other diseases of Public Health importance
+Pneumonia in children less than 5 years of age
+Diarrhea in children less than 5 years of age
+New AIDS cases
+Onchocerciasis
+Sexually Transmitted Infections (STIs)
+Tuberculosis 
+Measuring health and disease 
+To describe how often a disease or another health event occurs in a population, different measures of disease frequency can be used. The prevalence reflects the number of existing cases of a disease. In contrast to the prevalence, the incidence reflects the number of new cases of disease and can be reported as a risk or as an incidence rate. Prevalence and incidence are used for different purposes and to answer different research questions. 
+Measuring the frequency of a disease or other health outcome in a population and identifying how the disease frequency may differ over time or among subgroups are important steps in discovering potential causes of a disease and determining effective methods for prevention and care. 
+There are several measures of disease frequency in common use and depending on the research question and the available data, one should choose which measure is appropriate.
+The most important measures of disease frequency, are the prevalence, the risk and the incidence rate. 
+Prevalence
+The prevalence represents existing cases of a disease and can be seen as a measure of disease status; it is the proportion of people in a population having a disease:
+
+The prevalence is often useful as it reflects the burden of a disease in a certain population. This is not limited to burden in terms of monetary costs; it also reflects burden in terms of life expectancy, morbidity, quality of life, or other indicators. Knowledge of the burden of disease can help decision makers to determine where investments in health care should be targeted. For instance, the prevalent number of end-stage renal disease (ESRD) patients predicts the need for dialysis facilities and the related costs.
+Incidence
+While the prevalence represents the existing cases of a disease, the incidence reflects the number of new cases of disease within a certain period and can be expressed as a risk or an incidence rate.
+Incidence Rate
+The second measure of disease frequency that expresses incidence is the incidence rate. It can be calculated by dividing the number of subjects developing a disease by the total time at risk for all people to get the disease. The denominator of this formula includes a measure of time instead of just a number of subjects. The incidence rate should therefore be interpreted as an instantaneous concept, like speed:
+
+Like for the risk, one assumes for the calculation of the incidence rate that all subjects are free of the disease of interest at the start of the study. However, an important advantage of the incidence rate over the risk is that it is not required for subjects to complete the total follow-up time and only the actual time at risk is taken into account. Figure 1 shows an example of the calculation of the incidence rate. Suppose we study the incidence rate of vascular access infection in haemodialysis (HD) patients in a year and we would have diagnosed a number of episodes of vascular access infection in 10 HD patients. We would then need to calculate the total time at risk; in this case the total time on HD. Figure 1 shows that the 10 patients together were at risk for 89 patient-months. In this period, there were 4 of such episodes. The incidence rate of HD vascular access infection would therefore be 4/89 = 0.045 per patient-month, or 4/7.42 = 0.54 per patient-year. Assuming that each HD station in a dialysis department is occupied during the full year (by predecessors and successors of the patients shown in fig. 1), one could also calculate the incidence rate of vascular access infection on the level of HD station instead of on patient level. In this case, one would simply need to divide the total number of vascular access infections by the time when the HD stations were occupied (1 year per station).
+
+Risk
+The risk is the probability that a subject within a population will develop a given disease, or other health outcome, over a specified follow-up period. It can be calculated by dividing the number of subjects developing the disease over a certain period by the total number of subjects followed over that period:
+
+This risk can be interpreted as an estimation of the risk of disease in an individual subject. However, to interpret a risk appropriately, it is necessary to know the time period to which it applies. Without the definition of a time period, a risk is a meaningless value.
+Measures of Effect
+Measures of disease frequency may also be used to study the association between exposures and outcomes.
+ The effect of a certain exposure can be studied by comparing the disease frequency in exposed subjects to the disease frequency in those who were not exposed. The comparison of these frequencies can be summarized in a single parameter that estimates the association between the exposure and the disease. This can be accomplished by calculating either the ratio of the measures of disease frequency for two populations which indicates how much more likely one population is to develop a disease than another (relative risk), or the difference between the frequencies which indicates how much greater the frequency of a disease is in one population compared with the other (risk difference).
+Incidence versus Prevalence
+Factors that influence the prevalence are the number of incident cases, the deaths and the recoveries. 
+Given a steady state, the prevalence approximately equals the product of the incidence rate and the mean duration of disease. This can be illustrated by an examples of tetanus and end –stage renal disease (ESRD). Tetanus is an acute, rare and often fatal disease caused by the bacteria Clostridium tetani, leading to rapid death resulting in short disease duration. As a result, its prevalence in the general population will be extremely low at any point in time. ESRD, on the other hand, has a relatively low incidence rate, but in comparison to tetanus its survival is much higher, at least in developed countries. Its average disease duration is much longer; therefore, its prevalence is much higher compared to that of tetanus. Accordingly, an increase in prevalence could be the consequence of a higher incidence of ESRD, of an improved survival, or of a combination of both.
+
+
+Relationship between incidence and prevalence
+
+MEASURES OF ASSOCIATION
+A measure of association quantifies the relationship between exposure and disease among the two groups.
+A measure of association compares the distribution of the outcome in the exposed with the distribution of outcome in the unexposed
+It is calculated by taking the risk difference, dividing it by the incidence in the exposed group, and then multiplying it by 100 to convert it into a percentage
+The  two most common used measures of association in medical research are:
+relative risk( risk ratio) 
+odds ratio 
+A risk ratio (RR), also called relative risk, compares the risk of a health event (disease, injury, risk factor, or death) among one group with the risk among another group. It does so by dividing the risk (incidence proportion, attack rate) in group 1 by the risk (incidence proportion, attack rate) in group 2.
+Odds ratios are used to compare the relative odds of the occurrence of the outcome of interest (e.g. disease or disorder), given exposure to the variable of interest (e.g. health characteristic, aspect of medical history). The odds ratio can also be used to determine whether a particular exposure is a risk factor for a particular outcome, and to compare the magnitude of various risk factors for that outcome.
+OR=1 Exposure does not affect odds of outcome
+OR>1 Exposure associated with higher odds of outcome
+OR<1 Exposure associated with lower odds of outcome
+Two by Two Tables (2x2) or Contingency Tables
+There is no fixed convention for setting up a 2x2 (also known as contingency) table. However, when you use these tables to compute measures of association there is a distinct advantage to setting them up the same way all the time. If you don't, you can get confused when calculating measures of association. While you should set up your tables consistently, be aware that others may organize their tables differently, so be careful. I always put the exposure groups in rows with the row labels to the left, and I put the exposed (or most exposed) group on the top row. Outcome status is listed in the vertical columns; those with the outcome are listed in the left column.
+Options for comparing disease frequencies
+The fundamental methods for comparing the frequency of disease (or health events in general) are to:
+1.Calculate a ratio of the two measures of disease frequency (by dividing one by the other) or
+2.Calculate the difference between the two measures by subtraction.
+Risk Ratios and Rate Ratios (Relative Risk)
+Measures of disease frequency can be compared by calculating their ratio. Common terms to describe these ratios are
+risk ratio
+rate ratio
+relative risk
+relative rate
+Frequently, the term "relative risk" is used to encompass all of these. These relative measures give an indication of the "strength of association."
+Risk Ratio
+For the study examining wound infections after incidental appendectomy, the risk of wound infection in each exposure group is estimated from the cumulative incidence. The relative risk (or risk ratio) is an intuitive way to compare the risks for the two groups. Simply divide the cumulative incidence in exposed group by the cumulative incidence in the unexposed group:   
+
+Case fatality ratio (CFR) is the proportion of individuals diagnosed with a disease who die from that disease and is therefore a measure of severity among detected cases:
+
+
+Calculating Odds Ratio
+
+An OR of 1 means the exposure did not affect the odds of the outcome. An OR >1 means the exposure is associated with a higher odds of the outcome, and an OR <1 means the exposure is associated with a lower odds of  
+MEASURES OF TENDENCY
+
+Sources of epidemiologic  data 
+There are different sources of data on health and health related conditions in the community. Each source has advantages and limitations. The information obtained from these sources is used for health planning, programming and evaluation of health services. The major sources are the following:   
+1. Census:  
+Census is defined as a periodic count or enumeration of a population. Census data are necessary for accurate description of population’s health status and are principal source of denominator for rates of disease & death. 
+It provides information on: 
+Size and composition of a population 
+The trends anticipated in the future. 
+Age, sex and size of the population  
+Mortality, fertility  
+Language, ethnicity 
+Housing 
+From these data, different health indices could be calculated. Crude birth rate, crude death rate, age specific mortality rate and sex specific mortality rate are some of the examples of the indicators that could be calculated. 
+Limitation  
+Conducting nationwide census is very expensive and it generates a large amount of data which takes a very long time to compile and analyze
+It is carried in intervals of many years. Therefore it can’t assess yearly changes. 
+2. Vital statistics: 
+This is a system by which all births and deaths occurring nation-wide are registered, reported and compiled centrally.  Certificate is issued for each birth and death. It is the source of information for the calculation of birth and death rates. There is no nationwide birth and death registration system in Ethiopia but the system should be established in the future. 
+The main characteristics of vital statistics are: 
+Comprehensive – all births and deaths should be registered. 
+Compulsory by law – should be enforced by law. 
+Compiled centrally so that it can serve as a source of information. 
+Continuous – it should be an on-going process.  
+
+ 3. Health service records 
+ All health institutions report their activities to the Ministry of Health through the regional health bureaus. The Ministry compiles, analyzes and publishes it in the health service directory. It is therefore the major source of health information in Ethiopia. 
+ Advantages:   
+Easily obtainable 
+Available at low cost 
+Continuous system of reporting 
+Causes of illness and death available.  
+Limitations: 
+Lack of completeness – health service coverage is low. 
+Lack of representativeness – a small proportion of diseased population seeks medical advice. Those patients who remained at home are not reported. 
+ Lack of denominator – catchment area is not known in the majority of cases.  
+Lack of uniformity in quality. 
+Diagnosis varies across the level of health institutions. 
+Lack of compliance with reporting. 
+Irregularity and incompleteness of published compilations.  
+
+Notification of infectious diseases 
+There are some internationally notifiable diseases. WHO member states report on Plague, Cholera, and Yellow fever. Moreover, every country has its own list of notifiable diseases.  
+The major problems related to this source (health service records) are low compliance and delays in reporting. 
+4. Health surveys 
+Health surveys are studies conducted on a representative sample population to obtain more comprehensive data for monitoring the health status of a population. There are two types of health surveys: 
+ 1. Surveys of specific diseases: 
+These are studies conducted on each specific disease. Examples are:
+EPI target diseases  
+Diarrheal diseases  
+HIV/AIDS  
+Trachoma  
+Tuberculosis / Leprosy   
+2. Surveys of general health status: 
+These are studies on general health status of the population. They are based on interview, physical examination and laboratory tests. They are expensive.  
+Advantages of surveys based on interview: 
+They are more representative of the health condition of the community. 
+The denominator is known. 
+Data are more uniform in quality. 
+Limitations: 
+ Data accuracy is dependent on the memory and cooperation of the interviewee. 
+Surveys are expensive. 
+
+II. Methods of data collection 
+The main methods of collecting information are: 
+a).  Observation 
+b).   Interview and questionnaires 
+c). Documentary sources - Clinical records and other personal records, death certificates, 	publications etc.  
+Role of a nurse in epidemiology can be explained in 4 aspects. These are:
+a). Preventive role
+b). Promotive role
+c). Curative role
+d). Rehabilitative role
+Prevention role
+Epidemiology is one of the basic sciences applicable to nursing. The nurses working in a community deal with people in various settings and help them solve their health problems. They make the nursing process. They identify and investigate the problem, formulate and test the hypothesis regarding the causal factors, formulate alternative interventions and implement to prevent and control the problem and evaluate effectiveness of intervention.
+They have an active role in the prevention and control of communicable diseases which include:
+- Identify sources of infection and methods of spread of infection.
+ Health education of people in general.
+Having an important role in the prevention and control of chronic and non-infectious problems, such as cardiovascular conditions, accident, cancer, etc
+Notification of certain diseases like measles, diphtheria, tetanus, etc. to health authority.
+They can also teach and supervise other workers in surveillance activities.
+Promotion role
+Using knowledge of epidemiology, the community health nurses can set priorities for health programs according to the immediate health needs.
+Using knowledge of epidemiology, they establish the health resources more effectively, by giving more emphasis to urgent health problems needing attention.
+Plan the strategies to meet the new health needs. Nurses in the community as a member to health team participate in surveillance at all levels, which will depend on the existing situation, their preparation, and the level at which they work.
+Curative role
+
+
+
+
+They may deal with the problem independently, especially when these are the nursing problems, minor ailments or simply health conditions and they are only the health workers in a healthcare setting.
+They may participate as them members, especially when it is large scale investigation, e.g. occurrence of any epidemic.
+They may participate in data collection, data analysis, planning, implementation and evaluation.
+They may early diagnosis and treatment.
+They traces the contacts and keep  them under surveillance.
+They identify sources of infection and methods of spread of infection.
+Rehabilitation role 
+They evaluate the effectiveness of measures used to control specific disease or disorder.
+They can help people in the restoration of family and social life.
+They can also play a role in psychological rehabilitation by helping in restoring personal dignity and confidence of a person.
+Control and prevention  role of Community Health Nurse (CHN)  in epidemiology
+A community health nurse has an important role to play in the prevention and control of communicable diseases.  This includes;
+Participating in the early diagnosis and treatment
+sending notification of notifiable diseases
+tracing the contacts and keeping them under surveillance
+identifying sources of disease and educating the members of the community.
+In epidemiology nurses study the following:
+Whole populations in their living and working environment;
+Factors that determine state of health and disease;
+Patterns of health as well as patterns of disease;
+Mass phenomenon and effects of disease or conditions on groups or individuals;
+Distribution and causes of human health problems;
+Multiple factors and causation;
+Measures used to prevent and control disease;
+Variations in occurrence and distribution of communicable diseases in the community.
+The presence, nature and distribution of community disorders through morbidity and mortality rates along with identifying high-risk population, with a view to establishing a community diagnosis.
+Causes of communicable disease by defining various geographic, demographic, genetic, environmental and social factors;
+Estimates of individual risks and chances toward disease occurrence in general or specified segments of population;
+Clinical and sub-clinical forms of disorders in communities for early diagnosis through screening mechanisms
+   Knowledge, attitude, beliefs and practices of communities toward communicable problems and develop intervention programmes 
+The natural history of disease affecting the general population;
+Develops strategies for planning, organizing, implementing, integrating and evaluating services in communities.
+How epidemiology is related to community health
+Provide basic knowledge of disease trends and distribution, causes and contributing factors
+For planning health programmes e.g procurement of drugs etc
+Advocacy
+Research
+Monitoring and evaluation
+
+Assignment
+1, Read more and make notes on 
+a)Measures of tendency
+b)Measures of association
+2.Describe measurements of morbidity and mortality
+3.Describe the formula for the various measurements described in 2 above
+4.State sources of epidemiology data
+5.Differentiate between Epidemiological focus and clinical focus
+6.Differentiate between Attack Rate and Secondary Attack Rate
+7.Describe Approaches for receiving maternal deaths
+8.Define an epidemiological curve
