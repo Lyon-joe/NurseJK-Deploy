@@ -13,3 +13,4 @@ node_modules/
 
 # Ignore logs
 *.log
+backend/.env
