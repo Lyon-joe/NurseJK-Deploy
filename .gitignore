@@ -14,3 +14,4 @@ node_modules/
 # Ignore logs
 *.log
 backend/.env
+database/memory/conversation-memory.jsonl
