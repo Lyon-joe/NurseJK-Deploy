@@ -2,6 +2,7 @@ import dotenv from "dotenv";
 dotenv.config();
 
 console.log("Gemini key status:", process.env.GEMINI_API_KEY ? "Loaded" : "Missing");
+console.log("MONGO_URI =", process.env.MONGO_URI);
 
 import express from "express";
 import mongoose from "mongoose";
@@ -21,9 +22,9 @@ const app = express();
 // ==========================================
 app.use(cors({
   origin: [
-    "http://localhost:5173",                   // Standard Vite development port
-    "http://localhost:3000",                   // Standard Create-React-App port
-    "https://nursejk-assistant-q1oe.onrender.com" // Production web domain (no trailing slash)
+    "http://localhost:5173",             // Standard Vite development port
+    "http://localhost:3000",             // Standard Create-React-App port
+    "https://nurse-jk-deploy.vercel.app" // Production web domain (no trailing slash)
   ], 
   credentials: true
 }));
@@ -37,10 +38,8 @@ app.get("/", (req, res) => {
   res.send("API is running");
 });
 
-console.log("MONGO_URI =", process.env.MONGO_URI);
-
 mongoose.connect(process.env.MONGO_URI)
-  .then(() => console.log("MongoDB connected"))
+  .then(() => console.log("MongoDB connected successfully"))
   .catch(err => console.log("DB error:", err));
 
 // ==========================================
@@ -253,8 +252,11 @@ app.get("/api/dashboard/performance", auth, async (req, res) => {
 });
 
 // ==========================================
-// START SERVER
+// START SERVER (DYNAMIC ENVIRONMENT PORT)
 // ==========================================
-app.listen(3001, () => {
-  console.log("Server running on port 3001");
+// ✨ Clean fix for Render: Read dynamic port assigned by server context
+const PORT = process.env.PORT || 3001;
+
+app.listen(PORT, "0.0.0.0", () => {
+  console.log(`Server running smoothly on port ${PORT}`);
 });
