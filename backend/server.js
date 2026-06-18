@@ -9,7 +9,7 @@ import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 import cors from "cors"; 
 
-import User from "./models/User.js";
+import User from "./models/user.js";
 import Memory from "./models/Memory.js";
 import { auth } from "./middleware/auth.js";
 import { generateReply, analyzeWeakTopics } from "./ai/gemini.js";
