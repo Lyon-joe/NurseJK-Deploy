@@ -1,17 +1,47 @@
+# Dependencies
 node_modules/
-.env
+/node_modules
 backend/node_modules/
-backend/.env
-# Ignore local environment variables containing secrets
+frontend/node_modules/
+
+# Environment & secrets
 .env
+.env.local
+.env.*.local
 backend/.env
 frontend/.env
 
-# Ignore heavy external dependency folders
-node_modules/
-/node_modules
-
-# Ignore logs
+# Logs
 *.log
-backend/.env
+logs/
+npm-debug.log*
+yarn-debug.log*
+
+# Build outputs
+dist/
+build/
+frontend/dist
+frontend/build
+backend/dist
+.next/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Capacitor
+backend/android/
+frontend/android/
+
+# Development
+.DS_Store
+Thumbs.db
+
+# Temporary
 database/memory/conversation-memory.jsonl
+*.tmp
+

@@ -1,19 +1,31 @@
 {
-  "name": "nursing-ai-assistant",
+  "name": "nursing-ai-assistant-backend",
   "version": "1.0.0",
   "description": "AI-powered nursing assistant backend",
-  "main": "server.js",
+  "main": "../server.js",
+  "type": "module",
   "scripts": {
-    "start": "node server.js",
+    "start": "node ../server.js",
+    "dev": "node ../server.js",
     "build:vectors": "node scripts/buildVectorStore.js"
   },
   "author": "Joe",
   "license": "MIT",
-  "type": "module",
   "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "bcrypt": "^6.0.0",
+    "bcryptjs": "^3.0.3",
+    "cookie-parser": "^1.4.7",
     "cors": "^2.8.6",
-    "dotenv": "^16.4.5",
-    "express": "^4.21.2",
+    "dotenv": "^16.6.1",
+    "express": "^4.22.2",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.7.0",
     "openai": "^4.104.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^24.12.3",
+    "esbuild": "^0.28.1"
   }
 }
