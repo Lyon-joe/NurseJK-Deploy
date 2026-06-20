@@ -2,7 +2,6 @@ import { useEffect, useRef, useState } from "react";
 import { AuthProvider, useAuth } from "./context/AuthContext";
 import Login from "./components/Login";
 import Register from "./components/Register";
-import ProtectedRoute from "./components/ProtectedRoute";
 
 type MessageType = "assistant" | "user" | "error";
 
@@ -30,11 +29,12 @@ const sectionIcons = [
   { pattern: /pathophysiology/i, icon: "🧬" },
   { pattern: /risk/i, icon: "⚠️" },
   { pattern: /causes?/i, icon: "🔎" },
-  { pattern: /diagnostic|assessment|findings/i, icon: "🩺" },
-  { pattern: /signs?|symptoms?/i, icon: "🌡️" },
+  { pattern: /diagnostic|assessment|findings|investigations/i, icon: "🩺" },
+  { pattern: /signs?|symptoms?|clinical features/i, icon: "🌡️" },
   { pattern: /nursing|management|intervention/i, icon: "💉" },
   { pattern: /complications?/i, icon: "🚨" },
-  { pattern: /medications?/i, icon: "💊" },
+  { pattern: /medications?|medical management/i, icon: "💊" },
+  { pattern: /prevention/i, icon: "🛡️" },
   { pattern: /red flags?/i, icon: "🚩" },
 ];
 
@@ -77,13 +77,15 @@ const parseResponseSections = (text: string): ResponseSection[] => {
       continue;
     }
 
-    const headingMatch = line.match(/^#{1,4}\s+(.+)$/);
+    // Matches standard markdown headings (### Title) or custom bullet headers (• Title)
+    const headingMatch = line.match(/^#{1,4}\s+(.+)$/) || line.match(/^•\s+([A-Za-z\s]{3,30})$/);
     const numberedMatch = line.match(/^\*{0,2}(\d{1,2}\.\s+[^:*]+)\*{0,2}:?$/);
     const bulletMatch = line.match(/^[-*•]\s+(.+)$/);
 
     if (headingMatch || numberedMatch) {
       flushParagraph();
-      createSection(cleanInline((headingMatch || numberedMatch)![1]));
+      const matchGroup = headingMatch ? headingMatch[1] : (numberedMatch ? numberedMatch[1] : "");
+      createSection(cleanInline(matchGroup));
       continue;
     }
 
@@ -149,15 +151,11 @@ const renderResponseContent = (text: string) => {
 };
 
 function AppContent() {
-  // ✨ ALIGNED: Change this URL to your live backend endpoint or local server (e.g., http://localhost:3001)
-  const BASE_URL = "https://nursejk-assistant-q1oe.onrender.com"; 
-  const { user, token, logout, isAuthenticated } = useAuth();
+  // ALIGNMENT FIX: Safe environment assignment pointing explicitly to Render production url fallback
+  const BASE_URL = import.meta.env.VITE_API_URL || "https://nursejk-assistant-q1oe.onrender.com"; 
+  const { token, logout, isAuthenticated } = useAuth();
 
-  // Auth States - LEGACY (kept for compatibility, useAuth is primary)
   const [isRegisterMode, setIsRegisterMode] = useState(false);
-  const [authError, setAuthError] = useState("");
-
-  // System States
   const [statusText, setStatusText] = useState("Backend and notes ready");
   const [statusState, setStatusState] = useState<"ready" | "pending" | "error">("ready");
   const [modeValue, setModeValue] = useState<"retrieval" | "chat">("retrieval");
@@ -178,7 +176,6 @@ function AppContent() {
   const conversationRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
-    // Load data when token becomes available (from AuthContext)
     if (token && isAuthenticated) {
       checkHealth();
       loadHistory();
@@ -340,7 +337,6 @@ function AppContent() {
     setMessage(example);
   };
 
-  // Auth Screen Guard - Show login/register if not authenticated
   if (!isAuthenticated) {
     return isRegisterMode ? (
       <Register onSwitchToLogin={() => setIsRegisterMode(false)} />
@@ -376,7 +372,7 @@ function AppContent() {
             <span className={`dot ${statusState === "ready" ? "ready" : statusState === "error" ? "error" : ""}`} />
             <span>{statusText}</span>
           </span>
-          <button onClick={handleLogout} style={{ background: "none", border: "none", color: "red", cursor: "pointer", fontSize: "12px" }}>Logout</button>
+          <button type="button" onClick={handleLogout} style={{ background: "none", border: "none", color: "#ff4d4f", cursor: "pointer", fontSize: "12px", fontWeight: "bold" }}>Logout</button>
         </div>
 
         <div className="performance-widget" style={{ padding: "10px", background: "#f5f5f5", borderRadius: "6px", margin: "10px 0" }}>
@@ -454,8 +450,8 @@ function AppContent() {
 
         <form className="composer" id="chatForm" onSubmit={handleSubmit}>
           <div className="controls">
-            <label htmlFor="mode">
-              Mode
+            <div className="control-group">
+              <label htmlFor="mode">Mode</label>
               <select
                 id="mode"
                 name="mode"
@@ -465,9 +461,9 @@ function AppContent() {
                 <option value="retrieval">Retrieval</option>
                 <option value="chat">Direct chat</option>
               </select>
-            </label>
-            <label className="hidden" htmlFor="topK">
-              Matches
+            </div>
+            <div className="control-group hidden">
+              <label htmlFor="topK">Matches</label>
               <select
                 id="topK"
                 name="topK"
@@ -478,7 +474,7 @@ function AppContent() {
                 <option value={5}>5</option>
                 <option value={8}>8</option>
               </select>
-            </label>
+            </div>
           </div>
 
           <div className="input-row">
@@ -504,20 +500,12 @@ function AppContent() {
   );
 }
 
-// Wrapper component that handles authentication flow
 function App() {
-  const { isAuthenticated } = useAuth();
-
-  if (!isAuthenticated) {
-    const [showRegister, setShowRegister] = useState(false);
-    return showRegister ? (
-      <Register onSwitchToLogin={() => setShowRegister(false)} />
-    ) : (
-      <Login onSwitchToRegister={() => setShowRegister(true)} />
-    );
-  }
-
-  return <AppContent />;
+  return (
+    <AuthProvider>
+      <AppContent />
+    </AuthProvider>
+  );
 }
 
 export default App;

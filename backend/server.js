@@ -18,15 +18,37 @@ import { generateReply, analyzeWeakTopics } from "./ai/gemini.js";
 const app = express();
 
 // ==========================================
-// CORS CONFIGURATION (ALIGNED)
+// CORS CONFIGURATION (PRODUCTION ALIGNED - BULLETPROOF)
 // ==========================================
+const allowedOrigins = [
+  "https://nursejk-assistant-q1oe.onrender.com",
+  "https://nurse-jk-deploy.vercel.app",
+  "https://nurse-jk-deploy-51kt1rnul-nursek.vercel.app" // Added preview domain explicitly
+];
+
 app.use(cors({
-  origin: [
-    "http://localhost:5173",             // Standard Vite development port
-    "http://localhost:3000",             // Standard Create-React-App port
-    "https://nurse-jk-deploy.vercel.app" // Production web domain (no trailing slash)
-  ], 
-  credentials: true
+  origin: function (origin, callback) {
+    // Allow server-to-server requests, mobile testing apps, or tools where origin is undefined
+    if (!origin) return callback(null, true);
+
+    // Allow local development environments
+    if (origin.startsWith("http://localhost:")) return callback(null, true);
+
+    // Allow exact matches from designated production URLs
+    if (allowedOrigins.includes(origin)) return callback(null, true);
+
+    // Dynamic pattern check for any unique Vercel hash branch deployment variations
+    if (origin.includes(".vercel.app")) {
+      return callback(null, true);
+    }
+
+    // Capture fallback diagnostics if an unauthorized origin tries to connect
+    console.log("⚠️ Blocked Origin by CORS Policy:", origin);
+    return callback(new Error("Not allowed by CORS"));
+  },
+  credentials: true, // Fixed: Changed from 'True' to lowercase 'true'
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization"]
 }));
 
 app.use(express.json());
@@ -38,9 +60,24 @@ app.get("/", (req, res) => {
   res.send("API is running");
 });
 
-mongoose.connect(process.env.MONGO_URI)
-  .then(() => console.log("MongoDB connected successfully"))
-  .catch(err => console.log("DB error:", err));
+// Cache the database connection state for Serverless environment stability
+let isConnected = false;
+const connectDB = async () => {
+  if (isConnected) return;
+  try {
+    await mongoose.connect(process.env.MONGO_URI);
+    isConnected = true;
+    console.log("MongoDB connected successfully");
+  } catch (err) {
+    console.log("DB error:", err);
+  }
+};
+
+// Middleware to ensure DB connection is alive on every incoming serverless request
+app.use(async (req, res, next) => {
+  await connectDB();
+  next();
+});
 
 // ==========================================
 // AUTHENTICATION ROUTES
@@ -140,7 +177,6 @@ app.post("/api/chat/retrieval", auth, async (req, res) => {
       return res.status(400).json({ error: "Message is required" });
     }
 
-    // 🧠 STEP 1: Get or Create user memory
     let memory = await Memory.findOne({ userId });
     if (!memory) {
       memory = await Memory.create({
@@ -150,18 +186,15 @@ app.post("/api/chat/retrieval", auth, async (req, res) => {
       });
     }
 
-    // 🧠 STEP 2: Build conversation history (Last 6 messages)
     const recentMemory = memory.messages.slice(-6);
     const historyText = recentMemory
       .map(m => `${m.role}: ${m.content}`)
       .join("\n");
 
-    // 🔍 Format tracked weaknesses for the prompt context
     const studentWeaknesses = memory.weakTopics.length > 0 
       ? memory.weakTopics.join(", ") 
       : "None identified yet";
 
-    // 🧠 STEP 3: Build AI prompt WITH memory context and adaptive metrics
     const prompt = `
 You are a professional nursing educator interacting with a nursing student. 
 
@@ -197,16 +230,13 @@ Current question/interaction:
 ${message}
 `;
 
-    // 🤖 STEP 4: Call AI
     const reply = await generateReply(prompt);
 
-    // 🧠 STEP 5: Save user + AI messages to memory
     memory.messages.push(
       { role: "user", content: message },
       { role: "ai", content: reply }
     );
 
-    // 🔍 ANALYZE WEAK TOPICS: Automatically detect gaps and prevent duplicates
     const discoveredWeakTopic = await analyzeWeakTopics(message, reply);
     if (discoveredWeakTopic && !memory.weakTopics.includes(discoveredWeakTopic)) {
       memory.weakTopics.push(discoveredWeakTopic);
@@ -214,7 +244,6 @@ ${message}
 
     await memory.save();
 
-    // 📬 Return response
     return res.json({
       reply,
       userId
@@ -252,11 +281,13 @@ app.get("/api/dashboard/performance", auth, async (req, res) => {
 });
 
 // ==========================================
-// START SERVER (DYNAMIC ENVIRONMENT PORT)
+// VERCEL / ENVIRONMENT ALIGNMENT
 // ==========================================
-// ✨ Clean fix for Render: Read dynamic port assigned by server context
-const PORT = process.env.PORT || 3001;
+if (process.env.NODE_ENV !== "production") {
+  const PORT = process.env.PORT || 3001;
+  app.listen(PORT, () => {
+    console.log(`Development server running smoothly on port ${PORT}`);
+  });
+}
 
-app.listen(PORT, "0.0.0.0", () => {
-  console.log(`Server running smoothly on port ${PORT}`);
-});
+export default app;

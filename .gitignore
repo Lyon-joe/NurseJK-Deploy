@@ -45,3 +45,5 @@ Thumbs.db
 database/memory/conversation-memory.jsonl
 *.tmp
 
+.vercel
+.env*

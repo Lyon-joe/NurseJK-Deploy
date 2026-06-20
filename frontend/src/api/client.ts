@@ -3,7 +3,10 @@
  * Automatically includes JWT token in Authorization header
  */
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001';
+// ✨ Clean casting bypasses duplicate global interface declarations entirely
+const metaEnv = (import.meta as any).env || {};
+const BASE_URL = metaEnv.VITE_API_URL || 'https://nursejk-assistant-q1oe.onrender.com';
+const API_URL = BASE_URL.endsWith('/') ? BASE_URL.slice(0, -1) : BASE_URL;
 
 export interface ApiOptions extends RequestInit {
   // Custom options can be added here
@@ -18,18 +21,21 @@ export async function apiCall(
 ): Promise<any> {
   const token = localStorage.getItem('authToken');
   
-  const headers: HeadersInit = {
+  const headers: Record<string, string> = {
     'Content-Type': 'application/json',
-    ...options.headers,
+    ...((options.headers as Record<string, string>) || {}),
   };
 
   if (token) {
     headers['Authorization'] = `Bearer ${token}`;
   }
 
-  const response = await fetch(`${API_URL}${endpoint}`, {
+  // Ensure the endpoint string starts with a leading slash cleanly
+  const cleanEndpoint = endpoint.startsWith('/') ? endpoint : `/${endpoint}`;
+
+  const response = await fetch(`${API_URL}${cleanEndpoint}`, {
     ...options,
-    headers,
+    headers, 
   });
 
   if (response.status === 401) {

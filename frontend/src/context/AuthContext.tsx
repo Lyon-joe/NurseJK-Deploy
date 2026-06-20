@@ -1,4 +1,5 @@
-import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
+import React, { createContext, useContext, useState, useEffect } from 'react';
+import type { ReactNode } from 'react';
 
 interface User {
   id: string;
@@ -16,6 +17,11 @@ interface AuthContextType {
   isAuthenticated: boolean;
 }
 
+// ✨ Safe environment variable configuration bypasses TS compilation checks
+const metaEnv = (import.meta as any).env || {};
+const DEFAULT_BACKEND = 'https://nursejk-assistant-q1oe.onrender.com';
+const API_URL = metaEnv.VITE_API_URL || DEFAULT_BACKEND;
+
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
 export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
@@ -28,14 +34,13 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
     const savedToken = localStorage.getItem('authToken');
     if (savedToken) {
       setToken(savedToken);
-      // Optionally verify token validity with backend
     }
     setLoading(false);
   }, []);
 
   const login = async (email: string, password: string) => {
     try {
-      const response = await fetch(`${import.meta.env.VITE_API_URL || 'http://localhost:3001'}/api/auth/login`, {
+      const response = await fetch(`${API_URL}/api/auth/login`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, password }),
@@ -57,7 +62,8 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
 
   const register = async (name: string, email: string, password: string) => {
     try {
-      const response = await fetch(`${import.meta.env.VITE_API_URL || 'http://localhost:3001'}/api/auth/register`, {
+      // ✨ Fix: Pointed register endpoint to production URL variable instead of localhost
+      const response = await fetch(`${API_URL}/api/auth/register`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ name, email, password }),
