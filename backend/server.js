@@ -23,30 +23,21 @@ const app = express();
 const allowedOrigins = [
   "https://nursejk-assistant-q1oe.onrender.com",
   "https://nurse-jk-deploy.vercel.app",
-  "https://nurse-jk-deploy-51kt1rnul-nursek.vercel.app" // Added preview domain explicitly
+  "https://nurse-jk-deploy-51kt1rnul-nursek.vercel.app" 
 ];
 
 app.use(cors({
   origin: function (origin, callback) {
-    // Allow server-to-server requests, mobile testing apps, or tools where origin is undefined
     if (!origin) return callback(null, true);
-
-    // Allow local development environments
     if (origin.startsWith("http://localhost:")) return callback(null, true);
-
-    // Allow exact matches from designated production URLs
     if (allowedOrigins.includes(origin)) return callback(null, true);
-
-    // Dynamic pattern check for any unique Vercel hash branch deployment variations
     if (origin.includes(".vercel.app")) {
       return callback(null, true);
     }
-
-    // Capture fallback diagnostics if an unauthorized origin tries to connect
     console.log("⚠️ Blocked Origin by CORS Policy:", origin);
     return callback(new Error("Not allowed by CORS"));
   },
-  credentials: true, // Fixed: Changed from 'True' to lowercase 'true'
+  credentials: true, 
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization"]
 }));
@@ -60,7 +51,6 @@ app.get("/", (req, res) => {
   res.send("API is running");
 });
 
-// Cache the database connection state for Serverless environment stability
 let isConnected = false;
 const connectDB = async () => {
   if (isConnected) return;
@@ -73,7 +63,6 @@ const connectDB = async () => {
   }
 };
 
-// Middleware to ensure DB connection is alive on every incoming serverless request
 app.use(async (req, res, next) => {
   await connectDB();
   next();
@@ -83,7 +72,6 @@ app.use(async (req, res, next) => {
 // AUTHENTICATION ROUTES
 // ==========================================
 
-// REGISTER API
 app.post("/api/auth/register", async (req, res) => {
   try {
     const { name, email, password } = req.body;
@@ -117,24 +105,20 @@ app.post("/api/auth/register", async (req, res) => {
   }
 });
 
-// LOGIN API
 app.post("/api/auth/login", async (req, res) => {
   try {
     const { email, password } = req.body;
 
-    // Find user
     const user = await User.findOne({ email });
     if (!user) {
       return res.status(400).json({ error: "User not found" });
     }
 
-    // Compare passwords
     const validPassword = await bcrypt.compare(password, user.password);
     if (!validPassword) {
       return res.status(400).json({ error: "Invalid password" });
     }
 
-    // Create token
     const token = jwt.sign(
       { userId: user._id },
       process.env.JWT_SECRET,
@@ -157,7 +141,6 @@ app.post("/api/auth/login", async (req, res) => {
   }
 });
 
-// PROTECTED TEST ROUTE
 app.get("/api/protected", auth, (req, res) => {
   res.json({
     message: "You are authorized 🎉",
@@ -281,13 +264,11 @@ app.get("/api/dashboard/performance", auth, async (req, res) => {
 });
 
 // ==========================================
-// VERCEL / ENVIRONMENT ALIGNMENT
+// EXPLICIT PORT BINDING FOR PRODUCTION
 // ==========================================
-if (process.env.NODE_ENV !== "production") {
-  const PORT = process.env.PORT || 3001;
-  app.listen(PORT, () => {
-    console.log(`Development server running smoothly on port ${PORT}`);
-  });
-}
+const PORT = process.env.PORT || 3001;
+app.listen(PORT, () => {
+  console.log(`Application actively listening on port ${PORT}`);
+});
 
 export default app;
