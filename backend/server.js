@@ -264,12 +264,12 @@ app.get("/api/dashboard/performance", auth, async (req, res) => {
 // ==========================================
 // SERVE FRONTEND STATIC ASSETS IN PRODUCTION
 // ==========================================
-// Express serves compiled static application assets from the distribution folder
-app.use(express.static(path.join(__dirname, "./frontend/dist")));
+// Fixed path resolution logic: Steps one folder up (../) out of the backend directory 
+app.use(express.static(path.join(__dirname, "../frontend/dist")));
 
-// Fallback catch-all router matches UI routes to index.html for Single Page Application rendering
+// Fallback catch-all router handles React app interface routing
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "./frontend/dist", "index.html"));
+  res.sendFile(path.join(__dirname, "../frontend/dist", "index.html"));
 });
 
 // ==========================================
