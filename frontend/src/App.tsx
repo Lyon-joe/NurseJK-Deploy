@@ -1,7 +1,8 @@
-import { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { AuthProvider, useAuth } from "./context/AuthContext";
 import Login from "./components/Login";
 import Register from "./components/Register";
+import API_BASE from "./api"; // Imported our unified, mobile-ready configuration
 
 type MessageType = "assistant" | "user" | "error";
 
@@ -77,7 +78,6 @@ const parseResponseSections = (text: string): ResponseSection[] => {
       continue;
     }
 
-    // Matches standard markdown headings (### Title) or custom bullet headers (• Title)
     const headingMatch = line.match(/^#{1,4}\s+(.+)$/) || line.match(/^•\s+([A-Za-z\s]{3,30})$/);
     const numberedMatch = line.match(/^\*{0,2}(\d{1,2}\.\s+[^:*]+)\*{0,2}:?$/);
     const bulletMatch = line.match(/^[-*•]\s+(.+)$/);
@@ -150,16 +150,21 @@ const renderResponseContent = (text: string) => {
   );
 };
 
+// Component logic separated to accurately utilize useAuth hooks
 function AppContent() {
-  // ALIGNMENT FIX: Safe environment assignment pointing explicitly to Render production url fallback
-  const BASE_URL = import.meta.env.VITE_API_URL || "https://nursejk-assistant-q1oe.onrender.com"; 
-  const { token, logout, isAuthenticated } = useAuth();
+  const [isAuthenticated, setIsAuthenticated] = useState<boolean>(!!localStorage.getItem("token"));
+  const [isRegisterMode, setIsRegisterMode] = useState<boolean>(false);
+  const [token, setToken] = useState<string | null>(localStorage.getItem("token"));
 
-  const [isRegisterMode, setIsRegisterMode] = useState(false);
-  const [statusText, setStatusText] = useState("Backend and notes ready");
-  const [statusState, setStatusState] = useState<"ready" | "pending" | "error">("ready");
-  const [modeValue, setModeValue] = useState<"retrieval" | "chat">("retrieval");
-  const [topKValue, setTopKValue] = useState(3);
+  // Form Field States
+  const [name, setName] = useState<string>("");
+  const [email, setEmail] = useState<string>("");
+  const [password, setPassword] = useState<string>("");
+  const [authError, setAuthError] = useState<string>("");
+
+  // App Interface States
+  const [statusText, setStatusText] = useState("Checking Engine Connection...");
+  const [statusState, setStatusState] = useState<"ready" | "pending" | "error">("pending");
   const [message, setMessage] = useState("");
   const [conversation, setConversation] = useState<ConversationMessage[]>([
     {
@@ -167,7 +172,7 @@ function AppContent() {
       text: "Ready for a nursing question. Responses use the required sections from the schematic and draw from your specific learning profile history.",
     },
   ]);
-  
+
   const [history, setHistory] = useState<HistoryItem[]>([]);
   const [weakTopics, setWeakTopics] = useState<string[]>([]);
   const [historyCollapsed, setHistoryCollapsed] = useState(false);
@@ -175,22 +180,70 @@ function AppContent() {
 
   const conversationRef = useRef<HTMLDivElement | null>(null);
 
+  // Synchronize and run core endpoints when token state flips true
   useEffect(() => {
-    if (token && isAuthenticated) {
+    if (token) {
+      setIsAuthenticated(true);
       checkHealth();
       loadHistory();
       fetchPerformance();
+    } else {
+      setIsAuthenticated(false);
     }
-  }, [token, isAuthenticated]);
+  }, [token]);
 
+  // Handle continuous chat scrolling mechanics
   useEffect(() => {
     if (conversationRef.current) {
       conversationRef.current.scrollTop = conversationRef.current.scrollHeight;
     }
   }, [conversation]);
 
+  const handleLogin = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setAuthError("");
+    try {
+      const response = await fetch(`${API_BASE}/api/auth/login`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email, password }),
+      });
+      const data = await response.json();
+      if (response.ok) {
+        localStorage.setItem("token", data.token);
+        setToken(data.token);
+      } else {
+        setAuthError(data.error || "Login failed");
+      }
+    } catch {
+      setAuthError("Cannot connect to server infrastructure.");
+    }
+  };
+
+  const handleRegister = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setAuthError("");
+    try {
+      const response = await fetch(`${API_BASE}/api/auth/register`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, email, password }),
+      });
+      const data = await response.json();
+      if (response.ok) {
+        localStorage.setItem("token", data.token);
+        setToken(data.token);
+      } else {
+        setAuthError(data.error || "Registration failed");
+      }
+    } catch {
+      setAuthError("Cannot connect to server infrastructure.");
+    }
+  };
+
   const handleLogout = () => {
-    logout();
+    localStorage.removeItem("token");
+    setToken(null);
     setConversation([
       {
         type: "assistant",
@@ -223,7 +276,6 @@ function AppContent() {
     if (history.length === 0) {
       return <div className="empty-history">No saved conversations yet.</div>;
     }
-
     return history.map((item, index) => (
       <button
         key={`history-${index}`}
@@ -239,10 +291,10 @@ function AppContent() {
 
   const loadHistory = async () => {
     try {
-      const response = await fetch(`${BASE_URL}/api/conversations`, {
+      const response = await fetch(`${API_BASE}/api/conversations`, {
         headers: { "Authorization": `Bearer ${token}` }
       });
-      if (!response.ok) throw new Error("Could not load history.");
+      if (!response.ok) throw new Error();
       const data = await response.json();
       setHistory(data.conversations || []);
     } catch {
@@ -252,10 +304,10 @@ function AppContent() {
 
   const fetchPerformance = async () => {
     try {
-      const response = await fetch(`${BASE_URL}/api/dashboard/performance`, {
+      const response = await fetch(`${API_BASE}/api/dashboard/performance`, {
         headers: { "Authorization": `Bearer ${token}` }
       });
-      if (!response.ok) throw new Error("Could not load performance metrics.");
+      if (!response.ok) throw new Error();
       const data = await response.json();
       setWeakTopics(data.weakTopics || []);
     } catch {
@@ -265,10 +317,10 @@ function AppContent() {
 
   const checkHealth = async () => {
     try {
-      const response = await fetch(`${BASE_URL}/`, {
+      const response = await fetch(`${API_BASE}/api/protected`, {
         headers: { "Authorization": `Bearer ${token}` }
       });
-      if (!response.ok) throw new Error("Backend health check failed.");
+      if (!response.ok) throw new Error();
       setStatusState("ready");
       setStatusText("Backend Online & Secure");
     } catch {
@@ -277,33 +329,10 @@ function AppContent() {
     }
   };
 
-  const sendMessage = async (text: string) => {
-    const endpoint = `${BASE_URL}/api/chat/retrieval`;
-    const payload: Record<string, unknown> = { message: text };
-    if (modeValue === "retrieval") {
-      payload.topK = topKValue;
-    }
-
-    const response = await fetch(endpoint, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "Authorization": `Bearer ${token}`
-      },
-      body: JSON.stringify(payload),
-    });
-
-    const data = await response.json();
-    if (!response.ok) {
-      throw new Error(data.error || "Request failed.");
-    }
-    return data;
-  };
-
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const trimmed = message.trim();
-    if (!trimmed) return;
+    if (!trimmed || sending) return;
 
     setConversation((prev) => [...prev, { type: "user", text: trimmed }]);
     setMessage("");
@@ -313,7 +342,18 @@ function AppContent() {
     setConversation((prev) => [...prev, { type: "assistant", text: "Thinking..." }]);
 
     try {
-      const data = await sendMessage(trimmed);
+      const response = await fetch(`${API_BASE}/api/chat/retrieval`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Authorization": `Bearer ${token}`
+        },
+        body: JSON.stringify({ message: trimmed }),
+      });
+
+      const data = await response.json();
+      if (!response.ok) throw new Error(data.error || "Request failed.");
+
       setConversation((prev) =>
         prev.map((item, index) =>
           index === thinkingMessageIndex ? { type: "assistant", text: data.reply || "No response received." } : item
@@ -322,7 +362,7 @@ function AppContent() {
       loadHistory();
       fetchPerformance(); 
     } catch (error: unknown) {
-      const messageText = error instanceof Error ? error.message : "Failed to connect to backend.";
+      const messageText = error instanceof Error ? error.message : "Failed to connect to backend engine.";
       setConversation((prev) =>
         prev.map((item, index) =>
           index === thinkingMessageIndex ? { type: "error", text: messageText } : item
@@ -337,14 +377,40 @@ function AppContent() {
     setMessage(example);
   };
 
+  // RENDER SEPARATE LOGIN / DISCOVERY COMPONENT SCREEN FOR MOBILE WRAPPERS
   if (!isAuthenticated) {
-    return isRegisterMode ? (
-      <Register onSwitchToLogin={() => setIsRegisterMode(false)} />
-    ) : (
-      <Login onSwitchToRegister={() => setIsRegisterMode(true)} />
+    return (
+      <div style={{ maxWidth: "420px", margin: "80px auto", padding: "24px", fontFamily: "sans-serif", border: "1px solid #eaeaea", borderRadius: "12px", boxShadow: "0 4px 12px rgba(0,0,0,0.05)" }}>
+        <div style={{ textAlign: "center", marginBottom: "20px" }}>
+          <div style={{ display: "inline-block", padding: "10px 14px", background: "#0070f3", color: "white", borderRadius: "8px", fontWeight: "bold", fontSize: "20px", marginBottom: "8px" }}>NJ</div>
+          <h2 style={{ margin: "5px 0" }}>{isRegisterMode ? "Create Account" : "NurseJK Assistant"}</h2>
+          <small style={{ color: "#666" }}>Clinical Engine Gateway</small>
+        </div>
+        
+        {authError && <p style={{ color: "#ff4d4f", fontSize: "14px", textAlign: "center", background: "#fff2f0", padding: "8px", borderRadius: "4px", border: "1px solid #ffccc7" }}>{authError}</p>}
+        
+        <form onSubmit={isRegisterMode ? handleRegister : handleLogin} style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
+          {isRegisterMode && (
+            <input type="text" placeholder="Full Name" value={name} onChange={(e) => setName(e.target.value)} required style={{ padding: "10px", borderRadius: "6px", border: "1px solid #ccc", fontSize: "14px" }} />
+          )}
+          <input type="email" placeholder="Email Address" value={email} onChange={(e) => setEmail(e.target.value)} required style={{ padding: "10px", borderRadius: "6px", border: "1px solid #ccc", fontSize: "14px" }} />
+          <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} required style={{ padding: "10px", borderRadius: "6px", border: "1px solid #ccc", fontSize: "14px" }} />
+          <button type="submit" style={{ padding: "12px", backgroundColor: "#0070f3", color: "white", border: "none", borderRadius: "6px", cursor: "pointer", fontSize: "15px", fontWeight: "bold", marginTop: "5px" }}>
+            {isRegisterMode ? "Sign Up" : "Sign In"}
+          </button>
+        </form>
+        
+        <p style={{ marginTop: "20px", fontSize: "13px", textAlign: "center", color: "#444" }}>
+          {isRegisterMode ? "Already have an account? " : "New student? "}
+          <span style={{ color: "#0070f3", cursor: "pointer", fontWeight: "600", textDecoration: "underline" }} onClick={() => { setIsRegisterMode(!isRegisterMode); setAuthError(""); }}>
+            {isRegisterMode ? "Login here" : "Register here"}
+          </span>
+        </p>
+      </div>
     );
   }
 
+  // CORE UNIFIED SYSTEM WORKSPACE INTERFACE
   return (
     <div className="shell">
       <aside className={historyCollapsed ? "history-collapsed" : ""}>
@@ -424,10 +490,7 @@ function AppContent() {
       <main>
         <header>
           <h1>Clinical nursing support</h1>
-          <p>
-            Ask a nursing topic question and get a structured response grounded in the local
-            notes when the vector store is available.
-          </p>
+          <p>Ask a nursing topic question and get a structured response grounded in board preparation schematics.</p>
           <small>Created by Joe Karamuki</small>
         </header>
 
@@ -449,34 +512,6 @@ function AppContent() {
         </section>
 
         <form className="composer" id="chatForm" onSubmit={handleSubmit}>
-          <div className="controls">
-            <div className="control-group">
-              <label htmlFor="mode">Mode</label>
-              <select
-                id="mode"
-                name="mode"
-                value={modeValue}
-                onChange={(event) => setModeValue(event.target.value as "retrieval" | "chat")}
-              >
-                <option value="retrieval">Retrieval</option>
-                <option value="chat">Direct chat</option>
-              </select>
-            </div>
-            <div className="control-group hidden">
-              <label htmlFor="topK">Matches</label>
-              <select
-                id="topK"
-                name="topK"
-                value={topKValue}
-                onChange={(event) => setTopKValue(Number(event.target.value))}
-              >
-                <option value={3}>3</option>
-                <option value={5}>5</option>
-                <option value={8}>8</option>
-              </select>
-            </div>
-          </div>
-
           <div className="input-row">
             <textarea
               id="message"
@@ -485,6 +520,7 @@ function AppContent() {
               required
               value={message}
               onChange={(event) => setMessage(event.target.value)}
+              disabled={sending}
             />
             <button className="send" id="sendButton" type="submit" disabled={sending}>
               {sending ? "Sending" : "Send"}
@@ -500,12 +536,10 @@ function AppContent() {
   );
 }
 
-function App() {
+export default function App() {
   return (
     <AuthProvider>
       <AppContent />
     </AuthProvider>
   );
 }
-
-export default App;
