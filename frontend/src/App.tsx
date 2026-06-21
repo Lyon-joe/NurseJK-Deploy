@@ -150,7 +150,6 @@ const renderResponseContent = (text: string) => {
   );
 };
 
-// Component logic separated to accurately utilize useAuth hooks
 function AppContent() {
   const [isAuthenticated, setIsAuthenticated] = useState<boolean>(!!localStorage.getItem("token"));
   const [isRegisterMode, setIsRegisterMode] = useState<boolean>(false);
@@ -180,7 +179,6 @@ function AppContent() {
 
   const conversationRef = useRef<HTMLDivElement | null>(null);
 
-  // Synchronize and run core endpoints when token state flips true
   useEffect(() => {
     if (token) {
       setIsAuthenticated(true);
@@ -192,7 +190,6 @@ function AppContent() {
     }
   }, [token]);
 
-  // Handle continuous chat scrolling mechanics
   useEffect(() => {
     if (conversationRef.current) {
       conversationRef.current.scrollTop = conversationRef.current.scrollHeight;
@@ -377,32 +374,31 @@ function AppContent() {
     setMessage(example);
   };
 
-  // RENDER SEPARATE LOGIN / DISCOVERY COMPONENT SCREEN FOR MOBILE WRAPPERS
   if (!isAuthenticated) {
     return (
-      <div style={{ maxWidth: "420px", margin: "80px auto", padding: "24px", fontFamily: "sans-serif", border: "1px solid #eaeaea", borderRadius: "12px", boxShadow: "0 4px 12px rgba(0,0,0,0.05)" }}>
+      <div style={{ maxWidth: "420px", margin: "80px auto", padding: "24px", fontFamily: "sans-serif", border: "1px solid #4C9A2A", borderRadius: "12px", boxShadow: "0 4px 12px rgba(0,0,0,0.1)", backgroundColor: "#76BA1B" }}>
         <div style={{ textAlign: "center", marginBottom: "20px" }}>
-          <div style={{ display: "inline-block", padding: "10px 14px", background: "#0070f3", color: "white", borderRadius: "8px", fontWeight: "bold", fontSize: "20px", marginBottom: "8px" }}>NJ</div>
-          <h2 style={{ margin: "5px 0" }}>{isRegisterMode ? "Create Account" : "NurseJK Assistant"}</h2>
-          <small style={{ color: "#666" }}>Clinical Engine Gateway</small>
+          <div style={{ display: "inline-block", padding: "10px 14px", background: "#A4DE02", color: "#1E5631", borderRadius: "8px", fontWeight: "bold", fontSize: "20px", marginBottom: "8px" }}>NJ</div>
+          <h2 style={{ margin: "5px 0", color: "#FFFFFF" }}>{isRegisterMode ? "Create Account" : "NurseJK Assistant"}</h2>
+          <small style={{ color: "#ACDF87" }}>Clinical Engine Gateway</small>
         </div>
         
         {authError && <p style={{ color: "#ff4d4f", fontSize: "14px", textAlign: "center", background: "#fff2f0", padding: "8px", borderRadius: "4px", border: "1px solid #ffccc7" }}>{authError}</p>}
         
         <form onSubmit={isRegisterMode ? handleRegister : handleLogin} style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
           {isRegisterMode && (
-            <input type="text" placeholder="Full Name" value={name} onChange={(e) => setName(e.target.value)} required style={{ padding: "10px", borderRadius: "6px", border: "1px solid #ccc", fontSize: "14px" }} />
+            <input type="text" placeholder="Full Name" value={name} onChange={(e) => setName(e.target.value)} required style={{ padding: "10px", borderRadius: "6px", border: "1px solid #4C9A2A", fontSize: "14px" }} />
           )}
-          <input type="email" placeholder="Email Address" value={email} onChange={(e) => setEmail(e.target.value)} required style={{ padding: "10px", borderRadius: "6px", border: "1px solid #ccc", fontSize: "14px" }} />
-          <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} required style={{ padding: "10px", borderRadius: "6px", border: "1px solid #ccc", fontSize: "14px" }} />
-          <button type="submit" style={{ padding: "12px", backgroundColor: "#0070f3", color: "white", border: "none", borderRadius: "6px", cursor: "pointer", fontSize: "15px", fontWeight: "bold", marginTop: "5px" }}>
+          <input type="email" placeholder="Email Address" value={email} onChange={(e) => setEmail(e.target.value)} required style={{ padding: "10px", borderRadius: "6px", border: "1px solid #4C9A2A", fontSize: "14px" }} />
+          <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} required style={{ padding: "10px", borderRadius: "6px", border: "1px solid #4C9A2A", fontSize: "14px" }} />
+          <button type="submit" style={{ padding: "12px", backgroundColor: "#A4DE02", color: "#1E5631", border: "none", borderRadius: "6px", cursor: "pointer", fontSize: "15px", fontWeight: "bold", marginTop: "5px" }}>
             {isRegisterMode ? "Sign Up" : "Sign In"}
           </button>
         </form>
         
-        <p style={{ marginTop: "20px", fontSize: "13px", textAlign: "center", color: "#444" }}>
+        <p style={{ marginTop: "20px", fontSize: "13px", textAlign: "center", color: "#FFFFFF" }}>
           {isRegisterMode ? "Already have an account? " : "New student? "}
-          <span style={{ color: "#0070f3", cursor: "pointer", fontWeight: "600", textDecoration: "underline" }} onClick={() => { setIsRegisterMode(!isRegisterMode); setAuthError(""); }}>
+          <span style={{ color: "#A4DE02", cursor: "pointer", fontWeight: "600", textDecoration: "underline" }} onClick={() => { setIsRegisterMode(!isRegisterMode); setAuthError(""); }}>
             {isRegisterMode ? "Login here" : "Register here"}
           </span>
         </p>
@@ -410,7 +406,6 @@ function AppContent() {
     );
   }
 
-  // CORE UNIFIED SYSTEM WORKSPACE INTERFACE
   return (
     <div className="shell">
       <aside className={historyCollapsed ? "history-collapsed" : ""}>
@@ -422,15 +417,6 @@ function AppContent() {
               <small>Created by Joe Karamuki</small>
             </div>
           </div>
-          <button
-            className="icon-button"
-            type="button"
-            title="Show or hide recents"
-            aria-label="Show or hide recents"
-            onClick={() => setHistoryCollapsed((value) => !value)}
-          >
-            ☰
-          </button>
         </div>
 
         <div className="status">
@@ -441,16 +427,16 @@ function AppContent() {
           <button type="button" onClick={handleLogout} style={{ background: "none", border: "none", color: "#ff4d4f", cursor: "pointer", fontSize: "12px", fontWeight: "bold" }}>Logout</button>
         </div>
 
-        <div className="performance-widget" style={{ padding: "10px", background: "#f5f5f5", borderRadius: "6px", margin: "10px 0" }}>
-          <h4 style={{ margin: "0 0 8px 0", fontSize: "13px", color: "#333", display: "flex", alignItems: "center", gap: "5px" }}>
+        <div className="performance-widget">
+          <h4>
             <span>🎯</span> Tracked Review Topics
           </h4>
           {weakTopics.length === 0 ? (
-            <p style={{ margin: "0", fontSize: "11px", color: "#777" }}>No priority review topics tracked yet. Ask a clinical question to train the diagnostic scope.</p>
+            <p style={{ margin: "0", fontSize: "11px", color: "#ACDF87" }}>No priority review topics tracked yet. Ask a clinical question to train the diagnostic scope.</p>
           ) : (
             <div style={{ display: "flex", flexDirection: "column", gap: "4px", maxHeight: "120px", overflowY: "auto" }}>
               {weakTopics.map((topic, id) => (
-                <div key={id} style={{ background: "#fff", padding: "6px", borderRadius: "4px", fontSize: "11px", borderLeft: "3px solid #ff4d4f", boxShadow: "0 1px 2px rgba(0,0,0,0.05)" }}>
+                <div key={id} className="topic-pill">
                   {topic}
                 </div>
               ))}
@@ -489,9 +475,22 @@ function AppContent() {
 
       <main>
         <header>
-          <h1>Clinical nursing support</h1>
-          <p>Ask a nursing topic question and get a structured response grounded in board preparation schematics.</p>
-          <small>Created by Joe Karamuki</small>
+          <div className="top-header-row">
+            {/* Persistent External Toggle Button */}
+            <button
+              className="menu-toggle"
+              type="button"
+              title="Toggle sidebar visibility"
+              onClick={() => setHistoryCollapsed((value) => !value)}
+            >
+              ☰
+            </button>
+            <div className="header-titles">
+              <h1>Clinical nursing support</h1>
+              <p>Ask a nursing topic question and get a structured response grounded in board preparation schematics.</p>
+              <small>Created by Joe Karamuki</small>
+            </div>
+          </div>
         </header>
 
         <section className="conversation" aria-live="polite" ref={conversationRef}>
