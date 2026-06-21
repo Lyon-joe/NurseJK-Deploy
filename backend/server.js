@@ -9,6 +9,8 @@ import mongoose from "mongoose";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 import cors from "cors"; 
+import path from "path";
+import { fileURLToPath } from "url";
 
 import User from "./models/user.js";
 import Memory from "./models/Memory.js";
@@ -17,13 +19,16 @@ import { generateReply, analyzeWeakTopics } from "./ai/gemini.js";
 
 const app = express();
 
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
 // ==========================================
 // CORS CONFIGURATION (PRODUCTION ALIGNED - BULLETPROOF)
 // ==========================================
 const allowedOrigins = [
   "https://nursejk-assistant-q1oe.onrender.com",
   "https://nurse-jk-deploy.vercel.app",
-  "https://nurse-jk-deploy-51kt1rnul-nursek.vercel.app" 
+  "https://nurse-jk-frontend.onrender.com" 
 ];
 
 app.use(cors({
@@ -43,13 +48,6 @@ app.use(cors({
 }));
 
 app.use(express.json());
-
-// ==========================================
-// TEST ROUTE & MONGODB CONNECTION
-// ==========================================
-app.get("/", (req, res) => {
-  res.send("API is running");
-});
 
 let isConnected = false;
 const connectDB = async () => {
@@ -261,6 +259,17 @@ app.get("/api/dashboard/performance", auth, async (req, res) => {
     console.error("🔥 Dashboard fetch error:", err);
     res.status(500).json({ error: "Failed to retrieve student analytics" });
   }
+});
+
+// ==========================================
+// SERVE FRONTEND STATIC ASSETS IN PRODUCTION
+// ==========================================
+// Express serves compiled static application assets from the distribution folder
+app.use(express.static(path.join(__dirname, "./frontend/dist")));
+
+// Fallback catch-all router matches UI routes to index.html for Single Page Application rendering
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "./frontend/dist", "index.html"));
 });
 
 // ==========================================
