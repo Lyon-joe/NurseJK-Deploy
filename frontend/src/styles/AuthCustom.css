@@ -1,0 +1,137 @@
+/* ==========================================================================
+   FORCED VINTAGE DESK LAYOUT - FULL-HEIGHT LEFT SIDEBAR TRANSFORMATION
+   ========================================================================== */
+
+/* Overwrite all default app canvas constraints to handle the new panel setup */
+html, body, #root {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  background-color: #1a1613 !important; /* Neutral dark base fallback */
+}
+
+/* Base structural container covering the entire viewport */
+.custom-login-container {
+  display: flex !important;
+  align-items: stretch !important; /* Forces the child card to stretch top to bottom */
+  justify-content: flex-start !important; /* Moves the interface panel directly to the left */
+  width: 100vw !important;
+  height: 100vh !important;
+  position: fixed !important; 
+  top: 0 !important;
+  left: 0 !important;
+  overflow: hidden !important;
+  box-sizing: border-box !important;
+  
+  /* Vintage typewriter background image */
+  background: url('../assets/retrosupply-jLwVAUtLOAQ-unsplash.jpg') no-repeat center center !important;
+  background-size: cover !important;
+  z-index: 99999 !important;
+}
+
+/* Subtle background vignette tint (replaces the bright green glare with muted dark tones) */
+.custom-login-container::before {
+  content: "" !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  background: radial-gradient(circle, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.45) 100%) !important;
+  pointer-events: none !important;
+  z-index: 1 !important;
+}
+
+/* Full-height, translucent left sidebar panel */
+.custom-login-card {
+  position: relative !important;
+  z-index: 10 !important;
+  width: 100% !important;
+  max-width: 420px !important; /* Perfectly sized structural width for form contents */
+  height: 100vh !important; /* Fills screen completely from top to bottom */
+  padding: 60px 40px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important; /* Keeps the form centered vertically within the sidebar */
+  gap: 28px !important;
+  box-sizing: border-box !important;
+  border-radius: 0 !important; /* Removed curvature so it docks flush against screen edges */
+  
+  /* Premium frosted-glass translucency */
+  background: rgba(255, 255, 255, 0.06) !important; 
+  backdrop-filter: blur(20px) brightness(85%) contrast(105%) !important;
+  -webkit-backdrop-filter: blur(20px) brightness(85%) contrast(105%) !important;
+  
+  /* Right-hand side boundary edge line separates form panel from the background image */
+  border: none !important;
+  border-right: 1px solid rgba(255, 255, 255, 0.15) !important;
+  box-shadow: 10px 0 30px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Form Input Alignment Styles */
+.custom-field-group {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 8px !important;
+}
+
+.custom-field-group label {
+  font-size: 13px !important;
+  color: #e2e8f0 !important; /* Brightened text layer for maximum legibility on glass */
+  font-weight: 500 !important;
+  text-align: left !important;
+  letter-spacing: 0.5px !important;
+}
+
+.custom-field-group input {
+  width: 100% !important;
+  background-color: rgba(255, 255, 255, 0.08) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  color: #FFFFFF !important;
+  padding: 14px 16px !important;
+  border-radius: 8px !important;
+  font-size: 14px !important;
+  outline: none !important;
+  box-sizing: border-box !important;
+  transition: all 0.2s ease-in-out !important;
+}
+
+.custom-field-group input:focus {
+  border-color: #A4DE02 !important;
+  background-color: rgba(255, 255, 255, 0.14) !important;
+  box-shadow: 0 0 0 4px rgba(164, 222, 2, 0.2) !important;
+}
+
+/* High-Contrast Action Buttons */
+.custom-login-btn {
+  background: linear-gradient(135deg, #A4DE02, #68BB59) !important;
+  color: #1E5631 !important;
+  border: none !important;
+  padding: 15px !important;
+  border-radius: 8px !important;
+  font-weight: 600 !important;
+  font-size: 15px !important;
+  cursor: pointer !important;
+  transition: transform 0.1s ease, filter 0.2s ease !important;
+  margin-top: 12px !important;
+  width: 100% !important;
+  box-shadow: 0 4px 12px rgba(164, 222, 2, 0.2) !important;
+}
+
+.custom-login-btn:hover {
+  filter: brightness(1.1) !important;
+}
+
+.custom-login-btn:active {
+  transform: scale(0.99) !important;
+}
+
+/* Responsive Handling: Scales smoothly down to mobile views */
+@media (max-width: 480px) {
+  .custom-login-card {
+    max-width: 100% !important;
+    padding: 32px 24px !important;
+    background: rgba(20, 20, 20, 0.85) !important; /* Enhanced baseline contrast for mini screen safety profiles */
+  }
+}
