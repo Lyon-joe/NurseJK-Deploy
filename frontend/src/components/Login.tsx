@@ -1,26 +1,49 @@
 import React, { useState } from 'react';
-import { useAuth } from '../context/AuthContext';
-import '../styles/AuthCustom.css'; // Direct path to our new styles
+import API_BASE from '../api';
+import '../styles/AuthCustom.css';
 
 interface LoginProps {
   onSwitchToRegister: () => void;
 }
 
-const Login: React.FC<LoginProps> = ({ onSwitchToRegister }) => {
-  const { login } = useAuth();
+export default function Login({ onSwitchToRegister }: LoginProps) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setError('');
-    setLoading(true);
+    setLoading(false);
+
     try {
-      await login(email, password);
-    } catch (err) {
-      setError(err instanceof Error ? err.message : 'Login failed');
+      setLoading(true);
+      const response = await fetch(`${API_BASE}/api/auth/login`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email, password }),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Login failed. Please check your credentials.');
+      }
+
+      // Crucial Step: Store the token so App.tsx detects authentication instantly
+      if (data.token) {
+        localStorage.setItem('token', data.token);
+        // Force a state re-evaluation to load the dashboard shell smoothly
+        window.location.reload();
+      } else {
+        throw new Error('No authentication token returned from engine backend.');
+      }
+    } catch (err: unknown) {
+      console.error('🔥 Login Submission Error:', err);
+      setError(err instanceof Error ? err.message : 'Failed to reach the authentication engine.');
     } finally {
       setLoading(false);
     }
@@ -29,37 +52,25 @@ const Login: React.FC<LoginProps> = ({ onSwitchToRegister }) => {
   return (
     <div className="custom-login-container">
       <div className="custom-login-card">
-        
-        {/* Branding Headers */}
         <div style={{ textAlign: 'center' }}>
-          <div style={{
-            background: '#A4DE02', color: '#1E5631', width: '36px', height: '36px',
-            borderRadius: '8px', display: 'flex', alignItems: 'center', justifyContent: 'center',
-            fontWeight: 'bold', fontSize: '14px', margin: '0 auto 12px auto'
-          }}>
-            NJ
-          </div>
-          <h1 style={{ fontSize: '22px', color: '#A4DE02', fontWeight: 600, margin: 0 }}>
-            NurseJK Assistant
-          </h1>
-          <p style={{ fontSize: '13px', color: '#FFFFFF', opacity: 0.7, marginTop: '4px' }}>
-            Clinical Engine Gateway
-          </p>
+          <div className="brand-mark" style={{ margin: '0 auto 12px auto', width: '45px', height: '45px', fontSize: '18px' }}>NJ</div>
+          <h2 className="brand-title" style={{ color: '#a3e635', margin: '0' }}>NurseJK Assistant</h2>
+          <p className="brand-subtitle" style={{ color: '#ccc', fontSize: '13px', marginTop: '4px' }}>Clinical Engine Gateway</p>
         </div>
 
-        {error && <div style={{ color: '#EF4444', fontSize: '13px', textAlign: 'center' }}>{error}</div>}
+        {error && <div className="auth-error-banner" style={{ color: '#ff4d4f', textAlign: 'center', margin: '10px 0', fontSize: '13px', fontWeight: 'bold' }}>{error}</div>}
 
-        {/* Input Form Structure */}
-        <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '18px' }}>
+        <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '18px', marginTop: '15px' }}>
           <div className="custom-field-group">
             <label htmlFor="email">Email Address</label>
             <input
               id="email"
               type="email"
+              required
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              required
               disabled={loading}
+              placeholder="Enter your email"
             />
           </div>
 
@@ -68,32 +79,26 @@ const Login: React.FC<LoginProps> = ({ onSwitchToRegister }) => {
             <input
               id="password"
               type="password"
+              required
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              required
               disabled={loading}
+              placeholder="Enter your password"
             />
           </div>
 
-          <button type="submit" disabled={loading} className="custom-login-btn">
+          <button type="submit" className="custom-login-btn" disabled={loading}>
             {loading ? 'Signing In...' : 'Sign In'}
           </button>
         </form>
 
-        {/* Switch Links */}
-        <p style={{ textAlign: 'center', fontSize: '12px', color: '#FFFFFF', opacity: 0.8, margin: 0 }}>
+        <p style={{ textAlign: 'center', fontSize: '12px', color: 'rgba(255,255,255,0.7)', margin: '15px 0 0 0' }}>
           New student?{' '}
-          <button 
-            type="button" 
-            onClick={onSwitchToRegister} 
-            style={{ background: 'none', border: 'none', color: '#A4DE02', cursor: 'pointer', fontWeight: 600, textDecoration: 'underline', padding: 0 }}
-          >
+          <button type="button" onClick={onSwitchToRegister} style={{ background: 'none', border: 'none', color: '#a3e635', cursor: 'pointer', textDecoration: 'underline', padding: '0', fontSize: '12px' }}>
             Register here
           </button>
         </p>
       </div>
     </div>
   );
-};
-
-export default Login;
+}

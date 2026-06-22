@@ -1,8 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
+import { BrowserRouter } from "react-router-dom"; // Enforces history navigation context
 import { AuthProvider, useAuth } from "./context/AuthContext";
 import Login from "./components/Login";
 import Register from "./components/Register";
-import API_BASE from "./api"; // Imported our unified, mobile-ready configuration
+import API_BASE from "./api"; 
 
 type MessageType = "assistant" | "user" | "error";
 
@@ -326,7 +327,6 @@ function AppContent() {
     setMessage(example);
   };
 
-  // Wire up sub-components to intercept the authentication stack cleanly
   if (!isAuthenticated) {
     return isRegisterMode ? (
       <Register onSwitchToLogin={() => setIsRegisterMode(false)} />
@@ -465,8 +465,10 @@ function AppContent() {
 
 export default function App() {
   return (
-    <AuthProvider>
-      <AppContent />
-    </AuthProvider>
+    <BrowserRouter>
+      <AuthProvider>
+        <AppContent />
+      </AuthProvider>
+    </BrowserRouter>
   );
 }
