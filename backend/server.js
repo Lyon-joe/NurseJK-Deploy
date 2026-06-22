@@ -23,7 +23,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // ==========================================
-// CORS CONFIGURATION (PRODUCTION ALIGNED - BULLETPROOF)
+// CORS CONFIGURATION (PRODUCTION ALIGNED)
 // ==========================================
 const allowedOrigins = [
   "https://nursejk-assistant-q1oe.onrender.com",
@@ -240,6 +240,46 @@ ${message}
 });
 
 // ==========================================
+// RECENT THREADS CONVERSATION HISTORY
+// ==========================================
+app.get("/api/conversations", auth, async (req, res) => {
+  try {
+    const userId = req.user.userId;
+    const memory = await Memory.findOne({ userId });
+
+    if (!memory || !memory.messages || memory.messages.length === 0) {
+      return res.json({ conversations: [] });
+    }
+
+    const formattedConversations = [];
+    
+    // Group adjacent user and assistant messages to generate historical pairs
+    for (let i = 0; i < memory.messages.length; i += 2) {
+      const userMsg = memory.messages[i];
+      const aiMsg = memory.messages[i + 1];
+
+      if (userMsg && userMsg.role === "user") {
+        formattedConversations.push({
+          title: userMsg.content.substring(0, 32) + (userMsg.content.length > 32 ? "..." : ""),
+          userMessage: userMsg.content,
+          assistantReply: aiMsg ? aiMsg.content : "No response generated.",
+          createdAt: memory.updatedAt || new Date()
+        });
+      }
+    }
+
+    // Return chronological conversations descending (Newest first)
+    return res.json({ 
+      conversations: formattedConversations.reverse() 
+    });
+
+  } catch (err) {
+    console.error("🔥 FAILED TO RETRIEVE RECENT HISTORY:", err);
+    return res.status(500).json({ error: "Failed to load recent conversation streams." });
+  }
+});
+
+// ==========================================
 // STUDENT PERFORMANCE ANALYTICS
 // ==========================================
 app.get("/api/dashboard/performance", auth, async (req, res) => {
@@ -264,16 +304,15 @@ app.get("/api/dashboard/performance", auth, async (req, res) => {
 // ==========================================
 // SERVE FRONTEND STATIC ASSETS IN PRODUCTION
 // ==========================================
-// Fixed path resolution logic: Steps one folder up (../) out of the backend directory 
 app.use(express.static(path.join(__dirname, "../frontend/dist")));
 
-// Fallback catch-all router handles React app interface routing
+// Fallback catch-all route handles browser navigation refresh requests
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "../frontend/dist", "index.html"));
 });
 
 // ==========================================
-// EXPLICIT PORT BINDING FOR PRODUCTION
+// SYSTEM LAUNCH & PORT BINDING
 // ==========================================
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
