@@ -10,6 +10,8 @@ import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 import cors from "cors"; 
 import path from "path";
+import fs from "fs"; 
+import multer from "multer"; 
 import { fileURLToPath } from "url";
 
 import User from "./models/user.js";
@@ -23,6 +25,27 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // ==========================================
+// AUTOMATED MATERIAL STORAGE ENGINE CONFIG
+// ==========================================
+const uploadDir = path.join(__dirname, "public/uploads");
+if (!fs.existsSync(uploadDir)) {
+  fs.mkdirSync(uploadDir, { recursive: true });
+}
+
+const storage = multer.diskStorage({
+  destination: function (req, file, cb) {
+    cb(null, uploadDir);
+  },
+  filename: function (req, file, cb) {
+    const uniqueSuffix = Date.now() + "-" + Math.round(Math.random() * 1e9);
+    const fileExt = path.extname(file.originalname);
+    cb(null, file.fieldname + "-" + uniqueSuffix + fileExt);
+  }
+});
+
+const upload = multer({ storage: storage });
+
+// ==========================================
 // CORS CONFIGURATION (PRODUCTION ALIGNED)
 // ==========================================
 const allowedOrigins = [
@@ -34,9 +57,8 @@ const allowedOrigins = [
 app.use(cors({
   origin: function (origin, callback) {
     if (!origin) return callback(null, true);
-    if (origin.startsWith("http://localhost:")) return callback(null, true);
-    if (allowedOrigins.includes(origin)) return callback(null, true);
-    if (origin.includes(".vercel.app")) {
+    // Allow local development configurations or explicit production targets
+    if (origin.startsWith("http://localhost:") || allowedOrigins.includes(origin) || origin.includes(".vercel.app")) {
       return callback(null, true);
     }
     console.log("⚠️ Blocked Origin by CORS Policy:", origin);
@@ -49,6 +71,12 @@ app.use(cors({
 
 app.use(express.json());
 
+// Serve uploaded material assets statically (Placed safely above routing endpoints)
+app.use("/uploads", express.static(uploadDir));
+
+// ==========================================
+// MONGO DATABASE CONNECTIVITY
+// ==========================================
 let isConnected = false;
 const connectDB = async () => {
   if (isConnected) return;
@@ -67,9 +95,41 @@ app.use(async (req, res, next) => {
 });
 
 // ==========================================
+// AUTOMATED FILES INTERACTIVE RESOURCE ROUTE
+// ==========================================
+// 🛡️ CRITICAL FIX: Explicit path validation and fallback handling for the upload pipeline
+app.post("/api/materials/upload", auth, upload.array("files"), async (req, res) => {
+  try {
+    if (!req.files || req.files.length === 0) {
+      return res.status(400).json({ error: "No files provided for processing." });
+    }
+
+    const processedMaterials = req.files.map((file) => {
+      const fileExt = path.extname(file.originalname).replace(".", "").toLowerCase();
+      
+      // Dynamic resolution to clean up local paths vs hosted production addresses
+      const host = req.get("host");
+      const protocol = host.includes("localhost") ? "http" : "https";
+
+      return {
+        id: file.filename,
+        name: path.basename(file.originalname, path.extname(file.originalname)),
+        type: fileExt,
+        size: `${(file.size / (1024 * 1024)).toFixed(1)} MB`,
+        url: `${protocol}://${host}/uploads/${file.filename}`
+      };
+    });
+
+    return res.status(201).json(processedMaterials);
+  } catch (err) {
+    console.error("🔥 SYSTEM AUTOMATION UPLOAD FAULT:", err);
+    return res.status(500).json({ error: "Storage subsystem failed to catalog materials." });
+  }
+});
+
+// ==========================================
 // AUTHENTICATION ROUTES
 // ==========================================
-
 app.post("/api/auth/register", async (req, res) => {
   try {
     const { name, email, password } = req.body;
@@ -253,7 +313,6 @@ app.get("/api/conversations", auth, async (req, res) => {
 
     const formattedConversations = [];
     
-    // Group adjacent user and assistant messages to generate historical pairs
     for (let i = 0; i < memory.messages.length; i += 2) {
       const userMsg = memory.messages[i];
       const aiMsg = memory.messages[i + 1];
@@ -268,7 +327,6 @@ app.get("/api/conversations", auth, async (req, res) => {
       }
     }
 
-    // Return chronological conversations descending (Newest first)
     return res.json({ 
       conversations: formattedConversations.reverse() 
     });
@@ -299,14 +357,15 @@ app.get("/api/dashboard/performance", auth, async (req, res) => {
     console.error("🔥 Dashboard fetch error:", err);
     res.status(500).json({ error: "Failed to retrieve student analytics" });
   }
-});
+ });
 
 // ==========================================
 // SERVE FRONTEND STATIC ASSETS IN PRODUCTION
 // ==========================================
+// Serve physical distribution assets before executing catch-all redirects
 app.use(express.static(path.join(__dirname, "../frontend/dist")));
 
-// Fallback catch-all route handles browser navigation refresh requests
+// Fallback SPA catch-all rule (Must remain the final configuration entry)
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "../frontend/dist", "index.html"));
 });

@@ -2,33 +2,28 @@
    PREMIUM GLASSMORPHIC THEME CONFIGURATION
    ========================================== */
 :root {
-  /* Deep space canvas background */
-  --bg-main: #060813;
-  
-  /* Semi-transparent cards (Frosted Glass base) */
-  --bg-card-glass: rgba(12, 16, 33, 0.75);
-  
-  /* Subtle glass borders to give depth */
-  --border-glass: rgba(255, 255, 255, 0.07);
-  --border-glass-bright: rgba(255, 255, 255, 0.15);
-  
-  /* Text color hierarchy */
+  --bg-main: #58a541; /* Fallback */
+  --bg-card-glass: rgba(2, 13, 59, 0.7); /* Updated for better transparency */
+  --border-glass: rgba(255, 255, 255, 0.15);
+  --border-glass-bright: rgba(99, 177, 54, 0.945);
   --text-pure: #ffffff;
   --text-body: #94a3b8;
   --text-muted: #64748b;
-  
-  /* Neon Ambient Accents */
   --neon-cyan: #00f0ff;
   --neon-pink: #ff007f;
   --neon-lime: #a3e635;
   --neon-purple: #8b5cf6;
 }
 
-/* Apply base configuration to the document root */
 body {
   margin: 0;
   padding: 0;
-  background-color: var(--bg-main);
+  /* Updated to include your background image */
+  background-image: url('/assets/national-cancer-institute-NFvdKIhxYlU-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   color: var(--text-pure);
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -36,10 +31,30 @@ body {
 }
 
 /* ==========================================
-   REUSABLE UTILITY CLASSES FOR THE LAYOUT
+   RETRACTABLE HISTORY TAB
    ========================================== */
-   
-/* Premium Frosted Glass Panel Container */
+.history-tab {
+  position: fixed;
+  top: 0;
+  right: -320px; /* Hidden state */
+  width: 300px;
+  height: 100vh;
+  z-index: 2000;
+  transition: right 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  background: rgba(2, 13, 59, 0.85); /* Darker glass for text readability */
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  border-left: 1px solid var(--border-glass);
+  padding: 24px;
+}
+
+.history-tab.open {
+  right: 0; /* Visible state */
+}
+
+/* ==========================================
+   GLASSMORPHISM COMPONENTS
+   ========================================== */
 .glass-panel {
   background: var(--bg-card-glass);
   backdrop-filter: blur(20px);
@@ -47,203 +62,30 @@ body {
   border: 1px solid var(--border-glass);
   border-radius: 16px;
   padding: 24px;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
-}
-
-/* Interactive hover scales */
-.glass-panel:hover {
-  border-color: var(--border-glass-bright);
-  transform: translateY(-2px);
-}
-
-/* Accent Glow Variations */
-.glow-cyan:hover {
-  box-shadow: 0 0 25px rgba(0, 240, 255, 0.12);
-  border-color: rgba(0, 240, 255, 0.3);
-}
-
-.glow-pink:hover {
-  box-shadow: 0 0 25px rgba(255, 0, 127, 0.12);
-  border-color: rgba(255, 0, 127, 0.3);
-}
-
-.glow-purple:hover {
-  box-shadow: 0 0 25px rgba(139, 92, 246, 0.12);
-  border-color: rgba(139, 92, 246, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37); /* Added depth for glass effect */
 }
 
 /* ==========================================
-   THE 2-COLUMN MAIN APPLICATION SHELL
+   EXISTING LAYOUT & UTILITIES
    ========================================== */
-.app-dashboard-shell {
-  display: flex;
-  min-height: 100vh;
-  background-color: var(--bg-main);
+.app-dashboard-shell { display: flex; min-height: 100vh; }
+.app-dashboard-shell aside { 
+    width: 280px; 
+    padding: 24px; 
+    background: rgba(0,0,0,0.2); /* Slight tint for sidebar */
+    border-right: 1px solid var(--border-glass); 
 }
+.app-dashboard-shell main { flex-grow: 1; padding: 40px; overflow-y: auto; height: 100vh; position: relative; }
 
-/* Glassmorphic Sidebar wrapper */
-.app-dashboard-shell aside {
-  width: 280px;
-  min-width: 280px;
-  background: rgba(10, 12, 26, 0.4);
-  border-right: 1px solid var(--border-glass);
-  display: flex;
-  flex-direction: column;
-  padding: 24px;
-}
+.view-container { opacity: 0; transition: opacity 0.4s ease-in-out; display: none; }
+.view-container.active-view { opacity: 1; display: block; }
 
-/* Right-side scrollable content space */
-.app-dashboard-shell main {
-  flex-grow: 1;
-  padding: 40px;
-  overflow-y: auto;
-  height: 100vh;
-  box-sizing: border-box;
-}
+#live-header-clock { position: absolute; top: 24px; right: 40px; text-align: right; z-index: 100; }
+.live-time { font-size: 18px; font-weight: 700; color: var(--text-pure); display: block; }
+.live-date { font-size: 11px; color: var(--text-muted); text-transform: uppercase; }
 
-/* Header summary alignment */
-.dashboard-header {
-  margin-bottom: 32px;
-}
+.dashboard-grid-matrix { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
 
-.dashboard-header h1 {
-  font-size: 26px;
-  font-weight: 700;
-  margin: 0 0 8px 0;
-  letter-spacing: -0.5px;
-}
-
-.dashboard-header p {
-  color: var(--text-body);
-  margin: 0;
-  font-size: 14px;
-}
-
-/* ==========================================
-   THE DYNAMIC CONTENT GRID
-   ========================================== */
-.dashboard-grid-matrix {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 Equal Columns */
-  gap: 24px;
-}
-
-/* Control how panels expand across columns */
-.span-1 { grid-column: span 1; }
-.span-2 { grid-column: span 2; }
-.span-3 { grid-column: span 3; }
-
-/* Responsive break for lower resolutions */
-@media (max-width: 1200px) {
-  .dashboard-grid-matrix {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .span-2, .span-3 { grid-column: span 2; }
-}
-
-@media (max-width: 768px) {
-  .dashboard-grid-matrix {
-    grid-template-columns: 1fr;
-  }
-  .span-1, .span-2, .span-3 { grid-column: span 1; }
-}
-
-/* ==========================================
-   STRUCTURED CLINICAL RESPONSE DESIGN
-   ========================================== */
-.response-content {
-  animation: fadeInPanel 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.response-section {
-  transition: background-color 0.2s ease, border-color 0.2s ease;
-}
-
-.response-section:hover {
-  background: rgba(255, 255, 255, 0.04) !important;
-  border-color: rgba(255, 255, 255, 0.08) !important;
-}
-
-/* Custom Neon Highlights for Icons */
-.response-heading .icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 28px;
-  height: 28px;
-  background: rgba(255, 255, 255, 0.03);
-  border-radius: 6px;
-  border: 1px solid rgba(255, 255, 255, 0.05);
-}
-
-/* ==========================================
-   INTERACTIVE RECENT HISTORY BUTTONS
-   ========================================== */
-.history-item {
-  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.history-item:hover {
-  background: rgba(255, 255, 255, 0.06) !important;
-  border-color: rgba(255, 255, 255, 0.15) !important;
-  transform: translateX(2px);
-}
-
-.history-item:active {
-  transform: scale(0.98);
-}
-
-/* ==========================================
-   INPUT FIELDS & COMPOSER INTERFACE
-   ========================================== */
-input[type="text"]:focus {
-  border-color: var(--neon-cyan) !important;
-  box-shadow: 0 0 12px rgba(0, 240, 255, 0.15);
-  background: rgba(255, 255, 255, 0.01) !important;
-}
-
-button[type="submit"]:hover:not(:disabled) {
-  opacity: 0.9;
-  box-shadow: 0 0 15px rgba(163, 230, 53, 0.3);
-}
-
-button[type="submit"]:active:not(:disabled) {
-  transform: scale(0.97);
-}
-
-/* ==========================================
-   PREMIUM CUSTOM SIDEBAR SCROLLBARS
-   ========================================== */
-.conversation::-webkit-scrollbar,
-.history-list::-webkit-scrollbar {
-  width: 6px;
-}
-
-.conversation::-webkit-scrollbar-track,
-.history-list::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-.conversation::-webkit-scrollbar-thumb,
-.history-list::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-}
-
-.conversation::-webkit-scrollbar-thumb:hover,
-.history-list::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 255, 255, 0.25);
-}
-
-/* Smooth layout loading entries */
-@keyframes fadeInPanel {
-  from {
-    opacity: 0;
-    transform: translateY(6px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+/* Scrollbars */
+.conversation::-webkit-scrollbar, .history-list::-webkit-scrollbar { width: 6px; }
+.conversation::-webkit-scrollbar-thumb, .history-list::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.1); border-radius: 10px; }
