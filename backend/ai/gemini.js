@@ -1,16 +1,42 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
-const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
+let genAI;
+let model;
 
-const model = genAI.getGenerativeModel({
-  model: process.env.GEMINI_CHAT_MODEL || "gemini-2.5-flash",
-});
+const getModel = () => {
+  if (!model) {
+    if (!process.env.GEMINI_API_KEY) {
+      throw new Error("GEMINI_API_KEY environment variable is missing.");
+    }
+    genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
+    model = genAI.getGenerativeModel({
+      model: process.env.GEMINI_CHAT_MODEL || "gemini-2.5-flash",
+    });
+  }
+  return model;
+};
+
+// Helper to retry Gemini API requests with exponential backoff
+const generateContentWithRetry = async (prompt, retries = 4, delay = 1000) => {
+  const modelInstance = getModel();
+  for (let i = 0; i < retries; i++) {
+    try {
+      const result = await modelInstance.generateContent(prompt);
+      const response = await result.response;
+      return response.text();
+    } catch (err) {
+      console.warn(`⚠️ Gemini API call attempt ${i + 1} failed: ${err.message}`);
+      if (i === retries - 1) throw err;
+      const waitTime = delay * Math.pow(2, i);
+      console.log(`Retrying in ${waitTime}ms...`);
+      await new Promise(resolve => setTimeout(resolve, waitTime));
+    }
+  }
+};
 
 // Primary function for generating chat replies
 export const generateReply = async (message) => {
-  const result = await model.generateContent(message);
-  const response = await result.response;
-  return response.text();
+  return await generateContentWithRetry(message);
 };
 
 /**
@@ -31,9 +57,8 @@ If the student didn't show a clear conceptual weakness (e.g., they just said tha
 
 Response:`;
 
-    const result = await model.generateContent(analysisPrompt);
-    const response = await result.response;
-    const cleanedResult = response.text().trim();
+    const resultText = await generateContentWithRetry(analysisPrompt);
+    const cleanedResult = resultText.trim();
 
     // Check if it's a blank or a negative response
     if (cleanedResult.toUpperCase() === "NONE" || cleanedResult === "") {

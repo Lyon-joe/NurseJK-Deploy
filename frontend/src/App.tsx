@@ -6,17 +6,9 @@ import Register from "./components/Register";
 
 type MessageType = "assistant" | "user" | "error";
 type ConversationMessage = { type: MessageType; text: string; isHistory?: boolean; };
-type HistoryItem = { title?: string; createdAt?: string; userMessage: string; assistantReply: string; };
+type StudyMaterial = { id: string; name: string; type: string; size: string; url: string; };
 type ResponseSection = { heading: string; paragraphs: string[]; bullets: string[]; };
 type ActiveViewType = "dashboard" | "library";
-
-export interface StudyMaterial {
-  id: string;
-  name: string;
-  type: string;
-  size: string;
-  url: string; 
-}
 
 const sectionIcons = [
   { pattern: /definition/i, icon: "📘" }, 
@@ -27,7 +19,7 @@ const sectionIcons = [
   { pattern: /signs?|symptoms?|clinical features/i, icon: "🌡️" },
   { pattern: /nursing|management|intervention/i, icon: "💉" },
   { pattern: /complications?/i, icon: "🚨" },
-  { pattern: /medications?|medical management/i, icon: "💊" },
+  { pattern: /medications?|medical management|surgical/i, icon: "💊" },
   { pattern: /prevention/i, icon: "🛡️" }, 
   { pattern: /red flags?/i, icon: "🚩" },
 ];
@@ -54,12 +46,25 @@ const parseResponseSections = (text: string): ResponseSection[] => {
   for (const rawLine of lines) {
     const line = rawLine.trim();
     if (!line) { flushParagraph(); continue; }
-    const headingMatch = line.match(/^#{1,4}\s+(.+)$/) || line.match(/^•\s+([A-Za-z\s]{3,30})$/);
+    
+    // Check for bold markdown headings common in markdown lists or structured responses
+    const markdownHeadingMatch = line.match(/^#{1,4}\s+(.+)$/);
+    const genericHeadingMatch = line.match(/^[-*•]?\s*\*\*([^*:\n]{3,40})\*\*$/) || line.match(/^•\s+([A-Za-z\s]{3,30})$/);
     const numberedMatch = line.match(/^\*{0,2}(\d{1,2}\.\s+[^:*]+)\*{0,2}:?$/);
     const bulletMatch = line.match(/^[-*•]\s+(.+)$/);
 
-    if (headingMatch || numberedMatch) { flushParagraph(); createSection(cleanInline(headingMatch ? headingMatch[1] : numberedMatch![1])); continue; }
-    if (bulletMatch) { flushParagraph(); if (!currentSection) createSection("Key Points"); currentSection!.bullets.push(cleanInline(bulletMatch[1])); continue; }
+    if (markdownHeadingMatch || genericHeadingMatch || numberedMatch) { 
+      flushParagraph(); 
+      const headingText = markdownHeadingMatch ? markdownHeadingMatch[1] : (genericHeadingMatch ? genericHeadingMatch[1] : numberedMatch![1]);
+      createSection(cleanInline(headingText)); 
+      continue; 
+    }
+    if (bulletMatch) { 
+      flushParagraph(); 
+      if (!currentSection) createSection("Key Points"); 
+      currentSection!.bullets.push(cleanInline(bulletMatch[1])); 
+      continue; 
+    }
     paragraphBuffer.push(line);
   }
   flushParagraph();
@@ -71,13 +76,17 @@ const renderResponseContent = (text: string) => {
   return (
     <div className="response-content" style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
       {sections.map((section, idx) => (
-        <section key={`s-${idx}`} style={{ background: '#ffffff', padding: '16px', borderRadius: '10px', border: '1px solid #e2e8f0', boxShadow: '0 1px 3px rgba(0,0,0,0.02)' }} className="response-section">
-          <h4 style={{ margin: '0 0 10px 0', fontSize: '15px', fontWeight: '600', display: 'flex', alignItems: 'center', gap: '8px', color: '#1e293b' }}>
+        <section key={`s-${idx}`} style={{ background: 'rgba(255, 255, 255, 0.07)', padding: '16px', borderRadius: '12px', border: '1px solid rgba(255, 255, 255, 0.1)' }} className="response-section">
+          <h4 style={{ margin: '0 0 10px 0', fontSize: '15px', fontWeight: '600', display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--neon-cyan)' }}>
             <span>{iconForHeading(section.heading)}</span> {section.heading}
           </h4>
-          {section.paragraphs.map((p, pIdx) => <p key={`p-${idx}-${pIdx}`} style={{ color: '#475569', fontSize: '14px', lineHeight: '1.6', margin: '0 0 10px 0' }}>{p}</p>)}
+          {section.paragraphs.map((p, pIdx) => <p key={`p-${idx}-${pIdx}`} style={{ color: 'var(--text-pure)', fontSize: '14px', lineHeight: '1.6', margin: '0 0 10px 0' }}>{p}</p>)}
           <ul style={{ listStyle: 'none', padding: '0', margin: '0', display: 'flex', flexDirection: 'column', gap: '8px' }}>
-            {section.bullets.map((b, bIdx) => <li key={`b-${idx}-${bIdx}`} style={{ display: 'flex', gap: '8px', alignItems: 'flex-start', fontSize: '14px', color: '#475569' }}><span style={{ color: '#0d9488', fontWeight: 'bold' }}>•</span><span>{b}</span></li>)}
+            {section.bullets.map((b, bIdx) => (
+              <li key={`b-${idx}-${bIdx}`} style={{ display: 'flex', gap: '8px', alignItems: 'flex-start', fontSize: '14px', color: 'var(--text-pure)' }}>
+                <span style={{ color: 'var(--neon-lime)', fontWeight: 'bold' }}>•</span><span>{b}</span>
+              </li>
+            ))}
           </ul>
         </section>
       ))}
@@ -96,7 +105,7 @@ export function AppContent() {
 
   const [isAdmin, setIsAdmin] = useState<boolean>(true);
   const [isSidebarCollapsed, setIsSidebarCollapsed] = useState(false);
-  const [isMemoryCollapsed, setIsMemoryCollapsed] = useState(false);
+  const [isMemoryOpen, setIsMemoryOpen] = useState(false);
 
   const [timeStr, setTimeStr] = useState("");
   const [dateStr, setDateStr] = useState("");
@@ -105,18 +114,20 @@ export function AppContent() {
   const [statusState, setStatusState] = useState<"ready" | "pending" | "error">("ready");
   const [message, setMessage] = useState("");
   const [conversation, setConversation] = useState<ConversationMessage[]>([
-    { type: "assistant", text: "Ready for a nursing clinical logic exploration." }
+    { type: "assistant", text: "Ready for a structured clinical logic exploration. What complex pathology are we breaking down today?" }
   ]);
-  const [weakTopics, setWeakTopics] = useState<string[]>(["Maternal Shock Profiles", "Neonatal Resuscitation Timelines"]);
-  const [recentMemories] = useState([
-  "Pulmonary embolism",
-  "Myasthenia gravis",
-  "Postpartum hemorrhage",
-  "Diabetic ketoacidosis",
-  "Neonatal jaundice",
-  "Tuberculosis treatment"
-]);
+  const [weakTopics, setWeakTopics] = useState<string[]>([]);
+  const [recentMemories, setRecentMemories] = useState<string[]>([
+    "Pulmonary embolism",
+    "Myasthenia gravis",
+    "Postpartum hemorrhage",
+    "Diabetic ketoacidosis",
+    "Neonatal jaundice",
+    "Tuberculosis treatment"
+  ]);
+  
   const conversationRef = useRef<HTMLDivElement | null>(null);
+  const inputRef = useRef<HTMLInputElement | null>(null);
 
   const [materials, setMaterials] = useState<StudyMaterial[]>([
     { id: "hp-1", name: "Healing Tissues, Faster Recovery", type: "pdf", size: "4.2 MB", url: "/assets/Maternal_Healthcare_Guidelines.pdf" },
@@ -127,6 +138,41 @@ export function AppContent() {
     { id: "hp-6", name: "From Cutting Edge Treatments To Digital Health", type: "pptx", size: "14.2 MB", url: "/assets/Digital_Health.pptx" },
     { id: "hp-7", name: "Key Milestones In Treatment", type: "pptx", size: "9.8 MB", url: "/assets/Key_Milestones.pptx" }
   ]);
+
+  // Sync performance telemetry metrics from database endpoints
+  const fetchPerformanceAnalytics = async () => {
+    if (!token) return;
+    try {
+      const response = await fetch("/api/dashboard/performance", {
+        headers: { "Authorization": `Bearer ${token}` }
+      });
+      if (response.ok) {
+        const data = await response.json();
+        if (data.weakTopics) setWeakTopics(data.weakTopics);
+      }
+    } catch (err) {
+      console.error("Failed to sync structural dashboard analytics", err);
+    }
+  };
+
+  // Sync historical message summaries to fill recent memory tab
+  const fetchRecentConversations = async () => {
+    if (!token) return;
+    try {
+      const response = await fetch("/api/conversations", {
+        headers: { "Authorization": `Bearer ${token}` }
+      });
+      if (response.ok) {
+        const data = await response.json();
+        if (data.conversations && data.conversations.length > 0) {
+          const loadedTitles = data.conversations.map((c: any) => c.title);
+          setRecentMemories(loadedTitles);
+        }
+      }
+    } catch (err) {
+      console.error("Failed to fetch past session streams", err);
+    }
+  };
 
   useEffect(() => {
     const updateClock = () => {
@@ -142,8 +188,18 @@ export function AppContent() {
   useEffect(() => {
     if (token) {
       setIsAuthenticated(true);
-    } else setIsAuthenticated(false);
+      fetchPerformanceAnalytics();
+      fetchRecentConversations();
+    } else {
+      setIsAuthenticated(false);
+    }
   }, [token]);
+
+  useEffect(() => {
+    if (conversationRef.current) {
+      conversationRef.current.scrollTop = conversationRef.current.scrollHeight;
+    }
+  }, [conversation]);
 
   const handleLogout = () => {
     localStorage.removeItem("token");
@@ -151,66 +207,128 @@ export function AppContent() {
     setIsAuthenticated(false);
   };
 
-  const handleFileUploadClick = () => {
-  const fileInput = document.createElement("input");
-  fileInput.type = "file";
-  fileInput.multiple = true;
-  fileInput.accept = ".pdf,.doc,.docx,.ppt,.pptx,.xlsx";
+  // Submission engine driving direct queries down to /api/chat/retrieval 
+  const handleSendMessage = async () => {
+    if (!message.trim() || statusState === "pending") return;
 
-  fileInput.onchange = async (e: any) => {
-    const files: FileList = e.target.files;
-    if (!files || files.length === 0) return;
+    const userQuery = message.trim();
+    
+    setConversation(prev => [...prev, { type: "user", text: userQuery }]);
+    setMessage("");
 
-    setStatusText("Processing Assets...");
+    setStatusText("Synthesizing Logic...");
     setStatusState("pending");
 
     try {
-      const successfulUploads: StudyMaterial[] = [];
+      // Aligned with backend path: /api/chat/retrieval
+      const response = await fetch("/api/chat/retrieval", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Authorization": `Bearer ${token}`
+        },
+        body: JSON.stringify({ message: userQuery }) // Aligned payload: key is 'message'
+      });
 
-      for (let i = 0; i < files.length; i++) {
-        const file = files[i];
-        
-        // Construct clean JSON payload
-        const payload = {
-          name: file.name,
-          type: file.name.split('.').pop()?.toLowerCase() || 'unknown',
-          url: `/uploads/${file.name}`, // Or your cloud storage URL
-          size: (file.size / (1024 * 1024)).toFixed(1) + " MB"
-        };
-
-        // Ensure you are using the correct relative path
-const response = await fetch("/api/materials/manual-add", {
-  method: "POST",
-  headers: {
-    "Content-Type": "application/json",
-    "Authorization": `Bearer ${token}`
-  },
-  body: JSON.stringify(payload)
-});
-
-        if (!response.ok) {
-          throw new Error(`Server returned ${response.status} for ${file.name}`);
-        }
-
-        const result = await response.json();
-        successfulUploads.push({ id: Date.now().toString() + i, ...payload });
+      if (!response.ok) {
+        throw new Error(`Core routing error: ${response.status}`);
       }
 
-      setMaterials(prev => [...prev, ...successfulUploads]);
+      const data = await response.json();
+      
+      setConversation(prev => [...prev, {
+        type: "assistant",
+        text: data.reply || "No dynamic tracking returned."
+      }]);
+      
       setStatusText("Engine Core Online");
       setStatusState("ready");
-      console.log("Successfully added:", successfulUploads);
+      
+      // Update sidebar memory nodes and knowledge gaps dynamically post-response
+      fetchPerformanceAnalytics();
+      fetchRecentConversations();
 
     } catch (error: any) {
-      console.error("Upload failure:", error);
-      setStatusText("Upload Failed");
+      console.error("AI execution failure:", error);
+      setConversation(prev => [...prev, {
+        type: "error",
+        text: `🔴 Connection disrupted. System message: ${error.message}`
+      }]);
+      setStatusText("Offline Error");
       setStatusState("error");
-      alert(`Error: ${error.message}`);
     }
   };
 
-  fileInput.click();
-};
+  // Wire up structural click selections on recent memories directly back into execution pipeline
+  const handleSelectMemory = (topic: string) => {
+    setActiveView("dashboard");
+    setMessage(`Provide a systematic evaluation of ${topic}, emphasizing critical nursing roles, primary assessment methods, and high-priority diagnostics.`);
+    setIsMemoryOpen(false);
+    
+    setTimeout(() => {
+      if (inputRef.current) {
+        inputRef.current.focus();
+      }
+    }, 100);
+  };
+
+  const handleFileUploadClick = () => {
+    const fileInput = document.createElement("input");
+    fileInput.type = "file";
+    fileInput.multiple = true;
+    fileInput.accept = ".pdf,.doc,.docx,.ppt,.pptx,.xlsx";
+
+    fileInput.onchange = async (e: any) => {
+      const files: FileList = e.target.files;
+      if (!files || files.length === 0) return;
+
+      setStatusText("Processing Assets...");
+      setStatusState("pending");
+
+      try {
+        const successfulUploads: StudyMaterial[] = [];
+
+        for (let i = 0; i < files.length; i++) {
+          const file = files[i];
+          
+          const payload = {
+            name: file.name,
+            type: file.name.split('.').pop()?.toLowerCase() || 'unknown',
+            url: `/uploads/${file.name}`,
+            size: (file.size / (1024 * 1024)).toFixed(1) + " MB"
+          };
+
+          const response = await fetch("/api/materials/manual-add", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              "Authorization": `Bearer ${token}`
+            },
+            body: JSON.stringify(payload)
+          });
+
+          if (!response.ok) {
+            throw new Error(`Server returned ${response.status} for ${file.name}`);
+          }
+
+          successfulUploads.push({ id: Date.now().toString() + i, ...payload });
+        }
+
+        setMaterials(prev => [...prev, ...successfulUploads]);
+        setStatusText("Engine Core Online");
+        setStatusState("ready");
+
+      } catch (error: any) {
+        console.error("Upload failure:", error);
+        setStatusText("Upload Failed");
+        setStatusState("error");
+        alert(`Error: ${error.message}`);
+      }
+    };
+
+    fileInput.click();
+  };
+
   const purgeMaterial = (id: string) => {
     setMaterials(prev => prev.filter(item => item.id !== id));
   };
@@ -218,276 +336,211 @@ const response = await fetch("/api/materials/manual-add", {
   if (!isAuthenticated) return isRegisterMode ? <Register onSwitchToLogin={() => setIsRegisterMode(false)} /> : <Login onSwitchToRegister={() => setIsRegisterMode(true)} />;
 
   return (
-    <div className="app-dashboard-shell" style={{ display: 'flex', minHeight: '100vh', background: '#f8fafc', fontFamily: 'system-ui, -apple-system, sans-serif' }}>
+    <div className="app-dashboard-shell">
       
       {/* SIDEBAR NAVIGATION */}
-      <aside
-  className="sidebar-dock-shelf"
-  style={{
-    width: isSidebarCollapsed ? '80px' : '260px',
-    background: '#0f172a',
-    display: 'flex',
-    flexDirection: 'column',
-    padding: '24px 16px',
-    justifyContent: 'space-between',
-    transition: 'width .3s ease'
-  }}
->
+      <aside className="sidebar-dock-shelf" style={{ width: isSidebarCollapsed ? '80px' : '260px', transition: 'width .3s ease' }}>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
           <button
-  type="button"
-  onClick={() => setIsSidebarCollapsed(!isSidebarCollapsed)}
-  style={{
-    background: "#1e293b",
-    border: "none",
-    color: "#fff",
-    padding: "10px",
-    borderRadius: "8px",
-    cursor: "pointer",
-    marginBottom: "10px"
-  }}
->
-  {isSidebarCollapsed ? "🤯" : "😎AI Assistant😎"}
-</button>
+            type="button"
+            onClick={() => setIsSidebarCollapsed(!isSidebarCollapsed)}
+            style={{
+              background: "rgba(255, 255, 255, 0.08)",
+              border: "1px solid var(--border-glass)",
+              color: "#fff",
+              padding: "10px",
+              borderRadius: "8px",
+              cursor: "pointer",
+              marginBottom: "10px"
+            }}
+          >
+            {isSidebarCollapsed ? "🧭" : "⚡ Collapse Navigation"}
+          </button>
 
-          <div style={{ paddingBottom: '12px', borderBottom: '1px solid rgba(255, 255, 255, 0.08)' }}>
-            <h2
-  style={{
-    fontSize: '18px',
-    fontWeight: '700',
-    color: '#fff',
-    margin: '0 0 4px 0',
-    display: 'flex',
-    alignItems: 'center',
-    gap: '2px'
-  }}
->
-  <span style={{ color: '#2dd4bf' }}>🩺</span>
-  {!isSidebarCollapsed && "NurseJK Assistant"}
-</h2>
-
-{!isSidebarCollapsed && (
-  <p
-    style={{
-      fontSize: '11px',
-      color: '#94a3b8',
-      margin: 0,
-      textTransform: 'uppercase',
-      letterSpacing: '1px'
-    }}
-  >
-    Clinical Companion
-  </p>
-)}
+          <div style={{ paddingBottom: '12px', borderBottom: '1px solid var(--border-glass)' }}>
+            <h2 style={{ fontSize: '18px', fontWeight: '700', color: '#fff', margin: '0 0 4px 0', display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <span style={{ color: 'var(--neon-cyan)' }}>🩺</span>
+              {!isSidebarCollapsed && "NurseJK Assistant"}
+            </h2>
+            {!isSidebarCollapsed && <p style={{ fontSize: '11px', color: 'var(--text-body)', margin: 0, alignItems: 'center', textTransform: 'uppercase', letterSpacing: '1px' }}>Clinical Companion</p>}
           </div>
 
           <nav style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
             <button 
               type="button" 
               onClick={() => { setActiveView("dashboard"); }}
-              style={{ width: '100%', display: 'flex', alignItems: 'center', gap: '12px', padding: '12px 12px', borderRadius: '8px', border: 'none', background: activeView === 'dashboard' ? 'rgba(45, 212, 191, 0.1)' : 'transparent', color: activeView === 'dashboard' ? '#2dd4bf' : '#94a3b8', fontSize: '14px', fontWeight: '500', cursor: 'pointer', textAlign: 'left', transition: 'all 0.2s' }}
+              style={{ width: '100%', display: 'flex', alignItems: 'center', gap: '12px', padding: '12px', borderRadius: '8px', border: 'none', background: activeView === 'dashboard' ? 'rgba(0, 240, 255, 0.15)' : 'transparent', color: activeView === 'dashboard' ? 'var(--neon-cyan)' : 'var(--text-body)', fontSize: '14px', fontWeight: '500', cursor: 'pointer', textAlign: 'left', transition: 'all 0.2s' }}
             >
-              <>
-  <span>🖥️</span>
-  {!isSidebarCollapsed && "Dashboard Hub"}
-</>
+              <span>🖥️</span>
+              {!isSidebarCollapsed && "Reasoning Core"}
             </button>
             <button 
               type="button" 
               onClick={() => { setActiveView("library"); }}
-              style={{ width: '100%', display: 'flex', alignItems: 'center', gap: '12px', padding: '12px 12px', borderRadius: '8px', border: 'none', background: activeView === 'library' ? 'rgba(45, 212, 191, 0.1)' : 'transparent', color: activeView === 'library' ? '#2dd4bf' : '#94a3b8', fontSize: '14px', fontWeight: '500', cursor: 'pointer', textAlign: 'left', transition: 'all 0.2s' }}
+              style={{ width: '100%', display: 'flex', alignItems: 'center', gap: '12px', padding: '12px', borderRadius: '8px', border: 'none', background: activeView === 'library' ? 'rgba(0, 240, 255, 0.15)' : 'transparent', color: activeView === 'library' ? 'var(--neon-cyan)' : 'var(--text-body)', fontSize: '14px', fontWeight: '500', cursor: 'pointer', textAlign: 'left', transition: 'all 0.2s' }}
             >
-              <>
-  <span>📚</span>
-  {!isSidebarCollapsed && "Material Library"}
-</>
+              <span>📚</span>
+              {!isSidebarCollapsed && "Material Repository"}
             </button>
-            <div
-  style={{
-    background: "#111827",
-    borderRadius: "12px",
-    padding: "12px",
-    marginTop: "20px"
-  }}
->
-  <button
-    type="button"
-    onClick={() => setIsMemoryCollapsed(!isMemoryCollapsed)}
-    style={{
-      width: "100%",
-      background: "transparent",
-      border: "none",
-      color: "#2dd4bf",
-      cursor: "pointer",
-      fontWeight: "600",
-      display: "flex",
-      justifyContent: "space-between",
-      alignItems: "center"
-    }}
-  >
-    {!isSidebarCollapsed && (
-      <>
-        🧠 Recent Memory
-        <span>{isMemoryCollapsed ? "▼" : "▲"}</span>
-      </>
-    )}
-  </button>
-
-  {!isMemoryCollapsed && !isSidebarCollapsed && (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        gap: "8px",
-        marginTop: "12px"
-      }}
-    >
-      {recentMemories.map((memory, index) => (
-        <div
-          key={index}
-          style={{
-            background: "#1e293b",
-            color: "#cbd5e1",
-            padding: "10px",
-            borderRadius: "8px",
-            fontSize: "13px"
-          }}
-        >
-          <button
-  type="button"
-  style={{
-    width: "100%",
-    background: "transparent",
-    border: "none",
-    color: "#cbd5e1",
-    textAlign: "left",
-    cursor: "pointer",
-    fontSize: "13px"
-  }}
->
-  📝 {memory}
-</button>
-        </div>
-      ))}
-    </div>
-  )}
-</div>
+            
+            <button
+              type="button"
+              onClick={() => setIsMemoryOpen(!isMemoryOpen)}
+              style={{ width: '100%', display: 'flex', alignItems: 'center', gap: '12px', padding: '12px', borderRadius: '8px', border: 'none', background: isMemoryOpen ? 'rgba(163, 230, 53, 0.15)' : 'transparent', color: isMemoryOpen ? 'var(--neon-lime)' : 'var(--text-body)', fontSize: '14px', fontWeight: '500', cursor: 'pointer', textAlign: 'left', transition: 'all 0.2s', marginTop: '12px' }}
+            >
+              <span>🧠</span>
+              {!isSidebarCollapsed && (
+                <div style={{ display: 'flex', justifyContent: 'space-between', width: '100%', alignItems: 'center' }}>
+                  <span>Recent Memory</span>
+                  <span style={{ fontSize: '10px' }}>{isMemoryOpen ? "▶" : "◀"}</span>
+                </div>
+              )}
+            </button>
           </nav>
         </div>
 
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '12px', borderTop: '1px solid rgba(255, 255, 255, 0.08)', paddingTop: '12px' }}>
-          
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '12px', borderTop: '1px solid var(--border-glass)', paddingTop: '12px' }}>
           <div style={{ padding: '4px 8px' }}>
             {!isSidebarCollapsed && (
               <>
-                <span style={{ fontSize: '11px', color: '#64748b', display: 'block' }}>Student Profile</span>
-                <span style={{ fontSize: '13.5px', color: '#f1f5f9', fontWeight: '500' }}>Joseph Karamuki</span>
+                <span style={{ fontSize: '11px', color: 'var(--text-muted)', display: 'block' }}>Practitioner Profile</span>
+                <span style={{ fontSize: '13.5px', color: 'var(--text-pure)', fontWeight: '500' }}>Joseph Karamuki</span>
               </>
             )}
           </div>
           <button
             type="button"
             onClick={handleLogout}
-            style={{ width: '100%', display: 'flex', alignItems: 'center', gap: '12px', padding: '10px 16px', borderRadius: '8px', border: 'none', background: '#222738', color: '#ef4444', fontSize: '13.5px', fontWeight: '600', cursor: 'pointer', textAlign: 'left', transition: 'all 0.2s' }}
-            onMouseEnter={(e) => e.currentTarget.style.background = '#2d1e24'}
-            onMouseLeave={(e) => e.currentTarget.style.background = '#222738'}
-          ><>
-  <span>🚪</span>
-  {!isSidebarCollapsed && "Log Out Session"}
-</><span></span>
+            style={{ width: '100%', display: 'flex', alignItems: 'center', gap: '12px', padding: '10px 16px', borderRadius: '8px', border: '1px solid rgba(239, 68, 68, 0.2)', background: 'rgba(239, 68, 68, 0.05)', color: '#ef4444', fontSize: '13.5px', fontWeight: '600', cursor: 'pointer', textAlign: 'left', transition: 'all 0.2s' }}
+          >
+            <span></span>
+            {!isSidebarCollapsed && "Logout"}
           </button>
         </div>
       </aside>
 
+      {/* RETRACTABLE HISTORY DRAWER */}
+      <div className={`history-tab ${isMemoryOpen ? 'open' : ''}`}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px', borderBottom: '1px solid var(--border-glass)', paddingBottom: '12px' }}>
+          <h3 style={{ margin: 0, fontSize: '16px', fontWeight: '600', color: 'var(--neon-lime)', display: 'flex', alignItems: 'center', gap: '8px' }}>
+            <span>🧠</span> Diagnostic Ledger
+          </h3>
+          <button type="button" onClick={() => setIsMemoryOpen(false)} style={{ background: 'transparent', border: 'none', color: 'var(--text-body)', fontSize: '16px', cursor: 'pointer' }}>✕</button>
+        </div>
+        <div className="history-list" style={{ display: 'flex', flexDirection: 'column', gap: '10px', overflowY: 'auto', height: 'calc(100vh - 100px)' }}>
+          {recentMemories.map((memory, index) => (
+            <button
+              key={index}
+              type="button"
+              onClick={() => handleSelectMemory(memory)}
+              style={{ width: '100%', background: 'rgba(255, 255, 255, 0.05)', border: '1px solid var(--border-glass)', color: 'var(--text-pure)', padding: '12px', borderRadius: '8px', textAlign: 'left', cursor: 'pointer', fontSize: '13.5px', transition: 'all 0.2s' }}
+              onMouseEnter={(e) => e.currentTarget.style.borderColor = 'var(--neon-cyan)'}
+              onMouseLeave={(e) => e.currentTarget.style.borderColor = 'var(--border-glass)'}
+            >
+              📝 {memory}
+            </button>
+          ))}
+        </div>
+      </div>
+
       {/* WORKSPACE CONTENT AREA */}
-      <main style={{ flexGrow: 1, display: 'flex', flexDirection: 'column', minHeight: '100vh', padding: '40px', boxSizing: 'border-box' }}>
+      <main>
         
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', borderBottom: '1px solid #e2e8f0', paddingBottom: '20px', marginBottom: '32px' }}>
+        {/* TOP META BAR HEADER */}
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', borderBottom: '1px solid var(--border-glass)', paddingBottom: '20px', marginBottom: '32px' }}>
           <div>
-            <h1 style={{ fontSize: '22px', fontWeight: '700', color: '#0f172a', margin: '0 0 4px 0' }}>
+            <h1 style={{ fontSize: '24px', fontWeight: '700', color: 'var(--text-pure)', margin: '0 0 6px 0', letterSpacing: '-0.5px' }}>
               {activeView === 'dashboard' ? "Core Reasoning Subsystem" : "Study Material Repository"}
             </h1>
-            <p style={{ fontSize: '14px', color: '#64748b', margin: 0 }}>
+            <p style={{ fontSize: '14px', color: 'var(--text-body)', margin: 0 }}>
               {activeView === 'dashboard' ? "Real-time student workspace optimized for high-yield diagnostic synthesis." : "Access structured clinical guideline slide decks and training modules."}
             </p>
           </div>
 
-          <div style={{ textAlign: 'right' }}>
-            <span style={{ display: 'block', fontSize: '18px', fontWeight: '700', color: '#0f172a', fontFamily: 'monospace' }}>{timeStr}</span>
-            <span style={{ display: 'block', fontSize: '11px', color: '#64748b', textTransform: 'uppercase', marginTop: '2px', letterSpacing: '0.5px', fontWeight: '600' }}>{dateStr}</span>
+          <div id="live-header-clock">
+            <span className="live-time">{timeStr}</span>
+            <span className="live-date">{dateStr}</span>
           </div>
         </div>
 
         {/* VIEW 1: DASHBOARD HUB */}
         <div style={{ display: activeView === 'dashboard' ? 'block' : 'none' }}>
-          <div style={{ display: 'grid', gridTemplateColumns: (isChatMaximized ? '1fr' : '280px 1fr'), gap: '24px', alignItems: 'start' }}>
+          <div className="dashboard-grid-matrix" style={{ gridTemplateColumns: isChatMaximized ? '1fr' : undefined }}>
             
             {!isChatMaximized && (
               <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
-                <div style={{ background: '#ffffff', border: '1px solid #e2e8f0', borderRadius: '16px', padding: '20px', boxShadow: '0 4px 6px -1px rgba(0,0,0,0.05)' }}>
-                  <h3 style={{ color: '#0f172a', fontSize: '13px', fontWeight: '700', margin: '0 0 12px 0', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Diagnostic Tracking</h3>
+                <div className="glass-panel">
+                  <h3 style={{ color: 'var(--text-pure)', fontSize: '13px', fontWeight: '700', margin: '0 0 12px 0', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Diagnostic Tracking</h3>
                   <div style={{ display: 'flex', alignItems: 'baseline', gap: '8px' }}>
-                    <span style={{ fontSize: '36px', fontWeight: 'bold', color: '#0d9488' }}>{weakTopics.length}</span>
-                    <span style={{ color: '#475569', fontSize: '13.5px', fontWeight: '500' }}>Knowledge Gaps</span>
+                    <span style={{ fontSize: '36px', fontWeight: 'bold', color: 'var(--neon-cyan)' }}>{weakTopics.length}</span>
+                    <span style={{ color: 'var(--text-body)', fontSize: '13.5px', fontWeight: '500' }}>Knowledge Gaps</span>
                   </div>
-                  <p style={{ color: '#64748b', fontSize: '12px', margin: '12px 0 0 0', lineHeight: '1.5' }}>Dynamic areas needing curriculum review based on recent analytical performance.</p>
+                  <p style={{ color: 'var(--text-muted)', fontSize: '12px', margin: '12px 0 0 0', lineHeight: '1.5' }}>Dynamic areas needing curriculum review based on recent analytical performance.</p>
                 </div>
 
-                <div style={{ background: '#ffffff', border: '1px solid #e2e8f0', borderRadius: '16px', padding: '20px', boxShadow: '0 4px 6px -1px rgba(0,0,0,0.05)' }}>
-                  <h3 style={{ color: '#b91c1c', fontSize: '13px', fontWeight: '700', margin: '0 0 12px 0', textTransform: 'uppercase', letterSpacing: '0.5px' }}>High Priority Focus</h3>
+                <div className="glass-panel" style={{ borderTop: '2px solid var(--neon-pink)' }}>
+                  <h3 style={{ color: 'var(--neon-pink)', fontSize: '13px', fontWeight: '700', margin: '0 0 12px 0', textTransform: 'uppercase', letterSpacing: '0.5px' }}>High Priority Focus</h3>
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-                    {weakTopics.map((topic, index) => (
-                      <div key={index} style={{ background: '#fef2f2', borderLeft: '3px solid #ef4444', padding: '10px', borderRadius: '0 8px 8px 0' }}>
-                        <span style={{ fontSize: '13px', color: '#991b1b', display: 'block', fontWeight: '600' }}>{topic}</span>
-                      </div>
-                    ))}
+                    {weakTopics.length === 0 ? (
+                      <span style={{ fontSize: '13px', color: 'var(--text-muted)' }}>No topics flags logged yet.</span>
+                    ) : (
+                      weakTopics.map((topic, index) => (
+                        <div key={index} style={{ background: 'rgba(255, 0, 127, 0.08)', borderLeft: '3px solid var(--neon-pink)', padding: '10px', borderRadius: '0 8px 8px 0' }}>
+                          <span style={{ fontSize: '13px', color: 'var(--text-pure)', display: 'block', fontWeight: '600' }}>{topic}</span>
+                        </div>
+                      ))
+                    )}
                   </div>
                 </div>
               </div>
             )}
 
             {/* REASONING ENGINE INTERFACE */}
-            <div style={{ background: '#ffffff', border: '1px solid #e2e8f0', borderRadius: '16px', padding: '24px', display: 'flex', flexDirection: 'column', minHeight: '500px', boxShadow: '0 4px 6px -1px rgba(0,0,0,0.05)', position: 'relative' }}>
-              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderBottom: '1px solid #e2e8f0', paddingBottom: '16px', marginBottom: '20px' }}>
+            <div className="glass-panel" style={{ display: 'flex', flexDirection: 'column', minHeight: '520px' }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderBottom: '1px solid var(--border-glass)', paddingBottom: '16px', marginBottom: '20px' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                  <h3 style={{ color: '#0f172a', fontSize: '15px', fontWeight: '700', margin: 0, textTransform: 'uppercase', letterSpacing: '0.3px' }}>Reasoning Agent Subsystem</h3>
-                  <span style={{ fontSize: '12px', color: statusState === 'error' ? '#ef4444' : '#0d9488', fontWeight: '600', background: statusState === 'error' ? '#fef2f2' : '#f0fdfa', padding: '4px 8px', borderRadius: '6px' }}>● {statusText}</span>
+                  <h3 style={{ color: 'var(--text-pure)', fontSize: '15px', fontWeight: '700', margin: 0, textTransform: 'uppercase', letterSpacing: '0.3px' }}>Reasoning Agent Subsystem</h3>
+                  <span style={{ fontSize: '12px', color: statusState === 'error' ? 'var(--neon-pink)' : 'var(--neon-cyan)', fontWeight: '600', background: 'rgba(255,255,255,0.05)', padding: '4px 8px', borderRadius: '6px', border: '1px solid var(--border-glass)' }}>● {statusText}</span>
                 </div>
                 
                 <button
                   type="button"
                   onClick={() => setIsChatMaximized(!isChatMaximized)}
-                  style={{ background: '#f1f5f9', border: 'none', color: '#475569', padding: '6px 12px', borderRadius: '6px', fontSize: '12.5px', fontWeight: '600', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '6px', transition: 'all 0.2s' }}
-                  onMouseEnter={(e) => e.currentTarget.style.background = '#e2e8f0'}
-                  onMouseLeave={(e) => e.currentTarget.style.background = '#f1f5f9'}
+                  style={{ background: 'rgba(255, 255, 255, 0.08)', border: '1px solid var(--border-glass)', color: 'var(--text-pure)', padding: '6px 12px', borderRadius: '6px', fontSize: '12.5px', fontWeight: '600', cursor: 'pointer', transition: 'all 0.2s' }}
                 >
                   {isChatMaximized ? "🗜️ Exit Fullscreen" : "📺 Maximize Workspace"}
                 </button>
               </div>
 
-              <div className="conversation" ref={conversationRef} style={{ flexGrow: 1, overflowY: 'auto', marginBottom: '24px', display: 'flex', flexDirection: 'column', gap: '16px', maxHeight: isChatMaximized ? '580px' : '380px', paddingRight: '4px' }}>
+              <div className="conversation" ref={conversationRef} style={{ flexGrow: 1, overflowY: 'auto', marginBottom: '24px', display: 'flex', flexDirection: 'column', gap: '16px', maxHeight: isChatMaximized ? '620px' : '400px' }}>
                 {conversation.map((msg, index) => (
-                  <div key={index} style={{ alignSelf: msg.type === 'user' ? 'flex-end' : 'flex-start', maxWidth: '85%', background: msg.type === 'user' ? '#0f172a' : '#f8fafc', border: '1px solid ' + (msg.type === 'user' ? '#0f172a' : '#e2e8f0'), padding: '14px', borderRadius: '12px', boxShadow: '0 1px 2px rgba(0,0,0,0.02)' }}>
-                    {msg.type === 'assistant' ? renderResponseContent(msg.text) : <span style={{ color: '#ffffff', fontSize: '14px', lineHeight: '1.5' }}>{msg.text}</span>}
+                  <div key={index} style={{ alignSelf: msg.type === 'user' ? 'flex-end' : 'flex-start', maxWidth: '85%', background: msg.type === 'user' ? 'var(--bg-card-glass)' : 'rgba(255,255,255,0.04)', border: '1px solid ' + (msg.type === 'user' ? 'var(--border-glass-bright)' : 'var(--border-glass)'), padding: '14px', borderRadius: '14px' }}>
+                    {msg.type === 'assistant' ? renderResponseContent(msg.text) : <span style={{ color: 'var(--text-pure)', fontSize: '14px', lineHeight: '1.5' }}>{msg.text}</span>}
                   </div>
                 ))}
               </div>
 
+              {/* CHAT INPUT SUBMISSION GROUP */}
               <div style={{ display: 'flex', gap: '12px' }}>
                 <input 
                   type="text" 
-                  placeholder="Ask a question about pathology or nursing guidelines..."
+                  ref={inputRef}
+                  placeholder={statusState === "pending" ? "Mira is evaluating data fields..." : "Ask Mira a question about pathology or nursing guidelines..."}
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
+                  onKeyDown={(e) => { if (e.key === 'Enter') handleSendMessage(); }}
+                  disabled={statusState === "pending"}
                   onFocus={() => setIsChatFocused(true)}
                   onBlur={() => setIsChatFocused(false)}
-                  style={{ flexGrow: 1, padding: '14px', borderRadius: '10px', background: '#f8fafc', border: '1px solid #cbd5e1', color: '#0f172a', fontSize: '14px', outline: 'none', transition: 'border 0.2s' }}
+                  style={{ flexGrow: 1, padding: '14px', borderRadius: '10px', background: 'rgba(0,0,0,0.2)', border: '1px solid var(--border-glass)', color: 'var(--text-pure)', fontSize: '14px', outline: 'none', opacity: statusState === "pending" ? 0.6 : 1 }}
                 />
                 <button 
                   type="button"
-                  style={{ background: '#0d9488', color: '#fff', border: 'none', padding: '0 28px', borderRadius: '10px', fontWeight: '600', fontSize: '14px', cursor: 'pointer', transition: 'background 0.2s' }}
+                  onClick={handleSendMessage}
+                  disabled={statusState === "pending"}
+                  style={{ background: 'var(--border-glass-bright)', color: '#fff', border: 'none', padding: '0 28px', borderRadius: '10px', fontWeight: '600', fontSize: '14px', cursor: 'pointer', boxShadow: '0 4px 14px rgba(99,177,54,0.3)', opacity: statusState === "pending" ? 0.6 : 1 }}
                 >
-                  Analyze
+                  {statusState === "pending" ? "..." : "Analyze"}
                 </button>
               </div>
             </div>
@@ -497,32 +550,27 @@ const response = await fetch("/api/materials/manual-add", {
 
         {/* VIEW 2: MATERIAL LIBRARY */}
         <div style={{ display: activeView === 'library' ? 'block' : 'none' }}>
-          <div style={{ background: '#ffffff', border: '1px solid #e2e8f0', borderRadius: '16px', marginBottom: '32px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '20px 24px', boxShadow: '0 4px 6px -1px rgba(0,0,0,0.05)' }}>
+          <div className="glass-panel" style={{ marginBottom: '32px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '16px' }}>
             <div>
-              <h3 style={{ color: '#0f172a', margin: '0 0 4px 0', fontSize: '16px', fontWeight: '700' }}>Interactive Module Assets</h3>
-              <p style={{ color: '#64748b', fontSize: '13px', margin: 0 }}>Upload multiple presentations and blueprints to populate your digital clinical archive.</p>
+              <h3 style={{ color: 'var(--text-pure)', margin: '0 0 4px 0', fontSize: '16px', fontWeight: '700' }}>Interactive Module Assets</h3>
+              <p style={{ color: 'var(--text-body)', fontSize: '13px', margin: 0 }}>Upload multiple presentations and blueprints to populate your digital clinical archive.</p>
             </div>
             
             {isAdmin && (
               <button 
                 type="button" 
                 onClick={handleFileUploadClick}
-                style={{ background: '#0d9488', color: '#fff', padding: '10px 20px', borderRadius: '8px', border: 'none', fontSize: '13.5px', fontWeight: '600', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '8px', transition: 'background 0.2s', boxShadow: '0 2px 4px rgba(13,148,136,0.2)' }}
-                onMouseEnter={(e) => e.currentTarget.style.background = '#0f766e'}
-                onMouseLeave={(e) => e.currentTarget.style.background = '#0d9488'}
+                style={{ background: 'var(--border-glass-bright)', color: '#fff', padding: '10px 20px', borderRadius: '8px', border: 'none', fontSize: '13.5px', fontWeight: '600', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '8px', boxShadow: '0 4px 12px rgba(99,177,54,0.2)' }}
               >
                 <span>➕</span> Import Asset Decks
               </button>
             )}
           </div>
 
-          <div className="library-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '24px' }}>
+          <div className="library-grid">
             {materials.map((file) => (
-              <div 
-                key={file.id} 
-                style={{ background: '#ffffff', border: '1px solid #e2e8f0', borderRadius: '14px', overflow: 'hidden', display: 'flex', flexDirection: 'column', transition: 'transform 0.2s, box-shadow 0.2s', boxShadow: '0 2px 4px rgba(0,0,0,0.02)' }}
-              >
-                <div style={{ height: '140px', background: 'linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%)', position: 'relative', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <div key={file.id} className="glass-panel" style={{ padding: 0, overflow: 'hidden', display: 'flex', flexDirection: 'column' }}>
+                <div style={{ height: '140px', background: 'rgba(255,255,255,0.05)', position: 'relative', display: 'flex', alignItems: 'center', justifyContent: 'center', borderBottom: '1px solid var(--border-glass)' }}>
                   <span style={{ position: 'absolute', top: '12px', left: '12px', background: file.type === 'pdf' ? '#ef4444' : file.type.includes('ppt') ? '#f59e0b' : '#10b981', color: '#fff', fontSize: '10px', fontWeight: '700', padding: '3px 6px', borderRadius: '4px', textTransform: 'uppercase' }}>
                     {file.type}
                   </span>
@@ -530,28 +578,23 @@ const response = await fetch("/api/materials/manual-add", {
                   <div style={{ fontSize: '40px' }}>
                     {file.type === 'pdf' ? '📖' : file.type.includes('ppt') ? '📊' : '📝'}
                   </div>
-
-                  <div style={{ position: 'absolute', bottom: '12px', left: '12px', right: '12px', display: 'flex', flexDirection: 'column', gap: '4px' }}>
-                    <div style={{ width: '35%', height: '4px', background: '#cbd5e1', borderRadius: '2px' }}></div>
-                    <div style={{ width: '60%', height: '3px', background: '#e2e8f0', borderRadius: '2px' }}></div>
-                  </div>
                 </div>
 
                 <div style={{ padding: '16px', flexGrow: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
                   <div style={{ marginBottom: '16px' }}>
-                    <h4 style={{ color: '#0f172a', fontSize: '14.5px', fontWeight: '600', margin: '0 0 4px 0', lineHeight: '1.4' }}>
+                    <h4 style={{ color: 'var(--text-pure)', fontSize: '14.5px', fontWeight: '600', margin: '0 0 4px 0', lineHeight: '1.4' }}>
                       {file.name}
                     </h4>
-                    <span style={{ color: '#64748b', fontSize: '12px' }}>
+                    <span style={{ color: 'var(--text-body)', fontSize: '12px' }}>
                       Allocation Component: {file.size}
                     </span>
                   </div>
                   
-                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', borderTop: '1px solid #f1f5f9', paddingTop: '12px', marginTop: 'auto' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', borderTop: '1px solid var(--border-glass)', paddingTop: '12px', marginTop: 'auto' }}>
                     <a 
                       href={file.url} 
                       download={`${file.name}.${file.type}`}
-                      style={{ textDecoration: 'none', color: '#0d9488', fontSize: '13px', display: 'flex', alignItems: 'center', gap: '6px', fontWeight: '600' }}
+                      style={{ textDecoration: 'none', color: 'var(--neon-cyan)', fontSize: '13px', display: 'flex', alignItems: 'center', gap: '6px', fontWeight: '600' }}
                     >
                       Get Deck
                     </a>
@@ -560,16 +603,15 @@ const response = await fetch("/api/materials/manual-add", {
                       <button 
                         type="button" 
                         onClick={() => purgeMaterial(file.id)}
-                        style={{ background: 'none', border: 'none', color: '#94a3b8', fontSize: '13px', cursor: 'pointer', fontWeight: '500' }}
-                        onMouseEnter={(e) => e.currentTarget.style.color = '#ef4444'}
-                        onMouseLeave={(e) => e.currentTarget.style.color = '#94a3b8'}
+                        style={{ background: 'none', border: 'none', color: 'var(--text-muted)', fontSize: '13px', cursor: 'pointer', fontWeight: '500', transition: 'color 0.2s' }}
+                        onMouseEnter={(e) => e.currentTarget.style.color = 'var(--neon-pink)'}
+                        onMouseLeave={(e) => e.currentTarget.style.color = 'var(--text-muted)'}
                       >
                         Purge
                       </button>
                     )}
                   </div>
                 </div>
-
               </div>
             ))}
           </div>
@@ -580,4 +622,12 @@ const response = await fetch("/api/materials/manual-add", {
   );
 }
 
-export default function App() { return <BrowserRouter><AuthProvider><AppContent /></AuthProvider></BrowserRouter>; }
+export default function App() { 
+  return (
+    <BrowserRouter>
+      <AuthProvider>
+        <AppContent />
+      </AuthProvider>
+    </BrowserRouter>
+  ); 
+}

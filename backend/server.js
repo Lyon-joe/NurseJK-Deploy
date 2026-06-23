@@ -2,6 +2,7 @@ import dotenv from "dotenv";
 dotenv.config();
 
 console.log("Gemini key status:", process.env.GEMINI_API_KEY ? "Loaded" : "Missing");
+console.log("RAW KEY VALUE IS:", `[${process.env.GEMINI_API_KEY}]`);
 console.log("MONGO_URI =", process.env.MONGO_URI);
 
 import express from "express";
