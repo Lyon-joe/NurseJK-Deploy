@@ -57,7 +57,6 @@ const allowedOrigins = [
 app.use(cors({
   origin: function (origin, callback) {
     if (!origin) return callback(null, true);
-    // Allow local development configurations or explicit production targets
     if (origin.startsWith("http://localhost:") || allowedOrigins.includes(origin) || origin.includes(".vercel.app")) {
       return callback(null, true);
     }
@@ -95,42 +94,53 @@ app.use(async (req, res, next) => {
 });
 
 // ==========================================
-// AUTOMATED FILES INTERACTIVE RESOURCE ROUTE
+// SCOPED API ROUTER (PREVENTS PROXY BREAKAGE)
 // ==========================================
-// 🛡️ CRITICAL FIX: Explicit path validation and fallback handling for the upload pipeline
-app.post("/api/materials/upload", auth, upload.array("files"), async (req, res) => {
+const apiRouter = express.Router();
+
+// All routes added to apiRouter will automatically have the "/api" prefix pathing.
+
+// 🛡️ UPLOAD PIPELINE
+apiRouter.post("/materials/manual-add", auth, async (req, res) => {
   try {
-    if (!req.files || req.files.length === 0) {
-      return res.status(400).json({ error: "No files provided for processing." });
+    const { name, type, url, size } = req.body;
+    // You can add logic here to save to your MongoDB 'Material' schema
+    res.status(201).json({ success: true, name, type, url, size });
+  } catch (err) {
+    res.status(500).json({ error: "Failed to register material" });
+  }
+});
+// Add this to your apiRouter block in server.js
+apiRouter.post("/materials/manual-add", auth, async (req, res) => {
+  try {
+    // Expecting: { "name": "Document Name", "url": "https://...", "type": "pdf" }
+    const { name, url, type } = req.body;
+
+    if (!name || !url) {
+      return res.status(400).json({ error: "Name and URL are required for manual addition." });
     }
 
-    const processedMaterials = req.files.map((file) => {
-      const fileExt = path.extname(file.originalname).replace(".", "").toLowerCase();
-      
-      // Dynamic resolution to clean up local paths vs hosted production addresses
-      const host = req.get("host");
-      const protocol = host.includes("localhost") ? "http" : "https";
+    // Logic: If you have a 'Material' model, save it here.
+    // If you are just passing it back for state management, confirm it here.
+    const manualEntry = {
+      id: Date.now().toString(),
+      name,
+      type: type || "unknown",
+      url,
+      manual: true
+    };
 
-      return {
-        id: file.filename,
-        name: path.basename(file.originalname, path.extname(file.originalname)),
-        type: fileExt,
-        size: `${(file.size / (1024 * 1024)).toFixed(1)} MB`,
-        url: `${protocol}://${host}/uploads/${file.filename}`
-      };
-    });
+    console.log("✅ Manual entry processed:", manualEntry);
+    return res.status(201).json(manualEntry);
 
-    return res.status(201).json(processedMaterials);
   } catch (err) {
-    console.error("🔥 SYSTEM AUTOMATION UPLOAD FAULT:", err);
-    return res.status(500).json({ error: "Storage subsystem failed to catalog materials." });
+    console.error("🔥 MANUAL ENTRY FAULT:", err);
+    return res.status(500).json({ error: "Failed to process manual entry." });
   }
 });
 
-// ==========================================
-// AUTHENTICATION ROUTES
-// ==========================================
-app.post("/api/auth/register", async (req, res) => {
+// 🔐 AUTHENTICATION ENDPOINTS
+apiRouter.post("/auth/register", async (req, res) => {
   try {
     const { name, email, password } = req.body;
 
@@ -163,7 +173,7 @@ app.post("/api/auth/register", async (req, res) => {
   }
 });
 
-app.post("/api/auth/login", async (req, res) => {
+apiRouter.post("/auth/login", async (req, res) => {
   try {
     const { email, password } = req.body;
 
@@ -199,17 +209,15 @@ app.post("/api/auth/login", async (req, res) => {
   }
 });
 
-app.get("/api/protected", auth, (req, res) => {
+apiRouter.get("/protected", auth, (req, res) => {
   res.json({
     message: "You are authorized 🎉",
     user: req.user
   });
 });
 
-// ==========================================
-// AI CHAT & RETRIEVAL ROUTE
-// ==========================================
-app.post("/api/chat/retrieval", auth, async (req, res) => {
+// 🧠 AI CHAT & RETRIEVAL
+apiRouter.post("/chat/retrieval", auth, async (req, res) => {
   try {
     const { message } = req.body;
     const userId = req.user.userId;
@@ -299,10 +307,8 @@ ${message}
   }
 });
 
-// ==========================================
-// RECENT THREADS CONVERSATION HISTORY
-// ==========================================
-app.get("/api/conversations", auth, async (req, res) => {
+// ⏳ RECENT THREAD CONVERSATIONS
+apiRouter.get("/conversations", auth, async (req, res) => {
   try {
     const userId = req.user.userId;
     const memory = await Memory.findOne({ userId });
@@ -337,10 +343,8 @@ app.get("/api/conversations", auth, async (req, res) => {
   }
 });
 
-// ==========================================
-// STUDENT PERFORMANCE ANALYTICS
-// ==========================================
-app.get("/api/dashboard/performance", auth, async (req, res) => {
+// 📊 PERFORMANCE ANALYTICS DASHBOARD
+apiRouter.get("/dashboard/performance", auth, async (req, res) => {
   try {
     const userId = req.user.userId;
     const memory = await Memory.findOne({ userId });
@@ -357,15 +361,16 @@ app.get("/api/dashboard/performance", auth, async (req, res) => {
     console.error("🔥 Dashboard fetch error:", err);
     res.status(500).json({ error: "Failed to retrieve student analytics" });
   }
- });
+});
+
+// Mount the router onto the app with the formal prefix
+app.use("/api", apiRouter);
 
 // ==========================================
 // SERVE FRONTEND STATIC ASSETS IN PRODUCTION
 // ==========================================
-// Serve physical distribution assets before executing catch-all redirects
 app.use(express.static(path.join(__dirname, "../frontend/dist")));
 
-// Fallback SPA catch-all rule (Must remain the final configuration entry)
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "../frontend/dist", "index.html"));
 });
