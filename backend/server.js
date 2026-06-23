@@ -104,39 +104,53 @@ const apiRouter = express.Router();
 // 🛡️ UPLOAD PIPELINE
 apiRouter.post("/materials/manual-add", auth, async (req, res) => {
   try {
-    const { name, type, url, size } = req.body;
-    // You can add logic here to save to your MongoDB 'Material' schema
-    res.status(201).json({ success: true, name, type, url, size });
-  } catch (err) {
-    res.status(500).json({ error: "Failed to register material" });
-  }
-});
-// Add this to your apiRouter block in server.js
-apiRouter.post("/materials/manual-add", auth, async (req, res) => {
-  try {
-    // Expecting: { "name": "Document Name", "url": "https://...", "type": "pdf" }
-    const { name, url, type } = req.body;
+    const { name, url, type, size } = req.body;
 
     if (!name || !url) {
       return res.status(400).json({ error: "Name and URL are required for manual addition." });
     }
 
-    // Logic: If you have a 'Material' model, save it here.
-    // If you are just passing it back for state management, confirm it here.
     const manualEntry = {
       id: Date.now().toString(),
       name,
       type: type || "unknown",
       url,
+      size: size || "0.1 MB",
       manual: true
     };
 
     console.log("✅ Manual entry processed:", manualEntry);
     return res.status(201).json(manualEntry);
-
   } catch (err) {
     console.error("🔥 MANUAL ENTRY FAULT:", err);
     return res.status(500).json({ error: "Failed to process manual entry." });
+  }
+});
+
+// Physical file upload endpoint supporting multiple uploads via multer
+apiRouter.post("/materials/upload", auth, upload.array("files"), async (req, res) => {
+  try {
+    const files = req.files;
+    if (!files || files.length === 0) {
+      return res.status(400).json({ error: "No files uploaded" });
+    }
+
+    const uploadedMaterials = files.map((file, i) => {
+      const type = file.originalname.split('.').pop()?.toLowerCase() || 'unknown';
+      return {
+        id: (Date.now() + i).toString() + Math.random().toString(36).substring(2, 5),
+        name: file.originalname.replace(/\.[^/.]+$/, ""), // Strip extension for clean display
+        type: type,
+        url: `/uploads/${file.filename}`,
+        size: (file.size / (1024 * 1024)).toFixed(1) + " MB"
+      };
+    });
+
+    console.log("✅ Files uploaded and registered:", uploadedMaterials);
+    return res.status(201).json(uploadedMaterials);
+  } catch (err) {
+    console.error("🔥 FILE UPLOAD FAULT:", err);
+    return res.status(500).json({ error: "Failed to process file uploads." });
   }
 });
 

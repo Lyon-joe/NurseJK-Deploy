@@ -22,10 +22,28 @@ const sectionIcons = [
   { pattern: /medications?|medical management|surgical/i, icon: "💊" },
   { pattern: /prevention/i, icon: "🛡️" }, 
   { pattern: /red flags?/i, icon: "🚩" },
+  { pattern: /type|classification/i, icon: "🗂️" }
 ];
 
 const iconForHeading = (text: string) => sectionIcons.find((entry) => entry.pattern.test(text))?.icon || "📌";
 const cleanInline = (text: string) => text.replace(/\*\*(.*?)\*\*/g, "$1").replace(/\*(.*?)\*/g, "$1").replace(/`(.*?)`/g, "$1").trim();
+
+const renderMarkdownInline = (text: string) => {
+  const regex = /(\*\*.*?\*\*|\*.*?\*|`.*?`)/g;
+  const parts = text.split(regex);
+  return parts.map((part, idx) => {
+    if (part.startsWith('**') && part.endsWith('**')) {
+      return <strong key={idx} style={{ color: 'var(--neon-cyan)', fontWeight: 'bold' }}>{part.slice(2, -2)}</strong>;
+    }
+    if (part.startsWith('*') && part.endsWith('*')) {
+      return <em key={idx}>{part.slice(1, -1)}</em>;
+    }
+    if (part.startsWith('`') && part.endsWith('`')) {
+      return <code key={idx} style={{ background: 'rgba(255,255,255,0.1)', padding: '2px 4px', borderRadius: '4px', fontFamily: 'monospace' }}>{part.slice(1, -1)}</code>;
+    }
+    return part;
+  });
+};
 
 const parseResponseSections = (text: string): ResponseSection[] => {
   const lines = text.split(/\r?\n/);
@@ -47,9 +65,8 @@ const parseResponseSections = (text: string): ResponseSection[] => {
     const line = rawLine.trim();
     if (!line) { flushParagraph(); continue; }
     
-    // Check for bold markdown headings common in markdown lists or structured responses
     const markdownHeadingMatch = line.match(/^#{1,4}\s+(.+)$/);
-    const genericHeadingMatch = line.match(/^[-*•]?\s*\*\*([^*:\n]{3,40})\*\*$/) || line.match(/^•\s+([A-Za-z\s]{3,30})$/);
+    const genericHeadingMatch = line.match(/^[-*•]?\s*\*\*([^*:\n]{3,40})\*\*$/) || line.match(/^•\s+([A-Za-z0-9\s/()]{3,40})$/);
     const numberedMatch = line.match(/^\*{0,2}(\d{1,2}\.\s+[^:*]+)\*{0,2}:?$/);
     const bulletMatch = line.match(/^[-*•]\s+(.+)$/);
 
@@ -62,13 +79,13 @@ const parseResponseSections = (text: string): ResponseSection[] => {
     if (bulletMatch) { 
       flushParagraph(); 
       if (!currentSection) createSection("Key Points"); 
-      currentSection!.bullets.push(cleanInline(bulletMatch[1])); 
+      currentSection!.bullets.push(bulletMatch[1]); 
       continue; 
     }
     paragraphBuffer.push(line);
   }
   flushParagraph();
-  return sections.length === 0 ? [{ heading: "Response", paragraphs: [cleanInline(text)], bullets: [] }] : sections;
+  return sections.length === 0 ? [{ heading: "Response", paragraphs: [text], bullets: [] }] : sections;
 };
 
 const renderResponseContent = (text: string) => {
@@ -76,15 +93,15 @@ const renderResponseContent = (text: string) => {
   return (
     <div className="response-content" style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
       {sections.map((section, idx) => (
-        <section key={`s-${idx}`} style={{ background: 'rgba(255, 255, 255, 0.07)', padding: '16px', borderRadius: '12px', border: '1px solid rgba(255, 255, 255, 0.1)' }} className="response-section">
+        <section key={`s-${idx}`} className="response-section">
           <h4 style={{ margin: '0 0 10px 0', fontSize: '15px', fontWeight: '600', display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--neon-cyan)' }}>
             <span>{iconForHeading(section.heading)}</span> {section.heading}
           </h4>
-          {section.paragraphs.map((p, pIdx) => <p key={`p-${idx}-${pIdx}`} style={{ color: 'var(--text-pure)', fontSize: '14px', lineHeight: '1.6', margin: '0 0 10px 0' }}>{p}</p>)}
+          {section.paragraphs.map((p, pIdx) => <p key={`p-${idx}-${pIdx}`} style={{ color: 'var(--text-pure)', fontSize: '14px', lineHeight: '1.6', margin: '0 0 10px 0' }}>{renderMarkdownInline(p)}</p>)}
           <ul style={{ listStyle: 'none', padding: '0', margin: '0', display: 'flex', flexDirection: 'column', gap: '8px' }}>
             {section.bullets.map((b, bIdx) => (
               <li key={`b-${idx}-${bIdx}`} style={{ display: 'flex', gap: '8px', alignItems: 'flex-start', fontSize: '14px', color: 'var(--text-pure)' }}>
-                <span style={{ color: 'var(--neon-lime)', fontWeight: 'bold' }}>•</span><span>{b}</span>
+                <span style={{ color: 'var(--neon-lime)', fontWeight: 'bold' }}>•</span><span>{renderMarkdownInline(b)}</span>
               </li>
             ))}
           </ul>
@@ -208,10 +225,9 @@ export function AppContent() {
   };
 
   // Submission engine driving direct queries down to /api/chat/retrieval 
-  const handleSendMessage = async () => {
-    if (!message.trim() || statusState === "pending") return;
-
-    const userQuery = message.trim();
+  const handleSendMessage = async (overrideQuery?: string) => {
+    const userQuery = (overrideQuery ?? message).trim();
+    if (!userQuery || statusState === "pending") return;
     
     setConversation(prev => [...prev, { type: "user", text: userQuery }]);
     setMessage("");
@@ -252,7 +268,7 @@ export function AppContent() {
       console.error("AI execution failure:", error);
       setConversation(prev => [...prev, {
         type: "error",
-        text: `🔴 Connection disrupted. System message: ${error.message}`
+        text: `Connection disrupted. System message: ${error.message}`
       }]);
       setStatusText("Offline Error");
       setStatusState("error");
@@ -286,35 +302,25 @@ export function AppContent() {
       setStatusState("pending");
 
       try {
-        const successfulUploads: StudyMaterial[] = [];
-
+        const formData = new FormData();
         for (let i = 0; i < files.length; i++) {
-          const file = files[i];
-          
-          const payload = {
-            name: file.name,
-            type: file.name.split('.').pop()?.toLowerCase() || 'unknown',
-            url: `/uploads/${file.name}`,
-            size: (file.size / (1024 * 1024)).toFixed(1) + " MB"
-          };
-
-          const response = await fetch("/api/materials/manual-add", {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-              "Authorization": `Bearer ${token}`
-            },
-            body: JSON.stringify(payload)
-          });
-
-          if (!response.ok) {
-            throw new Error(`Server returned ${response.status} for ${file.name}`);
-          }
-
-          successfulUploads.push({ id: Date.now().toString() + i, ...payload });
+          formData.append("files", files[i]);
         }
 
-        setMaterials(prev => [...prev, ...successfulUploads]);
+        const response = await fetch("/api/materials/upload", {
+          method: "POST",
+          headers: {
+            "Authorization": `Bearer ${token}`
+          },
+          body: formData
+        });
+
+        if (!response.ok) {
+          throw new Error(`Server returned ${response.status} during upload`);
+        }
+
+        const uploadedMaterials = await response.json();
+        setMaterials(prev => [...prev, ...uploadedMaterials]);
         setStatusText("Engine Core Online");
         setStatusState("ready");
 
@@ -339,82 +345,69 @@ export function AppContent() {
     <div className="app-dashboard-shell">
       
       {/* SIDEBAR NAVIGATION */}
-      <aside className="sidebar-dock-shelf" style={{ width: isSidebarCollapsed ? '80px' : '260px', transition: 'width .3s ease' }}>
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
+      <aside className={`sidebar-dock-shelf ${isSidebarCollapsed ? 'collapsed' : ''}`}>
+        <div className="sidebar-main-content">
           <button
             type="button"
             onClick={() => setIsSidebarCollapsed(!isSidebarCollapsed)}
-            style={{
-              background: "rgba(255, 255, 255, 0.08)",
-              border: "1px solid var(--border-glass)",
-              color: "#fff",
-              padding: "10px",
-              borderRadius: "8px",
-              cursor: "pointer",
-              marginBottom: "10px"
-            }}
+            className="sidebar-toggle-btn"
           >
             {isSidebarCollapsed ? "🧭" : "⚡ Collapse Navigation"}
           </button>
 
-          <div style={{ paddingBottom: '12px', borderBottom: '1px solid var(--border-glass)' }}>
+          <div className="sidebar-brand">
             <h2 style={{ fontSize: '18px', fontWeight: '700', color: '#fff', margin: '0 0 4px 0', display: 'flex', alignItems: 'center', gap: '8px' }}>
               <span style={{ color: 'var(--neon-cyan)' }}>🩺</span>
-              {!isSidebarCollapsed && "NurseJK Assistant"}
+              <span className="brand-text-desktop">NurseJK Assistant</span>
+              <span className="brand-text-mobile">NurseJK</span>
             </h2>
-            {!isSidebarCollapsed && <p style={{ fontSize: '11px', color: 'var(--text-body)', margin: 0, alignItems: 'center', textTransform: 'uppercase', letterSpacing: '1px' }}>Clinical Companion</p>}
+            <p style={{ fontSize: '11px', color: 'var(--text-body)', margin: 0, textTransform: 'uppercase', letterSpacing: '1px' }}>Clinical Companion</p>
           </div>
 
-          <nav style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
+          <nav className="sidebar-nav">
             <button 
               type="button" 
               onClick={() => { setActiveView("dashboard"); }}
-              style={{ width: '100%', display: 'flex', alignItems: 'center', gap: '12px', padding: '12px', borderRadius: '8px', border: 'none', background: activeView === 'dashboard' ? 'rgba(0, 240, 255, 0.15)' : 'transparent', color: activeView === 'dashboard' ? 'var(--neon-cyan)' : 'var(--text-body)', fontSize: '14px', fontWeight: '500', cursor: 'pointer', textAlign: 'left', transition: 'all 0.2s' }}
+              className={`nav-button ${activeView === 'dashboard' ? 'active' : ''}`}
             >
               <span>🖥️</span>
-              {!isSidebarCollapsed && "Reasoning Core"}
+              <span className="nav-button-text">Reasoning Core</span>
             </button>
             <button 
               type="button" 
               onClick={() => { setActiveView("library"); }}
-              style={{ width: '100%', display: 'flex', alignItems: 'center', gap: '12px', padding: '12px', borderRadius: '8px', border: 'none', background: activeView === 'library' ? 'rgba(0, 240, 255, 0.15)' : 'transparent', color: activeView === 'library' ? 'var(--neon-cyan)' : 'var(--text-body)', fontSize: '14px', fontWeight: '500', cursor: 'pointer', textAlign: 'left', transition: 'all 0.2s' }}
+              className={`nav-button ${activeView === 'library' ? 'active' : ''}`}
             >
               <span>📚</span>
-              {!isSidebarCollapsed && "Material Repository"}
+              <span className="nav-button-text">Material Repository</span>
             </button>
             
             <button
               type="button"
               onClick={() => setIsMemoryOpen(!isMemoryOpen)}
-              style={{ width: '100%', display: 'flex', alignItems: 'center', gap: '12px', padding: '12px', borderRadius: '8px', border: 'none', background: isMemoryOpen ? 'rgba(163, 230, 53, 0.15)' : 'transparent', color: isMemoryOpen ? 'var(--neon-lime)' : 'var(--text-body)', fontSize: '14px', fontWeight: '500', cursor: 'pointer', textAlign: 'left', transition: 'all 0.2s', marginTop: '12px' }}
+              className={`nav-button ${isMemoryOpen ? 'active' : ''}`}
+              style={{ color: isMemoryOpen ? 'var(--neon-lime)' : undefined }}
             >
               <span>🧠</span>
-              {!isSidebarCollapsed && (
-                <div style={{ display: 'flex', justifyContent: 'space-between', width: '100%', alignItems: 'center' }}>
-                  <span>Recent Memory</span>
-                  <span style={{ fontSize: '10px' }}>{isMemoryOpen ? "▶" : "◀"}</span>
-                </div>
-              )}
+              <span className="nav-button-text">Recent Memory</span>
             </button>
           </nav>
         </div>
 
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '12px', borderTop: '1px solid var(--border-glass)', paddingTop: '12px' }}>
-          <div style={{ padding: '4px 8px' }}>
-            {!isSidebarCollapsed && (
-              <>
-                <span style={{ fontSize: '11px', color: 'var(--text-muted)', display: 'block' }}>Practitioner Profile</span>
-                <span style={{ fontSize: '13.5px', color: 'var(--text-pure)', fontWeight: '500' }}>Joseph Karamuki</span>
-              </>
-            )}
-          </div>
+        <div className="sidebar-footer">
+          {!isSidebarCollapsed && (
+            <div className="profile-container">
+              <span style={{ fontSize: '11px', color: 'var(--text-muted)', display: 'block' }}>Practitioner Profile</span>
+              <span style={{ fontSize: '13.5px', color: 'var(--text-pure)', fontWeight: '500' }}>Joseph Karamuki</span>
+            </div>
+          )}
           <button
             type="button"
             onClick={handleLogout}
-            style={{ width: '100%', display: 'flex', alignItems: 'center', gap: '12px', padding: '10px 16px', borderRadius: '8px', border: '1px solid rgba(239, 68, 68, 0.2)', background: 'rgba(239, 68, 68, 0.05)', color: '#ef4444', fontSize: '13.5px', fontWeight: '600', cursor: 'pointer', textAlign: 'left', transition: 'all 0.2s' }}
+            className="logout-button"
           >
-            <span></span>
-            {!isSidebarCollapsed && "Logout"}
+            <span>🚪</span>
+            <span className="logout-button-text">Logout</span>
           </button>
         </div>
       </aside>
@@ -485,8 +478,19 @@ export function AppContent() {
                       <span style={{ fontSize: '13px', color: 'var(--text-muted)' }}>No topics flags logged yet.</span>
                     ) : (
                       weakTopics.map((topic, index) => (
-                        <div key={index} style={{ background: 'rgba(255, 0, 127, 0.08)', borderLeft: '3px solid var(--neon-pink)', padding: '10px', borderRadius: '0 8px 8px 0' }}>
-                          <span style={{ fontSize: '13px', color: 'var(--text-pure)', display: 'block', fontWeight: '600' }}>{topic}</span>
+                        <div
+                          key={index}
+                          className="weak-topic-card"
+                          onClick={() => {
+                            const query = `Provide a board-exam focused breakdown of ${topic}, covering pathophysiology, clinical features, nursing interventions, and common NCLEX pitfalls.`;
+                            setActiveView('dashboard');
+                            setIsMemoryOpen(false);
+                            handleSendMessage(query);
+                          }}
+                          title="Click to trigger AI evaluation"
+                        >
+                          <span style={{ fontSize: '11px', color: 'var(--neon-pink)', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '0.5px' }}>⚡ Auto-Analyze</span>
+                          <span style={{ fontSize: '13px', color: 'var(--text-pure)', display: 'block', fontWeight: '600', marginTop: '4px' }}>{topic}</span>
                         </div>
                       ))
                     )}
@@ -514,10 +518,41 @@ export function AppContent() {
 
               <div className="conversation" ref={conversationRef} style={{ flexGrow: 1, overflowY: 'auto', marginBottom: '24px', display: 'flex', flexDirection: 'column', gap: '16px', maxHeight: isChatMaximized ? '620px' : '400px' }}>
                 {conversation.map((msg, index) => (
-                  <div key={index} style={{ alignSelf: msg.type === 'user' ? 'flex-end' : 'flex-start', maxWidth: '85%', background: msg.type === 'user' ? 'var(--bg-card-glass)' : 'rgba(255,255,255,0.04)', border: '1px solid ' + (msg.type === 'user' ? 'var(--border-glass-bright)' : 'var(--border-glass)'), padding: '14px', borderRadius: '14px' }}>
-                    {msg.type === 'assistant' ? renderResponseContent(msg.text) : <span style={{ color: 'var(--text-pure)', fontSize: '14px', lineHeight: '1.5' }}>{msg.text}</span>}
+                  <div
+                    key={index}
+                    style={{
+                      alignSelf: msg.type === 'user' ? 'flex-end' : 'flex-start',
+                      maxWidth: '88%',
+                      background: msg.type === 'user'
+                        ? 'var(--bg-card-glass)'
+                        : msg.type === 'error'
+                        ? 'rgba(255, 0, 127, 0.06)'
+                        : 'rgba(255,255,255,0.03)',
+                      border: '1px solid ' + (msg.type === 'user'
+                        ? 'var(--border-glass-bright)'
+                        : msg.type === 'error'
+                        ? 'rgba(255, 0, 127, 0.3)'
+                        : 'var(--border-glass)'),
+                      padding: '14px 18px',
+                      borderRadius: msg.type === 'user' ? '16px 4px 16px 16px' : '4px 16px 16px 16px',
+                      transition: 'all 0.2s'
+                    }}
+                  >
+                    {msg.type === 'assistant'
+                      ? renderResponseContent(msg.text)
+                      : msg.type === 'error'
+                      ? <span style={{ color: 'var(--neon-pink)', fontSize: '13.5px', lineHeight: '1.5', display: 'flex', alignItems: 'center', gap: '8px' }}>
+                          <span>⚠️</span><span>{msg.text.replace('🔴 ', '')}</span>
+                        </span>
+                      : <span style={{ color: 'var(--text-pure)', fontSize: '14px', lineHeight: '1.5' }}>{msg.text}</span>
+                    }
                   </div>
                 ))}
+                {statusState === 'pending' && (
+                  <div style={{ alignSelf: 'flex-start', padding: '12px 18px', background: 'rgba(255,255,255,0.03)', border: '1px solid var(--border-glass)', borderRadius: '4px 16px 16px 16px' }}>
+                    <span style={{ color: 'var(--neon-cyan)', fontSize: '13px', letterSpacing: '2px' }}>● ● ●</span>
+                  </div>
+                )}
               </div>
 
               {/* CHAT INPUT SUBMISSION GROUP */}
@@ -536,7 +571,7 @@ export function AppContent() {
                 />
                 <button 
                   type="button"
-                  onClick={handleSendMessage}
+                  onClick={() => handleSendMessage()}
                   disabled={statusState === "pending"}
                   style={{ background: 'var(--border-glass-bright)', color: '#fff', border: 'none', padding: '0 28px', borderRadius: '10px', fontWeight: '600', fontSize: '14px', cursor: 'pointer', boxShadow: '0 4px 14px rgba(99,177,54,0.3)', opacity: statusState === "pending" ? 0.6 : 1 }}
                 >
